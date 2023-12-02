@@ -23,3 +23,4 @@ The default path for the ZNS SSD is set to **/dev/nvme0n1**, and the default env
 ```
 ./db_bench --benchmarks=fillrandom --use_direct_io_for_flush_and_compaction=1 --num=1000 --key_size=20 --value_size=800
 ```
+aa
