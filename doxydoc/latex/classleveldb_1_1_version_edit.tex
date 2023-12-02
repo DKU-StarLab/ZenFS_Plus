@@ -1,0 +1,285 @@
+\hypertarget{classleveldb_1_1_version_edit}{}\section{leveldb\+::Version\+Edit Class Reference}
+\label{classleveldb_1_1_version_edit}\index{leveldb::VersionEdit@{leveldb::VersionEdit}}
+
+
+{\ttfamily \#include $<$version\+\_\+edit.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+::Version\+Edit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classleveldb_1_1_version_edit__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_version_edit_a60dd9c72d256ed1bda68597a9263333e}{Version\+Edit}} ()
+\item 
+\mbox{\hyperlink{classleveldb_1_1_version_edit_a8863bc7fa645c4bc2518910429447fbe}{$\sim$\+Version\+Edit}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_version_edit_a259c9de14d58e231178904c1559e4b5e}{Clear}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_version_edit_ab562147cdd82b184e86e88bd375a718c}{Set\+Comparator\+Name}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&name)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_version_edit_a47e5c58d34b0e27dc8990687e0c5477a}{Set\+Log\+Number}} (uint64\+\_\+t num)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_version_edit_ac1b5689f62e7a8f63c4eefa437a4f2f3}{Set\+Prev\+Log\+Number}} (uint64\+\_\+t num)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_version_edit_a4c104515adf573be0ead29e6835f14fb}{Set\+Next\+File}} (uint64\+\_\+t num)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_version_edit_abd6e841ed400672d33d26f4b187a66bf}{Set\+Last\+Sequence}} (\mbox{\hyperlink{namespaceleveldb_a5481ededd221c36d652c371249f869fa}{Sequence\+Number}} seq)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_version_edit_ac9b26dfba1188705d7fc4deaf047271c}{Set\+Compact\+Pointer}} (int level, const \mbox{\hyperlink{classleveldb_1_1_internal_key}{Internal\+Key}} \&key)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_version_edit_a4cd5cc92761b7ae5b5f9cff46cb88263}{Add\+File}} (int level, uint64\+\_\+t file, uint64\+\_\+t file\+\_\+size, const \mbox{\hyperlink{classleveldb_1_1_internal_key}{Internal\+Key}} \&smallest, const \mbox{\hyperlink{classleveldb_1_1_internal_key}{Internal\+Key}} \&largest)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_version_edit_ac222bfd1055114d57aadbd124f24ad0c}{Delete\+File}} (int level, uint64\+\_\+t file)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_version_edit_af95009ddc020f72a32a1aa805bcf3a91}{Encode\+To}} (std\+::string $\ast$dst) const
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_version_edit_ac0f431c5e8f08c74c697d8480f7c005f}{Decode\+From}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&src)
+\item 
+std\+::string \mbox{\hyperlink{classleveldb_1_1_version_edit_a535f639edaa85da0d602b145528c6303}{Debug\+String}} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_version_edit_a1827cd1b4d6e9e3c378ce37ca3cce635}{Version\+Set}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_version_edit_a60dd9c72d256ed1bda68597a9263333e}\label{classleveldb_1_1_version_edit_a60dd9c72d256ed1bda68597a9263333e}} 
+\index{leveldb::VersionEdit@{leveldb::VersionEdit}!VersionEdit@{VersionEdit}}
+\index{VersionEdit@{VersionEdit}!leveldb::VersionEdit@{leveldb::VersionEdit}}
+\subsubsection{\texorpdfstring{VersionEdit()}{VersionEdit()}}
+{\footnotesize\ttfamily leveldb\+::\+Version\+Edit\+::\+Version\+Edit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classleveldb_1_1_version_edit_a60dd9c72d256ed1bda68597a9263333e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_edit_a8863bc7fa645c4bc2518910429447fbe}\label{classleveldb_1_1_version_edit_a8863bc7fa645c4bc2518910429447fbe}} 
+\index{leveldb::VersionEdit@{leveldb::VersionEdit}!````~VersionEdit@{$\sim$VersionEdit}}
+\index{````~VersionEdit@{$\sim$VersionEdit}!leveldb::VersionEdit@{leveldb::VersionEdit}}
+\subsubsection{\texorpdfstring{$\sim$VersionEdit()}{~VersionEdit()}}
+{\footnotesize\ttfamily leveldb\+::\+Version\+Edit\+::$\sim$\+Version\+Edit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_version_edit_a4cd5cc92761b7ae5b5f9cff46cb88263}\label{classleveldb_1_1_version_edit_a4cd5cc92761b7ae5b5f9cff46cb88263}} 
+\index{leveldb::VersionEdit@{leveldb::VersionEdit}!AddFile@{AddFile}}
+\index{AddFile@{AddFile}!leveldb::VersionEdit@{leveldb::VersionEdit}}
+\subsubsection{\texorpdfstring{AddFile()}{AddFile()}}
+{\footnotesize\ttfamily void leveldb\+::\+Version\+Edit\+::\+Add\+File (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{uint64\+\_\+t}]{file,  }\item[{uint64\+\_\+t}]{file\+\_\+size,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_internal_key}{Internal\+Key}} \&}]{smallest,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_internal_key}{Internal\+Key}} \&}]{largest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_edit_a4cd5cc92761b7ae5b5f9cff46cb88263_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_edit_a259c9de14d58e231178904c1559e4b5e}\label{classleveldb_1_1_version_edit_a259c9de14d58e231178904c1559e4b5e}} 
+\index{leveldb::VersionEdit@{leveldb::VersionEdit}!Clear@{Clear}}
+\index{Clear@{Clear}!leveldb::VersionEdit@{leveldb::VersionEdit}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void leveldb\+::\+Version\+Edit\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_edit_a259c9de14d58e231178904c1559e4b5e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_edit_a535f639edaa85da0d602b145528c6303}\label{classleveldb_1_1_version_edit_a535f639edaa85da0d602b145528c6303}} 
+\index{leveldb::VersionEdit@{leveldb::VersionEdit}!DebugString@{DebugString}}
+\index{DebugString@{DebugString}!leveldb::VersionEdit@{leveldb::VersionEdit}}
+\subsubsection{\texorpdfstring{DebugString()}{DebugString()}}
+{\footnotesize\ttfamily std\+::string leveldb\+::\+Version\+Edit\+::\+Debug\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_edit_a535f639edaa85da0d602b145528c6303_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_edit_ac0f431c5e8f08c74c697d8480f7c005f}\label{classleveldb_1_1_version_edit_ac0f431c5e8f08c74c697d8480f7c005f}} 
+\index{leveldb::VersionEdit@{leveldb::VersionEdit}!DecodeFrom@{DecodeFrom}}
+\index{DecodeFrom@{DecodeFrom}!leveldb::VersionEdit@{leveldb::VersionEdit}}
+\subsubsection{\texorpdfstring{DecodeFrom()}{DecodeFrom()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Version\+Edit\+::\+Decode\+From (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{src }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_edit_ac0f431c5e8f08c74c697d8480f7c005f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_edit_ac0f431c5e8f08c74c697d8480f7c005f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_edit_ac222bfd1055114d57aadbd124f24ad0c}\label{classleveldb_1_1_version_edit_ac222bfd1055114d57aadbd124f24ad0c}} 
+\index{leveldb::VersionEdit@{leveldb::VersionEdit}!DeleteFile@{DeleteFile}}
+\index{DeleteFile@{DeleteFile}!leveldb::VersionEdit@{leveldb::VersionEdit}}
+\subsubsection{\texorpdfstring{DeleteFile()}{DeleteFile()}}
+{\footnotesize\ttfamily void leveldb\+::\+Version\+Edit\+::\+Delete\+File (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{uint64\+\_\+t}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_edit_ac222bfd1055114d57aadbd124f24ad0c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_edit_af95009ddc020f72a32a1aa805bcf3a91}\label{classleveldb_1_1_version_edit_af95009ddc020f72a32a1aa805bcf3a91}} 
+\index{leveldb::VersionEdit@{leveldb::VersionEdit}!EncodeTo@{EncodeTo}}
+\index{EncodeTo@{EncodeTo}!leveldb::VersionEdit@{leveldb::VersionEdit}}
+\subsubsection{\texorpdfstring{EncodeTo()}{EncodeTo()}}
+{\footnotesize\ttfamily void leveldb\+::\+Version\+Edit\+::\+Encode\+To (\begin{DoxyParamCaption}\item[{std\+::string $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classleveldb_1_1_version_edit_af95009ddc020f72a32a1aa805bcf3a91_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_edit_af95009ddc020f72a32a1aa805bcf3a91_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_edit_ac9b26dfba1188705d7fc4deaf047271c}\label{classleveldb_1_1_version_edit_ac9b26dfba1188705d7fc4deaf047271c}} 
+\index{leveldb::VersionEdit@{leveldb::VersionEdit}!SetCompactPointer@{SetCompactPointer}}
+\index{SetCompactPointer@{SetCompactPointer}!leveldb::VersionEdit@{leveldb::VersionEdit}}
+\subsubsection{\texorpdfstring{SetCompactPointer()}{SetCompactPointer()}}
+{\footnotesize\ttfamily void leveldb\+::\+Version\+Edit\+::\+Set\+Compact\+Pointer (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_internal_key}{Internal\+Key}} \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classleveldb_1_1_version_edit_ac9b26dfba1188705d7fc4deaf047271c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_edit_ab562147cdd82b184e86e88bd375a718c}\label{classleveldb_1_1_version_edit_ab562147cdd82b184e86e88bd375a718c}} 
+\index{leveldb::VersionEdit@{leveldb::VersionEdit}!SetComparatorName@{SetComparatorName}}
+\index{SetComparatorName@{SetComparatorName}!leveldb::VersionEdit@{leveldb::VersionEdit}}
+\subsubsection{\texorpdfstring{SetComparatorName()}{SetComparatorName()}}
+{\footnotesize\ttfamily void leveldb\+::\+Version\+Edit\+::\+Set\+Comparator\+Name (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classleveldb_1_1_version_edit_ab562147cdd82b184e86e88bd375a718c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{classleveldb_1_1_version_edit_ab562147cdd82b184e86e88bd375a718c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_edit_abd6e841ed400672d33d26f4b187a66bf}\label{classleveldb_1_1_version_edit_abd6e841ed400672d33d26f4b187a66bf}} 
+\index{leveldb::VersionEdit@{leveldb::VersionEdit}!SetLastSequence@{SetLastSequence}}
+\index{SetLastSequence@{SetLastSequence}!leveldb::VersionEdit@{leveldb::VersionEdit}}
+\subsubsection{\texorpdfstring{SetLastSequence()}{SetLastSequence()}}
+{\footnotesize\ttfamily void leveldb\+::\+Version\+Edit\+::\+Set\+Last\+Sequence (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceleveldb_a5481ededd221c36d652c371249f869fa}{Sequence\+Number}}}]{seq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_edit_abd6e841ed400672d33d26f4b187a66bf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_edit_a47e5c58d34b0e27dc8990687e0c5477a}\label{classleveldb_1_1_version_edit_a47e5c58d34b0e27dc8990687e0c5477a}} 
+\index{leveldb::VersionEdit@{leveldb::VersionEdit}!SetLogNumber@{SetLogNumber}}
+\index{SetLogNumber@{SetLogNumber}!leveldb::VersionEdit@{leveldb::VersionEdit}}
+\subsubsection{\texorpdfstring{SetLogNumber()}{SetLogNumber()}}
+{\footnotesize\ttfamily void leveldb\+::\+Version\+Edit\+::\+Set\+Log\+Number (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_edit_a47e5c58d34b0e27dc8990687e0c5477a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_edit_a4c104515adf573be0ead29e6835f14fb}\label{classleveldb_1_1_version_edit_a4c104515adf573be0ead29e6835f14fb}} 
+\index{leveldb::VersionEdit@{leveldb::VersionEdit}!SetNextFile@{SetNextFile}}
+\index{SetNextFile@{SetNextFile}!leveldb::VersionEdit@{leveldb::VersionEdit}}
+\subsubsection{\texorpdfstring{SetNextFile()}{SetNextFile()}}
+{\footnotesize\ttfamily void leveldb\+::\+Version\+Edit\+::\+Set\+Next\+File (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_edit_a4c104515adf573be0ead29e6835f14fb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_edit_ac1b5689f62e7a8f63c4eefa437a4f2f3}\label{classleveldb_1_1_version_edit_ac1b5689f62e7a8f63c4eefa437a4f2f3}} 
+\index{leveldb::VersionEdit@{leveldb::VersionEdit}!SetPrevLogNumber@{SetPrevLogNumber}}
+\index{SetPrevLogNumber@{SetPrevLogNumber}!leveldb::VersionEdit@{leveldb::VersionEdit}}
+\subsubsection{\texorpdfstring{SetPrevLogNumber()}{SetPrevLogNumber()}}
+{\footnotesize\ttfamily void leveldb\+::\+Version\+Edit\+::\+Set\+Prev\+Log\+Number (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_edit_ac1b5689f62e7a8f63c4eefa437a4f2f3_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_version_edit_a1827cd1b4d6e9e3c378ce37ca3cce635}\label{classleveldb_1_1_version_edit_a1827cd1b4d6e9e3c378ce37ca3cce635}} 
+\index{leveldb::VersionEdit@{leveldb::VersionEdit}!VersionSet@{VersionSet}}
+\index{VersionSet@{VersionSet}!leveldb::VersionEdit@{leveldb::VersionEdit}}
+\subsubsection{\texorpdfstring{VersionSet}{VersionSet}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classleveldb_1_1_version_set}{Version\+Set}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{version__edit_8h}{version\+\_\+edit.\+h}}\item 
+db/\mbox{\hyperlink{version__edit_8cc}{version\+\_\+edit.\+cc}}\end{DoxyCompactItemize}

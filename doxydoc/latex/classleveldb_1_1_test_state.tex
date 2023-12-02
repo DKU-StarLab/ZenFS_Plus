@@ -1,0 +1,111 @@
+\hypertarget{classleveldb_1_1_test_state}{}\section{leveldb\+::Test\+State Class Reference}
+\label{classleveldb_1_1_test_state}\index{leveldb::TestState@{leveldb::TestState}}
+
+
+Collaboration diagram for leveldb\+::Test\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classleveldb_1_1_test_state__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classleveldb_1_1_test_state_a1bf1f0a16815237ff1f29d2925d9a4ad}{Reader\+State}} \{ \mbox{\hyperlink{classleveldb_1_1_test_state_a1bf1f0a16815237ff1f29d2925d9a4ada93ff507fceeb18ff487d343ce24e49fb}{S\+T\+A\+R\+T\+I\+NG}}, 
+\mbox{\hyperlink{classleveldb_1_1_test_state_a1bf1f0a16815237ff1f29d2925d9a4adab21481f14b9bab70778076d33ea574da}{R\+U\+N\+N\+I\+NG}}, 
+\mbox{\hyperlink{classleveldb_1_1_test_state_a1bf1f0a16815237ff1f29d2925d9a4ada5d7f032453f326a46f7ebd8b3f0c7d83}{D\+O\+NE}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_test_state_a777f2182bef5c524d580dc26ec589c2d}{Test\+State}} (int s)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_test_state_aceea3fc38e9f92e61b87815b43c38816}{Wait}} (\mbox{\hyperlink{classleveldb_1_1_test_state_a1bf1f0a16815237ff1f29d2925d9a4ad}{Reader\+State}} s) L\+O\+C\+K\+S\+\_\+\+E\+X\+C\+L\+U\+D\+ED(mu\+\_\+)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_test_state_adfbf3d6799e6f1fd4f43740262506df9}{Change}} (\mbox{\hyperlink{classleveldb_1_1_test_state_a1bf1f0a16815237ff1f29d2925d9a4ad}{Reader\+State}} s) L\+O\+C\+K\+S\+\_\+\+E\+X\+C\+L\+U\+D\+ED(mu\+\_\+)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_concurrent_test}{Concurrent\+Test}} \mbox{\hyperlink{classleveldb_1_1_test_state_a090fd0c59fb141c4843511b4020f05e9}{t\+\_\+}}
+\item 
+int \mbox{\hyperlink{classleveldb_1_1_test_state_aa44f519b574945b0061c88df42fd4725}{seed\+\_\+}}
+\item 
+port\+::\+Atomic\+Pointer \mbox{\hyperlink{classleveldb_1_1_test_state_a04e07cf69866e925db3fafd5cf9fa23f}{quit\+\_\+flag\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_test_state_a1bf1f0a16815237ff1f29d2925d9a4ad}\label{classleveldb_1_1_test_state_a1bf1f0a16815237ff1f29d2925d9a4ad}} 
+\index{leveldb::TestState@{leveldb::TestState}!ReaderState@{ReaderState}}
+\index{ReaderState@{ReaderState}!leveldb::TestState@{leveldb::TestState}}
+\subsubsection{\texorpdfstring{ReaderState}{ReaderState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classleveldb_1_1_test_state_a1bf1f0a16815237ff1f29d2925d9a4ad}{leveldb\+::\+Test\+State\+::\+Reader\+State}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STARTING@{STARTING}!leveldb::TestState@{leveldb::TestState}}\index{leveldb::TestState@{leveldb::TestState}!STARTING@{STARTING}}}\mbox{\Hypertarget{classleveldb_1_1_test_state_a1bf1f0a16815237ff1f29d2925d9a4ada93ff507fceeb18ff487d343ce24e49fb}\label{classleveldb_1_1_test_state_a1bf1f0a16815237ff1f29d2925d9a4ada93ff507fceeb18ff487d343ce24e49fb}} 
+S\+T\+A\+R\+T\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUNNING@{RUNNING}!leveldb::TestState@{leveldb::TestState}}\index{leveldb::TestState@{leveldb::TestState}!RUNNING@{RUNNING}}}\mbox{\Hypertarget{classleveldb_1_1_test_state_a1bf1f0a16815237ff1f29d2925d9a4adab21481f14b9bab70778076d33ea574da}\label{classleveldb_1_1_test_state_a1bf1f0a16815237ff1f29d2925d9a4adab21481f14b9bab70778076d33ea574da}} 
+R\+U\+N\+N\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DONE@{DONE}!leveldb::TestState@{leveldb::TestState}}\index{leveldb::TestState@{leveldb::TestState}!DONE@{DONE}}}\mbox{\Hypertarget{classleveldb_1_1_test_state_a1bf1f0a16815237ff1f29d2925d9a4ada5d7f032453f326a46f7ebd8b3f0c7d83}\label{classleveldb_1_1_test_state_a1bf1f0a16815237ff1f29d2925d9a4ada5d7f032453f326a46f7ebd8b3f0c7d83}} 
+D\+O\+NE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_test_state_a777f2182bef5c524d580dc26ec589c2d}\label{classleveldb_1_1_test_state_a777f2182bef5c524d580dc26ec589c2d}} 
+\index{leveldb::TestState@{leveldb::TestState}!TestState@{TestState}}
+\index{TestState@{TestState}!leveldb::TestState@{leveldb::TestState}}
+\subsubsection{\texorpdfstring{TestState()}{TestState()}}
+{\footnotesize\ttfamily leveldb\+::\+Test\+State\+::\+Test\+State (\begin{DoxyParamCaption}\item[{int}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_test_state_adfbf3d6799e6f1fd4f43740262506df9}\label{classleveldb_1_1_test_state_adfbf3d6799e6f1fd4f43740262506df9}} 
+\index{leveldb::TestState@{leveldb::TestState}!Change@{Change}}
+\index{Change@{Change}!leveldb::TestState@{leveldb::TestState}}
+\subsubsection{\texorpdfstring{Change()}{Change()}}
+{\footnotesize\ttfamily void leveldb\+::\+Test\+State\+::\+Change (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1_test_state_a1bf1f0a16815237ff1f29d2925d9a4ad}{Reader\+State}}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_test_state_aceea3fc38e9f92e61b87815b43c38816}\label{classleveldb_1_1_test_state_aceea3fc38e9f92e61b87815b43c38816}} 
+\index{leveldb::TestState@{leveldb::TestState}!Wait@{Wait}}
+\index{Wait@{Wait}!leveldb::TestState@{leveldb::TestState}}
+\subsubsection{\texorpdfstring{Wait()}{Wait()}}
+{\footnotesize\ttfamily void leveldb\+::\+Test\+State\+::\+Wait (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1_test_state_a1bf1f0a16815237ff1f29d2925d9a4ad}{Reader\+State}}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_test_state_a04e07cf69866e925db3fafd5cf9fa23f}\label{classleveldb_1_1_test_state_a04e07cf69866e925db3fafd5cf9fa23f}} 
+\index{leveldb::TestState@{leveldb::TestState}!quit\_flag\_@{quit\_flag\_}}
+\index{quit\_flag\_@{quit\_flag\_}!leveldb::TestState@{leveldb::TestState}}
+\subsubsection{\texorpdfstring{quit\_flag\_}{quit\_flag\_}}
+{\footnotesize\ttfamily port\+::\+Atomic\+Pointer leveldb\+::\+Test\+State\+::quit\+\_\+flag\+\_\+}
+
+\mbox{\Hypertarget{classleveldb_1_1_test_state_aa44f519b574945b0061c88df42fd4725}\label{classleveldb_1_1_test_state_aa44f519b574945b0061c88df42fd4725}} 
+\index{leveldb::TestState@{leveldb::TestState}!seed\_@{seed\_}}
+\index{seed\_@{seed\_}!leveldb::TestState@{leveldb::TestState}}
+\subsubsection{\texorpdfstring{seed\_}{seed\_}}
+{\footnotesize\ttfamily int leveldb\+::\+Test\+State\+::seed\+\_\+}
+
+\mbox{\Hypertarget{classleveldb_1_1_test_state_a090fd0c59fb141c4843511b4020f05e9}\label{classleveldb_1_1_test_state_a090fd0c59fb141c4843511b4020f05e9}} 
+\index{leveldb::TestState@{leveldb::TestState}!t\_@{t\_}}
+\index{t\_@{t\_}!leveldb::TestState@{leveldb::TestState}}
+\subsubsection{\texorpdfstring{t\_}{t\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_concurrent_test}{Concurrent\+Test}} leveldb\+::\+Test\+State\+::t\+\_\+}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{skiplist__test_8cc}{skiplist\+\_\+test.\+cc}}\end{DoxyCompactItemize}

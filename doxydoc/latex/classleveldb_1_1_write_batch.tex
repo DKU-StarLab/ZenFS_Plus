@@ -1,0 +1,218 @@
+\hypertarget{classleveldb_1_1_write_batch}{}\section{leveldb\+::Write\+Batch Class Reference}
+\label{classleveldb_1_1_write_batch}\index{leveldb::WriteBatch@{leveldb::WriteBatch}}
+
+
+{\ttfamily \#include $<$write\+\_\+batch.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+::Write\+Batch\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classleveldb_1_1_write_batch__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_write_batch_1_1_handler}{Handler}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_write_batch_a5287eda973cfd100149a034c871dcc44}{Write\+Batch}} ()
+\item 
+\mbox{\hyperlink{classleveldb_1_1_write_batch_a61a12adbdb41477fbdc8a0c74fb09cad}{Write\+Batch}} (const \mbox{\hyperlink{classleveldb_1_1_write_batch}{Write\+Batch}} \&)=default
+\item 
+\mbox{\hyperlink{classleveldb_1_1_write_batch}{Write\+Batch}} \& \mbox{\hyperlink{classleveldb_1_1_write_batch_a049aee5405c91cb9e56bd26bd098f51d}{operator=}} (const \mbox{\hyperlink{classleveldb_1_1_write_batch}{Write\+Batch}} \&)=default
+\item 
+\mbox{\hyperlink{classleveldb_1_1_write_batch_a5bc7decc31279f2457839b30ad8daca5}{$\sim$\+Write\+Batch}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_write_batch_a30770379143a7ccb4ede18ddf0e45bf3}{Put}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&key, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&\mbox{\hyperlink{version__set_8cc_a38c8b88c432e666ad10b0c5573e1160a}{value}})
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_write_batch_a473da7f94483dab253cc36b7b231ce53}{Delete}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&key)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_write_batch_afd5058344dc9be113919a5110129006f}{Clear}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{classleveldb_1_1_write_batch_ab6fef29a45e54ede38138dea327b8051}{Approximate\+Size}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_write_batch_a90424a9947fb7501eec2c31acf96e27f}{Append}} (const \mbox{\hyperlink{classleveldb_1_1_write_batch}{Write\+Batch}} \&source)
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_write_batch_a64278020155c37619bfe007840bb2d23}{Iterate}} (\mbox{\hyperlink{classleveldb_1_1_write_batch_1_1_handler}{Handler}} $\ast$handler) const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_write_batch_a0c491f15816190f8235ccd1367d5ae5f}{Write\+Batch\+Internal}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_write_batch_a5287eda973cfd100149a034c871dcc44}\label{classleveldb_1_1_write_batch_a5287eda973cfd100149a034c871dcc44}} 
+\index{leveldb::WriteBatch@{leveldb::WriteBatch}!WriteBatch@{WriteBatch}}
+\index{WriteBatch@{WriteBatch}!leveldb::WriteBatch@{leveldb::WriteBatch}}
+\subsubsection{\texorpdfstring{WriteBatch()}{WriteBatch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily leveldb\+::\+Write\+Batch\+::\+Write\+Batch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classleveldb_1_1_write_batch_a5287eda973cfd100149a034c871dcc44_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_write_batch_a61a12adbdb41477fbdc8a0c74fb09cad}\label{classleveldb_1_1_write_batch_a61a12adbdb41477fbdc8a0c74fb09cad}} 
+\index{leveldb::WriteBatch@{leveldb::WriteBatch}!WriteBatch@{WriteBatch}}
+\index{WriteBatch@{WriteBatch}!leveldb::WriteBatch@{leveldb::WriteBatch}}
+\subsubsection{\texorpdfstring{WriteBatch()}{WriteBatch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily leveldb\+::\+Write\+Batch\+::\+Write\+Batch (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_write_batch}{Write\+Batch}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_write_batch_a5bc7decc31279f2457839b30ad8daca5}\label{classleveldb_1_1_write_batch_a5bc7decc31279f2457839b30ad8daca5}} 
+\index{leveldb::WriteBatch@{leveldb::WriteBatch}!````~WriteBatch@{$\sim$WriteBatch}}
+\index{````~WriteBatch@{$\sim$WriteBatch}!leveldb::WriteBatch@{leveldb::WriteBatch}}
+\subsubsection{\texorpdfstring{$\sim$WriteBatch()}{~WriteBatch()}}
+{\footnotesize\ttfamily leveldb\+::\+Write\+Batch\+::$\sim$\+Write\+Batch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_write_batch_a90424a9947fb7501eec2c31acf96e27f}\label{classleveldb_1_1_write_batch_a90424a9947fb7501eec2c31acf96e27f}} 
+\index{leveldb::WriteBatch@{leveldb::WriteBatch}!Append@{Append}}
+\index{Append@{Append}!leveldb::WriteBatch@{leveldb::WriteBatch}}
+\subsubsection{\texorpdfstring{Append()}{Append()}}
+{\footnotesize\ttfamily void leveldb\+::\+Write\+Batch\+::\+Append (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_write_batch}{Write\+Batch}} \&}]{source }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_write_batch_a90424a9947fb7501eec2c31acf96e27f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{classleveldb_1_1_write_batch_a90424a9947fb7501eec2c31acf96e27f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_write_batch_ab6fef29a45e54ede38138dea327b8051}\label{classleveldb_1_1_write_batch_ab6fef29a45e54ede38138dea327b8051}} 
+\index{leveldb::WriteBatch@{leveldb::WriteBatch}!ApproximateSize@{ApproximateSize}}
+\index{ApproximateSize@{ApproximateSize}!leveldb::WriteBatch@{leveldb::WriteBatch}}
+\subsubsection{\texorpdfstring{ApproximateSize()}{ApproximateSize()}}
+{\footnotesize\ttfamily size\+\_\+t leveldb\+::\+Write\+Batch\+::\+Approximate\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{classleveldb_1_1_write_batch_ab6fef29a45e54ede38138dea327b8051_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_write_batch_afd5058344dc9be113919a5110129006f}\label{classleveldb_1_1_write_batch_afd5058344dc9be113919a5110129006f}} 
+\index{leveldb::WriteBatch@{leveldb::WriteBatch}!Clear@{Clear}}
+\index{Clear@{Clear}!leveldb::WriteBatch@{leveldb::WriteBatch}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void leveldb\+::\+Write\+Batch\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_write_batch_afd5058344dc9be113919a5110129006f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_write_batch_a473da7f94483dab253cc36b7b231ce53}\label{classleveldb_1_1_write_batch_a473da7f94483dab253cc36b7b231ce53}} 
+\index{leveldb::WriteBatch@{leveldb::WriteBatch}!Delete@{Delete}}
+\index{Delete@{Delete}!leveldb::WriteBatch@{leveldb::WriteBatch}}
+\subsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily void leveldb\+::\+Write\+Batch\+::\+Delete (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{key }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_write_batch_a473da7f94483dab253cc36b7b231ce53_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_write_batch_a473da7f94483dab253cc36b7b231ce53_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_write_batch_a64278020155c37619bfe007840bb2d23}\label{classleveldb_1_1_write_batch_a64278020155c37619bfe007840bb2d23}} 
+\index{leveldb::WriteBatch@{leveldb::WriteBatch}!Iterate@{Iterate}}
+\index{Iterate@{Iterate}!leveldb::WriteBatch@{leveldb::WriteBatch}}
+\subsubsection{\texorpdfstring{Iterate()}{Iterate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Write\+Batch\+::\+Iterate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1_write_batch_1_1_handler}{Handler}} $\ast$}]{handler }\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_write_batch_a64278020155c37619bfe007840bb2d23_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_write_batch_a64278020155c37619bfe007840bb2d23_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_write_batch_a049aee5405c91cb9e56bd26bd098f51d}\label{classleveldb_1_1_write_batch_a049aee5405c91cb9e56bd26bd098f51d}} 
+\index{leveldb::WriteBatch@{leveldb::WriteBatch}!operator=@{operator=}}
+\index{operator=@{operator=}!leveldb::WriteBatch@{leveldb::WriteBatch}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_write_batch}{Write\+Batch}}\& leveldb\+::\+Write\+Batch\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_write_batch}{Write\+Batch}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_write_batch_a30770379143a7ccb4ede18ddf0e45bf3}\label{classleveldb_1_1_write_batch_a30770379143a7ccb4ede18ddf0e45bf3}} 
+\index{leveldb::WriteBatch@{leveldb::WriteBatch}!Put@{Put}}
+\index{Put@{Put}!leveldb::WriteBatch@{leveldb::WriteBatch}}
+\subsubsection{\texorpdfstring{Put()}{Put()}}
+{\footnotesize\ttfamily void leveldb\+::\+Write\+Batch\+::\+Put (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{key,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{value }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_write_batch_a30770379143a7ccb4ede18ddf0e45bf3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_write_batch_a30770379143a7ccb4ede18ddf0e45bf3_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_write_batch_a0c491f15816190f8235ccd1367d5ae5f}\label{classleveldb_1_1_write_batch_a0c491f15816190f8235ccd1367d5ae5f}} 
+\index{leveldb::WriteBatch@{leveldb::WriteBatch}!WriteBatchInternal@{WriteBatchInternal}}
+\index{WriteBatchInternal@{WriteBatchInternal}!leveldb::WriteBatch@{leveldb::WriteBatch}}
+\subsubsection{\texorpdfstring{WriteBatchInternal}{WriteBatchInternal}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classleveldb_1_1_write_batch_internal}{Write\+Batch\+Internal}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/leveldb/\mbox{\hyperlink{write__batch_8h}{write\+\_\+batch.\+h}}\item 
+db/\mbox{\hyperlink{write__batch_8cc}{write\+\_\+batch.\+cc}}\end{DoxyCompactItemize}

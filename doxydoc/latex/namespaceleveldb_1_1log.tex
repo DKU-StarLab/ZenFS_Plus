@@ -1,0 +1,364 @@
+\hypertarget{namespaceleveldb_1_1log}{}\section{leveldb\+::log Namespace Reference}
+\label{namespaceleveldb_1_1log}\index{leveldb::log@{leveldb::log}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1log_1_1_reader}{Reader}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1log_1_1_writer}{Writer}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceleveldb_1_1log_a01bdc1b51beb634f14f8fbb70fbd8d2a}{Record\+Type}} \{ \newline
+\mbox{\hyperlink{namespaceleveldb_1_1log_a01bdc1b51beb634f14f8fbb70fbd8d2aa5a96fbcdf2a8be4834c61233ec2cea2e}{k\+Zero\+Type}} = 0, 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a01bdc1b51beb634f14f8fbb70fbd8d2aa2c77e6c3871e8ec5506f9f9c2e7dfb13}{k\+Full\+Type}} = 1, 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a01bdc1b51beb634f14f8fbb70fbd8d2aa46ff8d418146ec7ce6c3a883e89b48da}{k\+First\+Type}} = 2, 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a01bdc1b51beb634f14f8fbb70fbd8d2aa50ec9d5a2236253d02c0abd55d178e08}{k\+Middle\+Type}} = 3, 
+\newline
+\mbox{\hyperlink{namespaceleveldb_1_1log_a01bdc1b51beb634f14f8fbb70fbd8d2aa29f913fb4d719f97a9618bca93775dfc}{k\+Last\+Type}} = 4
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_ab8a02b9419477420eca51cfd47d5f172}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Empty)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_aabca07adceffd87baf38b81665d92bb4}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Read\+Write)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a60249ea325a8656fdc31898d7c5f4ad9}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Many\+Blocks)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_ac15e5779ff43d83522727b8cc44882a2}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Fragmentation)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a9721de928c01ac50b5770b8b4cbb98e1}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Marginal\+Trailer)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_aad9c4a11c674359115f4d16c97e33ad1}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Marginal\+Trailer2)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a1a1972ff9493353cfb4546cacd33ddb7}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Short\+Trailer)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a55d554f8c576d9d4d99e35d3fe0c169f}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Aligned\+Eof)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a078c001c07b1e30d68d374b0fdb0f55c}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Open\+For\+Append)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a52d33034be964c0d0e40efdf4b423452}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Random\+Read)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a47ffd653cde9cb9bc00c0a9914da48fd}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Read\+Error)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a4fd335e6dbc3a27ea10e985387f69d6d}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Bad\+Record\+Type)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_aa1e3f8be0b7799bfb21c5c4bf40d22c3}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Truncated\+Trailing\+Record\+Is\+Ignored)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a024a8bc0f558ffe46b3a15ab43018402}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Bad\+Length)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a22b6e6d2a3de82f3e05d63e13f44b9fd}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Bad\+Length\+At\+End\+Is\+Ignored)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a2dccd9d88a61eb0f59fdea07edfe2022}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Checksum\+Mismatch)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_ae2aa67608715051976e4cbb2008e3b52}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Unexpected\+Middle\+Type)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_ad618b3ff1dc35a8641c019d8eb4a4e8b}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Unexpected\+Last\+Type)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a178460e2ee7a665f0aef08a28217a6d3}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Unexpected\+Full\+Type)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a7c8a46287bbb1e185ccfcb78c5ae94e3}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Unexpected\+First\+Type)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a965e5192bb2f0467f987fe54995d0c89}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Missing\+Last\+Is\+Ignored)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_acae9dd4e93ded56d6585082822964b71}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Partial\+Last\+Is\+Ignored)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_af81444ef2ffe0f52c3fb766a5c5db3ea}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Skip\+Into\+Multi\+Record)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a2ea9cc0af9f5d8b6bdc74e3126bd389a}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Error\+Joins\+Records)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a6ee7068a33cb134e26e7d1cf58327064}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Read\+Start)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_af9cc8dffe50b0cefff163fdca58d1a08}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Read\+Second\+One\+Off)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_ab734bca6b78216dc41b112075258dbe7}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Read\+Second\+Ten\+Thousand)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_aa9e212a334431228c79a843316480db0}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Read\+Second\+Start)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_af5f8505f08225382f290158f5175cca0}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Read\+Third\+One\+Off)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a87cfcd7bb0a248dc72d9856e1d00d519}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Read\+Third\+Start)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_abbda151ff0e2439ac1dfa823a6089439}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Read\+Fourth\+One\+Off)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a85f6833939c09f181924774403bfbe4f}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Read\+Fourth\+First\+Block\+Trailer)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a6fb47c0abe5c036d95a4f9aeb1d62174}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Read\+Fourth\+Middle\+Block)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a9c80a844e21aec7c6fbde209e99c1ad8}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Read\+Fourth\+Last\+Block)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_aa652940a4e7bff7fa21f0d1c941712d7}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Read\+Fourth\+Start)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_af4f391a0323192a38607f4943e4b1dd4}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Read\+Initial\+Offset\+Into\+Block\+Padding)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_a74e0fb6c39041d1ef2193114b0a2275b}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Read\+End)
+\item 
+\mbox{\hyperlink{namespaceleveldb_1_1log_ae1081d375c33d8b2f01d5593ecd5f4a7}{T\+E\+ST}} (\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}, Read\+Past\+End)
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespaceleveldb_1_1log_a01bdc1b51beb634f14f8fbb70fbd8d2a}\label{namespaceleveldb_1_1log_a01bdc1b51beb634f14f8fbb70fbd8d2a}} 
+\index{leveldb::log@{leveldb::log}!RecordType@{RecordType}}
+\index{RecordType@{RecordType}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{RecordType}{RecordType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceleveldb_1_1log_a01bdc1b51beb634f14f8fbb70fbd8d2a}{leveldb\+::log\+::\+Record\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kZeroType@{kZeroType}!leveldb::log@{leveldb::log}}\index{leveldb::log@{leveldb::log}!kZeroType@{kZeroType}}}\mbox{\Hypertarget{namespaceleveldb_1_1log_a01bdc1b51beb634f14f8fbb70fbd8d2aa5a96fbcdf2a8be4834c61233ec2cea2e}\label{namespaceleveldb_1_1log_a01bdc1b51beb634f14f8fbb70fbd8d2aa5a96fbcdf2a8be4834c61233ec2cea2e}} 
+k\+Zero\+Type&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kFullType@{kFullType}!leveldb::log@{leveldb::log}}\index{leveldb::log@{leveldb::log}!kFullType@{kFullType}}}\mbox{\Hypertarget{namespaceleveldb_1_1log_a01bdc1b51beb634f14f8fbb70fbd8d2aa2c77e6c3871e8ec5506f9f9c2e7dfb13}\label{namespaceleveldb_1_1log_a01bdc1b51beb634f14f8fbb70fbd8d2aa2c77e6c3871e8ec5506f9f9c2e7dfb13}} 
+k\+Full\+Type&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kFirstType@{kFirstType}!leveldb::log@{leveldb::log}}\index{leveldb::log@{leveldb::log}!kFirstType@{kFirstType}}}\mbox{\Hypertarget{namespaceleveldb_1_1log_a01bdc1b51beb634f14f8fbb70fbd8d2aa46ff8d418146ec7ce6c3a883e89b48da}\label{namespaceleveldb_1_1log_a01bdc1b51beb634f14f8fbb70fbd8d2aa46ff8d418146ec7ce6c3a883e89b48da}} 
+k\+First\+Type&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kMiddleType@{kMiddleType}!leveldb::log@{leveldb::log}}\index{leveldb::log@{leveldb::log}!kMiddleType@{kMiddleType}}}\mbox{\Hypertarget{namespaceleveldb_1_1log_a01bdc1b51beb634f14f8fbb70fbd8d2aa50ec9d5a2236253d02c0abd55d178e08}\label{namespaceleveldb_1_1log_a01bdc1b51beb634f14f8fbb70fbd8d2aa50ec9d5a2236253d02c0abd55d178e08}} 
+k\+Middle\+Type&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kLastType@{kLastType}!leveldb::log@{leveldb::log}}\index{leveldb::log@{leveldb::log}!kLastType@{kLastType}}}\mbox{\Hypertarget{namespaceleveldb_1_1log_a01bdc1b51beb634f14f8fbb70fbd8d2aa29f913fb4d719f97a9618bca93775dfc}\label{namespaceleveldb_1_1log_a01bdc1b51beb634f14f8fbb70fbd8d2aa29f913fb4d719f97a9618bca93775dfc}} 
+k\+Last\+Type&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceleveldb_1_1log_ab8a02b9419477420eca51cfd47d5f172}\label{namespaceleveldb_1_1log_ab8a02b9419477420eca51cfd47d5f172}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Empty}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_aabca07adceffd87baf38b81665d92bb4}\label{namespaceleveldb_1_1log_aabca07adceffd87baf38b81665d92bb4}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Read\+Write}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_a60249ea325a8656fdc31898d7c5f4ad9}\label{namespaceleveldb_1_1log_a60249ea325a8656fdc31898d7c5f4ad9}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Many\+Blocks}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_ac15e5779ff43d83522727b8cc44882a2}\label{namespaceleveldb_1_1log_ac15e5779ff43d83522727b8cc44882a2}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Fragmentation}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_a9721de928c01ac50b5770b8b4cbb98e1}\label{namespaceleveldb_1_1log_a9721de928c01ac50b5770b8b4cbb98e1}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [5/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Marginal\+Trailer}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_aad9c4a11c674359115f4d16c97e33ad1}\label{namespaceleveldb_1_1log_aad9c4a11c674359115f4d16c97e33ad1}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [6/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Marginal\+Trailer2}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_a1a1972ff9493353cfb4546cacd33ddb7}\label{namespaceleveldb_1_1log_a1a1972ff9493353cfb4546cacd33ddb7}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [7/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Short\+Trailer}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_a55d554f8c576d9d4d99e35d3fe0c169f}\label{namespaceleveldb_1_1log_a55d554f8c576d9d4d99e35d3fe0c169f}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [8/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Aligned\+Eof}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_a078c001c07b1e30d68d374b0fdb0f55c}\label{namespaceleveldb_1_1log_a078c001c07b1e30d68d374b0fdb0f55c}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [9/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Open\+For\+Append}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_a52d33034be964c0d0e40efdf4b423452}\label{namespaceleveldb_1_1log_a52d33034be964c0d0e40efdf4b423452}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [10/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Random\+Read}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_a47ffd653cde9cb9bc00c0a9914da48fd}\label{namespaceleveldb_1_1log_a47ffd653cde9cb9bc00c0a9914da48fd}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [11/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Read\+Error}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_a4fd335e6dbc3a27ea10e985387f69d6d}\label{namespaceleveldb_1_1log_a4fd335e6dbc3a27ea10e985387f69d6d}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [12/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Bad\+Record\+Type}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_aa1e3f8be0b7799bfb21c5c4bf40d22c3}\label{namespaceleveldb_1_1log_aa1e3f8be0b7799bfb21c5c4bf40d22c3}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [13/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Truncated\+Trailing\+Record\+Is\+Ignored}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_a024a8bc0f558ffe46b3a15ab43018402}\label{namespaceleveldb_1_1log_a024a8bc0f558ffe46b3a15ab43018402}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [14/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Bad\+Length}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_a22b6e6d2a3de82f3e05d63e13f44b9fd}\label{namespaceleveldb_1_1log_a22b6e6d2a3de82f3e05d63e13f44b9fd}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [15/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Bad\+Length\+At\+End\+Is\+Ignored}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_a2dccd9d88a61eb0f59fdea07edfe2022}\label{namespaceleveldb_1_1log_a2dccd9d88a61eb0f59fdea07edfe2022}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [16/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Checksum\+Mismatch}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_ae2aa67608715051976e4cbb2008e3b52}\label{namespaceleveldb_1_1log_ae2aa67608715051976e4cbb2008e3b52}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [17/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Unexpected\+Middle\+Type}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_ad618b3ff1dc35a8641c019d8eb4a4e8b}\label{namespaceleveldb_1_1log_ad618b3ff1dc35a8641c019d8eb4a4e8b}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [18/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Unexpected\+Last\+Type}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_a178460e2ee7a665f0aef08a28217a6d3}\label{namespaceleveldb_1_1log_a178460e2ee7a665f0aef08a28217a6d3}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [19/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Unexpected\+Full\+Type}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_a7c8a46287bbb1e185ccfcb78c5ae94e3}\label{namespaceleveldb_1_1log_a7c8a46287bbb1e185ccfcb78c5ae94e3}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [20/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Unexpected\+First\+Type}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_a965e5192bb2f0467f987fe54995d0c89}\label{namespaceleveldb_1_1log_a965e5192bb2f0467f987fe54995d0c89}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [21/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Missing\+Last\+Is\+Ignored}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_acae9dd4e93ded56d6585082822964b71}\label{namespaceleveldb_1_1log_acae9dd4e93ded56d6585082822964b71}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [22/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Partial\+Last\+Is\+Ignored}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_af81444ef2ffe0f52c3fb766a5c5db3ea}\label{namespaceleveldb_1_1log_af81444ef2ffe0f52c3fb766a5c5db3ea}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [23/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Skip\+Into\+Multi\+Record}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_a2ea9cc0af9f5d8b6bdc74e3126bd389a}\label{namespaceleveldb_1_1log_a2ea9cc0af9f5d8b6bdc74e3126bd389a}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [24/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Error\+Joins\+Records}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_a6ee7068a33cb134e26e7d1cf58327064}\label{namespaceleveldb_1_1log_a6ee7068a33cb134e26e7d1cf58327064}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [25/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Read\+Start}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_af9cc8dffe50b0cefff163fdca58d1a08}\label{namespaceleveldb_1_1log_af9cc8dffe50b0cefff163fdca58d1a08}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [26/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Read\+Second\+One\+Off}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_ab734bca6b78216dc41b112075258dbe7}\label{namespaceleveldb_1_1log_ab734bca6b78216dc41b112075258dbe7}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [27/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Read\+Second\+Ten\+Thousand}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_aa9e212a334431228c79a843316480db0}\label{namespaceleveldb_1_1log_aa9e212a334431228c79a843316480db0}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [28/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Read\+Second\+Start}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_af5f8505f08225382f290158f5175cca0}\label{namespaceleveldb_1_1log_af5f8505f08225382f290158f5175cca0}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [29/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Read\+Third\+One\+Off}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_a87cfcd7bb0a248dc72d9856e1d00d519}\label{namespaceleveldb_1_1log_a87cfcd7bb0a248dc72d9856e1d00d519}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [30/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Read\+Third\+Start}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_abbda151ff0e2439ac1dfa823a6089439}\label{namespaceleveldb_1_1log_abbda151ff0e2439ac1dfa823a6089439}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [31/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Read\+Fourth\+One\+Off}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_a85f6833939c09f181924774403bfbe4f}\label{namespaceleveldb_1_1log_a85f6833939c09f181924774403bfbe4f}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [32/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Read\+Fourth\+First\+Block\+Trailer}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_a6fb47c0abe5c036d95a4f9aeb1d62174}\label{namespaceleveldb_1_1log_a6fb47c0abe5c036d95a4f9aeb1d62174}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [33/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Read\+Fourth\+Middle\+Block}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_a9c80a844e21aec7c6fbde209e99c1ad8}\label{namespaceleveldb_1_1log_a9c80a844e21aec7c6fbde209e99c1ad8}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [34/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Read\+Fourth\+Last\+Block}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_aa652940a4e7bff7fa21f0d1c941712d7}\label{namespaceleveldb_1_1log_aa652940a4e7bff7fa21f0d1c941712d7}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [35/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Read\+Fourth\+Start}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_af4f391a0323192a38607f4943e4b1dd4}\label{namespaceleveldb_1_1log_af4f391a0323192a38607f4943e4b1dd4}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [36/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Read\+Initial\+Offset\+Into\+Block\+Padding}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_a74e0fb6c39041d1ef2193114b0a2275b}\label{namespaceleveldb_1_1log_a74e0fb6c39041d1ef2193114b0a2275b}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [37/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Read\+End}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceleveldb_1_1log_ae1081d375c33d8b2f01d5593ecd5f4a7}\label{namespaceleveldb_1_1log_ae1081d375c33d8b2f01d5593ecd5f4a7}} 
+\index{leveldb::log@{leveldb::log}!TEST@{TEST}}
+\index{TEST@{TEST}!leveldb::log@{leveldb::log}}
+\subsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [38/38]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+T\+E\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test}{Log\+Test}}}]{,  }\item[{Read\+Past\+End}]{ }\end{DoxyParamCaption})}
+

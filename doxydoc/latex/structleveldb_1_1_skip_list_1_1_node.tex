@@ -1,0 +1,90 @@
+\hypertarget{structleveldb_1_1_skip_list_1_1_node}{}\section{leveldb\+::Skip\+List$<$ Key, Comparator $>$\+::Node Struct Reference}
+\label{structleveldb_1_1_skip_list_1_1_node}\index{leveldb::SkipList$<$ Key, Comparator $>$::Node@{leveldb::SkipList$<$ Key, Comparator $>$::Node}}
+
+
+{\ttfamily \#include $<$skiplist.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+::Skip\+List$<$ Key, Comparator $>$\+::Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{structleveldb_1_1_skip_list_1_1_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structleveldb_1_1_skip_list_1_1_node_a7dec52445f4f05892239a77407d109b0}{Node}} (const \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}} \&k)
+\item 
+\mbox{\hyperlink{structleveldb_1_1_skip_list_1_1_node}{Node}} $\ast$ \mbox{\hyperlink{structleveldb_1_1_skip_list_1_1_node_aca7f18fc57f6c8e8a8dfe176eedbde74}{Next}} (int n)
+\item 
+void \mbox{\hyperlink{structleveldb_1_1_skip_list_1_1_node_a46c7cc10db3d77c85df7e411b720a8f4}{Set\+Next}} (int n, \mbox{\hyperlink{structleveldb_1_1_skip_list_1_1_node}{Node}} $\ast$x)
+\item 
+\mbox{\hyperlink{structleveldb_1_1_skip_list_1_1_node}{Node}} $\ast$ \mbox{\hyperlink{structleveldb_1_1_skip_list_1_1_node_a96b7213d1fd9ef893f3a7baecc5c4801}{No\+Barrier\+\_\+\+Next}} (int n)
+\item 
+void \mbox{\hyperlink{structleveldb_1_1_skip_list_1_1_node_af93b362f5e38fcf645820e02377cca64}{No\+Barrier\+\_\+\+Set\+Next}} (int n, \mbox{\hyperlink{structleveldb_1_1_skip_list_1_1_node}{Node}} $\ast$x)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}} const \mbox{\hyperlink{structleveldb_1_1_skip_list_1_1_node_a654f196e057edd294e4dbcbb6dabb844}{key}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structleveldb_1_1_skip_list_1_1_node_a7dec52445f4f05892239a77407d109b0}\label{structleveldb_1_1_skip_list_1_1_node_a7dec52445f4f05892239a77407d109b0}} 
+\index{leveldb::SkipList$<$ Key, Comparator $>$::Node@{leveldb::SkipList$<$ Key, Comparator $>$::Node}!Node@{Node}}
+\index{Node@{Node}!leveldb::SkipList$<$ Key, Comparator $>$::Node@{leveldb::SkipList$<$ Key, Comparator $>$::Node}}
+\subsubsection{\texorpdfstring{Node()}{Node()}}
+{\footnotesize\ttfamily template$<$typename Key, class Comparator$>$ \\
+\mbox{\hyperlink{classleveldb_1_1_skip_list}{leveldb\+::\+Skip\+List}}$<$ \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}}, \mbox{\hyperlink{structleveldb_1_1_comparator}{Comparator}} $>$\+::Node\+::\+Node (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}} \&}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structleveldb_1_1_skip_list_1_1_node_aca7f18fc57f6c8e8a8dfe176eedbde74}\label{structleveldb_1_1_skip_list_1_1_node_aca7f18fc57f6c8e8a8dfe176eedbde74}} 
+\index{leveldb::SkipList$<$ Key, Comparator $>$::Node@{leveldb::SkipList$<$ Key, Comparator $>$::Node}!Next@{Next}}
+\index{Next@{Next}!leveldb::SkipList$<$ Key, Comparator $>$::Node@{leveldb::SkipList$<$ Key, Comparator $>$::Node}}
+\subsubsection{\texorpdfstring{Next()}{Next()}}
+{\footnotesize\ttfamily template$<$typename Key, class Comparator$>$ \\
+\mbox{\hyperlink{structleveldb_1_1_skip_list_1_1_node}{Node}}$\ast$ \mbox{\hyperlink{classleveldb_1_1_skip_list}{leveldb\+::\+Skip\+List}}$<$ \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}}, \mbox{\hyperlink{structleveldb_1_1_comparator}{Comparator}} $>$\+::Node\+::\+Next (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structleveldb_1_1_skip_list_1_1_node_a96b7213d1fd9ef893f3a7baecc5c4801}\label{structleveldb_1_1_skip_list_1_1_node_a96b7213d1fd9ef893f3a7baecc5c4801}} 
+\index{leveldb::SkipList$<$ Key, Comparator $>$::Node@{leveldb::SkipList$<$ Key, Comparator $>$::Node}!NoBarrier\_Next@{NoBarrier\_Next}}
+\index{NoBarrier\_Next@{NoBarrier\_Next}!leveldb::SkipList$<$ Key, Comparator $>$::Node@{leveldb::SkipList$<$ Key, Comparator $>$::Node}}
+\subsubsection{\texorpdfstring{NoBarrier\_Next()}{NoBarrier\_Next()}}
+{\footnotesize\ttfamily template$<$typename Key, class Comparator$>$ \\
+\mbox{\hyperlink{structleveldb_1_1_skip_list_1_1_node}{Node}}$\ast$ \mbox{\hyperlink{classleveldb_1_1_skip_list}{leveldb\+::\+Skip\+List}}$<$ \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}}, \mbox{\hyperlink{structleveldb_1_1_comparator}{Comparator}} $>$\+::Node\+::\+No\+Barrier\+\_\+\+Next (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structleveldb_1_1_skip_list_1_1_node_af93b362f5e38fcf645820e02377cca64}\label{structleveldb_1_1_skip_list_1_1_node_af93b362f5e38fcf645820e02377cca64}} 
+\index{leveldb::SkipList$<$ Key, Comparator $>$::Node@{leveldb::SkipList$<$ Key, Comparator $>$::Node}!NoBarrier\_SetNext@{NoBarrier\_SetNext}}
+\index{NoBarrier\_SetNext@{NoBarrier\_SetNext}!leveldb::SkipList$<$ Key, Comparator $>$::Node@{leveldb::SkipList$<$ Key, Comparator $>$::Node}}
+\subsubsection{\texorpdfstring{NoBarrier\_SetNext()}{NoBarrier\_SetNext()}}
+{\footnotesize\ttfamily template$<$typename Key, class Comparator$>$ \\
+void \mbox{\hyperlink{classleveldb_1_1_skip_list}{leveldb\+::\+Skip\+List}}$<$ \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}}, \mbox{\hyperlink{structleveldb_1_1_comparator}{Comparator}} $>$\+::Node\+::\+No\+Barrier\+\_\+\+Set\+Next (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{\mbox{\hyperlink{structleveldb_1_1_skip_list_1_1_node}{Node}} $\ast$}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structleveldb_1_1_skip_list_1_1_node_a46c7cc10db3d77c85df7e411b720a8f4}\label{structleveldb_1_1_skip_list_1_1_node_a46c7cc10db3d77c85df7e411b720a8f4}} 
+\index{leveldb::SkipList$<$ Key, Comparator $>$::Node@{leveldb::SkipList$<$ Key, Comparator $>$::Node}!SetNext@{SetNext}}
+\index{SetNext@{SetNext}!leveldb::SkipList$<$ Key, Comparator $>$::Node@{leveldb::SkipList$<$ Key, Comparator $>$::Node}}
+\subsubsection{\texorpdfstring{SetNext()}{SetNext()}}
+{\footnotesize\ttfamily template$<$typename Key, class Comparator$>$ \\
+void \mbox{\hyperlink{classleveldb_1_1_skip_list}{leveldb\+::\+Skip\+List}}$<$ \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}}, \mbox{\hyperlink{structleveldb_1_1_comparator}{Comparator}} $>$\+::Node\+::\+Set\+Next (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{\mbox{\hyperlink{structleveldb_1_1_skip_list_1_1_node}{Node}} $\ast$}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structleveldb_1_1_skip_list_1_1_node_a654f196e057edd294e4dbcbb6dabb844}\label{structleveldb_1_1_skip_list_1_1_node_a654f196e057edd294e4dbcbb6dabb844}} 
+\index{leveldb::SkipList$<$ Key, Comparator $>$::Node@{leveldb::SkipList$<$ Key, Comparator $>$::Node}!key@{key}}
+\index{key@{key}!leveldb::SkipList$<$ Key, Comparator $>$::Node@{leveldb::SkipList$<$ Key, Comparator $>$::Node}}
+\subsubsection{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily template$<$typename Key, class Comparator$>$ \\
+\mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}} const \mbox{\hyperlink{classleveldb_1_1_skip_list}{leveldb\+::\+Skip\+List}}$<$ \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}}, \mbox{\hyperlink{structleveldb_1_1_comparator}{Comparator}} $>$\+::Node\+::key}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{skiplist_8h}{skiplist.\+h}}\end{DoxyCompactItemize}

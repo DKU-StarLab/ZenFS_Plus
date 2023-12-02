@@ -1,0 +1,213 @@
+\hypertarget{classleveldb_1_1_compaction}{}\section{leveldb\+::Compaction Class Reference}
+\label{classleveldb_1_1_compaction}\index{leveldb::Compaction@{leveldb::Compaction}}
+
+
+{\ttfamily \#include $<$version\+\_\+set.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+::Compaction\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{classleveldb_1_1_compaction__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_compaction_ad29d60feea9dd53f54a2bd9301dbd9c4}{$\sim$\+Compaction}} ()
+\item 
+int \mbox{\hyperlink{classleveldb_1_1_compaction_a716f0b644cf403944db14e7622519bd3}{level}} () const
+\item 
+\mbox{\hyperlink{classleveldb_1_1_version_edit}{Version\+Edit}} $\ast$ \mbox{\hyperlink{classleveldb_1_1_compaction_a122e4f7b4fdb6c0d1862624742b34b3d}{edit}} ()
+\item 
+int \mbox{\hyperlink{classleveldb_1_1_compaction_a701f2fa2d3fb00af0847aa570506e743}{num\+\_\+input\+\_\+files}} (int which) const
+\item 
+\mbox{\hyperlink{structleveldb_1_1_file_meta_data}{File\+Meta\+Data}} $\ast$ \mbox{\hyperlink{classleveldb_1_1_compaction_aa0999bbaeb6993759b3e76e3516589d3}{input}} (int which, int i) const
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classleveldb_1_1_compaction_ad4487eda793d622dbcf0483663fef2ed}{Max\+Output\+File\+Size}} () const
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1_compaction_a85ab53d400d49d1dfb7e8f63017fef99}{Is\+Trivial\+Move}} () const
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_compaction_abb1acdc9b882a7497603b13386e7e1a7}{Add\+Input\+Deletions}} (\mbox{\hyperlink{classleveldb_1_1_version_edit}{Version\+Edit}} $\ast$\mbox{\hyperlink{classleveldb_1_1_compaction_a122e4f7b4fdb6c0d1862624742b34b3d}{edit}})
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1_compaction_ae982beb6ee52d92de76a363ef0eefc29}{Is\+Base\+Level\+For\+Key}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&\mbox{\hyperlink{version__set_8cc_afced2118ae0bf03db7c7e75a21cfd004}{user\+\_\+key}})
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1_compaction_a07624423bb512fedb358a008a38fa0b9}{Should\+Stop\+Before}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&internal\+\_\+key)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_compaction_a87ec90747d22dce0d103149db1ecf709}{Release\+Inputs}} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_compaction_ace162f32d4abb584945d3a55a389b0a3}{Version}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_compaction_a1827cd1b4d6e9e3c378ce37ca3cce635}{Version\+Set}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_compaction_ad29d60feea9dd53f54a2bd9301dbd9c4}\label{classleveldb_1_1_compaction_ad29d60feea9dd53f54a2bd9301dbd9c4}} 
+\index{leveldb::Compaction@{leveldb::Compaction}!````~Compaction@{$\sim$Compaction}}
+\index{````~Compaction@{$\sim$Compaction}!leveldb::Compaction@{leveldb::Compaction}}
+\subsubsection{\texorpdfstring{$\sim$Compaction()}{~Compaction()}}
+{\footnotesize\ttfamily leveldb\+::\+Compaction\+::$\sim$\+Compaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classleveldb_1_1_compaction_ad29d60feea9dd53f54a2bd9301dbd9c4_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_compaction_abb1acdc9b882a7497603b13386e7e1a7}\label{classleveldb_1_1_compaction_abb1acdc9b882a7497603b13386e7e1a7}} 
+\index{leveldb::Compaction@{leveldb::Compaction}!AddInputDeletions@{AddInputDeletions}}
+\index{AddInputDeletions@{AddInputDeletions}!leveldb::Compaction@{leveldb::Compaction}}
+\subsubsection{\texorpdfstring{AddInputDeletions()}{AddInputDeletions()}}
+{\footnotesize\ttfamily void leveldb\+::\+Compaction\+::\+Add\+Input\+Deletions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1_version_edit}{Version\+Edit}} $\ast$}]{edit }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{classleveldb_1_1_compaction_abb1acdc9b882a7497603b13386e7e1a7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_compaction_a122e4f7b4fdb6c0d1862624742b34b3d}\label{classleveldb_1_1_compaction_a122e4f7b4fdb6c0d1862624742b34b3d}} 
+\index{leveldb::Compaction@{leveldb::Compaction}!edit@{edit}}
+\index{edit@{edit}!leveldb::Compaction@{leveldb::Compaction}}
+\subsubsection{\texorpdfstring{edit()}{edit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_version_edit}{Version\+Edit}}$\ast$ leveldb\+::\+Compaction\+::edit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{classleveldb_1_1_compaction_a122e4f7b4fdb6c0d1862624742b34b3d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_compaction_aa0999bbaeb6993759b3e76e3516589d3}\label{classleveldb_1_1_compaction_aa0999bbaeb6993759b3e76e3516589d3}} 
+\index{leveldb::Compaction@{leveldb::Compaction}!input@{input}}
+\index{input@{input}!leveldb::Compaction@{leveldb::Compaction}}
+\subsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structleveldb_1_1_file_meta_data}{File\+Meta\+Data}}$\ast$ leveldb\+::\+Compaction\+::input (\begin{DoxyParamCaption}\item[{int}]{which,  }\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_compaction_ae982beb6ee52d92de76a363ef0eefc29}\label{classleveldb_1_1_compaction_ae982beb6ee52d92de76a363ef0eefc29}} 
+\index{leveldb::Compaction@{leveldb::Compaction}!IsBaseLevelForKey@{IsBaseLevelForKey}}
+\index{IsBaseLevelForKey@{IsBaseLevelForKey}!leveldb::Compaction@{leveldb::Compaction}}
+\subsubsection{\texorpdfstring{IsBaseLevelForKey()}{IsBaseLevelForKey()}}
+{\footnotesize\ttfamily bool leveldb\+::\+Compaction\+::\+Is\+Base\+Level\+For\+Key (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{user\+\_\+key }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_compaction_ae982beb6ee52d92de76a363ef0eefc29_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_compaction_a85ab53d400d49d1dfb7e8f63017fef99}\label{classleveldb_1_1_compaction_a85ab53d400d49d1dfb7e8f63017fef99}} 
+\index{leveldb::Compaction@{leveldb::Compaction}!IsTrivialMove@{IsTrivialMove}}
+\index{IsTrivialMove@{IsTrivialMove}!leveldb::Compaction@{leveldb::Compaction}}
+\subsubsection{\texorpdfstring{IsTrivialMove()}{IsTrivialMove()}}
+{\footnotesize\ttfamily bool leveldb\+::\+Compaction\+::\+Is\+Trivial\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{classleveldb_1_1_compaction_a85ab53d400d49d1dfb7e8f63017fef99_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_compaction_a716f0b644cf403944db14e7622519bd3}\label{classleveldb_1_1_compaction_a716f0b644cf403944db14e7622519bd3}} 
+\index{leveldb::Compaction@{leveldb::Compaction}!level@{level}}
+\index{level@{level}!leveldb::Compaction@{leveldb::Compaction}}
+\subsubsection{\texorpdfstring{level()}{level()}}
+{\footnotesize\ttfamily int leveldb\+::\+Compaction\+::level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classleveldb_1_1_compaction_a716f0b644cf403944db14e7622519bd3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_compaction_ad4487eda793d622dbcf0483663fef2ed}\label{classleveldb_1_1_compaction_ad4487eda793d622dbcf0483663fef2ed}} 
+\index{leveldb::Compaction@{leveldb::Compaction}!MaxOutputFileSize@{MaxOutputFileSize}}
+\index{MaxOutputFileSize@{MaxOutputFileSize}!leveldb::Compaction@{leveldb::Compaction}}
+\subsubsection{\texorpdfstring{MaxOutputFileSize()}{MaxOutputFileSize()}}
+{\footnotesize\ttfamily uint64\+\_\+t leveldb\+::\+Compaction\+::\+Max\+Output\+File\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_compaction_a701f2fa2d3fb00af0847aa570506e743}\label{classleveldb_1_1_compaction_a701f2fa2d3fb00af0847aa570506e743}} 
+\index{leveldb::Compaction@{leveldb::Compaction}!num\_input\_files@{num\_input\_files}}
+\index{num\_input\_files@{num\_input\_files}!leveldb::Compaction@{leveldb::Compaction}}
+\subsubsection{\texorpdfstring{num\_input\_files()}{num\_input\_files()}}
+{\footnotesize\ttfamily int leveldb\+::\+Compaction\+::num\+\_\+input\+\_\+files (\begin{DoxyParamCaption}\item[{int}]{which }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{classleveldb_1_1_compaction_a701f2fa2d3fb00af0847aa570506e743_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_compaction_a87ec90747d22dce0d103149db1ecf709}\label{classleveldb_1_1_compaction_a87ec90747d22dce0d103149db1ecf709}} 
+\index{leveldb::Compaction@{leveldb::Compaction}!ReleaseInputs@{ReleaseInputs}}
+\index{ReleaseInputs@{ReleaseInputs}!leveldb::Compaction@{leveldb::Compaction}}
+\subsubsection{\texorpdfstring{ReleaseInputs()}{ReleaseInputs()}}
+{\footnotesize\ttfamily void leveldb\+::\+Compaction\+::\+Release\+Inputs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classleveldb_1_1_compaction_a87ec90747d22dce0d103149db1ecf709_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_compaction_a07624423bb512fedb358a008a38fa0b9}\label{classleveldb_1_1_compaction_a07624423bb512fedb358a008a38fa0b9}} 
+\index{leveldb::Compaction@{leveldb::Compaction}!ShouldStopBefore@{ShouldStopBefore}}
+\index{ShouldStopBefore@{ShouldStopBefore}!leveldb::Compaction@{leveldb::Compaction}}
+\subsubsection{\texorpdfstring{ShouldStopBefore()}{ShouldStopBefore()}}
+{\footnotesize\ttfamily bool leveldb\+::\+Compaction\+::\+Should\+Stop\+Before (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{internal\+\_\+key }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_compaction_a07624423bb512fedb358a008a38fa0b9_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_compaction_ace162f32d4abb584945d3a55a389b0a3}\label{classleveldb_1_1_compaction_ace162f32d4abb584945d3a55a389b0a3}} 
+\index{leveldb::Compaction@{leveldb::Compaction}!Version@{Version}}
+\index{Version@{Version}!leveldb::Compaction@{leveldb::Compaction}}
+\subsubsection{\texorpdfstring{Version}{Version}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classleveldb_1_1_version}{Version}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_compaction_a1827cd1b4d6e9e3c378ce37ca3cce635}\label{classleveldb_1_1_compaction_a1827cd1b4d6e9e3c378ce37ca3cce635}} 
+\index{leveldb::Compaction@{leveldb::Compaction}!VersionSet@{VersionSet}}
+\index{VersionSet@{VersionSet}!leveldb::Compaction@{leveldb::Compaction}}
+\subsubsection{\texorpdfstring{VersionSet}{VersionSet}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classleveldb_1_1_version_set}{Version\+Set}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{version__set_8h}{version\+\_\+set.\+h}}\item 
+db/\mbox{\hyperlink{version__set_8cc}{version\+\_\+set.\+cc}}\end{DoxyCompactItemize}

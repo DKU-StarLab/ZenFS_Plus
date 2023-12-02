@@ -1,0 +1,84 @@
+\hypertarget{version__set_8cc}{}\section{db/version\+\_\+set.cc File Reference}
+\label{version__set_8cc}\index{db/version\_set.cc@{db/version\_set.cc}}
+{\ttfamily \#include \char`\"{}db/version\+\_\+set.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}db/filename.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/log\+\_\+reader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/log\+\_\+writer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/memtable.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/table\+\_\+cache.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/env.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/table\+\_\+builder.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}table/merger.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}table/two\+\_\+level\+\_\+iterator.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/coding.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/logging.\+h\char`\"{}}\newline
+Include dependency graph for version\+\_\+set.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{version__set_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_version_1_1_level_file_num_iterator}{leveldb\+::\+Version\+::\+Level\+File\+Num\+Iterator}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_version_set_1_1_builder}{leveldb\+::\+Version\+Set\+::\+Builder}}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceleveldb}{leveldb}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{version__set_8cc_ab2cdc6eadc05b87ef40469db9d3c2617}{leveldb\+::@39\+::\+Saver\+State}} 
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespaceleveldb_a812c4c6cf8299e767535a59f2205df0c}{leveldb\+::\+Find\+File}} (const Internal\+Key\+Comparator \&icmp, const std\+::vector$<$ File\+Meta\+Data $\ast$ $>$ \&files, const Slice \&key)
+\item 
+bool \mbox{\hyperlink{namespaceleveldb_a1a6a370f17b20667b885b5b91159c5a9}{leveldb\+::\+Some\+File\+Overlaps\+Range}} (const Internal\+Key\+Comparator \&icmp, bool disjoint\+\_\+sorted\+\_\+files, const std\+::vector$<$ File\+Meta\+Data $\ast$ $>$ \&files, const Slice $\ast$smallest\+\_\+user\+\_\+key, const Slice $\ast$largest\+\_\+user\+\_\+key)
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{version__set_8cc_file_ab2cdc6eadc05b87ef40469db9d3c2617}\label{version__set_8cc_file_ab2cdc6eadc05b87ef40469db9d3c2617}} 
+\index{version\_set.cc@{version\_set.cc}!SaverState@{SaverState}}
+\index{SaverState@{SaverState}!version\_set.cc@{version\_set.cc}}
+\subsubsection{\texorpdfstring{SaverState}{SaverState}}
+{\footnotesize\ttfamily enum leveldb\+::@39\+::Saver\+State}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{version__set_8cc_a6aad002d0db5e5e85dc31927a5a6f503}\label{version__set_8cc_a6aad002d0db5e5e85dc31927a5a6f503}} 
+\index{version\_set.cc@{version\_set.cc}!state@{state}}
+\index{state@{state}!version\_set.cc@{version\_set.cc}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily Saver\+State state}
+
+\mbox{\Hypertarget{version__set_8cc_a598e50ba29b234ea6ee753e383e79452}\label{version__set_8cc_a598e50ba29b234ea6ee753e383e79452}} 
+\index{version\_set.cc@{version\_set.cc}!ucmp@{ucmp}}
+\index{ucmp@{ucmp}!version\_set.cc@{version\_set.cc}}
+\subsubsection{\texorpdfstring{ucmp}{ucmp}}
+{\footnotesize\ttfamily const Comparator$\ast$ ucmp}
+
+\mbox{\Hypertarget{version__set_8cc_afced2118ae0bf03db7c7e75a21cfd004}\label{version__set_8cc_afced2118ae0bf03db7c7e75a21cfd004}} 
+\index{version\_set.cc@{version\_set.cc}!user\_key@{user\_key}}
+\index{user\_key@{user\_key}!version\_set.cc@{version\_set.cc}}
+\subsubsection{\texorpdfstring{user\_key}{user\_key}}
+{\footnotesize\ttfamily Slice user\+\_\+key}
+
+\mbox{\Hypertarget{version__set_8cc_a38c8b88c432e666ad10b0c5573e1160a}\label{version__set_8cc_a38c8b88c432e666ad10b0c5573e1160a}} 
+\index{version\_set.cc@{version\_set.cc}!value@{value}}
+\index{value@{value}!version\_set.cc@{version\_set.cc}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily std\+::string$\ast$ value}
+

@@ -1,0 +1,11 @@
+<map id="leveldb::RecoveryTest::MakeLogFile" name="leveldb::RecoveryTest::MakeLogFile">
+<area shape="rect" id="node1" title=" " alt="" coords="5,125,157,164"/>
+<area shape="rect" id="node2" href="$namespaceleveldb.html#aba6dbc953c414e0069c35662ea806b9a" title=" " alt="" coords="229,5,379,31"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_env.html#a4566194f3e82fede425fdb5bb355f7de" title=" " alt="" coords="205,55,403,80"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_write_batch.html#a30770379143a7ccb4ede18ddf0e45bf3" title=" " alt="" coords="223,104,386,129"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_write_batch_internal.html#a0ca3483de37433fb0ce37b1e91f01bd1" title=" " alt="" coords="214,153,394,192"/>
+<area shape="rect" id="node8" href="$classleveldb_1_1_write_batch_internal.html#a348947b16653c8a17590b13115b5274d" title=" " alt="" coords="214,216,394,255"/>
+<area shape="rect" id="node9" href="$classleveldb_1_1_writable_file.html#ab95759ad32f6a05b0ee4266969fa265e" title=" " alt="" coords="234,279,375,317"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_write_batch_internal.html#ae03d20619da53aae175dd28d61c90bd9" title=" " alt="" coords="451,67,632,105"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_write_batch_internal.html#a5270ca4567dbae1524005ad14e0698e3" title=" " alt="" coords="451,129,632,168"/>
+</map>

@@ -1,0 +1,454 @@
+\hypertarget{classleveldb_1_1_fault_injection_test}{}\section{leveldb\+::Fault\+Injection\+Test Class Reference}
+\label{classleveldb_1_1_fault_injection_test}\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+
+
+Collaboration diagram for leveldb\+::Fault\+Injection\+Test\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a5360c720d3ac8c6618f12400296feef9}{Expected\+Verif\+Result}} \{ \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a5360c720d3ac8c6618f12400296feef9a7683a5559fa1a7f217b25c44cbd61836}{V\+A\+L\+\_\+\+E\+X\+P\+E\+C\+T\+\_\+\+N\+O\+\_\+\+E\+R\+R\+OR}}, 
+\mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a5360c720d3ac8c6618f12400296feef9a233217cab98c7850764ab708e942804a}{V\+A\+L\+\_\+\+E\+X\+P\+E\+C\+T\+\_\+\+E\+R\+R\+OR}}
+ \}
+\item 
+enum \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a316891ca042a42e0d26ec45450828cc3}{Reset\+Method}} \{ \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a316891ca042a42e0d26ec45450828cc3a015358eeff960123a9fae83fc21e6c46}{R\+E\+S\+E\+T\+\_\+\+D\+R\+O\+P\+\_\+\+U\+N\+S\+Y\+N\+C\+E\+D\+\_\+\+D\+A\+TA}}, 
+\mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a316891ca042a42e0d26ec45450828cc3a0685f7ef65ee539bbc7cd8ce746b9a27}{R\+E\+S\+E\+T\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+U\+N\+S\+Y\+N\+C\+E\+D\+\_\+\+F\+I\+L\+ES}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_fault_injection_test_ae54ddb4aaf6bb2fb8dbd688164dd87f4}{Fault\+Injection\+Test}} ()
+\item 
+\mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a547ba383f26947152eb0c5045d5965c1}{$\sim$\+Fault\+Injection\+Test}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_ad89bbc5e5caf77e0c7a983005afe1dad}{Reuse\+Logs}} (bool reuse)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_aa387332893f14da9bdec0751e151f282}{Build}} (int start\+\_\+idx, int num\+\_\+vals)
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a0b40c46d524ef4ddd2415039e7f100a4}{Read\+Value}} (int i, std\+::string $\ast$val) const
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a2c29a68922ed25a3c15713fc4780c76e}{Verify}} (int start\+\_\+idx, int num\+\_\+vals, \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a5360c720d3ac8c6618f12400296feef9}{Expected\+Verif\+Result}} expected) const
+\item 
+\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_ab2599d1e090f74b7294715c8d676ff12}{Key}} (int i, std\+::string $\ast$storage) const
+\item 
+\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a8922e4c2b543e52e42b513e8dffd65ae}{Value}} (int k, std\+::string $\ast$storage) const
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_af81cf86b19e72e08bdee141a612e6b77}{Open\+DB}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_ab0290ce2456f04e5309165196369e834}{Close\+DB}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a6e112ba6b03957228317818c0e91fa04}{Delete\+All\+Data}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a15c8b348e0d0569b2dbd5065386e7405}{Reset\+D\+B\+State}} (\mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a316891ca042a42e0d26ec45450828cc3}{Reset\+Method}} reset\+\_\+method)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a9a3c0876a2caae54ccbae754794f262c}{Partial\+Compact\+Test\+Pre\+Fault}} (int num\+\_\+pre\+\_\+sync, int num\+\_\+post\+\_\+sync)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_aba1c6ef251ae09ce32acb3a16e2c0004}{Partial\+Compact\+Test\+Reopen\+With\+Fault}} (\mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a316891ca042a42e0d26ec45450828cc3}{Reset\+Method}} reset\+\_\+method, int num\+\_\+pre\+\_\+sync, int num\+\_\+post\+\_\+sync)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a5989cfdb585f4f94364b111809161fad}{No\+Write\+Test\+Pre\+Fault}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a3b6eda3b745af3c89e4fe268431783ad}{No\+Write\+Test\+Reopen\+With\+Fault}} (\mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a316891ca042a42e0d26ec45450828cc3}{Reset\+Method}} reset\+\_\+method)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a451539e9d3eb1ba9e9f68cca5a774cdc}{Do\+Test}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_fault_injection_test_env}{Fault\+Injection\+Test\+Env}} $\ast$ \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_adb67cb8d9a917e46ec2a53ed5057edd5}{env\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a10e623017566062afd6015a3602232e4}{dbname\+\_\+}}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_cache}{Cache}} $\ast$ \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a4fdcca3ee57d36a652276c1f30cf5452}{tiny\+\_\+cache\+\_\+}}
+\item 
+\mbox{\hyperlink{structleveldb_1_1_options}{Options}} \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a6d0711cdd4c9a601ab45dd0f781a6e62}{options\+\_\+}}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_d_b}{DB}} $\ast$ \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_aa34cf3e5150932bc948f7d2bc00c9c71}{db\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_a5360c720d3ac8c6618f12400296feef9}\label{classleveldb_1_1_fault_injection_test_a5360c720d3ac8c6618f12400296feef9}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!ExpectedVerifResult@{ExpectedVerifResult}}
+\index{ExpectedVerifResult@{ExpectedVerifResult}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{ExpectedVerifResult}{ExpectedVerifResult}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a5360c720d3ac8c6618f12400296feef9}{leveldb\+::\+Fault\+Injection\+Test\+::\+Expected\+Verif\+Result}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VAL\_EXPECT\_NO\_ERROR@{VAL\_EXPECT\_NO\_ERROR}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!VAL\_EXPECT\_NO\_ERROR@{VAL\_EXPECT\_NO\_ERROR}}}\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_a5360c720d3ac8c6618f12400296feef9a7683a5559fa1a7f217b25c44cbd61836}\label{classleveldb_1_1_fault_injection_test_a5360c720d3ac8c6618f12400296feef9a7683a5559fa1a7f217b25c44cbd61836}} 
+V\+A\+L\+\_\+\+E\+X\+P\+E\+C\+T\+\_\+\+N\+O\+\_\+\+E\+R\+R\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VAL\_EXPECT\_ERROR@{VAL\_EXPECT\_ERROR}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!VAL\_EXPECT\_ERROR@{VAL\_EXPECT\_ERROR}}}\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_a5360c720d3ac8c6618f12400296feef9a233217cab98c7850764ab708e942804a}\label{classleveldb_1_1_fault_injection_test_a5360c720d3ac8c6618f12400296feef9a233217cab98c7850764ab708e942804a}} 
+V\+A\+L\+\_\+\+E\+X\+P\+E\+C\+T\+\_\+\+E\+R\+R\+OR&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_a316891ca042a42e0d26ec45450828cc3}\label{classleveldb_1_1_fault_injection_test_a316891ca042a42e0d26ec45450828cc3}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!ResetMethod@{ResetMethod}}
+\index{ResetMethod@{ResetMethod}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{ResetMethod}{ResetMethod}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a316891ca042a42e0d26ec45450828cc3}{leveldb\+::\+Fault\+Injection\+Test\+::\+Reset\+Method}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RESET\_DROP\_UNSYNCED\_DATA@{RESET\_DROP\_UNSYNCED\_DATA}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!RESET\_DROP\_UNSYNCED\_DATA@{RESET\_DROP\_UNSYNCED\_DATA}}}\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_a316891ca042a42e0d26ec45450828cc3a015358eeff960123a9fae83fc21e6c46}\label{classleveldb_1_1_fault_injection_test_a316891ca042a42e0d26ec45450828cc3a015358eeff960123a9fae83fc21e6c46}} 
+R\+E\+S\+E\+T\+\_\+\+D\+R\+O\+P\+\_\+\+U\+N\+S\+Y\+N\+C\+E\+D\+\_\+\+D\+A\+TA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RESET\_DELETE\_UNSYNCED\_FILES@{RESET\_DELETE\_UNSYNCED\_FILES}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!RESET\_DELETE\_UNSYNCED\_FILES@{RESET\_DELETE\_UNSYNCED\_FILES}}}\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_a316891ca042a42e0d26ec45450828cc3a0685f7ef65ee539bbc7cd8ce746b9a27}\label{classleveldb_1_1_fault_injection_test_a316891ca042a42e0d26ec45450828cc3a0685f7ef65ee539bbc7cd8ce746b9a27}} 
+R\+E\+S\+E\+T\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+U\+N\+S\+Y\+N\+C\+E\+D\+\_\+\+F\+I\+L\+ES&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_ae54ddb4aaf6bb2fb8dbd688164dd87f4}\label{classleveldb_1_1_fault_injection_test_ae54ddb4aaf6bb2fb8dbd688164dd87f4}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!FaultInjectionTest@{FaultInjectionTest}}
+\index{FaultInjectionTest@{FaultInjectionTest}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{FaultInjectionTest()}{FaultInjectionTest()}}
+{\footnotesize\ttfamily leveldb\+::\+Fault\+Injection\+Test\+::\+Fault\+Injection\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_ae54ddb4aaf6bb2fb8dbd688164dd87f4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_a547ba383f26947152eb0c5045d5965c1}\label{classleveldb_1_1_fault_injection_test_a547ba383f26947152eb0c5045d5965c1}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!````~FaultInjectionTest@{$\sim$FaultInjectionTest}}
+\index{````~FaultInjectionTest@{$\sim$FaultInjectionTest}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{$\sim$FaultInjectionTest()}{~FaultInjectionTest()}}
+{\footnotesize\ttfamily leveldb\+::\+Fault\+Injection\+Test\+::$\sim$\+Fault\+Injection\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_a547ba383f26947152eb0c5045d5965c1_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_aa387332893f14da9bdec0751e151f282}\label{classleveldb_1_1_fault_injection_test_aa387332893f14da9bdec0751e151f282}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!Build@{Build}}
+\index{Build@{Build}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily void leveldb\+::\+Fault\+Injection\+Test\+::\+Build (\begin{DoxyParamCaption}\item[{int}]{start\+\_\+idx,  }\item[{int}]{num\+\_\+vals }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_aa387332893f14da9bdec0751e151f282_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_aa387332893f14da9bdec0751e151f282_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_ab0290ce2456f04e5309165196369e834}\label{classleveldb_1_1_fault_injection_test_ab0290ce2456f04e5309165196369e834}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!CloseDB@{CloseDB}}
+\index{CloseDB@{CloseDB}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{CloseDB()}{CloseDB()}}
+{\footnotesize\ttfamily void leveldb\+::\+Fault\+Injection\+Test\+::\+Close\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_ab0290ce2456f04e5309165196369e834_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_a6e112ba6b03957228317818c0e91fa04}\label{classleveldb_1_1_fault_injection_test_a6e112ba6b03957228317818c0e91fa04}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!DeleteAllData@{DeleteAllData}}
+\index{DeleteAllData@{DeleteAllData}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{DeleteAllData()}{DeleteAllData()}}
+{\footnotesize\ttfamily void leveldb\+::\+Fault\+Injection\+Test\+::\+Delete\+All\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_a6e112ba6b03957228317818c0e91fa04_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_a6e112ba6b03957228317818c0e91fa04_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_a451539e9d3eb1ba9e9f68cca5a774cdc}\label{classleveldb_1_1_fault_injection_test_a451539e9d3eb1ba9e9f68cca5a774cdc}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!DoTest@{DoTest}}
+\index{DoTest@{DoTest}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{DoTest()}{DoTest()}}
+{\footnotesize\ttfamily void leveldb\+::\+Fault\+Injection\+Test\+::\+Do\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_a451539e9d3eb1ba9e9f68cca5a774cdc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_ab2599d1e090f74b7294715c8d676ff12}\label{classleveldb_1_1_fault_injection_test_ab2599d1e090f74b7294715c8d676ff12}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!Key@{Key}}
+\index{Key@{Key}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{Key()}{Key()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} leveldb\+::\+Fault\+Injection\+Test\+::\+Key (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{std\+::string $\ast$}]{storage }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_ab2599d1e090f74b7294715c8d676ff12_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_a5989cfdb585f4f94364b111809161fad}\label{classleveldb_1_1_fault_injection_test_a5989cfdb585f4f94364b111809161fad}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!NoWriteTestPreFault@{NoWriteTestPreFault}}
+\index{NoWriteTestPreFault@{NoWriteTestPreFault}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{NoWriteTestPreFault()}{NoWriteTestPreFault()}}
+{\footnotesize\ttfamily void leveldb\+::\+Fault\+Injection\+Test\+::\+No\+Write\+Test\+Pre\+Fault (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_a5989cfdb585f4f94364b111809161fad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_a3b6eda3b745af3c89e4fe268431783ad}\label{classleveldb_1_1_fault_injection_test_a3b6eda3b745af3c89e4fe268431783ad}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!NoWriteTestReopenWithFault@{NoWriteTestReopenWithFault}}
+\index{NoWriteTestReopenWithFault@{NoWriteTestReopenWithFault}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{NoWriteTestReopenWithFault()}{NoWriteTestReopenWithFault()}}
+{\footnotesize\ttfamily void leveldb\+::\+Fault\+Injection\+Test\+::\+No\+Write\+Test\+Reopen\+With\+Fault (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a316891ca042a42e0d26ec45450828cc3}{Reset\+Method}}}]{reset\+\_\+method }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_a3b6eda3b745af3c89e4fe268431783ad_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_a3b6eda3b745af3c89e4fe268431783ad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_af81cf86b19e72e08bdee141a612e6b77}\label{classleveldb_1_1_fault_injection_test_af81cf86b19e72e08bdee141a612e6b77}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!OpenDB@{OpenDB}}
+\index{OpenDB@{OpenDB}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{OpenDB()}{OpenDB()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Fault\+Injection\+Test\+::\+Open\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_af81cf86b19e72e08bdee141a612e6b77_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_af81cf86b19e72e08bdee141a612e6b77_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_a9a3c0876a2caae54ccbae754794f262c}\label{classleveldb_1_1_fault_injection_test_a9a3c0876a2caae54ccbae754794f262c}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!PartialCompactTestPreFault@{PartialCompactTestPreFault}}
+\index{PartialCompactTestPreFault@{PartialCompactTestPreFault}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{PartialCompactTestPreFault()}{PartialCompactTestPreFault()}}
+{\footnotesize\ttfamily void leveldb\+::\+Fault\+Injection\+Test\+::\+Partial\+Compact\+Test\+Pre\+Fault (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+pre\+\_\+sync,  }\item[{int}]{num\+\_\+post\+\_\+sync }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_a9a3c0876a2caae54ccbae754794f262c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_a9a3c0876a2caae54ccbae754794f262c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_aba1c6ef251ae09ce32acb3a16e2c0004}\label{classleveldb_1_1_fault_injection_test_aba1c6ef251ae09ce32acb3a16e2c0004}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!PartialCompactTestReopenWithFault@{PartialCompactTestReopenWithFault}}
+\index{PartialCompactTestReopenWithFault@{PartialCompactTestReopenWithFault}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{PartialCompactTestReopenWithFault()}{PartialCompactTestReopenWithFault()}}
+{\footnotesize\ttfamily void leveldb\+::\+Fault\+Injection\+Test\+::\+Partial\+Compact\+Test\+Reopen\+With\+Fault (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a316891ca042a42e0d26ec45450828cc3}{Reset\+Method}}}]{reset\+\_\+method,  }\item[{int}]{num\+\_\+pre\+\_\+sync,  }\item[{int}]{num\+\_\+post\+\_\+sync }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_aba1c6ef251ae09ce32acb3a16e2c0004_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_aba1c6ef251ae09ce32acb3a16e2c0004_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_a0b40c46d524ef4ddd2415039e7f100a4}\label{classleveldb_1_1_fault_injection_test_a0b40c46d524ef4ddd2415039e7f100a4}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!ReadValue@{ReadValue}}
+\index{ReadValue@{ReadValue}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{ReadValue()}{ReadValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Fault\+Injection\+Test\+::\+Read\+Value (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{std\+::string $\ast$}]{val }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_a0b40c46d524ef4ddd2415039e7f100a4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_a0b40c46d524ef4ddd2415039e7f100a4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_a15c8b348e0d0569b2dbd5065386e7405}\label{classleveldb_1_1_fault_injection_test_a15c8b348e0d0569b2dbd5065386e7405}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!ResetDBState@{ResetDBState}}
+\index{ResetDBState@{ResetDBState}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{ResetDBState()}{ResetDBState()}}
+{\footnotesize\ttfamily void leveldb\+::\+Fault\+Injection\+Test\+::\+Reset\+D\+B\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a316891ca042a42e0d26ec45450828cc3}{Reset\+Method}}}]{reset\+\_\+method }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_a15c8b348e0d0569b2dbd5065386e7405_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_a15c8b348e0d0569b2dbd5065386e7405_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_ad89bbc5e5caf77e0c7a983005afe1dad}\label{classleveldb_1_1_fault_injection_test_ad89bbc5e5caf77e0c7a983005afe1dad}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!ReuseLogs@{ReuseLogs}}
+\index{ReuseLogs@{ReuseLogs}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{ReuseLogs()}{ReuseLogs()}}
+{\footnotesize\ttfamily void leveldb\+::\+Fault\+Injection\+Test\+::\+Reuse\+Logs (\begin{DoxyParamCaption}\item[{bool}]{reuse }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_a8922e4c2b543e52e42b513e8dffd65ae}\label{classleveldb_1_1_fault_injection_test_a8922e4c2b543e52e42b513e8dffd65ae}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!Value@{Value}}
+\index{Value@{Value}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{Value()}{Value()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} leveldb\+::\+Fault\+Injection\+Test\+::\+Value (\begin{DoxyParamCaption}\item[{int}]{k,  }\item[{std\+::string $\ast$}]{storage }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_a8922e4c2b543e52e42b513e8dffd65ae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_a2c29a68922ed25a3c15713fc4780c76e}\label{classleveldb_1_1_fault_injection_test_a2c29a68922ed25a3c15713fc4780c76e}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!Verify@{Verify}}
+\index{Verify@{Verify}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{Verify()}{Verify()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Fault\+Injection\+Test\+::\+Verify (\begin{DoxyParamCaption}\item[{int}]{start\+\_\+idx,  }\item[{int}]{num\+\_\+vals,  }\item[{\mbox{\hyperlink{classleveldb_1_1_fault_injection_test_a5360c720d3ac8c6618f12400296feef9}{Expected\+Verif\+Result}}}]{expected }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_a2c29a68922ed25a3c15713fc4780c76e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_a2c29a68922ed25a3c15713fc4780c76e_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_aa34cf3e5150932bc948f7d2bc00c9c71}\label{classleveldb_1_1_fault_injection_test_aa34cf3e5150932bc948f7d2bc00c9c71}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!db\_@{db\_}}
+\index{db\_@{db\_}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{db\_}{db\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_d_b}{DB}}$\ast$ leveldb\+::\+Fault\+Injection\+Test\+::db\+\_\+}
+
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_a10e623017566062afd6015a3602232e4}\label{classleveldb_1_1_fault_injection_test_a10e623017566062afd6015a3602232e4}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!dbname\_@{dbname\_}}
+\index{dbname\_@{dbname\_}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{dbname\_}{dbname\_}}
+{\footnotesize\ttfamily std\+::string leveldb\+::\+Fault\+Injection\+Test\+::dbname\+\_\+}
+
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_adb67cb8d9a917e46ec2a53ed5057edd5}\label{classleveldb_1_1_fault_injection_test_adb67cb8d9a917e46ec2a53ed5057edd5}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!env\_@{env\_}}
+\index{env\_@{env\_}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{env\_}{env\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_env}{Fault\+Injection\+Test\+Env}}$\ast$ leveldb\+::\+Fault\+Injection\+Test\+::env\+\_\+}
+
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_a6d0711cdd4c9a601ab45dd0f781a6e62}\label{classleveldb_1_1_fault_injection_test_a6d0711cdd4c9a601ab45dd0f781a6e62}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!options\_@{options\_}}
+\index{options\_@{options\_}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{options\_}{options\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structleveldb_1_1_options}{Options}} leveldb\+::\+Fault\+Injection\+Test\+::options\+\_\+}
+
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_a4fdcca3ee57d36a652276c1f30cf5452}\label{classleveldb_1_1_fault_injection_test_a4fdcca3ee57d36a652276c1f30cf5452}} 
+\index{leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}!tiny\_cache\_@{tiny\_cache\_}}
+\index{tiny\_cache\_@{tiny\_cache\_}!leveldb::FaultInjectionTest@{leveldb::FaultInjectionTest}}
+\subsubsection{\texorpdfstring{tiny\_cache\_}{tiny\_cache\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_cache}{Cache}}$\ast$ leveldb\+::\+Fault\+Injection\+Test\+::tiny\+\_\+cache\+\_\+}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{fault__injection__test_8cc}{fault\+\_\+injection\+\_\+test.\+cc}}\end{DoxyCompactItemize}

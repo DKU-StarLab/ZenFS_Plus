@@ -1,0 +1,48 @@
+\hypertarget{repair_8cc}{}\section{db/repair.cc File Reference}
+\label{repair_8cc}\index{db/repair.cc@{db/repair.cc}}
+{\ttfamily \#include \char`\"{}db/builder.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/db\+\_\+impl.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/dbformat.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/filename.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/log\+\_\+reader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/log\+\_\+writer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/memtable.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/table\+\_\+cache.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/version\+\_\+edit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/write\+\_\+batch\+\_\+internal.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/comparator.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/db.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/env.\+h\char`\"{}}\newline
+Include dependency graph for repair.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{repair_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceleveldb}{leveldb}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Status \mbox{\hyperlink{namespaceleveldb_aa19b8fd0c5732d463fbf6af09792676a}{leveldb\+::\+Repair\+DB}} (const std\+::string \&dbname, const Options \&options)
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{repair_8cc_a52c1b794512261f530db50c720acb0c4}\label{repair_8cc_a52c1b794512261f530db50c720acb0c4}} 
+\index{repair.cc@{repair.cc}!max\_sequence@{max\_sequence}}
+\index{max\_sequence@{max\_sequence}!repair.cc@{repair.cc}}
+\subsubsection{\texorpdfstring{max\_sequence}{max\_sequence}}
+{\footnotesize\ttfamily Sequence\+Number max\+\_\+sequence}
+
+\mbox{\Hypertarget{repair_8cc_a6b8f1f5fc8f36aa1678fff8fa5aecd0b}\label{repair_8cc_a6b8f1f5fc8f36aa1678fff8fa5aecd0b}} 
+\index{repair.cc@{repair.cc}!meta@{meta}}
+\index{meta@{meta}!repair.cc@{repair.cc}}
+\subsubsection{\texorpdfstring{meta}{meta}}
+{\footnotesize\ttfamily File\+Meta\+Data meta}
+

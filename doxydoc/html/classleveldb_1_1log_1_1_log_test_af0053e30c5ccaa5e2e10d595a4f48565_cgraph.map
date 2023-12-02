@@ -1,0 +1,9 @@
+<map id="leveldb::log::LogTest::WriteInitialOffsetLog" name="leveldb::log::LogTest::WriteInitialOffsetLog">
+<area shape="rect" id="node1" title=" " alt="" coords="5,76,154,115"/>
+<area shape="rect" id="node2" href="$classleveldb_1_1log_1_1_log_test.html#ab8af1c9335e7fbb42e06a6c01de2d0fc" title=" " alt="" coords="202,76,345,115"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1log_1_1_writer.html#acb4abda5a5348ac1771657ff01bf2fad" title=" " alt="" coords="393,76,524,115"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_slice.html#a94ccee3d05b66ba0b059f2d9772b782b" title=" " alt="" coords="576,5,709,31"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_slice.html#a7344120beda110de81d0c45d4cfe4b63" title=" " alt="" coords="577,55,708,80"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_writable_file.html#a53b41841d9577d28f65d4d90e1660de8" title=" " alt="" coords="572,104,713,143"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_status.html#af988e2a8d204019c14f21126d9300362" title=" " alt="" coords="577,167,708,192"/>
+</map>

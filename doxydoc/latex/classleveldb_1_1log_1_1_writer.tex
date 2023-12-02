@@ -1,0 +1,79 @@
+\hypertarget{classleveldb_1_1log_1_1_writer}{}\section{leveldb\+::log\+::Writer Class Reference}
+\label{classleveldb_1_1log_1_1_writer}\index{leveldb::log::Writer@{leveldb::log::Writer}}
+
+
+{\ttfamily \#include $<$log\+\_\+writer.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+::log\+::Writer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{classleveldb_1_1log_1_1_writer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1log_1_1_writer_a424f67be4485fdf3ef8ba55c9c559c90}{Writer}} (\mbox{\hyperlink{classleveldb_1_1_writable_file}{Writable\+File}} $\ast$dest)
+\item 
+\mbox{\hyperlink{classleveldb_1_1log_1_1_writer_ad0460b6358412b6609899a821065c628}{Writer}} (\mbox{\hyperlink{classleveldb_1_1_writable_file}{Writable\+File}} $\ast$dest, uint64\+\_\+t dest\+\_\+length)
+\item 
+\mbox{\hyperlink{classleveldb_1_1log_1_1_writer_a71bcdee2a87eb535fd60a3fe047e66be}{$\sim$\+Writer}} ()
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1log_1_1_writer_acb4abda5a5348ac1771657ff01bf2fad}{Add\+Record}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&slice)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_writer_a424f67be4485fdf3ef8ba55c9c559c90}\label{classleveldb_1_1log_1_1_writer_a424f67be4485fdf3ef8ba55c9c559c90}} 
+\index{leveldb::log::Writer@{leveldb::log::Writer}!Writer@{Writer}}
+\index{Writer@{Writer}!leveldb::log::Writer@{leveldb::log::Writer}}
+\subsubsection{\texorpdfstring{Writer()}{Writer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+Writer\+::\+Writer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1_writable_file}{Writable\+File}} $\ast$}]{dest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_writer_ad0460b6358412b6609899a821065c628}\label{classleveldb_1_1log_1_1_writer_ad0460b6358412b6609899a821065c628}} 
+\index{leveldb::log::Writer@{leveldb::log::Writer}!Writer@{Writer}}
+\index{Writer@{Writer}!leveldb::log::Writer@{leveldb::log::Writer}}
+\subsubsection{\texorpdfstring{Writer()}{Writer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+Writer\+::\+Writer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1_writable_file}{Writable\+File}} $\ast$}]{dest,  }\item[{uint64\+\_\+t}]{dest\+\_\+length }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_writer_a71bcdee2a87eb535fd60a3fe047e66be}\label{classleveldb_1_1log_1_1_writer_a71bcdee2a87eb535fd60a3fe047e66be}} 
+\index{leveldb::log::Writer@{leveldb::log::Writer}!````~Writer@{$\sim$Writer}}
+\index{````~Writer@{$\sim$Writer}!leveldb::log::Writer@{leveldb::log::Writer}}
+\subsubsection{\texorpdfstring{$\sim$Writer()}{~Writer()}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+Writer\+::$\sim$\+Writer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_writer_acb4abda5a5348ac1771657ff01bf2fad}\label{classleveldb_1_1log_1_1_writer_acb4abda5a5348ac1771657ff01bf2fad}} 
+\index{leveldb::log::Writer@{leveldb::log::Writer}!AddRecord@{AddRecord}}
+\index{AddRecord@{AddRecord}!leveldb::log::Writer@{leveldb::log::Writer}}
+\subsubsection{\texorpdfstring{AddRecord()}{AddRecord()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::log\+::\+Writer\+::\+Add\+Record (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{slice }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classleveldb_1_1log_1_1_writer_acb4abda5a5348ac1771657ff01bf2fad_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1log_1_1_writer_acb4abda5a5348ac1771657ff01bf2fad_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{log__writer_8h}{log\+\_\+writer.\+h}}\item 
+db/\mbox{\hyperlink{log__writer_8cc}{log\+\_\+writer.\+cc}}\end{DoxyCompactItemize}

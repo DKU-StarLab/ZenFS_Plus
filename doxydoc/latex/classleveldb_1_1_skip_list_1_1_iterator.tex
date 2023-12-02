@@ -1,0 +1,158 @@
+\hypertarget{classleveldb_1_1_skip_list_1_1_iterator}{}\section{leveldb\+::Skip\+List$<$ Key, Comparator $>$\+::Iterator Class Reference}
+\label{classleveldb_1_1_skip_list_1_1_iterator}\index{leveldb::SkipList$<$ Key, Comparator $>$::Iterator@{leveldb::SkipList$<$ Key, Comparator $>$::Iterator}}
+
+
+{\ttfamily \#include $<$skiplist.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+::Skip\+List$<$ Key, Comparator $>$\+::Iterator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classleveldb_1_1_skip_list_1_1_iterator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_skip_list_1_1_iterator_ab27d6dd0959d67ed26f2bd451c18270c}{Iterator}} (const \mbox{\hyperlink{classleveldb_1_1_skip_list}{Skip\+List}} $\ast$list)
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1_skip_list_1_1_iterator_a6eaf87cf7b2a58908ea3d8f9cccc606f}{Valid}} () const
+\item 
+const \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}} \& \mbox{\hyperlink{classleveldb_1_1_skip_list_1_1_iterator_a8b9bc9940fbf067a3fb500ebae6999be}{key}} () const
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_skip_list_1_1_iterator_ade5a684c74056f578f85237735da0cef}{Next}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_skip_list_1_1_iterator_a10dbaf45640ab2b9f61a96c82e7227e5}{Prev}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_skip_list_1_1_iterator_a6c641d5cd37386abdb0aa8d73454611a}{Seek}} (const \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}} \&target)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_skip_list_1_1_iterator_adf69c04f0480a66f10a125c49e19caa7}{Seek\+To\+First}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_skip_list_1_1_iterator_afe892ff436137b85216c2ed124f3c6dd}{Seek\+To\+Last}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_skip_list_1_1_iterator_ab27d6dd0959d67ed26f2bd451c18270c}\label{classleveldb_1_1_skip_list_1_1_iterator_ab27d6dd0959d67ed26f2bd451c18270c}} 
+\index{leveldb::SkipList$<$ Key, Comparator $>$::Iterator@{leveldb::SkipList$<$ Key, Comparator $>$::Iterator}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!leveldb::SkipList$<$ Key, Comparator $>$::Iterator@{leveldb::SkipList$<$ Key, Comparator $>$::Iterator}}
+\subsubsection{\texorpdfstring{Iterator()}{Iterator()}}
+{\footnotesize\ttfamily template$<$typename Key , class Comparator $>$ \\
+\mbox{\hyperlink{classleveldb_1_1_skip_list}{leveldb\+::\+Skip\+List}}$<$ \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}}, \mbox{\hyperlink{structleveldb_1_1_comparator}{Comparator}} $>$\+::Iterator\+::\+Iterator (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_skip_list}{Skip\+List}} $\ast$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_skip_list_1_1_iterator_a8b9bc9940fbf067a3fb500ebae6999be}\label{classleveldb_1_1_skip_list_1_1_iterator_a8b9bc9940fbf067a3fb500ebae6999be}} 
+\index{leveldb::SkipList$<$ Key, Comparator $>$::Iterator@{leveldb::SkipList$<$ Key, Comparator $>$::Iterator}!key@{key}}
+\index{key@{key}!leveldb::SkipList$<$ Key, Comparator $>$::Iterator@{leveldb::SkipList$<$ Key, Comparator $>$::Iterator}}
+\subsubsection{\texorpdfstring{key()}{key()}}
+{\footnotesize\ttfamily template$<$typename Key , class Comparator $>$ \\
+const \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}} \& \mbox{\hyperlink{classleveldb_1_1_skip_list}{leveldb\+::\+Skip\+List}}$<$ \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}}, \mbox{\hyperlink{structleveldb_1_1_comparator}{Comparator}} $>$\+::Iterator\+::key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{classleveldb_1_1_skip_list_1_1_iterator_a8b9bc9940fbf067a3fb500ebae6999be_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_skip_list_1_1_iterator_ade5a684c74056f578f85237735da0cef}\label{classleveldb_1_1_skip_list_1_1_iterator_ade5a684c74056f578f85237735da0cef}} 
+\index{leveldb::SkipList$<$ Key, Comparator $>$::Iterator@{leveldb::SkipList$<$ Key, Comparator $>$::Iterator}!Next@{Next}}
+\index{Next@{Next}!leveldb::SkipList$<$ Key, Comparator $>$::Iterator@{leveldb::SkipList$<$ Key, Comparator $>$::Iterator}}
+\subsubsection{\texorpdfstring{Next()}{Next()}}
+{\footnotesize\ttfamily template$<$typename Key , class Comparator $>$ \\
+void \mbox{\hyperlink{classleveldb_1_1_skip_list}{leveldb\+::\+Skip\+List}}$<$ \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}}, \mbox{\hyperlink{structleveldb_1_1_comparator}{Comparator}} $>$\+::Iterator\+::\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{classleveldb_1_1_skip_list_1_1_iterator_ade5a684c74056f578f85237735da0cef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_skip_list_1_1_iterator_a10dbaf45640ab2b9f61a96c82e7227e5}\label{classleveldb_1_1_skip_list_1_1_iterator_a10dbaf45640ab2b9f61a96c82e7227e5}} 
+\index{leveldb::SkipList$<$ Key, Comparator $>$::Iterator@{leveldb::SkipList$<$ Key, Comparator $>$::Iterator}!Prev@{Prev}}
+\index{Prev@{Prev}!leveldb::SkipList$<$ Key, Comparator $>$::Iterator@{leveldb::SkipList$<$ Key, Comparator $>$::Iterator}}
+\subsubsection{\texorpdfstring{Prev()}{Prev()}}
+{\footnotesize\ttfamily template$<$typename Key , class Comparator $>$ \\
+void \mbox{\hyperlink{classleveldb_1_1_skip_list}{leveldb\+::\+Skip\+List}}$<$ \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}}, \mbox{\hyperlink{structleveldb_1_1_comparator}{Comparator}} $>$\+::Iterator\+::\+Prev (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{classleveldb_1_1_skip_list_1_1_iterator_a10dbaf45640ab2b9f61a96c82e7227e5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_skip_list_1_1_iterator_a6c641d5cd37386abdb0aa8d73454611a}\label{classleveldb_1_1_skip_list_1_1_iterator_a6c641d5cd37386abdb0aa8d73454611a}} 
+\index{leveldb::SkipList$<$ Key, Comparator $>$::Iterator@{leveldb::SkipList$<$ Key, Comparator $>$::Iterator}!Seek@{Seek}}
+\index{Seek@{Seek}!leveldb::SkipList$<$ Key, Comparator $>$::Iterator@{leveldb::SkipList$<$ Key, Comparator $>$::Iterator}}
+\subsubsection{\texorpdfstring{Seek()}{Seek()}}
+{\footnotesize\ttfamily template$<$typename Key, class Comparator $>$ \\
+void \mbox{\hyperlink{classleveldb_1_1_skip_list}{leveldb\+::\+Skip\+List}}$<$ \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}}, \mbox{\hyperlink{structleveldb_1_1_comparator}{Comparator}} $>$\+::Iterator\+::\+Seek (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}} \&}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{classleveldb_1_1_skip_list_1_1_iterator_a6c641d5cd37386abdb0aa8d73454611a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_skip_list_1_1_iterator_adf69c04f0480a66f10a125c49e19caa7}\label{classleveldb_1_1_skip_list_1_1_iterator_adf69c04f0480a66f10a125c49e19caa7}} 
+\index{leveldb::SkipList$<$ Key, Comparator $>$::Iterator@{leveldb::SkipList$<$ Key, Comparator $>$::Iterator}!SeekToFirst@{SeekToFirst}}
+\index{SeekToFirst@{SeekToFirst}!leveldb::SkipList$<$ Key, Comparator $>$::Iterator@{leveldb::SkipList$<$ Key, Comparator $>$::Iterator}}
+\subsubsection{\texorpdfstring{SeekToFirst()}{SeekToFirst()}}
+{\footnotesize\ttfamily template$<$typename Key , class Comparator $>$ \\
+void \mbox{\hyperlink{classleveldb_1_1_skip_list}{leveldb\+::\+Skip\+List}}$<$ \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}}, \mbox{\hyperlink{structleveldb_1_1_comparator}{Comparator}} $>$\+::Iterator\+::\+Seek\+To\+First (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{classleveldb_1_1_skip_list_1_1_iterator_adf69c04f0480a66f10a125c49e19caa7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_skip_list_1_1_iterator_afe892ff436137b85216c2ed124f3c6dd}\label{classleveldb_1_1_skip_list_1_1_iterator_afe892ff436137b85216c2ed124f3c6dd}} 
+\index{leveldb::SkipList$<$ Key, Comparator $>$::Iterator@{leveldb::SkipList$<$ Key, Comparator $>$::Iterator}!SeekToLast@{SeekToLast}}
+\index{SeekToLast@{SeekToLast}!leveldb::SkipList$<$ Key, Comparator $>$::Iterator@{leveldb::SkipList$<$ Key, Comparator $>$::Iterator}}
+\subsubsection{\texorpdfstring{SeekToLast()}{SeekToLast()}}
+{\footnotesize\ttfamily template$<$typename Key , class Comparator $>$ \\
+void \mbox{\hyperlink{classleveldb_1_1_skip_list}{leveldb\+::\+Skip\+List}}$<$ \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}}, \mbox{\hyperlink{structleveldb_1_1_comparator}{Comparator}} $>$\+::Iterator\+::\+Seek\+To\+Last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classleveldb_1_1_skip_list_1_1_iterator_afe892ff436137b85216c2ed124f3c6dd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_skip_list_1_1_iterator_a6eaf87cf7b2a58908ea3d8f9cccc606f}\label{classleveldb_1_1_skip_list_1_1_iterator_a6eaf87cf7b2a58908ea3d8f9cccc606f}} 
+\index{leveldb::SkipList$<$ Key, Comparator $>$::Iterator@{leveldb::SkipList$<$ Key, Comparator $>$::Iterator}!Valid@{Valid}}
+\index{Valid@{Valid}!leveldb::SkipList$<$ Key, Comparator $>$::Iterator@{leveldb::SkipList$<$ Key, Comparator $>$::Iterator}}
+\subsubsection{\texorpdfstring{Valid()}{Valid()}}
+{\footnotesize\ttfamily template$<$typename Key , class Comparator $>$ \\
+bool \mbox{\hyperlink{classleveldb_1_1_skip_list}{leveldb\+::\+Skip\+List}}$<$ \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}}, \mbox{\hyperlink{structleveldb_1_1_comparator}{Comparator}} $>$\+::Iterator\+::\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{classleveldb_1_1_skip_list_1_1_iterator_a6eaf87cf7b2a58908ea3d8f9cccc606f_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{skiplist_8h}{skiplist.\+h}}\end{DoxyCompactItemize}

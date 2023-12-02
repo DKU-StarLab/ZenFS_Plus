@@ -1,0 +1,86 @@
+\hypertarget{fault__injection__test_8cc}{}\section{db/fault\+\_\+injection\+\_\+test.cc File Reference}
+\label{fault__injection__test_8cc}\index{db/fault\_injection\_test.cc@{db/fault\_injection\_test.cc}}
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include \char`\"{}leveldb/db.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/db\+\_\+impl.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/filename.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/log\+\_\+format.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/version\+\_\+set.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/cache.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/env.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/table.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/write\+\_\+batch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}port/port.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}port/thread\+\_\+annotations.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/logging.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/mutexlock.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/testharness.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/testutil.\+h\char`\"{}}\newline
+Include dependency graph for fault\+\_\+injection\+\_\+test.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fault__injection__test_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_test_writable_file}{leveldb\+::\+Test\+Writable\+File}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_env}{leveldb\+::\+Fault\+Injection\+Test\+Env}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_fault_injection_test}{leveldb\+::\+Fault\+Injection\+Test}}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceleveldb}{leveldb}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceleveldb_ac6e00c81300b5ed2dda43d329ae83651}{leveldb\+::\+T\+E\+ST}} (Fault\+Injection\+Test, Fault\+Test\+No\+Log\+Reuse)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a0d5b1f86ae1ddc161d758cbca56e09c7}{leveldb\+::\+T\+E\+ST}} (Fault\+Injection\+Test, Fault\+Test\+With\+Log\+Reuse)
+\item 
+int \mbox{\hyperlink{fault__injection__test_8cc_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{fault__injection__test_8cc_a3c04138a5bfe5d72780bb7e82a18e627}\label{fault__injection__test_8cc_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{fault\_injection\_test.cc@{fault\_injection\_test.cc}!main@{main}}
+\index{main@{main}!fault\_injection\_test.cc@{fault\_injection\_test.cc}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{fault__injection__test_8cc_a1987d426278f7aa44643e6b36f6ea1d3}\label{fault__injection__test_8cc_a1987d426278f7aa44643e6b36f6ea1d3}} 
+\index{fault\_injection\_test.cc@{fault\_injection\_test.cc}!filename\_@{filename\_}}
+\index{filename\_@{filename\_}!fault\_injection\_test.cc@{fault\_injection\_test.cc}}
+\subsubsection{\texorpdfstring{filename\_}{filename\_}}
+{\footnotesize\ttfamily std\+::string filename\+\_\+}
+
+\mbox{\Hypertarget{fault__injection__test_8cc_a51395517dc515b619f954882c9cf02c0}\label{fault__injection__test_8cc_a51395517dc515b619f954882c9cf02c0}} 
+\index{fault\_injection\_test.cc@{fault\_injection\_test.cc}!pos\_@{pos\_}}
+\index{pos\_@{pos\_}!fault\_injection\_test.cc@{fault\_injection\_test.cc}}
+\subsubsection{\texorpdfstring{pos\_}{pos\_}}
+{\footnotesize\ttfamily int64\+\_\+t pos\+\_\+}
+
+\mbox{\Hypertarget{fault__injection__test_8cc_a89b0db42e50c689f10521164457e743a}\label{fault__injection__test_8cc_a89b0db42e50c689f10521164457e743a}} 
+\index{fault\_injection\_test.cc@{fault\_injection\_test.cc}!pos\_at\_last\_flush\_@{pos\_at\_last\_flush\_}}
+\index{pos\_at\_last\_flush\_@{pos\_at\_last\_flush\_}!fault\_injection\_test.cc@{fault\_injection\_test.cc}}
+\subsubsection{\texorpdfstring{pos\_at\_last\_flush\_}{pos\_at\_last\_flush\_}}
+{\footnotesize\ttfamily int64\+\_\+t pos\+\_\+at\+\_\+last\+\_\+flush\+\_\+}
+
+\mbox{\Hypertarget{fault__injection__test_8cc_ae2e9c88fee2dec2a28f2bcc394f81908}\label{fault__injection__test_8cc_ae2e9c88fee2dec2a28f2bcc394f81908}} 
+\index{fault\_injection\_test.cc@{fault\_injection\_test.cc}!pos\_at\_last\_sync\_@{pos\_at\_last\_sync\_}}
+\index{pos\_at\_last\_sync\_@{pos\_at\_last\_sync\_}!fault\_injection\_test.cc@{fault\_injection\_test.cc}}
+\subsubsection{\texorpdfstring{pos\_at\_last\_sync\_}{pos\_at\_last\_sync\_}}
+{\footnotesize\ttfamily int64\+\_\+t pos\+\_\+at\+\_\+last\+\_\+sync\+\_\+}
+

@@ -1,0 +1,71 @@
+\hypertarget{classleveldb_1_1_write_batch_1_1_handler}{}\section{leveldb\+::Write\+Batch\+::Handler Class Reference}
+\label{classleveldb_1_1_write_batch_1_1_handler}\index{leveldb::WriteBatch::Handler@{leveldb::WriteBatch::Handler}}
+
+
+{\ttfamily \#include $<$write\+\_\+batch.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+::Write\+Batch\+::Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classleveldb_1_1_write_batch_1_1_handler__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_write_batch_1_1_handler_a85fd79c7fb47ef448719379499c5d090}{$\sim$\+Handler}} ()
+\item 
+virtual void \mbox{\hyperlink{classleveldb_1_1_write_batch_1_1_handler_ad41d4985db289b94e29921167d206d4b}{Put}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&key, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&\mbox{\hyperlink{version__set_8cc_a38c8b88c432e666ad10b0c5573e1160a}{value}})=0
+\item 
+virtual void \mbox{\hyperlink{classleveldb_1_1_write_batch_1_1_handler_aeab6526b87bf5b50fb64216b69b34b17}{Delete}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&key)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_write_batch_1_1_handler_a85fd79c7fb47ef448719379499c5d090}\label{classleveldb_1_1_write_batch_1_1_handler_a85fd79c7fb47ef448719379499c5d090}} 
+\index{leveldb::WriteBatch::Handler@{leveldb::WriteBatch::Handler}!````~Handler@{$\sim$Handler}}
+\index{````~Handler@{$\sim$Handler}!leveldb::WriteBatch::Handler@{leveldb::WriteBatch::Handler}}
+\subsubsection{\texorpdfstring{$\sim$Handler()}{~Handler()}}
+{\footnotesize\ttfamily leveldb\+::\+Write\+Batch\+::\+Handler\+::$\sim$\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_write_batch_1_1_handler_aeab6526b87bf5b50fb64216b69b34b17}\label{classleveldb_1_1_write_batch_1_1_handler_aeab6526b87bf5b50fb64216b69b34b17}} 
+\index{leveldb::WriteBatch::Handler@{leveldb::WriteBatch::Handler}!Delete@{Delete}}
+\index{Delete@{Delete}!leveldb::WriteBatch::Handler@{leveldb::WriteBatch::Handler}}
+\subsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily virtual void leveldb\+::\+Write\+Batch\+::\+Handler\+::\+Delete (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_write_batch_1_1_handler_aeab6526b87bf5b50fb64216b69b34b17_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_write_batch_1_1_handler_ad41d4985db289b94e29921167d206d4b}\label{classleveldb_1_1_write_batch_1_1_handler_ad41d4985db289b94e29921167d206d4b}} 
+\index{leveldb::WriteBatch::Handler@{leveldb::WriteBatch::Handler}!Put@{Put}}
+\index{Put@{Put}!leveldb::WriteBatch::Handler@{leveldb::WriteBatch::Handler}}
+\subsubsection{\texorpdfstring{Put()}{Put()}}
+{\footnotesize\ttfamily virtual void leveldb\+::\+Write\+Batch\+::\+Handler\+::\+Put (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{key,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_write_batch_1_1_handler_ad41d4985db289b94e29921167d206d4b_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/leveldb/\mbox{\hyperlink{write__batch_8h}{write\+\_\+batch.\+h}}\item 
+db/\mbox{\hyperlink{write__batch_8cc}{write\+\_\+batch.\+cc}}\end{DoxyCompactItemize}

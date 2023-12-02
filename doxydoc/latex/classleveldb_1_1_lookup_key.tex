@@ -1,0 +1,103 @@
+\hypertarget{classleveldb_1_1_lookup_key}{}\section{leveldb\+::Lookup\+Key Class Reference}
+\label{classleveldb_1_1_lookup_key}\index{leveldb::LookupKey@{leveldb::LookupKey}}
+
+
+{\ttfamily \#include $<$dbformat.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+::Lookup\+Key\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classleveldb_1_1_lookup_key__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_lookup_key_acd09aa56607ced962e1b458d05d53472}{Lookup\+Key}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&\mbox{\hyperlink{classleveldb_1_1_lookup_key_a35812939729922656f6dc98c43216265}{user\+\_\+key}}, \mbox{\hyperlink{namespaceleveldb_a5481ededd221c36d652c371249f869fa}{Sequence\+Number}} sequence)
+\item 
+\mbox{\hyperlink{classleveldb_1_1_lookup_key_a1ed5751c159540217aa5d702fdf83a98}{$\sim$\+Lookup\+Key}} ()
+\item 
+\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \mbox{\hyperlink{classleveldb_1_1_lookup_key_aa53ebf124713e32632a7aaaee359ac22}{memtable\+\_\+key}} () const
+\item 
+\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \mbox{\hyperlink{classleveldb_1_1_lookup_key_a3ba069ced6c871a1f420487e8ca99fc1}{internal\+\_\+key}} () const
+\item 
+\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \mbox{\hyperlink{classleveldb_1_1_lookup_key_a35812939729922656f6dc98c43216265}{user\+\_\+key}} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_lookup_key_acd09aa56607ced962e1b458d05d53472}\label{classleveldb_1_1_lookup_key_acd09aa56607ced962e1b458d05d53472}} 
+\index{leveldb::LookupKey@{leveldb::LookupKey}!LookupKey@{LookupKey}}
+\index{LookupKey@{LookupKey}!leveldb::LookupKey@{leveldb::LookupKey}}
+\subsubsection{\texorpdfstring{LookupKey()}{LookupKey()}}
+{\footnotesize\ttfamily leveldb\+::\+Lookup\+Key\+::\+Lookup\+Key (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{user\+\_\+key,  }\item[{\mbox{\hyperlink{namespaceleveldb_a5481ededd221c36d652c371249f869fa}{Sequence\+Number}}}]{sequence }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classleveldb_1_1_lookup_key_acd09aa56607ced962e1b458d05d53472_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_lookup_key_a1ed5751c159540217aa5d702fdf83a98}\label{classleveldb_1_1_lookup_key_a1ed5751c159540217aa5d702fdf83a98}} 
+\index{leveldb::LookupKey@{leveldb::LookupKey}!````~LookupKey@{$\sim$LookupKey}}
+\index{````~LookupKey@{$\sim$LookupKey}!leveldb::LookupKey@{leveldb::LookupKey}}
+\subsubsection{\texorpdfstring{$\sim$LookupKey()}{~LookupKey()}}
+{\footnotesize\ttfamily leveldb\+::\+Lookup\+Key\+::$\sim$\+Lookup\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_lookup_key_a3ba069ced6c871a1f420487e8ca99fc1}\label{classleveldb_1_1_lookup_key_a3ba069ced6c871a1f420487e8ca99fc1}} 
+\index{leveldb::LookupKey@{leveldb::LookupKey}!internal\_key@{internal\_key}}
+\index{internal\_key@{internal\_key}!leveldb::LookupKey@{leveldb::LookupKey}}
+\subsubsection{\texorpdfstring{internal\_key()}{internal\_key()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} leveldb\+::\+Lookup\+Key\+::internal\+\_\+key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_lookup_key_a3ba069ced6c871a1f420487e8ca99fc1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_lookup_key_aa53ebf124713e32632a7aaaee359ac22}\label{classleveldb_1_1_lookup_key_aa53ebf124713e32632a7aaaee359ac22}} 
+\index{leveldb::LookupKey@{leveldb::LookupKey}!memtable\_key@{memtable\_key}}
+\index{memtable\_key@{memtable\_key}!leveldb::LookupKey@{leveldb::LookupKey}}
+\subsubsection{\texorpdfstring{memtable\_key()}{memtable\_key()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} leveldb\+::\+Lookup\+Key\+::memtable\+\_\+key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_lookup_key_aa53ebf124713e32632a7aaaee359ac22_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_lookup_key_a35812939729922656f6dc98c43216265}\label{classleveldb_1_1_lookup_key_a35812939729922656f6dc98c43216265}} 
+\index{leveldb::LookupKey@{leveldb::LookupKey}!user\_key@{user\_key}}
+\index{user\_key@{user\_key}!leveldb::LookupKey@{leveldb::LookupKey}}
+\subsubsection{\texorpdfstring{user\_key()}{user\_key()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} leveldb\+::\+Lookup\+Key\+::user\+\_\+key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_lookup_key_a35812939729922656f6dc98c43216265_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{dbformat_8h}{dbformat.\+h}}\item 
+db/\mbox{\hyperlink{dbformat_8cc}{dbformat.\+cc}}\end{DoxyCompactItemize}

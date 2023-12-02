@@ -1,0 +1,11 @@
+<map id="leveldb::WriteBatch::Iterate" name="leveldb::WriteBatch::Iterate">
+<area shape="rect" id="node1" title=" " alt="" coords="5,188,141,227"/>
+<area shape="rect" id="node2" href="$classleveldb_1_1_slice.html#a7344120beda110de81d0c45d4cfe4b63" title=" " alt="" coords="214,5,345,31"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_status.html#a755b1ee5b0029cf9ea1128f1cdff5855" title=" " alt="" coords="190,55,369,80"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_slice.html#a1be5b22958a115ebecb2b017aad2b3f6" title=" " alt="" coords="204,104,355,143"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_slice.html#a56ac7a70125c26187ecf4dd040004582" title=" " alt="" coords="208,167,351,192"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_write_batch_1_1_handler.html#ad41d4985db289b94e29921167d206d4b" title=" " alt="" coords="212,216,347,255"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_write_batch_1_1_handler.html#aeab6526b87bf5b50fb64216b69b34b17" title=" " alt="" coords="212,279,347,317"/>
+<area shape="rect" id="node8" href="$classleveldb_1_1_write_batch_internal.html#a5270ca4567dbae1524005ad14e0698e3" title=" " alt="" coords="189,341,370,380"/>
+<area shape="rect" id="node9" href="$classleveldb_1_1_status.html#a8e3720d233281c874a53c17e081f51b3" title=" " alt="" coords="212,404,347,429"/>
+</map>

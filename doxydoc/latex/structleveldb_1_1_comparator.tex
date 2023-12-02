@@ -1,0 +1,137 @@
+\hypertarget{structleveldb_1_1_comparator}{}\section{leveldb\+::Comparator Class Reference}
+\label{structleveldb_1_1_comparator}\index{leveldb::Comparator@{leveldb::Comparator}}
+
+
+{\ttfamily \#include $<$comparator.\+h$>$}
+
+
+
+Inheritance diagram for leveldb\+::Comparator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_comparator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for leveldb\+::Comparator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{structleveldb_1_1_comparator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structleveldb_1_1_comparator_af56f4d3b86bd598dde1d1af379ea486d}{operator()}} (const \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}} \&a, const \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}} \&b) const
+\item 
+virtual \mbox{\hyperlink{structleveldb_1_1_comparator_a0637d3530450873fae87ab9c55b6f8e8}{$\sim$\+Comparator}} ()
+\item 
+virtual int \mbox{\hyperlink{structleveldb_1_1_comparator_a05dae6edcad3c7db23827c0233d74039}{Compare}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&a, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&b) const =0
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{structleveldb_1_1_comparator_a888b039bdd6d59517dca75fb40721f5e}{Name}} () const =0
+\item 
+virtual void \mbox{\hyperlink{structleveldb_1_1_comparator_abdfe6076225e95b91ffd94f646063115}{Find\+Shortest\+Separator}} (std\+::string $\ast$start, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&limit) const =0
+\item 
+virtual void \mbox{\hyperlink{structleveldb_1_1_comparator_a49751dd906595633161dfad943d24b3b}{Find\+Short\+Successor}} (std\+::string $\ast$key) const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structleveldb_1_1_comparator_a0637d3530450873fae87ab9c55b6f8e8}\label{structleveldb_1_1_comparator_a0637d3530450873fae87ab9c55b6f8e8}} 
+\index{leveldb::Comparator@{leveldb::Comparator}!````~Comparator@{$\sim$Comparator}}
+\index{````~Comparator@{$\sim$Comparator}!leveldb::Comparator@{leveldb::Comparator}}
+\subsubsection{\texorpdfstring{$\sim$Comparator()}{~Comparator()}}
+{\footnotesize\ttfamily virtual leveldb\+::\+Comparator\+::$\sim$\+Comparator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structleveldb_1_1_comparator_a05dae6edcad3c7db23827c0233d74039}\label{structleveldb_1_1_comparator_a05dae6edcad3c7db23827c0233d74039}} 
+\index{leveldb::Comparator@{leveldb::Comparator}!Compare@{Compare}}
+\index{Compare@{Compare}!leveldb::Comparator@{leveldb::Comparator}}
+\subsubsection{\texorpdfstring{Compare()}{Compare()}}
+{\footnotesize\ttfamily virtual int leveldb\+::\+Comparator\+::\+Compare (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{a,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{b }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classleveldb_1_1_internal_key_comparator_a8ee088d285165f692f2f03ac5b3e13b1}{leveldb\+::\+Internal\+Key\+Comparator}}, and \mbox{\hyperlink{structleveldb__comparator__t_abad34abeefd52bcfd421e14f426f6d05}{leveldb\+\_\+comparator\+\_\+t}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_comparator_a05dae6edcad3c7db23827c0233d74039_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structleveldb_1_1_comparator_abdfe6076225e95b91ffd94f646063115}\label{structleveldb_1_1_comparator_abdfe6076225e95b91ffd94f646063115}} 
+\index{leveldb::Comparator@{leveldb::Comparator}!FindShortestSeparator@{FindShortestSeparator}}
+\index{FindShortestSeparator@{FindShortestSeparator}!leveldb::Comparator@{leveldb::Comparator}}
+\subsubsection{\texorpdfstring{FindShortestSeparator()}{FindShortestSeparator()}}
+{\footnotesize\ttfamily virtual void leveldb\+::\+Comparator\+::\+Find\+Shortest\+Separator (\begin{DoxyParamCaption}\item[{std\+::string $\ast$}]{start,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{limit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classleveldb_1_1_internal_key_comparator_a876984ae99b1404b4074be4d92cab421}{leveldb\+::\+Internal\+Key\+Comparator}}, and \mbox{\hyperlink{structleveldb__comparator__t_ad5bc952c5129d060c1ffe7a830eb3820}{leveldb\+\_\+comparator\+\_\+t}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_comparator_abdfe6076225e95b91ffd94f646063115_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structleveldb_1_1_comparator_a49751dd906595633161dfad943d24b3b}\label{structleveldb_1_1_comparator_a49751dd906595633161dfad943d24b3b}} 
+\index{leveldb::Comparator@{leveldb::Comparator}!FindShortSuccessor@{FindShortSuccessor}}
+\index{FindShortSuccessor@{FindShortSuccessor}!leveldb::Comparator@{leveldb::Comparator}}
+\subsubsection{\texorpdfstring{FindShortSuccessor()}{FindShortSuccessor()}}
+{\footnotesize\ttfamily virtual void leveldb\+::\+Comparator\+::\+Find\+Short\+Successor (\begin{DoxyParamCaption}\item[{std\+::string $\ast$}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classleveldb_1_1_internal_key_comparator_a221a28a524474834b2cba5c3be84cb13}{leveldb\+::\+Internal\+Key\+Comparator}}, and \mbox{\hyperlink{structleveldb__comparator__t_a46671a92506b28d1df61125499df3d23}{leveldb\+\_\+comparator\+\_\+t}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_comparator_a49751dd906595633161dfad943d24b3b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structleveldb_1_1_comparator_a888b039bdd6d59517dca75fb40721f5e}\label{structleveldb_1_1_comparator_a888b039bdd6d59517dca75fb40721f5e}} 
+\index{leveldb::Comparator@{leveldb::Comparator}!Name@{Name}}
+\index{Name@{Name}!leveldb::Comparator@{leveldb::Comparator}}
+\subsubsection{\texorpdfstring{Name()}{Name()}}
+{\footnotesize\ttfamily virtual const char$\ast$ leveldb\+::\+Comparator\+::\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classleveldb_1_1_internal_key_comparator_ae8848b098c0c20071aa93a166b80de0d}{leveldb\+::\+Internal\+Key\+Comparator}}, and \mbox{\hyperlink{structleveldb__comparator__t_aaf7e79d77687d0542037ae5310296180}{leveldb\+\_\+comparator\+\_\+t}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_comparator_a888b039bdd6d59517dca75fb40721f5e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structleveldb_1_1_comparator_af56f4d3b86bd598dde1d1af379ea486d}\label{structleveldb_1_1_comparator_af56f4d3b86bd598dde1d1af379ea486d}} 
+\index{leveldb::Comparator@{leveldb::Comparator}!operator()@{operator()}}
+\index{operator()@{operator()}!leveldb::Comparator@{leveldb::Comparator}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily int leveldb\+::\+Comparator\+::operator() (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}} \&}]{a,  }\item[{const \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}} \&}]{b }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{skiplist__test_8cc}{skiplist\+\_\+test.\+cc}}\item 
+include/leveldb/\mbox{\hyperlink{comparator_8h}{comparator.\+h}}\end{DoxyCompactItemize}

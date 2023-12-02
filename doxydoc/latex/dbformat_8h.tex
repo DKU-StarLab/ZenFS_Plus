@@ -1,0 +1,69 @@
+\hypertarget{dbformat_8h}{}\section{db/dbformat.h File Reference}
+\label{dbformat_8h}\index{db/dbformat.h@{db/dbformat.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}leveldb/comparator.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/db.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/filter\+\_\+policy.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/slice.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/table\+\_\+builder.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/coding.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/logging.\+h\char`\"{}}\newline
+Include dependency graph for dbformat.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dbformat_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dbformat_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structleveldb_1_1_parsed_internal_key}{leveldb\+::\+Parsed\+Internal\+Key}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_internal_key_comparator}{leveldb\+::\+Internal\+Key\+Comparator}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_internal_filter_policy}{leveldb\+::\+Internal\+Filter\+Policy}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_internal_key}{leveldb\+::\+Internal\+Key}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_lookup_key}{leveldb\+::\+Lookup\+Key}}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceleveldb}{leveldb}}
+\item 
+ \mbox{\hyperlink{namespaceleveldb_1_1config}{leveldb\+::config}}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint64\+\_\+t \mbox{\hyperlink{namespaceleveldb_a5481ededd221c36d652c371249f869fa}{leveldb\+::\+Sequence\+Number}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceleveldb_acc038cb0d608414730cafa459a4ba866}{leveldb\+::\+Value\+Type}} \{ \mbox{\hyperlink{namespaceleveldb_acc038cb0d608414730cafa459a4ba866aca5f2147a76c932346e15d86668d4ed3}{leveldb\+::k\+Type\+Deletion}} = 0x0, 
+\mbox{\hyperlink{namespaceleveldb_acc038cb0d608414730cafa459a4ba866a97725c1d8e3317d1bac1f3b14fbfa281}{leveldb\+::k\+Type\+Value}} = 0x1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{namespaceleveldb_a8406e76939e7e97465acf293f1585581}{leveldb\+::\+Internal\+Key\+Encoding\+Length}} (const Parsed\+Internal\+Key \&key)
+\item 
+void \mbox{\hyperlink{namespaceleveldb_a7192bb79e7fa6ba01490473941386534}{leveldb\+::\+Append\+Internal\+Key}} (std\+::string $\ast$result, const Parsed\+Internal\+Key \&key)
+\item 
+bool \mbox{\hyperlink{namespaceleveldb_a5a173b622e86c7a2f9beae3ac8818ac3}{leveldb\+::\+Parse\+Internal\+Key}} (const Slice \&internal\+\_\+key, Parsed\+Internal\+Key $\ast$result)
+\item 
+Slice \mbox{\hyperlink{namespaceleveldb_a1c889869840312393b805ad91a41b94f}{leveldb\+::\+Extract\+User\+Key}} (const Slice \&internal\+\_\+key)
+\end{DoxyCompactItemize}

@@ -1,0 +1,150 @@
+\hypertarget{classleveldb_1_1_table_builder}{}\section{leveldb\+::Table\+Builder Class Reference}
+\label{classleveldb_1_1_table_builder}\index{leveldb::TableBuilder@{leveldb::TableBuilder}}
+
+
+{\ttfamily \#include $<$table\+\_\+builder.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+::Table\+Builder\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classleveldb_1_1_table_builder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_table_builder_a7f5d99e06039848d9b342a4871b31cc6}{Table\+Builder}} (const \mbox{\hyperlink{structleveldb_1_1_options}{Options}} \&options, \mbox{\hyperlink{classleveldb_1_1_writable_file}{Writable\+File}} $\ast$file)
+\item 
+\mbox{\hyperlink{classleveldb_1_1_table_builder_a51e5264174bdcc7d55b985dd8015591d}{Table\+Builder}} (const \mbox{\hyperlink{classleveldb_1_1_table_builder}{Table\+Builder}} \&)=delete
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_table_builder_acb2779b99c803170e72eb39f2e713181}{operator=}} (const \mbox{\hyperlink{classleveldb_1_1_table_builder}{Table\+Builder}} \&)=delete
+\item 
+\mbox{\hyperlink{classleveldb_1_1_table_builder_aa166d9bae1402bf2e77f7c45469e715d}{$\sim$\+Table\+Builder}} ()
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_table_builder_a6e37a5ddc82161e8665f2fba08031c24}{Change\+Options}} (const \mbox{\hyperlink{structleveldb_1_1_options}{Options}} \&options)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_table_builder_a37bd347cb6340215475ac9b42dc19d10}{Add}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&key, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&\mbox{\hyperlink{version__set_8cc_a38c8b88c432e666ad10b0c5573e1160a}{value}})
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_table_builder_a544560b4c97cd382ba9b8e0ef69dacfa}{Flush}} ()
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_table_builder_a9199d15b39f1b7ec83c49b58e8bd4768}{status}} () const
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_table_builder_a88f4bae006782e24462362d489dd3f35}{Finish}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_table_builder_a3b4dded079f960b8624bdfa13d967b94}{Abandon}} ()
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classleveldb_1_1_table_builder_a1449306d91ce2edfd88625482ecd03d1}{Num\+Entries}} () const
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classleveldb_1_1_table_builder_a50ac83aca1c3321f16f26748d654a6ae}{File\+Size}} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_table_builder_a7f5d99e06039848d9b342a4871b31cc6}\label{classleveldb_1_1_table_builder_a7f5d99e06039848d9b342a4871b31cc6}} 
+\index{leveldb::TableBuilder@{leveldb::TableBuilder}!TableBuilder@{TableBuilder}}
+\index{TableBuilder@{TableBuilder}!leveldb::TableBuilder@{leveldb::TableBuilder}}
+\subsubsection{\texorpdfstring{TableBuilder()}{TableBuilder()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily leveldb\+::\+Table\+Builder\+::\+Table\+Builder (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb_1_1_options}{Options}} \&}]{options,  }\item[{\mbox{\hyperlink{classleveldb_1_1_writable_file}{Writable\+File}} $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classleveldb_1_1_table_builder_a51e5264174bdcc7d55b985dd8015591d}\label{classleveldb_1_1_table_builder_a51e5264174bdcc7d55b985dd8015591d}} 
+\index{leveldb::TableBuilder@{leveldb::TableBuilder}!TableBuilder@{TableBuilder}}
+\index{TableBuilder@{TableBuilder}!leveldb::TableBuilder@{leveldb::TableBuilder}}
+\subsubsection{\texorpdfstring{TableBuilder()}{TableBuilder()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily leveldb\+::\+Table\+Builder\+::\+Table\+Builder (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_table_builder}{Table\+Builder}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_table_builder_aa166d9bae1402bf2e77f7c45469e715d}\label{classleveldb_1_1_table_builder_aa166d9bae1402bf2e77f7c45469e715d}} 
+\index{leveldb::TableBuilder@{leveldb::TableBuilder}!````~TableBuilder@{$\sim$TableBuilder}}
+\index{````~TableBuilder@{$\sim$TableBuilder}!leveldb::TableBuilder@{leveldb::TableBuilder}}
+\subsubsection{\texorpdfstring{$\sim$TableBuilder()}{~TableBuilder()}}
+{\footnotesize\ttfamily leveldb\+::\+Table\+Builder\+::$\sim$\+Table\+Builder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_table_builder_a3b4dded079f960b8624bdfa13d967b94}\label{classleveldb_1_1_table_builder_a3b4dded079f960b8624bdfa13d967b94}} 
+\index{leveldb::TableBuilder@{leveldb::TableBuilder}!Abandon@{Abandon}}
+\index{Abandon@{Abandon}!leveldb::TableBuilder@{leveldb::TableBuilder}}
+\subsubsection{\texorpdfstring{Abandon()}{Abandon()}}
+{\footnotesize\ttfamily void leveldb\+::\+Table\+Builder\+::\+Abandon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classleveldb_1_1_table_builder_a37bd347cb6340215475ac9b42dc19d10}\label{classleveldb_1_1_table_builder_a37bd347cb6340215475ac9b42dc19d10}} 
+\index{leveldb::TableBuilder@{leveldb::TableBuilder}!Add@{Add}}
+\index{Add@{Add}!leveldb::TableBuilder@{leveldb::TableBuilder}}
+\subsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void leveldb\+::\+Table\+Builder\+::\+Add (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{key,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{value }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{classleveldb_1_1_table_builder_a37bd347cb6340215475ac9b42dc19d10_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_table_builder_a6e37a5ddc82161e8665f2fba08031c24}\label{classleveldb_1_1_table_builder_a6e37a5ddc82161e8665f2fba08031c24}} 
+\index{leveldb::TableBuilder@{leveldb::TableBuilder}!ChangeOptions@{ChangeOptions}}
+\index{ChangeOptions@{ChangeOptions}!leveldb::TableBuilder@{leveldb::TableBuilder}}
+\subsubsection{\texorpdfstring{ChangeOptions()}{ChangeOptions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Table\+Builder\+::\+Change\+Options (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb_1_1_options}{Options}} \&}]{options }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classleveldb_1_1_table_builder_a50ac83aca1c3321f16f26748d654a6ae}\label{classleveldb_1_1_table_builder_a50ac83aca1c3321f16f26748d654a6ae}} 
+\index{leveldb::TableBuilder@{leveldb::TableBuilder}!FileSize@{FileSize}}
+\index{FileSize@{FileSize}!leveldb::TableBuilder@{leveldb::TableBuilder}}
+\subsubsection{\texorpdfstring{FileSize()}{FileSize()}}
+{\footnotesize\ttfamily uint64\+\_\+t leveldb\+::\+Table\+Builder\+::\+File\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classleveldb_1_1_table_builder_a50ac83aca1c3321f16f26748d654a6ae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_table_builder_a88f4bae006782e24462362d489dd3f35}\label{classleveldb_1_1_table_builder_a88f4bae006782e24462362d489dd3f35}} 
+\index{leveldb::TableBuilder@{leveldb::TableBuilder}!Finish@{Finish}}
+\index{Finish@{Finish}!leveldb::TableBuilder@{leveldb::TableBuilder}}
+\subsubsection{\texorpdfstring{Finish()}{Finish()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Table\+Builder\+::\+Finish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classleveldb_1_1_table_builder_a88f4bae006782e24462362d489dd3f35_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_table_builder_a544560b4c97cd382ba9b8e0ef69dacfa}\label{classleveldb_1_1_table_builder_a544560b4c97cd382ba9b8e0ef69dacfa}} 
+\index{leveldb::TableBuilder@{leveldb::TableBuilder}!Flush@{Flush}}
+\index{Flush@{Flush}!leveldb::TableBuilder@{leveldb::TableBuilder}}
+\subsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily void leveldb\+::\+Table\+Builder\+::\+Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classleveldb_1_1_table_builder_a1449306d91ce2edfd88625482ecd03d1}\label{classleveldb_1_1_table_builder_a1449306d91ce2edfd88625482ecd03d1}} 
+\index{leveldb::TableBuilder@{leveldb::TableBuilder}!NumEntries@{NumEntries}}
+\index{NumEntries@{NumEntries}!leveldb::TableBuilder@{leveldb::TableBuilder}}
+\subsubsection{\texorpdfstring{NumEntries()}{NumEntries()}}
+{\footnotesize\ttfamily uint64\+\_\+t leveldb\+::\+Table\+Builder\+::\+Num\+Entries (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classleveldb_1_1_table_builder_acb2779b99c803170e72eb39f2e713181}\label{classleveldb_1_1_table_builder_acb2779b99c803170e72eb39f2e713181}} 
+\index{leveldb::TableBuilder@{leveldb::TableBuilder}!operator=@{operator=}}
+\index{operator=@{operator=}!leveldb::TableBuilder@{leveldb::TableBuilder}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void leveldb\+::\+Table\+Builder\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_table_builder}{Table\+Builder}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_table_builder_a9199d15b39f1b7ec83c49b58e8bd4768}\label{classleveldb_1_1_table_builder_a9199d15b39f1b7ec83c49b58e8bd4768}} 
+\index{leveldb::TableBuilder@{leveldb::TableBuilder}!status@{status}}
+\index{status@{status}!leveldb::TableBuilder@{leveldb::TableBuilder}}
+\subsubsection{\texorpdfstring{status()}{status()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Table\+Builder\+::status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/leveldb/\mbox{\hyperlink{table__builder_8h}{table\+\_\+builder.\+h}}\end{DoxyCompactItemize}

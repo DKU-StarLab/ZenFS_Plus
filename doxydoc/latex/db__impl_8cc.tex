@@ -1,0 +1,73 @@
+\hypertarget{db__impl_8cc}{}\section{db/db\+\_\+impl.cc File Reference}
+\label{db__impl_8cc}\index{db/db\_impl.cc@{db/db\_impl.cc}}
+{\ttfamily \#include \char`\"{}db/db\+\_\+impl.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}db/builder.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/db\+\_\+iter.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/dbformat.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/filename.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/log\+\_\+reader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/log\+\_\+writer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/memtable.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/table\+\_\+cache.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/version\+\_\+set.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/write\+\_\+batch\+\_\+internal.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/db.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/env.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/status.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/table.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/table\+\_\+builder.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}table/block.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}table/merger.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}table/two\+\_\+level\+\_\+iterator.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/coding.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/logging.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/mutexlock.\+h\char`\"{}}\newline
+Include dependency graph for db\+\_\+impl.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db__impl_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_writer}{leveldb\+::\+D\+B\+Impl\+::\+Writer}}
+\item 
+struct \mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_compaction_state}{leveldb\+::\+D\+B\+Impl\+::\+Compaction\+State}}
+\item 
+struct \mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_compaction_state_1_1_output}{leveldb\+::\+D\+B\+Impl\+::\+Compaction\+State\+::\+Output}}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceleveldb}{leveldb}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Options \mbox{\hyperlink{namespaceleveldb_aa4783e598841dca4393a97d360d10f56}{leveldb\+::\+Sanitize\+Options}} (const std\+::string \&dbname, const Internal\+Key\+Comparator $\ast$icmp, const Internal\+Filter\+Policy $\ast$ipolicy, const Options \&src)
+\item 
+Status \mbox{\hyperlink{namespaceleveldb_aa8b29424fdd7d5113876e89682d68e6f}{leveldb\+::\+Destroy\+DB}} (const std\+::string \&dbname, const Options \&options)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{namespaceleveldb_a550686b2c442f4c3011d68dd12c38662}{leveldb\+::k\+Num\+Non\+Table\+Cache\+Files}} = 10
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{db__impl_8cc_a740e67d0878f1b00c462da3805e85078}\label{db__impl_8cc_a740e67d0878f1b00c462da3805e85078}} 
+\index{db\_impl.cc@{db\_impl.cc}!mu@{mu}}
+\index{mu@{mu}!db\_impl.cc@{db\_impl.cc}}
+\subsubsection{\texorpdfstring{mu}{mu}}
+{\footnotesize\ttfamily port\+::\+Mutex$\ast$ const mu}
+

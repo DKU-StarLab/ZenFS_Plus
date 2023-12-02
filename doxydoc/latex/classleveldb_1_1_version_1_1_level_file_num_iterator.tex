@@ -1,0 +1,209 @@
+\hypertarget{classleveldb_1_1_version_1_1_level_file_num_iterator}{}\section{leveldb\+::Version\+::Level\+File\+Num\+Iterator Class Reference}
+\label{classleveldb_1_1_version_1_1_level_file_num_iterator}\index{leveldb::Version::LevelFileNumIterator@{leveldb::Version::LevelFileNumIterator}}
+
+
+Inheritance diagram for leveldb\+::Version\+::Level\+File\+Num\+Iterator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classleveldb_1_1_version_1_1_level_file_num_iterator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for leveldb\+::Version\+::Level\+File\+Num\+Iterator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classleveldb_1_1_version_1_1_level_file_num_iterator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_version_1_1_level_file_num_iterator_a7d9b5b7c74d74974ae322d20535f112a}{Level\+File\+Num\+Iterator}} (const \mbox{\hyperlink{classleveldb_1_1_internal_key_comparator}{Internal\+Key\+Comparator}} \&icmp, const std\+::vector$<$ \mbox{\hyperlink{structleveldb_1_1_file_meta_data}{File\+Meta\+Data}} $\ast$ $>$ $\ast$flist)
+\item 
+virtual bool \mbox{\hyperlink{classleveldb_1_1_version_1_1_level_file_num_iterator_a9bf0e045961ed325d37bfaa8b2c77e8b}{Valid}} () const
+\item 
+virtual void \mbox{\hyperlink{classleveldb_1_1_version_1_1_level_file_num_iterator_adbe855f4a783c2f578e1ff2fbb5259b2}{Seek}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&target)
+\item 
+virtual void \mbox{\hyperlink{classleveldb_1_1_version_1_1_level_file_num_iterator_a8e5d34bf0c1e17e83bbb9941821a7ee2}{Seek\+To\+First}} ()
+\item 
+virtual void \mbox{\hyperlink{classleveldb_1_1_version_1_1_level_file_num_iterator_ac7fafc33c049d1e33fdf9b5ae99f73d8}{Seek\+To\+Last}} ()
+\item 
+virtual void \mbox{\hyperlink{classleveldb_1_1_version_1_1_level_file_num_iterator_a7f470d4bd4dd27ff653bd1e61ccfd759}{Next}} ()
+\item 
+virtual void \mbox{\hyperlink{classleveldb_1_1_version_1_1_level_file_num_iterator_ab39c60a98d579590231034fdb665cb42}{Prev}} ()
+\item 
+\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \mbox{\hyperlink{classleveldb_1_1_version_1_1_level_file_num_iterator_af89babdc6efb44a125b9ec597fc96bd8}{key}} () const
+\item 
+\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \mbox{\hyperlink{classleveldb_1_1_version_1_1_level_file_num_iterator_af7b7da923a316d8b85f7194c926470db}{value}} () const
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_version_1_1_level_file_num_iterator_a173217ee0e689944ba052b1d07d2e58a}{status}} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_version_1_1_level_file_num_iterator_a7d9b5b7c74d74974ae322d20535f112a}\label{classleveldb_1_1_version_1_1_level_file_num_iterator_a7d9b5b7c74d74974ae322d20535f112a}} 
+\index{leveldb::Version::LevelFileNumIterator@{leveldb::Version::LevelFileNumIterator}!LevelFileNumIterator@{LevelFileNumIterator}}
+\index{LevelFileNumIterator@{LevelFileNumIterator}!leveldb::Version::LevelFileNumIterator@{leveldb::Version::LevelFileNumIterator}}
+\subsubsection{\texorpdfstring{LevelFileNumIterator()}{LevelFileNumIterator()}}
+{\footnotesize\ttfamily leveldb\+::\+Version\+::\+Level\+File\+Num\+Iterator\+::\+Level\+File\+Num\+Iterator (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_internal_key_comparator}{Internal\+Key\+Comparator}} \&}]{icmp,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{structleveldb_1_1_file_meta_data}{File\+Meta\+Data}} $\ast$ $>$ $\ast$}]{flist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_version_1_1_level_file_num_iterator_af89babdc6efb44a125b9ec597fc96bd8}\label{classleveldb_1_1_version_1_1_level_file_num_iterator_af89babdc6efb44a125b9ec597fc96bd8}} 
+\index{leveldb::Version::LevelFileNumIterator@{leveldb::Version::LevelFileNumIterator}!key@{key}}
+\index{key@{key}!leveldb::Version::LevelFileNumIterator@{leveldb::Version::LevelFileNumIterator}}
+\subsubsection{\texorpdfstring{key()}{key()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} leveldb\+::\+Version\+::\+Level\+File\+Num\+Iterator\+::key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_iterator_ad17feced6e24a1b21db5ae6940c1f220}{leveldb\+::\+Iterator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_1_1_level_file_num_iterator_af89babdc6efb44a125b9ec597fc96bd8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_1_1_level_file_num_iterator_a7f470d4bd4dd27ff653bd1e61ccfd759}\label{classleveldb_1_1_version_1_1_level_file_num_iterator_a7f470d4bd4dd27ff653bd1e61ccfd759}} 
+\index{leveldb::Version::LevelFileNumIterator@{leveldb::Version::LevelFileNumIterator}!Next@{Next}}
+\index{Next@{Next}!leveldb::Version::LevelFileNumIterator@{leveldb::Version::LevelFileNumIterator}}
+\subsubsection{\texorpdfstring{Next()}{Next()}}
+{\footnotesize\ttfamily virtual void leveldb\+::\+Version\+::\+Level\+File\+Num\+Iterator\+::\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_iterator_aea54a5ca7eb942eb15770820529410e7}{leveldb\+::\+Iterator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_1_1_level_file_num_iterator_a7f470d4bd4dd27ff653bd1e61ccfd759_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_1_1_level_file_num_iterator_ab39c60a98d579590231034fdb665cb42}\label{classleveldb_1_1_version_1_1_level_file_num_iterator_ab39c60a98d579590231034fdb665cb42}} 
+\index{leveldb::Version::LevelFileNumIterator@{leveldb::Version::LevelFileNumIterator}!Prev@{Prev}}
+\index{Prev@{Prev}!leveldb::Version::LevelFileNumIterator@{leveldb::Version::LevelFileNumIterator}}
+\subsubsection{\texorpdfstring{Prev()}{Prev()}}
+{\footnotesize\ttfamily virtual void leveldb\+::\+Version\+::\+Level\+File\+Num\+Iterator\+::\+Prev (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_iterator_a28798d802a203788587dc6adc5bc729e}{leveldb\+::\+Iterator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_1_1_level_file_num_iterator_ab39c60a98d579590231034fdb665cb42_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_1_1_level_file_num_iterator_adbe855f4a783c2f578e1ff2fbb5259b2}\label{classleveldb_1_1_version_1_1_level_file_num_iterator_adbe855f4a783c2f578e1ff2fbb5259b2}} 
+\index{leveldb::Version::LevelFileNumIterator@{leveldb::Version::LevelFileNumIterator}!Seek@{Seek}}
+\index{Seek@{Seek}!leveldb::Version::LevelFileNumIterator@{leveldb::Version::LevelFileNumIterator}}
+\subsubsection{\texorpdfstring{Seek()}{Seek()}}
+{\footnotesize\ttfamily virtual void leveldb\+::\+Version\+::\+Level\+File\+Num\+Iterator\+::\+Seek (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_iterator_a97a556e97ded60c677fbf4de7321ec44}{leveldb\+::\+Iterator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_1_1_level_file_num_iterator_adbe855f4a783c2f578e1ff2fbb5259b2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_1_1_level_file_num_iterator_a8e5d34bf0c1e17e83bbb9941821a7ee2}\label{classleveldb_1_1_version_1_1_level_file_num_iterator_a8e5d34bf0c1e17e83bbb9941821a7ee2}} 
+\index{leveldb::Version::LevelFileNumIterator@{leveldb::Version::LevelFileNumIterator}!SeekToFirst@{SeekToFirst}}
+\index{SeekToFirst@{SeekToFirst}!leveldb::Version::LevelFileNumIterator@{leveldb::Version::LevelFileNumIterator}}
+\subsubsection{\texorpdfstring{SeekToFirst()}{SeekToFirst()}}
+{\footnotesize\ttfamily virtual void leveldb\+::\+Version\+::\+Level\+File\+Num\+Iterator\+::\+Seek\+To\+First (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_iterator_a3594967cf26ddf1d37c7b886bb48627e}{leveldb\+::\+Iterator}}.
+
+\mbox{\Hypertarget{classleveldb_1_1_version_1_1_level_file_num_iterator_ac7fafc33c049d1e33fdf9b5ae99f73d8}\label{classleveldb_1_1_version_1_1_level_file_num_iterator_ac7fafc33c049d1e33fdf9b5ae99f73d8}} 
+\index{leveldb::Version::LevelFileNumIterator@{leveldb::Version::LevelFileNumIterator}!SeekToLast@{SeekToLast}}
+\index{SeekToLast@{SeekToLast}!leveldb::Version::LevelFileNumIterator@{leveldb::Version::LevelFileNumIterator}}
+\subsubsection{\texorpdfstring{SeekToLast()}{SeekToLast()}}
+{\footnotesize\ttfamily virtual void leveldb\+::\+Version\+::\+Level\+File\+Num\+Iterator\+::\+Seek\+To\+Last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_iterator_a8ad637f0a759e6d94cca6c5b4db440d3}{leveldb\+::\+Iterator}}.
+
+\mbox{\Hypertarget{classleveldb_1_1_version_1_1_level_file_num_iterator_a173217ee0e689944ba052b1d07d2e58a}\label{classleveldb_1_1_version_1_1_level_file_num_iterator_a173217ee0e689944ba052b1d07d2e58a}} 
+\index{leveldb::Version::LevelFileNumIterator@{leveldb::Version::LevelFileNumIterator}!status@{status}}
+\index{status@{status}!leveldb::Version::LevelFileNumIterator@{leveldb::Version::LevelFileNumIterator}}
+\subsubsection{\texorpdfstring{status()}{status()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Version\+::\+Level\+File\+Num\+Iterator\+::status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_iterator_ac84f34623a031b7eeb23409320f76376}{leveldb\+::\+Iterator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_1_1_level_file_num_iterator_a173217ee0e689944ba052b1d07d2e58a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_1_1_level_file_num_iterator_a9bf0e045961ed325d37bfaa8b2c77e8b}\label{classleveldb_1_1_version_1_1_level_file_num_iterator_a9bf0e045961ed325d37bfaa8b2c77e8b}} 
+\index{leveldb::Version::LevelFileNumIterator@{leveldb::Version::LevelFileNumIterator}!Valid@{Valid}}
+\index{Valid@{Valid}!leveldb::Version::LevelFileNumIterator@{leveldb::Version::LevelFileNumIterator}}
+\subsubsection{\texorpdfstring{Valid()}{Valid()}}
+{\footnotesize\ttfamily virtual bool leveldb\+::\+Version\+::\+Level\+File\+Num\+Iterator\+::\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_iterator_a38614978bfa0586327b8e237bcb46012}{leveldb\+::\+Iterator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_1_1_level_file_num_iterator_a9bf0e045961ed325d37bfaa8b2c77e8b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_1_1_level_file_num_iterator_af7b7da923a316d8b85f7194c926470db}\label{classleveldb_1_1_version_1_1_level_file_num_iterator_af7b7da923a316d8b85f7194c926470db}} 
+\index{leveldb::Version::LevelFileNumIterator@{leveldb::Version::LevelFileNumIterator}!value@{value}}
+\index{value@{value}!leveldb::Version::LevelFileNumIterator@{leveldb::Version::LevelFileNumIterator}}
+\subsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} leveldb\+::\+Version\+::\+Level\+File\+Num\+Iterator\+::value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_iterator_a613ac2e965518aad7a064c64c72bcf7c}{leveldb\+::\+Iterator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_1_1_level_file_num_iterator_af7b7da923a316d8b85f7194c926470db_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{version__set_8cc}{version\+\_\+set.\+cc}}\end{DoxyCompactItemize}

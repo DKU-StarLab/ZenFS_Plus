@@ -1,0 +1,914 @@
+\hypertarget{c_8h}{}\section{include/leveldb/c.h File Reference}
+\label{c_8h}\index{include/leveldb/c.h@{include/leveldb/c.h}}
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}leveldb/export.\+h\char`\"{}}\newline
+Include dependency graph for c.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{c_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{c_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} \mbox{\hyperlink{c_8h_a636e4c8428a435ac0e40175843ee2f2d}{leveldb\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structleveldb__cache__t}{leveldb\+\_\+cache\+\_\+t}} \mbox{\hyperlink{c_8h_ac73aa1ecc1d8a50707b4d9f7cd03f95f}{leveldb\+\_\+cache\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structleveldb__comparator__t}{leveldb\+\_\+comparator\+\_\+t}} \mbox{\hyperlink{c_8h_ac9735683d97693fc5b36e3b61aaac736}{leveldb\+\_\+comparator\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structleveldb__env__t}{leveldb\+\_\+env\+\_\+t}} \mbox{\hyperlink{c_8h_acb2785116fcacc02597f4b3f3dc4d1b7}{leveldb\+\_\+env\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structleveldb__filelock__t}{leveldb\+\_\+filelock\+\_\+t}} \mbox{\hyperlink{c_8h_af33c8311c6cee88afb413b72eeb60725}{leveldb\+\_\+filelock\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structleveldb__filterpolicy__t}{leveldb\+\_\+filterpolicy\+\_\+t}} \mbox{\hyperlink{c_8h_a4619326a9cac2ba474081bba243961b5}{leveldb\+\_\+filterpolicy\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} \mbox{\hyperlink{c_8h_aebf49c6a138b179689251fbf9fba41cd}{leveldb\+\_\+iterator\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structleveldb__logger__t}{leveldb\+\_\+logger\+\_\+t}} \mbox{\hyperlink{c_8h_ac123f38ad65a300fa63d36c6526ccd41}{leveldb\+\_\+logger\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} \mbox{\hyperlink{c_8h_a83bbdb1b9c03ef5b608626083b6d4a8a}{leveldb\+\_\+options\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structleveldb__randomfile__t}{leveldb\+\_\+randomfile\+\_\+t}} \mbox{\hyperlink{c_8h_af9c808d2a14c978a1b907de90485702b}{leveldb\+\_\+randomfile\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structleveldb__readoptions__t}{leveldb\+\_\+readoptions\+\_\+t}} \mbox{\hyperlink{c_8h_a4ff993fcf94872656048929a8c829193}{leveldb\+\_\+readoptions\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structleveldb__seqfile__t}{leveldb\+\_\+seqfile\+\_\+t}} \mbox{\hyperlink{c_8h_a5b253ebb76432befabcfa64b99dcb1c7}{leveldb\+\_\+seqfile\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structleveldb__snapshot__t}{leveldb\+\_\+snapshot\+\_\+t}} \mbox{\hyperlink{c_8h_ab313e8ef3ccfd88f8c0f2bbfd3678b7d}{leveldb\+\_\+snapshot\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structleveldb__writablefile__t}{leveldb\+\_\+writablefile\+\_\+t}} \mbox{\hyperlink{c_8h_afe2d3c06c7c36d14e2e51e2573152432}{leveldb\+\_\+writablefile\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structleveldb__writebatch__t}{leveldb\+\_\+writebatch\+\_\+t}} \mbox{\hyperlink{c_8h_a1dc1f4835950d84dfc6c93f4acb87650}{leveldb\+\_\+writebatch\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structleveldb__writeoptions__t}{leveldb\+\_\+writeoptions\+\_\+t}} \mbox{\hyperlink{c_8h_a8ec21871766c9e631de966d139641f85}{leveldb\+\_\+writeoptions\+\_\+t}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{c_8h_a99fb83031ce9923c84392b4e92f956b5acfeb0c8224005d87b097de4b65f376b9}{leveldb\+\_\+no\+\_\+compression}} = 0, 
+\mbox{\hyperlink{c_8h_a99fb83031ce9923c84392b4e92f956b5ae4ff77513d2ccd2aa8ede4e2227eed7d}{leveldb\+\_\+snappy\+\_\+compression}} = 1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$ \mbox{\hyperlink{c_8h_a96bfded0a9c5744def04051c765bb55d}{leveldb\+\_\+open}} (const \mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$options, const char $\ast$name, char $\ast$$\ast$errptr)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a11497fdd9495941ffa9afefd66eecf62}{leveldb\+\_\+close}} (\mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$db)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_aaf6809901f28b89907a9f619b9abf2bd}{leveldb\+\_\+put}} (\mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$db, const \mbox{\hyperlink{structleveldb__writeoptions__t}{leveldb\+\_\+writeoptions\+\_\+t}} $\ast$options, const char $\ast$key, size\+\_\+t keylen, const char $\ast$val, size\+\_\+t vallen, char $\ast$$\ast$errptr)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_aa102d72a07c9c9cf78e271569ee7b11b}{leveldb\+\_\+delete}} (\mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$db, const \mbox{\hyperlink{structleveldb__writeoptions__t}{leveldb\+\_\+writeoptions\+\_\+t}} $\ast$options, const char $\ast$key, size\+\_\+t keylen, char $\ast$$\ast$errptr)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_abf1e4b0886fe47c03b9105bf3c9bb692}{leveldb\+\_\+write}} (\mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$db, const \mbox{\hyperlink{structleveldb__writeoptions__t}{leveldb\+\_\+writeoptions\+\_\+t}} $\ast$options, \mbox{\hyperlink{structleveldb__writebatch__t}{leveldb\+\_\+writebatch\+\_\+t}} $\ast$batch, char $\ast$$\ast$errptr)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} char $\ast$ \mbox{\hyperlink{c_8h_aba1e6a97cb42dffd9dddd346b257ff7e}{leveldb\+\_\+get}} (\mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$db, const \mbox{\hyperlink{structleveldb__readoptions__t}{leveldb\+\_\+readoptions\+\_\+t}} $\ast$options, const char $\ast$key, size\+\_\+t keylen, size\+\_\+t $\ast$vallen, char $\ast$$\ast$errptr)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} $\ast$ \mbox{\hyperlink{c_8h_addfabd9a329e9c405c10a646ad357557}{leveldb\+\_\+create\+\_\+iterator}} (\mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$db, const \mbox{\hyperlink{structleveldb__readoptions__t}{leveldb\+\_\+readoptions\+\_\+t}} $\ast$options)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} const \mbox{\hyperlink{structleveldb__snapshot__t}{leveldb\+\_\+snapshot\+\_\+t}} $\ast$ \mbox{\hyperlink{c_8h_ac397715da410cdbecebaec614e370575}{leveldb\+\_\+create\+\_\+snapshot}} (\mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$db)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a08e1f939905ce45979e197ec1c64edea}{leveldb\+\_\+release\+\_\+snapshot}} (\mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$db, const \mbox{\hyperlink{structleveldb__snapshot__t}{leveldb\+\_\+snapshot\+\_\+t}} $\ast$snapshot)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} char $\ast$ \mbox{\hyperlink{c_8h_a951d55793fef93146bef63b3948ddf12}{leveldb\+\_\+property\+\_\+value}} (\mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$db, const char $\ast$propname)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a18a862aa621204e54bcb312dad0bf1db}{leveldb\+\_\+approximate\+\_\+sizes}} (\mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$db, int num\+\_\+ranges, const char $\ast$const $\ast$range\+\_\+start\+\_\+key, const size\+\_\+t $\ast$range\+\_\+start\+\_\+key\+\_\+len, const char $\ast$const $\ast$range\+\_\+limit\+\_\+key, const size\+\_\+t $\ast$range\+\_\+limit\+\_\+key\+\_\+len, uint64\+\_\+t $\ast$sizes)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_ae56d476a6e78521842e30f40c32ebeed}{leveldb\+\_\+compact\+\_\+range}} (\mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$db, const char $\ast$start\+\_\+key, size\+\_\+t start\+\_\+key\+\_\+len, const char $\ast$limit\+\_\+key, size\+\_\+t limit\+\_\+key\+\_\+len)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a973ca5328db0ec890b6d1402490c3d6e}{leveldb\+\_\+destroy\+\_\+db}} (const \mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$options, const char $\ast$name, char $\ast$$\ast$errptr)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a3bec7da920ce484a5869edca885cebe6}{leveldb\+\_\+repair\+\_\+db}} (const \mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$options, const char $\ast$name, char $\ast$$\ast$errptr)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_aa970cff5e5b5138522a2b86616dba952}{leveldb\+\_\+iter\+\_\+destroy}} (\mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} $\ast$)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} unsigned char \mbox{\hyperlink{c_8h_abc5c91563b611f07ba6eee60a42a3161}{leveldb\+\_\+iter\+\_\+valid}} (const \mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} $\ast$)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a0d863b656eb589dc91b537d7aeb79cca}{leveldb\+\_\+iter\+\_\+seek\+\_\+to\+\_\+first}} (\mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} $\ast$)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a807ddb259d885f90cd5934aca72a4941}{leveldb\+\_\+iter\+\_\+seek\+\_\+to\+\_\+last}} (\mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} $\ast$)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_ad3aa345ef18afdda24dc267af2e40fff}{leveldb\+\_\+iter\+\_\+seek}} (\mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} $\ast$, const char $\ast$k, size\+\_\+t klen)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_ab723c10d38eca0c6ba4ec0801f2c337f}{leveldb\+\_\+iter\+\_\+next}} (\mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} $\ast$)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a95532aba50f8361aeec51c72dc9071ba}{leveldb\+\_\+iter\+\_\+prev}} (\mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} $\ast$)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} const char $\ast$ \mbox{\hyperlink{c_8h_a1c252452578062ba8042d742285f98a4}{leveldb\+\_\+iter\+\_\+key}} (const \mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} $\ast$, size\+\_\+t $\ast$klen)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} const char $\ast$ \mbox{\hyperlink{c_8h_a3ee13d2bb051f99c4b9d078007575de4}{leveldb\+\_\+iter\+\_\+value}} (const \mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} $\ast$, size\+\_\+t $\ast$vlen)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a76d5615fd424a37ef3fddf68cd6a86a3}{leveldb\+\_\+iter\+\_\+get\+\_\+error}} (const \mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} $\ast$, char $\ast$$\ast$errptr)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{structleveldb__writebatch__t}{leveldb\+\_\+writebatch\+\_\+t}} $\ast$ \mbox{\hyperlink{c_8h_a0a128f8cc064d8113e40ac6c4fce8110}{leveldb\+\_\+writebatch\+\_\+create}} ()
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a0578ea3db6c5b78e3f6ccc5a8780b1bd}{leveldb\+\_\+writebatch\+\_\+destroy}} (\mbox{\hyperlink{structleveldb__writebatch__t}{leveldb\+\_\+writebatch\+\_\+t}} $\ast$)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a5f89bd5cbe255f91fa3cc75167fdd7b0}{leveldb\+\_\+writebatch\+\_\+clear}} (\mbox{\hyperlink{structleveldb__writebatch__t}{leveldb\+\_\+writebatch\+\_\+t}} $\ast$)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a52cecb4005236f3ff149a48c9a8f5827}{leveldb\+\_\+writebatch\+\_\+put}} (\mbox{\hyperlink{structleveldb__writebatch__t}{leveldb\+\_\+writebatch\+\_\+t}} $\ast$, const char $\ast$key, size\+\_\+t klen, const char $\ast$val, size\+\_\+t vlen)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a4184468e4d4dcd0c2760494757e1b033}{leveldb\+\_\+writebatch\+\_\+delete}} (\mbox{\hyperlink{structleveldb__writebatch__t}{leveldb\+\_\+writebatch\+\_\+t}} $\ast$, const char $\ast$key, size\+\_\+t klen)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a58dec4f155202bbbf931685fd06366a4}{leveldb\+\_\+writebatch\+\_\+iterate}} (const \mbox{\hyperlink{structleveldb__writebatch__t}{leveldb\+\_\+writebatch\+\_\+t}} $\ast$, void $\ast$\mbox{\hyperlink{version__set_8cc_a6aad002d0db5e5e85dc31927a5a6f503}{state}}, void($\ast$put)(void $\ast$, const char $\ast$k, size\+\_\+t klen, const char $\ast$v, size\+\_\+t vlen), void($\ast$deleted)(void $\ast$, const char $\ast$k, size\+\_\+t klen))
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a5a4b14650ffab65633093a14f2ac284e}{leveldb\+\_\+writebatch\+\_\+append}} (\mbox{\hyperlink{structleveldb__writebatch__t}{leveldb\+\_\+writebatch\+\_\+t}} $\ast$destination, const \mbox{\hyperlink{structleveldb__writebatch__t}{leveldb\+\_\+writebatch\+\_\+t}} $\ast$source)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$ \mbox{\hyperlink{c_8h_af0fd8bb803b717e2571f70ebda15186d}{leveldb\+\_\+options\+\_\+create}} ()
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a06d8c7a9693b7d25e2fece51521f85ff}{leveldb\+\_\+options\+\_\+destroy}} (\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_ae9bc81baa392a068a70d86b0908ac948}{leveldb\+\_\+options\+\_\+set\+\_\+comparator}} (\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$, \mbox{\hyperlink{structleveldb__comparator__t}{leveldb\+\_\+comparator\+\_\+t}} $\ast$)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a6d12623a08ec007a5194eaac77857965}{leveldb\+\_\+options\+\_\+set\+\_\+filter\+\_\+policy}} (\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$, \mbox{\hyperlink{structleveldb__filterpolicy__t}{leveldb\+\_\+filterpolicy\+\_\+t}} $\ast$)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a4270a22fd0dc147a26d292a37797d487}{leveldb\+\_\+options\+\_\+set\+\_\+create\+\_\+if\+\_\+missing}} (\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$, unsigned char)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a7efa72d5246d4f18ee34aaecaff4a6a2}{leveldb\+\_\+options\+\_\+set\+\_\+error\+\_\+if\+\_\+exists}} (\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$, unsigned char)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a2dda5285db22751a95a16ff7b0da97ef}{leveldb\+\_\+options\+\_\+set\+\_\+paranoid\+\_\+checks}} (\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$, unsigned char)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a79fddc610229c0ca8aa00a459d0a32f7}{leveldb\+\_\+options\+\_\+set\+\_\+env}} (\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$, \mbox{\hyperlink{structleveldb__env__t}{leveldb\+\_\+env\+\_\+t}} $\ast$)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_ae9eb61b79e2a907e218c7af4f2c8caaf}{leveldb\+\_\+options\+\_\+set\+\_\+info\+\_\+log}} (\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$, \mbox{\hyperlink{structleveldb__logger__t}{leveldb\+\_\+logger\+\_\+t}} $\ast$)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_ae0ef5421247b2a44706969ec0bc5dd49}{leveldb\+\_\+options\+\_\+set\+\_\+write\+\_\+buffer\+\_\+size}} (\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$, size\+\_\+t)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_adb77d086128a42ad5b127d1520d8b282}{leveldb\+\_\+options\+\_\+set\+\_\+max\+\_\+open\+\_\+files}} (\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$, int)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a75eb39d7c237a128948067e25362307a}{leveldb\+\_\+options\+\_\+set\+\_\+cache}} (\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$, \mbox{\hyperlink{structleveldb__cache__t}{leveldb\+\_\+cache\+\_\+t}} $\ast$)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a3b3c4dd894ae075d2d7dde8966210ae2}{leveldb\+\_\+options\+\_\+set\+\_\+block\+\_\+size}} (\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$, size\+\_\+t)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a73370fa4a8b765da0b089cf8b10edc5e}{leveldb\+\_\+options\+\_\+set\+\_\+block\+\_\+restart\+\_\+interval}} (\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$, int)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a3db56e2c768078d7ffbc3b384306b33c}{leveldb\+\_\+options\+\_\+set\+\_\+max\+\_\+file\+\_\+size}} (\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$, size\+\_\+t)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a8ccc2b1e558ce4cafc7ef3d5c2d1a455}{leveldb\+\_\+options\+\_\+set\+\_\+compression}} (\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$, int)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{structleveldb__comparator__t}{leveldb\+\_\+comparator\+\_\+t}} $\ast$ \mbox{\hyperlink{c_8h_a409507438fd3eaaef04b67b2c2fb5099}{leveldb\+\_\+comparator\+\_\+create}} (void $\ast$\mbox{\hyperlink{version__set_8cc_a6aad002d0db5e5e85dc31927a5a6f503}{state}}, void($\ast$destructor)(void $\ast$), int($\ast$compare)(void $\ast$, const char $\ast$a, size\+\_\+t alen, const char $\ast$b, size\+\_\+t blen), const char $\ast$($\ast$name)(void $\ast$))
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_ad4dddaee31b87cff397cbcf226e9e70e}{leveldb\+\_\+comparator\+\_\+destroy}} (\mbox{\hyperlink{structleveldb__comparator__t}{leveldb\+\_\+comparator\+\_\+t}} $\ast$)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{structleveldb__filterpolicy__t}{leveldb\+\_\+filterpolicy\+\_\+t}} $\ast$ \mbox{\hyperlink{c_8h_a43a2a0c81a6e1bec3a6f9c2be73be854}{leveldb\+\_\+filterpolicy\+\_\+create}} (void $\ast$\mbox{\hyperlink{version__set_8cc_a6aad002d0db5e5e85dc31927a5a6f503}{state}}, void($\ast$destructor)(void $\ast$), char $\ast$($\ast$create\+\_\+filter)(void $\ast$, const char $\ast$const $\ast$key\+\_\+array, const size\+\_\+t $\ast$key\+\_\+length\+\_\+array, int num\+\_\+keys, size\+\_\+t $\ast$filter\+\_\+length), unsigned char($\ast$key\+\_\+may\+\_\+match)(void $\ast$, const char $\ast$key, size\+\_\+t length, const char $\ast$filter, size\+\_\+t filter\+\_\+length), const char $\ast$($\ast$name)(void $\ast$))
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a43fbb69eade7fe2932b7e2ba0cfc3d38}{leveldb\+\_\+filterpolicy\+\_\+destroy}} (\mbox{\hyperlink{structleveldb__filterpolicy__t}{leveldb\+\_\+filterpolicy\+\_\+t}} $\ast$)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{structleveldb__filterpolicy__t}{leveldb\+\_\+filterpolicy\+\_\+t}} $\ast$ \mbox{\hyperlink{c_8h_a7bf2faef378ed108e828c76c228a0ded}{leveldb\+\_\+filterpolicy\+\_\+create\+\_\+bloom}} (int bits\+\_\+per\+\_\+key)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{structleveldb__readoptions__t}{leveldb\+\_\+readoptions\+\_\+t}} $\ast$ \mbox{\hyperlink{c_8h_a14e2610836d55605e7200edb632a3a9e}{leveldb\+\_\+readoptions\+\_\+create}} ()
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a45710465a3d4d468ad8e11941c651659}{leveldb\+\_\+readoptions\+\_\+destroy}} (\mbox{\hyperlink{structleveldb__readoptions__t}{leveldb\+\_\+readoptions\+\_\+t}} $\ast$)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a4c9a59c803178c8b9a9db4d101ffd756}{leveldb\+\_\+readoptions\+\_\+set\+\_\+verify\+\_\+checksums}} (\mbox{\hyperlink{structleveldb__readoptions__t}{leveldb\+\_\+readoptions\+\_\+t}} $\ast$, unsigned char)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_aa255fc25cbfe36761c28f695e134abb7}{leveldb\+\_\+readoptions\+\_\+set\+\_\+fill\+\_\+cache}} (\mbox{\hyperlink{structleveldb__readoptions__t}{leveldb\+\_\+readoptions\+\_\+t}} $\ast$, unsigned char)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a0d981c992a71be7df1b2800180d519e5}{leveldb\+\_\+readoptions\+\_\+set\+\_\+snapshot}} (\mbox{\hyperlink{structleveldb__readoptions__t}{leveldb\+\_\+readoptions\+\_\+t}} $\ast$, const \mbox{\hyperlink{structleveldb__snapshot__t}{leveldb\+\_\+snapshot\+\_\+t}} $\ast$)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{structleveldb__writeoptions__t}{leveldb\+\_\+writeoptions\+\_\+t}} $\ast$ \mbox{\hyperlink{c_8h_a1708080e1b4d6778d3b34433acdeb01b}{leveldb\+\_\+writeoptions\+\_\+create}} ()
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_ab7bdd09c352e86386f413d5bc1c3b2aa}{leveldb\+\_\+writeoptions\+\_\+destroy}} (\mbox{\hyperlink{structleveldb__writeoptions__t}{leveldb\+\_\+writeoptions\+\_\+t}} $\ast$)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_aef0b5c295dc3f2173be9e21a79518cf5}{leveldb\+\_\+writeoptions\+\_\+set\+\_\+sync}} (\mbox{\hyperlink{structleveldb__writeoptions__t}{leveldb\+\_\+writeoptions\+\_\+t}} $\ast$, unsigned char)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{structleveldb__cache__t}{leveldb\+\_\+cache\+\_\+t}} $\ast$ \mbox{\hyperlink{c_8h_a9c97a1933c0c97d9d4c5937b2191ef07}{leveldb\+\_\+cache\+\_\+create\+\_\+lru}} (size\+\_\+t capacity)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_ae6020ad11b5c99e786c1fc280d61bb71}{leveldb\+\_\+cache\+\_\+destroy}} (\mbox{\hyperlink{structleveldb__cache__t}{leveldb\+\_\+cache\+\_\+t}} $\ast$cache)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{structleveldb__env__t}{leveldb\+\_\+env\+\_\+t}} $\ast$ \mbox{\hyperlink{c_8h_a289673fa4b706644e1d7aa10d7024999}{leveldb\+\_\+create\+\_\+default\+\_\+env}} ()
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a04f116a479b6bc61bd4d246ce8a05097}{leveldb\+\_\+env\+\_\+destroy}} (\mbox{\hyperlink{structleveldb__env__t}{leveldb\+\_\+env\+\_\+t}} $\ast$)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} char $\ast$ \mbox{\hyperlink{c_8h_aca5ccc5e933fb557a0a39a020a64f138}{leveldb\+\_\+env\+\_\+get\+\_\+test\+\_\+directory}} (\mbox{\hyperlink{structleveldb__env__t}{leveldb\+\_\+env\+\_\+t}} $\ast$)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void \mbox{\hyperlink{c_8h_a352c4866920a61546d5080a0a8ebb76e}{leveldb\+\_\+free}} (void $\ast$ptr)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} int \mbox{\hyperlink{c_8h_a46fac866278742814a547c6ac0f91934}{leveldb\+\_\+major\+\_\+version}} ()
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} int \mbox{\hyperlink{c_8h_a4da6084d4f4697774dbea9b3b4f62515}{leveldb\+\_\+minor\+\_\+version}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{c_8h_ac73aa1ecc1d8a50707b4d9f7cd03f95f}\label{c_8h_ac73aa1ecc1d8a50707b4d9f7cd03f95f}} 
+\index{c.h@{c.h}!leveldb\_cache\_t@{leveldb\_cache\_t}}
+\index{leveldb\_cache\_t@{leveldb\_cache\_t}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_cache\_t}{leveldb\_cache\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structleveldb__cache__t}{leveldb\+\_\+cache\+\_\+t}} \mbox{\hyperlink{structleveldb__cache__t}{leveldb\+\_\+cache\+\_\+t}}}
+
+\mbox{\Hypertarget{c_8h_ac9735683d97693fc5b36e3b61aaac736}\label{c_8h_ac9735683d97693fc5b36e3b61aaac736}} 
+\index{c.h@{c.h}!leveldb\_comparator\_t@{leveldb\_comparator\_t}}
+\index{leveldb\_comparator\_t@{leveldb\_comparator\_t}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_comparator\_t}{leveldb\_comparator\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structleveldb__comparator__t}{leveldb\+\_\+comparator\+\_\+t}} \mbox{\hyperlink{structleveldb__comparator__t}{leveldb\+\_\+comparator\+\_\+t}}}
+
+\mbox{\Hypertarget{c_8h_acb2785116fcacc02597f4b3f3dc4d1b7}\label{c_8h_acb2785116fcacc02597f4b3f3dc4d1b7}} 
+\index{c.h@{c.h}!leveldb\_env\_t@{leveldb\_env\_t}}
+\index{leveldb\_env\_t@{leveldb\_env\_t}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_env\_t}{leveldb\_env\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structleveldb__env__t}{leveldb\+\_\+env\+\_\+t}} \mbox{\hyperlink{structleveldb__env__t}{leveldb\+\_\+env\+\_\+t}}}
+
+\mbox{\Hypertarget{c_8h_af33c8311c6cee88afb413b72eeb60725}\label{c_8h_af33c8311c6cee88afb413b72eeb60725}} 
+\index{c.h@{c.h}!leveldb\_filelock\_t@{leveldb\_filelock\_t}}
+\index{leveldb\_filelock\_t@{leveldb\_filelock\_t}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_filelock\_t}{leveldb\_filelock\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structleveldb__filelock__t}{leveldb\+\_\+filelock\+\_\+t}} \mbox{\hyperlink{structleveldb__filelock__t}{leveldb\+\_\+filelock\+\_\+t}}}
+
+\mbox{\Hypertarget{c_8h_a4619326a9cac2ba474081bba243961b5}\label{c_8h_a4619326a9cac2ba474081bba243961b5}} 
+\index{c.h@{c.h}!leveldb\_filterpolicy\_t@{leveldb\_filterpolicy\_t}}
+\index{leveldb\_filterpolicy\_t@{leveldb\_filterpolicy\_t}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_filterpolicy\_t}{leveldb\_filterpolicy\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structleveldb__filterpolicy__t}{leveldb\+\_\+filterpolicy\+\_\+t}} \mbox{\hyperlink{structleveldb__filterpolicy__t}{leveldb\+\_\+filterpolicy\+\_\+t}}}
+
+\mbox{\Hypertarget{c_8h_aebf49c6a138b179689251fbf9fba41cd}\label{c_8h_aebf49c6a138b179689251fbf9fba41cd}} 
+\index{c.h@{c.h}!leveldb\_iterator\_t@{leveldb\_iterator\_t}}
+\index{leveldb\_iterator\_t@{leveldb\_iterator\_t}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_iterator\_t}{leveldb\_iterator\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} \mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}}}
+
+\mbox{\Hypertarget{c_8h_ac123f38ad65a300fa63d36c6526ccd41}\label{c_8h_ac123f38ad65a300fa63d36c6526ccd41}} 
+\index{c.h@{c.h}!leveldb\_logger\_t@{leveldb\_logger\_t}}
+\index{leveldb\_logger\_t@{leveldb\_logger\_t}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_logger\_t}{leveldb\_logger\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structleveldb__logger__t}{leveldb\+\_\+logger\+\_\+t}} \mbox{\hyperlink{structleveldb__logger__t}{leveldb\+\_\+logger\+\_\+t}}}
+
+\mbox{\Hypertarget{c_8h_a83bbdb1b9c03ef5b608626083b6d4a8a}\label{c_8h_a83bbdb1b9c03ef5b608626083b6d4a8a}} 
+\index{c.h@{c.h}!leveldb\_options\_t@{leveldb\_options\_t}}
+\index{leveldb\_options\_t@{leveldb\_options\_t}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_options\_t}{leveldb\_options\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} \mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}}}
+
+\mbox{\Hypertarget{c_8h_af9c808d2a14c978a1b907de90485702b}\label{c_8h_af9c808d2a14c978a1b907de90485702b}} 
+\index{c.h@{c.h}!leveldb\_randomfile\_t@{leveldb\_randomfile\_t}}
+\index{leveldb\_randomfile\_t@{leveldb\_randomfile\_t}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_randomfile\_t}{leveldb\_randomfile\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structleveldb__randomfile__t}{leveldb\+\_\+randomfile\+\_\+t}} \mbox{\hyperlink{structleveldb__randomfile__t}{leveldb\+\_\+randomfile\+\_\+t}}}
+
+\mbox{\Hypertarget{c_8h_a4ff993fcf94872656048929a8c829193}\label{c_8h_a4ff993fcf94872656048929a8c829193}} 
+\index{c.h@{c.h}!leveldb\_readoptions\_t@{leveldb\_readoptions\_t}}
+\index{leveldb\_readoptions\_t@{leveldb\_readoptions\_t}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_readoptions\_t}{leveldb\_readoptions\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structleveldb__readoptions__t}{leveldb\+\_\+readoptions\+\_\+t}} \mbox{\hyperlink{structleveldb__readoptions__t}{leveldb\+\_\+readoptions\+\_\+t}}}
+
+\mbox{\Hypertarget{c_8h_a5b253ebb76432befabcfa64b99dcb1c7}\label{c_8h_a5b253ebb76432befabcfa64b99dcb1c7}} 
+\index{c.h@{c.h}!leveldb\_seqfile\_t@{leveldb\_seqfile\_t}}
+\index{leveldb\_seqfile\_t@{leveldb\_seqfile\_t}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_seqfile\_t}{leveldb\_seqfile\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structleveldb__seqfile__t}{leveldb\+\_\+seqfile\+\_\+t}} \mbox{\hyperlink{structleveldb__seqfile__t}{leveldb\+\_\+seqfile\+\_\+t}}}
+
+\mbox{\Hypertarget{c_8h_ab313e8ef3ccfd88f8c0f2bbfd3678b7d}\label{c_8h_ab313e8ef3ccfd88f8c0f2bbfd3678b7d}} 
+\index{c.h@{c.h}!leveldb\_snapshot\_t@{leveldb\_snapshot\_t}}
+\index{leveldb\_snapshot\_t@{leveldb\_snapshot\_t}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_snapshot\_t}{leveldb\_snapshot\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structleveldb__snapshot__t}{leveldb\+\_\+snapshot\+\_\+t}} \mbox{\hyperlink{structleveldb__snapshot__t}{leveldb\+\_\+snapshot\+\_\+t}}}
+
+\mbox{\Hypertarget{c_8h_a636e4c8428a435ac0e40175843ee2f2d}\label{c_8h_a636e4c8428a435ac0e40175843ee2f2d}} 
+\index{c.h@{c.h}!leveldb\_t@{leveldb\_t}}
+\index{leveldb\_t@{leveldb\_t}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_t}{leveldb\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} \mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}}}
+
+\mbox{\Hypertarget{c_8h_afe2d3c06c7c36d14e2e51e2573152432}\label{c_8h_afe2d3c06c7c36d14e2e51e2573152432}} 
+\index{c.h@{c.h}!leveldb\_writablefile\_t@{leveldb\_writablefile\_t}}
+\index{leveldb\_writablefile\_t@{leveldb\_writablefile\_t}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_writablefile\_t}{leveldb\_writablefile\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structleveldb__writablefile__t}{leveldb\+\_\+writablefile\+\_\+t}} \mbox{\hyperlink{structleveldb__writablefile__t}{leveldb\+\_\+writablefile\+\_\+t}}}
+
+\mbox{\Hypertarget{c_8h_a1dc1f4835950d84dfc6c93f4acb87650}\label{c_8h_a1dc1f4835950d84dfc6c93f4acb87650}} 
+\index{c.h@{c.h}!leveldb\_writebatch\_t@{leveldb\_writebatch\_t}}
+\index{leveldb\_writebatch\_t@{leveldb\_writebatch\_t}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_writebatch\_t}{leveldb\_writebatch\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structleveldb__writebatch__t}{leveldb\+\_\+writebatch\+\_\+t}} \mbox{\hyperlink{structleveldb__writebatch__t}{leveldb\+\_\+writebatch\+\_\+t}}}
+
+\mbox{\Hypertarget{c_8h_a8ec21871766c9e631de966d139641f85}\label{c_8h_a8ec21871766c9e631de966d139641f85}} 
+\index{c.h@{c.h}!leveldb\_writeoptions\_t@{leveldb\_writeoptions\_t}}
+\index{leveldb\_writeoptions\_t@{leveldb\_writeoptions\_t}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_writeoptions\_t}{leveldb\_writeoptions\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structleveldb__writeoptions__t}{leveldb\+\_\+writeoptions\+\_\+t}} \mbox{\hyperlink{structleveldb__writeoptions__t}{leveldb\+\_\+writeoptions\+\_\+t}}}
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{c_8h_a99fb83031ce9923c84392b4e92f956b5}\label{c_8h_a99fb83031ce9923c84392b4e92f956b5}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{leveldb\_no\_compression@{leveldb\_no\_compression}!c.h@{c.h}}\index{c.h@{c.h}!leveldb\_no\_compression@{leveldb\_no\_compression}}}\mbox{\Hypertarget{c_8h_a99fb83031ce9923c84392b4e92f956b5acfeb0c8224005d87b097de4b65f376b9}\label{c_8h_a99fb83031ce9923c84392b4e92f956b5acfeb0c8224005d87b097de4b65f376b9}} 
+leveldb\+\_\+no\+\_\+compression&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{leveldb\_snappy\_compression@{leveldb\_snappy\_compression}!c.h@{c.h}}\index{c.h@{c.h}!leveldb\_snappy\_compression@{leveldb\_snappy\_compression}}}\mbox{\Hypertarget{c_8h_a99fb83031ce9923c84392b4e92f956b5ae4ff77513d2ccd2aa8ede4e2227eed7d}\label{c_8h_a99fb83031ce9923c84392b4e92f956b5ae4ff77513d2ccd2aa8ede4e2227eed7d}} 
+leveldb\+\_\+snappy\+\_\+compression&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{c_8h_a18a862aa621204e54bcb312dad0bf1db}\label{c_8h_a18a862aa621204e54bcb312dad0bf1db}} 
+\index{c.h@{c.h}!leveldb\_approximate\_sizes@{leveldb\_approximate\_sizes}}
+\index{leveldb\_approximate\_sizes@{leveldb\_approximate\_sizes}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_approximate\_sizes()}{leveldb\_approximate\_sizes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+approximate\+\_\+sizes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$}]{db,  }\item[{int}]{num\+\_\+ranges,  }\item[{const char $\ast$const $\ast$}]{range\+\_\+start\+\_\+key,  }\item[{const size\+\_\+t $\ast$}]{range\+\_\+start\+\_\+key\+\_\+len,  }\item[{const char $\ast$const $\ast$}]{range\+\_\+limit\+\_\+key,  }\item[{const size\+\_\+t $\ast$}]{range\+\_\+limit\+\_\+key\+\_\+len,  }\item[{uint64\+\_\+t $\ast$}]{sizes }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{c_8h_a18a862aa621204e54bcb312dad0bf1db_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_a9c97a1933c0c97d9d4c5937b2191ef07}\label{c_8h_a9c97a1933c0c97d9d4c5937b2191ef07}} 
+\index{c.h@{c.h}!leveldb\_cache\_create\_lru@{leveldb\_cache\_create\_lru}}
+\index{leveldb\_cache\_create\_lru@{leveldb\_cache\_create\_lru}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_cache\_create\_lru()}{leveldb\_cache\_create\_lru()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{structleveldb__cache__t}{leveldb\+\_\+cache\+\_\+t}}$\ast$ leveldb\+\_\+cache\+\_\+create\+\_\+lru (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{capacity }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{c_8h_a9c97a1933c0c97d9d4c5937b2191ef07_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_ae6020ad11b5c99e786c1fc280d61bb71}\label{c_8h_ae6020ad11b5c99e786c1fc280d61bb71}} 
+\index{c.h@{c.h}!leveldb\_cache\_destroy@{leveldb\_cache\_destroy}}
+\index{leveldb\_cache\_destroy@{leveldb\_cache\_destroy}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_cache\_destroy()}{leveldb\_cache\_destroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+cache\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__cache__t}{leveldb\+\_\+cache\+\_\+t}} $\ast$}]{cache }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a11497fdd9495941ffa9afefd66eecf62}\label{c_8h_a11497fdd9495941ffa9afefd66eecf62}} 
+\index{c.h@{c.h}!leveldb\_close@{leveldb\_close}}
+\index{leveldb\_close@{leveldb\_close}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_close()}{leveldb\_close()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+close (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$}]{db }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_ae56d476a6e78521842e30f40c32ebeed}\label{c_8h_ae56d476a6e78521842e30f40c32ebeed}} 
+\index{c.h@{c.h}!leveldb\_compact\_range@{leveldb\_compact\_range}}
+\index{leveldb\_compact\_range@{leveldb\_compact\_range}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_compact\_range()}{leveldb\_compact\_range()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+compact\+\_\+range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$}]{db,  }\item[{const char $\ast$}]{start\+\_\+key,  }\item[{size\+\_\+t}]{start\+\_\+key\+\_\+len,  }\item[{const char $\ast$}]{limit\+\_\+key,  }\item[{size\+\_\+t}]{limit\+\_\+key\+\_\+len }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{c_8h_ae56d476a6e78521842e30f40c32ebeed_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_a409507438fd3eaaef04b67b2c2fb5099}\label{c_8h_a409507438fd3eaaef04b67b2c2fb5099}} 
+\index{c.h@{c.h}!leveldb\_comparator\_create@{leveldb\_comparator\_create}}
+\index{leveldb\_comparator\_create@{leveldb\_comparator\_create}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_comparator\_create()}{leveldb\_comparator\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{structleveldb__comparator__t}{leveldb\+\_\+comparator\+\_\+t}}$\ast$ leveldb\+\_\+comparator\+\_\+create (\begin{DoxyParamCaption}\item[{void $\ast$}]{state,  }\item[{void($\ast$)(void $\ast$)}]{destructor,  }\item[{int($\ast$)(void $\ast$, const char $\ast$a, size\+\_\+t alen, const char $\ast$b, size\+\_\+t blen)}]{compare,  }\item[{const char $\ast$($\ast$)(void $\ast$)}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_ad4dddaee31b87cff397cbcf226e9e70e}\label{c_8h_ad4dddaee31b87cff397cbcf226e9e70e}} 
+\index{c.h@{c.h}!leveldb\_comparator\_destroy@{leveldb\_comparator\_destroy}}
+\index{leveldb\_comparator\_destroy@{leveldb\_comparator\_destroy}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_comparator\_destroy()}{leveldb\_comparator\_destroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+comparator\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__comparator__t}{leveldb\+\_\+comparator\+\_\+t}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a289673fa4b706644e1d7aa10d7024999}\label{c_8h_a289673fa4b706644e1d7aa10d7024999}} 
+\index{c.h@{c.h}!leveldb\_create\_default\_env@{leveldb\_create\_default\_env}}
+\index{leveldb\_create\_default\_env@{leveldb\_create\_default\_env}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_create\_default\_env()}{leveldb\_create\_default\_env()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{structleveldb__env__t}{leveldb\+\_\+env\+\_\+t}}$\ast$ leveldb\+\_\+create\+\_\+default\+\_\+env (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_addfabd9a329e9c405c10a646ad357557}\label{c_8h_addfabd9a329e9c405c10a646ad357557}} 
+\index{c.h@{c.h}!leveldb\_create\_iterator@{leveldb\_create\_iterator}}
+\index{leveldb\_create\_iterator@{leveldb\_create\_iterator}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_create\_iterator()}{leveldb\_create\_iterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}}$\ast$ leveldb\+\_\+create\+\_\+iterator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$}]{db,  }\item[{const \mbox{\hyperlink{structleveldb__readoptions__t}{leveldb\+\_\+readoptions\+\_\+t}} $\ast$}]{options }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{c_8h_addfabd9a329e9c405c10a646ad357557_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_ac397715da410cdbecebaec614e370575}\label{c_8h_ac397715da410cdbecebaec614e370575}} 
+\index{c.h@{c.h}!leveldb\_create\_snapshot@{leveldb\_create\_snapshot}}
+\index{leveldb\_create\_snapshot@{leveldb\_create\_snapshot}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_create\_snapshot()}{leveldb\_create\_snapshot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} const \mbox{\hyperlink{structleveldb__snapshot__t}{leveldb\+\_\+snapshot\+\_\+t}}$\ast$ leveldb\+\_\+create\+\_\+snapshot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$}]{db }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{c_8h_ac397715da410cdbecebaec614e370575_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_aa102d72a07c9c9cf78e271569ee7b11b}\label{c_8h_aa102d72a07c9c9cf78e271569ee7b11b}} 
+\index{c.h@{c.h}!leveldb\_delete@{leveldb\_delete}}
+\index{leveldb\_delete@{leveldb\_delete}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_delete()}{leveldb\_delete()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$}]{db,  }\item[{const \mbox{\hyperlink{structleveldb__writeoptions__t}{leveldb\+\_\+writeoptions\+\_\+t}} $\ast$}]{options,  }\item[{const char $\ast$}]{key,  }\item[{size\+\_\+t}]{keylen,  }\item[{char $\ast$$\ast$}]{errptr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a973ca5328db0ec890b6d1402490c3d6e}\label{c_8h_a973ca5328db0ec890b6d1402490c3d6e}} 
+\index{c.h@{c.h}!leveldb\_destroy\_db@{leveldb\_destroy\_db}}
+\index{leveldb\_destroy\_db@{leveldb\_destroy\_db}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_destroy\_db()}{leveldb\_destroy\_db()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+destroy\+\_\+db (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$}]{options,  }\item[{const char $\ast$}]{name,  }\item[{char $\ast$$\ast$}]{errptr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a04f116a479b6bc61bd4d246ce8a05097}\label{c_8h_a04f116a479b6bc61bd4d246ce8a05097}} 
+\index{c.h@{c.h}!leveldb\_env\_destroy@{leveldb\_env\_destroy}}
+\index{leveldb\_env\_destroy@{leveldb\_env\_destroy}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_env\_destroy()}{leveldb\_env\_destroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+env\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__env__t}{leveldb\+\_\+env\+\_\+t}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_aca5ccc5e933fb557a0a39a020a64f138}\label{c_8h_aca5ccc5e933fb557a0a39a020a64f138}} 
+\index{c.h@{c.h}!leveldb\_env\_get\_test\_directory@{leveldb\_env\_get\_test\_directory}}
+\index{leveldb\_env\_get\_test\_directory@{leveldb\_env\_get\_test\_directory}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_env\_get\_test\_directory()}{leveldb\_env\_get\_test\_directory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} char$\ast$ leveldb\+\_\+env\+\_\+get\+\_\+test\+\_\+directory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__env__t}{leveldb\+\_\+env\+\_\+t}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{c_8h_aca5ccc5e933fb557a0a39a020a64f138_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_a43a2a0c81a6e1bec3a6f9c2be73be854}\label{c_8h_a43a2a0c81a6e1bec3a6f9c2be73be854}} 
+\index{c.h@{c.h}!leveldb\_filterpolicy\_create@{leveldb\_filterpolicy\_create}}
+\index{leveldb\_filterpolicy\_create@{leveldb\_filterpolicy\_create}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_filterpolicy\_create()}{leveldb\_filterpolicy\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{structleveldb__filterpolicy__t}{leveldb\+\_\+filterpolicy\+\_\+t}}$\ast$ leveldb\+\_\+filterpolicy\+\_\+create (\begin{DoxyParamCaption}\item[{void $\ast$}]{state,  }\item[{void($\ast$)(void $\ast$)}]{destructor,  }\item[{char $\ast$($\ast$)(void $\ast$, const char $\ast$const $\ast$key\+\_\+array, const size\+\_\+t $\ast$key\+\_\+length\+\_\+array, int num\+\_\+keys, size\+\_\+t $\ast$filter\+\_\+length)}]{create\+\_\+filter,  }\item[{unsigned char($\ast$)(void $\ast$, const char $\ast$key, size\+\_\+t length, const char $\ast$filter, size\+\_\+t filter\+\_\+length)}]{key\+\_\+may\+\_\+match,  }\item[{const char $\ast$($\ast$)(void $\ast$)}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a7bf2faef378ed108e828c76c228a0ded}\label{c_8h_a7bf2faef378ed108e828c76c228a0ded}} 
+\index{c.h@{c.h}!leveldb\_filterpolicy\_create\_bloom@{leveldb\_filterpolicy\_create\_bloom}}
+\index{leveldb\_filterpolicy\_create\_bloom@{leveldb\_filterpolicy\_create\_bloom}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_filterpolicy\_create\_bloom()}{leveldb\_filterpolicy\_create\_bloom()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{structleveldb__filterpolicy__t}{leveldb\+\_\+filterpolicy\+\_\+t}}$\ast$ leveldb\+\_\+filterpolicy\+\_\+create\+\_\+bloom (\begin{DoxyParamCaption}\item[{int}]{bits\+\_\+per\+\_\+key }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{c_8h_a7bf2faef378ed108e828c76c228a0ded_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_a43fbb69eade7fe2932b7e2ba0cfc3d38}\label{c_8h_a43fbb69eade7fe2932b7e2ba0cfc3d38}} 
+\index{c.h@{c.h}!leveldb\_filterpolicy\_destroy@{leveldb\_filterpolicy\_destroy}}
+\index{leveldb\_filterpolicy\_destroy@{leveldb\_filterpolicy\_destroy}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_filterpolicy\_destroy()}{leveldb\_filterpolicy\_destroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+filterpolicy\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__filterpolicy__t}{leveldb\+\_\+filterpolicy\+\_\+t}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a352c4866920a61546d5080a0a8ebb76e}\label{c_8h_a352c4866920a61546d5080a0a8ebb76e}} 
+\index{c.h@{c.h}!leveldb\_free@{leveldb\_free}}
+\index{leveldb\_free@{leveldb\_free}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_free()}{leveldb\_free()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+free (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_aba1e6a97cb42dffd9dddd346b257ff7e}\label{c_8h_aba1e6a97cb42dffd9dddd346b257ff7e}} 
+\index{c.h@{c.h}!leveldb\_get@{leveldb\_get}}
+\index{leveldb\_get@{leveldb\_get}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_get()}{leveldb\_get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} char$\ast$ leveldb\+\_\+get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$}]{db,  }\item[{const \mbox{\hyperlink{structleveldb__readoptions__t}{leveldb\+\_\+readoptions\+\_\+t}} $\ast$}]{options,  }\item[{const char $\ast$}]{key,  }\item[{size\+\_\+t}]{keylen,  }\item[{size\+\_\+t $\ast$}]{vallen,  }\item[{char $\ast$$\ast$}]{errptr }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{c_8h_aba1e6a97cb42dffd9dddd346b257ff7e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_aa970cff5e5b5138522a2b86616dba952}\label{c_8h_aa970cff5e5b5138522a2b86616dba952}} 
+\index{c.h@{c.h}!leveldb\_iter\_destroy@{leveldb\_iter\_destroy}}
+\index{leveldb\_iter\_destroy@{leveldb\_iter\_destroy}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_iter\_destroy()}{leveldb\_iter\_destroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+iter\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a76d5615fd424a37ef3fddf68cd6a86a3}\label{c_8h_a76d5615fd424a37ef3fddf68cd6a86a3}} 
+\index{c.h@{c.h}!leveldb\_iter\_get\_error@{leveldb\_iter\_get\_error}}
+\index{leveldb\_iter\_get\_error@{leveldb\_iter\_get\_error}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_iter\_get\_error()}{leveldb\_iter\_get\_error()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+iter\+\_\+get\+\_\+error (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} $\ast$}]{,  }\item[{char $\ast$$\ast$}]{errptr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a1c252452578062ba8042d742285f98a4}\label{c_8h_a1c252452578062ba8042d742285f98a4}} 
+\index{c.h@{c.h}!leveldb\_iter\_key@{leveldb\_iter\_key}}
+\index{leveldb\_iter\_key@{leveldb\_iter\_key}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_iter\_key()}{leveldb\_iter\_key()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} const char$\ast$ leveldb\+\_\+iter\+\_\+key (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} $\ast$}]{,  }\item[{size\+\_\+t $\ast$}]{klen }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{c_8h_a1c252452578062ba8042d742285f98a4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_ab723c10d38eca0c6ba4ec0801f2c337f}\label{c_8h_ab723c10d38eca0c6ba4ec0801f2c337f}} 
+\index{c.h@{c.h}!leveldb\_iter\_next@{leveldb\_iter\_next}}
+\index{leveldb\_iter\_next@{leveldb\_iter\_next}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_iter\_next()}{leveldb\_iter\_next()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+iter\+\_\+next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{c_8h_ab723c10d38eca0c6ba4ec0801f2c337f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_a95532aba50f8361aeec51c72dc9071ba}\label{c_8h_a95532aba50f8361aeec51c72dc9071ba}} 
+\index{c.h@{c.h}!leveldb\_iter\_prev@{leveldb\_iter\_prev}}
+\index{leveldb\_iter\_prev@{leveldb\_iter\_prev}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_iter\_prev()}{leveldb\_iter\_prev()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+iter\+\_\+prev (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{c_8h_a95532aba50f8361aeec51c72dc9071ba_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_ad3aa345ef18afdda24dc267af2e40fff}\label{c_8h_ad3aa345ef18afdda24dc267af2e40fff}} 
+\index{c.h@{c.h}!leveldb\_iter\_seek@{leveldb\_iter\_seek}}
+\index{leveldb\_iter\_seek@{leveldb\_iter\_seek}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_iter\_seek()}{leveldb\_iter\_seek()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+iter\+\_\+seek (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} $\ast$}]{,  }\item[{const char $\ast$}]{k,  }\item[{size\+\_\+t}]{klen }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{c_8h_ad3aa345ef18afdda24dc267af2e40fff_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_a0d863b656eb589dc91b537d7aeb79cca}\label{c_8h_a0d863b656eb589dc91b537d7aeb79cca}} 
+\index{c.h@{c.h}!leveldb\_iter\_seek\_to\_first@{leveldb\_iter\_seek\_to\_first}}
+\index{leveldb\_iter\_seek\_to\_first@{leveldb\_iter\_seek\_to\_first}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_iter\_seek\_to\_first()}{leveldb\_iter\_seek\_to\_first()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+iter\+\_\+seek\+\_\+to\+\_\+first (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{c_8h_a0d863b656eb589dc91b537d7aeb79cca_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_a807ddb259d885f90cd5934aca72a4941}\label{c_8h_a807ddb259d885f90cd5934aca72a4941}} 
+\index{c.h@{c.h}!leveldb\_iter\_seek\_to\_last@{leveldb\_iter\_seek\_to\_last}}
+\index{leveldb\_iter\_seek\_to\_last@{leveldb\_iter\_seek\_to\_last}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_iter\_seek\_to\_last()}{leveldb\_iter\_seek\_to\_last()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+iter\+\_\+seek\+\_\+to\+\_\+last (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{c_8h_a807ddb259d885f90cd5934aca72a4941_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_abc5c91563b611f07ba6eee60a42a3161}\label{c_8h_abc5c91563b611f07ba6eee60a42a3161}} 
+\index{c.h@{c.h}!leveldb\_iter\_valid@{leveldb\_iter\_valid}}
+\index{leveldb\_iter\_valid@{leveldb\_iter\_valid}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_iter\_valid()}{leveldb\_iter\_valid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} unsigned char leveldb\+\_\+iter\+\_\+valid (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{c_8h_abc5c91563b611f07ba6eee60a42a3161_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_a3ee13d2bb051f99c4b9d078007575de4}\label{c_8h_a3ee13d2bb051f99c4b9d078007575de4}} 
+\index{c.h@{c.h}!leveldb\_iter\_value@{leveldb\_iter\_value}}
+\index{leveldb\_iter\_value@{leveldb\_iter\_value}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_iter\_value()}{leveldb\_iter\_value()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} const char$\ast$ leveldb\+\_\+iter\+\_\+value (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb__iterator__t}{leveldb\+\_\+iterator\+\_\+t}} $\ast$}]{,  }\item[{size\+\_\+t $\ast$}]{vlen }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{c_8h_a3ee13d2bb051f99c4b9d078007575de4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_a46fac866278742814a547c6ac0f91934}\label{c_8h_a46fac866278742814a547c6ac0f91934}} 
+\index{c.h@{c.h}!leveldb\_major\_version@{leveldb\_major\_version}}
+\index{leveldb\_major\_version@{leveldb\_major\_version}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_major\_version()}{leveldb\_major\_version()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} int leveldb\+\_\+major\+\_\+version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a4da6084d4f4697774dbea9b3b4f62515}\label{c_8h_a4da6084d4f4697774dbea9b3b4f62515}} 
+\index{c.h@{c.h}!leveldb\_minor\_version@{leveldb\_minor\_version}}
+\index{leveldb\_minor\_version@{leveldb\_minor\_version}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_minor\_version()}{leveldb\_minor\_version()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} int leveldb\+\_\+minor\+\_\+version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a96bfded0a9c5744def04051c765bb55d}\label{c_8h_a96bfded0a9c5744def04051c765bb55d}} 
+\index{c.h@{c.h}!leveldb\_open@{leveldb\_open}}
+\index{leveldb\_open@{leveldb\_open}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_open()}{leveldb\_open()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}}$\ast$ leveldb\+\_\+open (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$}]{options,  }\item[{const char $\ast$}]{name,  }\item[{char $\ast$$\ast$}]{errptr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_af0fd8bb803b717e2571f70ebda15186d}\label{c_8h_af0fd8bb803b717e2571f70ebda15186d}} 
+\index{c.h@{c.h}!leveldb\_options\_create@{leveldb\_options\_create}}
+\index{leveldb\_options\_create@{leveldb\_options\_create}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_options\_create()}{leveldb\_options\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}}$\ast$ leveldb\+\_\+options\+\_\+create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a06d8c7a9693b7d25e2fece51521f85ff}\label{c_8h_a06d8c7a9693b7d25e2fece51521f85ff}} 
+\index{c.h@{c.h}!leveldb\_options\_destroy@{leveldb\_options\_destroy}}
+\index{leveldb\_options\_destroy@{leveldb\_options\_destroy}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_options\_destroy()}{leveldb\_options\_destroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+options\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a73370fa4a8b765da0b089cf8b10edc5e}\label{c_8h_a73370fa4a8b765da0b089cf8b10edc5e}} 
+\index{c.h@{c.h}!leveldb\_options\_set\_block\_restart\_interval@{leveldb\_options\_set\_block\_restart\_interval}}
+\index{leveldb\_options\_set\_block\_restart\_interval@{leveldb\_options\_set\_block\_restart\_interval}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_options\_set\_block\_restart\_interval()}{leveldb\_options\_set\_block\_restart\_interval()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+options\+\_\+set\+\_\+block\+\_\+restart\+\_\+interval (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a3b3c4dd894ae075d2d7dde8966210ae2}\label{c_8h_a3b3c4dd894ae075d2d7dde8966210ae2}} 
+\index{c.h@{c.h}!leveldb\_options\_set\_block\_size@{leveldb\_options\_set\_block\_size}}
+\index{leveldb\_options\_set\_block\_size@{leveldb\_options\_set\_block\_size}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_options\_set\_block\_size()}{leveldb\_options\_set\_block\_size()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+options\+\_\+set\+\_\+block\+\_\+size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$}]{,  }\item[{size\+\_\+t}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a75eb39d7c237a128948067e25362307a}\label{c_8h_a75eb39d7c237a128948067e25362307a}} 
+\index{c.h@{c.h}!leveldb\_options\_set\_cache@{leveldb\_options\_set\_cache}}
+\index{leveldb\_options\_set\_cache@{leveldb\_options\_set\_cache}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_options\_set\_cache()}{leveldb\_options\_set\_cache()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+options\+\_\+set\+\_\+cache (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$}]{,  }\item[{\mbox{\hyperlink{structleveldb__cache__t}{leveldb\+\_\+cache\+\_\+t}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_ae9bc81baa392a068a70d86b0908ac948}\label{c_8h_ae9bc81baa392a068a70d86b0908ac948}} 
+\index{c.h@{c.h}!leveldb\_options\_set\_comparator@{leveldb\_options\_set\_comparator}}
+\index{leveldb\_options\_set\_comparator@{leveldb\_options\_set\_comparator}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_options\_set\_comparator()}{leveldb\_options\_set\_comparator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+options\+\_\+set\+\_\+comparator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$}]{,  }\item[{\mbox{\hyperlink{structleveldb__comparator__t}{leveldb\+\_\+comparator\+\_\+t}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a8ccc2b1e558ce4cafc7ef3d5c2d1a455}\label{c_8h_a8ccc2b1e558ce4cafc7ef3d5c2d1a455}} 
+\index{c.h@{c.h}!leveldb\_options\_set\_compression@{leveldb\_options\_set\_compression}}
+\index{leveldb\_options\_set\_compression@{leveldb\_options\_set\_compression}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_options\_set\_compression()}{leveldb\_options\_set\_compression()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+options\+\_\+set\+\_\+compression (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a4270a22fd0dc147a26d292a37797d487}\label{c_8h_a4270a22fd0dc147a26d292a37797d487}} 
+\index{c.h@{c.h}!leveldb\_options\_set\_create\_if\_missing@{leveldb\_options\_set\_create\_if\_missing}}
+\index{leveldb\_options\_set\_create\_if\_missing@{leveldb\_options\_set\_create\_if\_missing}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_options\_set\_create\_if\_missing()}{leveldb\_options\_set\_create\_if\_missing()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+options\+\_\+set\+\_\+create\+\_\+if\+\_\+missing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$}]{,  }\item[{unsigned char}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a79fddc610229c0ca8aa00a459d0a32f7}\label{c_8h_a79fddc610229c0ca8aa00a459d0a32f7}} 
+\index{c.h@{c.h}!leveldb\_options\_set\_env@{leveldb\_options\_set\_env}}
+\index{leveldb\_options\_set\_env@{leveldb\_options\_set\_env}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_options\_set\_env()}{leveldb\_options\_set\_env()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+options\+\_\+set\+\_\+env (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$}]{,  }\item[{\mbox{\hyperlink{structleveldb__env__t}{leveldb\+\_\+env\+\_\+t}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a7efa72d5246d4f18ee34aaecaff4a6a2}\label{c_8h_a7efa72d5246d4f18ee34aaecaff4a6a2}} 
+\index{c.h@{c.h}!leveldb\_options\_set\_error\_if\_exists@{leveldb\_options\_set\_error\_if\_exists}}
+\index{leveldb\_options\_set\_error\_if\_exists@{leveldb\_options\_set\_error\_if\_exists}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_options\_set\_error\_if\_exists()}{leveldb\_options\_set\_error\_if\_exists()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+options\+\_\+set\+\_\+error\+\_\+if\+\_\+exists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$}]{,  }\item[{unsigned char}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a6d12623a08ec007a5194eaac77857965}\label{c_8h_a6d12623a08ec007a5194eaac77857965}} 
+\index{c.h@{c.h}!leveldb\_options\_set\_filter\_policy@{leveldb\_options\_set\_filter\_policy}}
+\index{leveldb\_options\_set\_filter\_policy@{leveldb\_options\_set\_filter\_policy}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_options\_set\_filter\_policy()}{leveldb\_options\_set\_filter\_policy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+options\+\_\+set\+\_\+filter\+\_\+policy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$}]{,  }\item[{\mbox{\hyperlink{structleveldb__filterpolicy__t}{leveldb\+\_\+filterpolicy\+\_\+t}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_ae9eb61b79e2a907e218c7af4f2c8caaf}\label{c_8h_ae9eb61b79e2a907e218c7af4f2c8caaf}} 
+\index{c.h@{c.h}!leveldb\_options\_set\_info\_log@{leveldb\_options\_set\_info\_log}}
+\index{leveldb\_options\_set\_info\_log@{leveldb\_options\_set\_info\_log}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_options\_set\_info\_log()}{leveldb\_options\_set\_info\_log()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+options\+\_\+set\+\_\+info\+\_\+log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$}]{,  }\item[{\mbox{\hyperlink{structleveldb__logger__t}{leveldb\+\_\+logger\+\_\+t}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a3db56e2c768078d7ffbc3b384306b33c}\label{c_8h_a3db56e2c768078d7ffbc3b384306b33c}} 
+\index{c.h@{c.h}!leveldb\_options\_set\_max\_file\_size@{leveldb\_options\_set\_max\_file\_size}}
+\index{leveldb\_options\_set\_max\_file\_size@{leveldb\_options\_set\_max\_file\_size}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_options\_set\_max\_file\_size()}{leveldb\_options\_set\_max\_file\_size()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+options\+\_\+set\+\_\+max\+\_\+file\+\_\+size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$}]{,  }\item[{size\+\_\+t}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_adb77d086128a42ad5b127d1520d8b282}\label{c_8h_adb77d086128a42ad5b127d1520d8b282}} 
+\index{c.h@{c.h}!leveldb\_options\_set\_max\_open\_files@{leveldb\_options\_set\_max\_open\_files}}
+\index{leveldb\_options\_set\_max\_open\_files@{leveldb\_options\_set\_max\_open\_files}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_options\_set\_max\_open\_files()}{leveldb\_options\_set\_max\_open\_files()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+options\+\_\+set\+\_\+max\+\_\+open\+\_\+files (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a2dda5285db22751a95a16ff7b0da97ef}\label{c_8h_a2dda5285db22751a95a16ff7b0da97ef}} 
+\index{c.h@{c.h}!leveldb\_options\_set\_paranoid\_checks@{leveldb\_options\_set\_paranoid\_checks}}
+\index{leveldb\_options\_set\_paranoid\_checks@{leveldb\_options\_set\_paranoid\_checks}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_options\_set\_paranoid\_checks()}{leveldb\_options\_set\_paranoid\_checks()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+options\+\_\+set\+\_\+paranoid\+\_\+checks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$}]{,  }\item[{unsigned char}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_ae0ef5421247b2a44706969ec0bc5dd49}\label{c_8h_ae0ef5421247b2a44706969ec0bc5dd49}} 
+\index{c.h@{c.h}!leveldb\_options\_set\_write\_buffer\_size@{leveldb\_options\_set\_write\_buffer\_size}}
+\index{leveldb\_options\_set\_write\_buffer\_size@{leveldb\_options\_set\_write\_buffer\_size}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_options\_set\_write\_buffer\_size()}{leveldb\_options\_set\_write\_buffer\_size()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+options\+\_\+set\+\_\+write\+\_\+buffer\+\_\+size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$}]{,  }\item[{size\+\_\+t}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a951d55793fef93146bef63b3948ddf12}\label{c_8h_a951d55793fef93146bef63b3948ddf12}} 
+\index{c.h@{c.h}!leveldb\_property\_value@{leveldb\_property\_value}}
+\index{leveldb\_property\_value@{leveldb\_property\_value}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_property\_value()}{leveldb\_property\_value()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} char$\ast$ leveldb\+\_\+property\+\_\+value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$}]{db,  }\item[{const char $\ast$}]{propname }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{c_8h_a951d55793fef93146bef63b3948ddf12_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_aaf6809901f28b89907a9f619b9abf2bd}\label{c_8h_aaf6809901f28b89907a9f619b9abf2bd}} 
+\index{c.h@{c.h}!leveldb\_put@{leveldb\_put}}
+\index{leveldb\_put@{leveldb\_put}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_put()}{leveldb\_put()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+put (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$}]{db,  }\item[{const \mbox{\hyperlink{structleveldb__writeoptions__t}{leveldb\+\_\+writeoptions\+\_\+t}} $\ast$}]{options,  }\item[{const char $\ast$}]{key,  }\item[{size\+\_\+t}]{keylen,  }\item[{const char $\ast$}]{val,  }\item[{size\+\_\+t}]{vallen,  }\item[{char $\ast$$\ast$}]{errptr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a14e2610836d55605e7200edb632a3a9e}\label{c_8h_a14e2610836d55605e7200edb632a3a9e}} 
+\index{c.h@{c.h}!leveldb\_readoptions\_create@{leveldb\_readoptions\_create}}
+\index{leveldb\_readoptions\_create@{leveldb\_readoptions\_create}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_readoptions\_create()}{leveldb\_readoptions\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{structleveldb__readoptions__t}{leveldb\+\_\+readoptions\+\_\+t}}$\ast$ leveldb\+\_\+readoptions\+\_\+create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a45710465a3d4d468ad8e11941c651659}\label{c_8h_a45710465a3d4d468ad8e11941c651659}} 
+\index{c.h@{c.h}!leveldb\_readoptions\_destroy@{leveldb\_readoptions\_destroy}}
+\index{leveldb\_readoptions\_destroy@{leveldb\_readoptions\_destroy}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_readoptions\_destroy()}{leveldb\_readoptions\_destroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+readoptions\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__readoptions__t}{leveldb\+\_\+readoptions\+\_\+t}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_aa255fc25cbfe36761c28f695e134abb7}\label{c_8h_aa255fc25cbfe36761c28f695e134abb7}} 
+\index{c.h@{c.h}!leveldb\_readoptions\_set\_fill\_cache@{leveldb\_readoptions\_set\_fill\_cache}}
+\index{leveldb\_readoptions\_set\_fill\_cache@{leveldb\_readoptions\_set\_fill\_cache}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_readoptions\_set\_fill\_cache()}{leveldb\_readoptions\_set\_fill\_cache()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+readoptions\+\_\+set\+\_\+fill\+\_\+cache (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__readoptions__t}{leveldb\+\_\+readoptions\+\_\+t}} $\ast$}]{,  }\item[{unsigned char}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a0d981c992a71be7df1b2800180d519e5}\label{c_8h_a0d981c992a71be7df1b2800180d519e5}} 
+\index{c.h@{c.h}!leveldb\_readoptions\_set\_snapshot@{leveldb\_readoptions\_set\_snapshot}}
+\index{leveldb\_readoptions\_set\_snapshot@{leveldb\_readoptions\_set\_snapshot}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_readoptions\_set\_snapshot()}{leveldb\_readoptions\_set\_snapshot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+readoptions\+\_\+set\+\_\+snapshot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__readoptions__t}{leveldb\+\_\+readoptions\+\_\+t}} $\ast$}]{,  }\item[{const \mbox{\hyperlink{structleveldb__snapshot__t}{leveldb\+\_\+snapshot\+\_\+t}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a4c9a59c803178c8b9a9db4d101ffd756}\label{c_8h_a4c9a59c803178c8b9a9db4d101ffd756}} 
+\index{c.h@{c.h}!leveldb\_readoptions\_set\_verify\_checksums@{leveldb\_readoptions\_set\_verify\_checksums}}
+\index{leveldb\_readoptions\_set\_verify\_checksums@{leveldb\_readoptions\_set\_verify\_checksums}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_readoptions\_set\_verify\_checksums()}{leveldb\_readoptions\_set\_verify\_checksums()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+readoptions\+\_\+set\+\_\+verify\+\_\+checksums (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__readoptions__t}{leveldb\+\_\+readoptions\+\_\+t}} $\ast$}]{,  }\item[{unsigned char}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a08e1f939905ce45979e197ec1c64edea}\label{c_8h_a08e1f939905ce45979e197ec1c64edea}} 
+\index{c.h@{c.h}!leveldb\_release\_snapshot@{leveldb\_release\_snapshot}}
+\index{leveldb\_release\_snapshot@{leveldb\_release\_snapshot}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_release\_snapshot()}{leveldb\_release\_snapshot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+release\+\_\+snapshot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$}]{db,  }\item[{const \mbox{\hyperlink{structleveldb__snapshot__t}{leveldb\+\_\+snapshot\+\_\+t}} $\ast$}]{snapshot }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{c_8h_a08e1f939905ce45979e197ec1c64edea_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_a3bec7da920ce484a5869edca885cebe6}\label{c_8h_a3bec7da920ce484a5869edca885cebe6}} 
+\index{c.h@{c.h}!leveldb\_repair\_db@{leveldb\_repair\_db}}
+\index{leveldb\_repair\_db@{leveldb\_repair\_db}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_repair\_db()}{leveldb\_repair\_db()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+repair\+\_\+db (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb__options__t}{leveldb\+\_\+options\+\_\+t}} $\ast$}]{options,  }\item[{const char $\ast$}]{name,  }\item[{char $\ast$$\ast$}]{errptr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_abf1e4b0886fe47c03b9105bf3c9bb692}\label{c_8h_abf1e4b0886fe47c03b9105bf3c9bb692}} 
+\index{c.h@{c.h}!leveldb\_write@{leveldb\_write}}
+\index{leveldb\_write@{leveldb\_write}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_write()}{leveldb\_write()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__t}{leveldb\+\_\+t}} $\ast$}]{db,  }\item[{const \mbox{\hyperlink{structleveldb__writeoptions__t}{leveldb\+\_\+writeoptions\+\_\+t}} $\ast$}]{options,  }\item[{\mbox{\hyperlink{structleveldb__writebatch__t}{leveldb\+\_\+writebatch\+\_\+t}} $\ast$}]{batch,  }\item[{char $\ast$$\ast$}]{errptr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a5a4b14650ffab65633093a14f2ac284e}\label{c_8h_a5a4b14650ffab65633093a14f2ac284e}} 
+\index{c.h@{c.h}!leveldb\_writebatch\_append@{leveldb\_writebatch\_append}}
+\index{leveldb\_writebatch\_append@{leveldb\_writebatch\_append}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_writebatch\_append()}{leveldb\_writebatch\_append()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+writebatch\+\_\+append (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__writebatch__t}{leveldb\+\_\+writebatch\+\_\+t}} $\ast$}]{destination,  }\item[{const \mbox{\hyperlink{structleveldb__writebatch__t}{leveldb\+\_\+writebatch\+\_\+t}} $\ast$}]{source }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{c_8h_a5a4b14650ffab65633093a14f2ac284e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_a5f89bd5cbe255f91fa3cc75167fdd7b0}\label{c_8h_a5f89bd5cbe255f91fa3cc75167fdd7b0}} 
+\index{c.h@{c.h}!leveldb\_writebatch\_clear@{leveldb\_writebatch\_clear}}
+\index{leveldb\_writebatch\_clear@{leveldb\_writebatch\_clear}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_writebatch\_clear()}{leveldb\_writebatch\_clear()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+writebatch\+\_\+clear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__writebatch__t}{leveldb\+\_\+writebatch\+\_\+t}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{c_8h_a5f89bd5cbe255f91fa3cc75167fdd7b0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_a0a128f8cc064d8113e40ac6c4fce8110}\label{c_8h_a0a128f8cc064d8113e40ac6c4fce8110}} 
+\index{c.h@{c.h}!leveldb\_writebatch\_create@{leveldb\_writebatch\_create}}
+\index{leveldb\_writebatch\_create@{leveldb\_writebatch\_create}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_writebatch\_create()}{leveldb\_writebatch\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{structleveldb__writebatch__t}{leveldb\+\_\+writebatch\+\_\+t}}$\ast$ leveldb\+\_\+writebatch\+\_\+create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a4184468e4d4dcd0c2760494757e1b033}\label{c_8h_a4184468e4d4dcd0c2760494757e1b033}} 
+\index{c.h@{c.h}!leveldb\_writebatch\_delete@{leveldb\_writebatch\_delete}}
+\index{leveldb\_writebatch\_delete@{leveldb\_writebatch\_delete}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_writebatch\_delete()}{leveldb\_writebatch\_delete()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+writebatch\+\_\+delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__writebatch__t}{leveldb\+\_\+writebatch\+\_\+t}} $\ast$}]{,  }\item[{const char $\ast$}]{key,  }\item[{size\+\_\+t}]{klen }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{c_8h_a4184468e4d4dcd0c2760494757e1b033_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_a0578ea3db6c5b78e3f6ccc5a8780b1bd}\label{c_8h_a0578ea3db6c5b78e3f6ccc5a8780b1bd}} 
+\index{c.h@{c.h}!leveldb\_writebatch\_destroy@{leveldb\_writebatch\_destroy}}
+\index{leveldb\_writebatch\_destroy@{leveldb\_writebatch\_destroy}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_writebatch\_destroy()}{leveldb\_writebatch\_destroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+writebatch\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__writebatch__t}{leveldb\+\_\+writebatch\+\_\+t}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_a58dec4f155202bbbf931685fd06366a4}\label{c_8h_a58dec4f155202bbbf931685fd06366a4}} 
+\index{c.h@{c.h}!leveldb\_writebatch\_iterate@{leveldb\_writebatch\_iterate}}
+\index{leveldb\_writebatch\_iterate@{leveldb\_writebatch\_iterate}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_writebatch\_iterate()}{leveldb\_writebatch\_iterate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+writebatch\+\_\+iterate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb__writebatch__t}{leveldb\+\_\+writebatch\+\_\+t}} $\ast$}]{,  }\item[{void $\ast$}]{state,  }\item[{void($\ast$)(void $\ast$, const char $\ast$k, size\+\_\+t klen, const char $\ast$v, size\+\_\+t vlen)}]{put,  }\item[{void($\ast$)(void $\ast$, const char $\ast$k, size\+\_\+t klen)}]{deleted }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{c_8h_a58dec4f155202bbbf931685fd06366a4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_a52cecb4005236f3ff149a48c9a8f5827}\label{c_8h_a52cecb4005236f3ff149a48c9a8f5827}} 
+\index{c.h@{c.h}!leveldb\_writebatch\_put@{leveldb\_writebatch\_put}}
+\index{leveldb\_writebatch\_put@{leveldb\_writebatch\_put}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_writebatch\_put()}{leveldb\_writebatch\_put()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+writebatch\+\_\+put (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__writebatch__t}{leveldb\+\_\+writebatch\+\_\+t}} $\ast$}]{,  }\item[{const char $\ast$}]{key,  }\item[{size\+\_\+t}]{klen,  }\item[{const char $\ast$}]{val,  }\item[{size\+\_\+t}]{vlen }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{c_8h_a52cecb4005236f3ff149a48c9a8f5827_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{c_8h_a1708080e1b4d6778d3b34433acdeb01b}\label{c_8h_a1708080e1b4d6778d3b34433acdeb01b}} 
+\index{c.h@{c.h}!leveldb\_writeoptions\_create@{leveldb\_writeoptions\_create}}
+\index{leveldb\_writeoptions\_create@{leveldb\_writeoptions\_create}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_writeoptions\_create()}{leveldb\_writeoptions\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{structleveldb__writeoptions__t}{leveldb\+\_\+writeoptions\+\_\+t}}$\ast$ leveldb\+\_\+writeoptions\+\_\+create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_ab7bdd09c352e86386f413d5bc1c3b2aa}\label{c_8h_ab7bdd09c352e86386f413d5bc1c3b2aa}} 
+\index{c.h@{c.h}!leveldb\_writeoptions\_destroy@{leveldb\_writeoptions\_destroy}}
+\index{leveldb\_writeoptions\_destroy@{leveldb\_writeoptions\_destroy}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_writeoptions\_destroy()}{leveldb\_writeoptions\_destroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+writeoptions\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__writeoptions__t}{leveldb\+\_\+writeoptions\+\_\+t}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c_8h_aef0b5c295dc3f2173be9e21a79518cf5}\label{c_8h_aef0b5c295dc3f2173be9e21a79518cf5}} 
+\index{c.h@{c.h}!leveldb\_writeoptions\_set\_sync@{leveldb\_writeoptions\_set\_sync}}
+\index{leveldb\_writeoptions\_set\_sync@{leveldb\_writeoptions\_set\_sync}!c.h@{c.h}}
+\subsubsection{\texorpdfstring{leveldb\_writeoptions\_set\_sync()}{leveldb\_writeoptions\_set\_sync()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} void leveldb\+\_\+writeoptions\+\_\+set\+\_\+sync (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb__writeoptions__t}{leveldb\+\_\+writeoptions\+\_\+t}} $\ast$}]{,  }\item[{unsigned char}]{ }\end{DoxyParamCaption})}
+

@@ -1,0 +1,265 @@
+\hypertarget{classleveldb_1_1_status}{}\section{leveldb\+::Status Class Reference}
+\label{classleveldb_1_1_status}\index{leveldb::Status@{leveldb::Status}}
+
+
+{\ttfamily \#include $<$status.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+::Status\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classleveldb_1_1_status__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status_a01e02f5736b96f1b1e58bbcb0c98bf92}{Status}} () noexcept
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status_a5f36252202fb791ef8312fe848ffceb3}{$\sim$\+Status}} ()
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status_aa9c1250e3cf41da64347a3de85e3f0a3}{Status}} (const \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \&rhs)
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \& \mbox{\hyperlink{classleveldb_1_1_status_a6c7bc85cbe92cba9146e269286838557}{operator=}} (const \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \&rhs)
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status_a3e2257b373226d0294cdd8ae73615388}{Status}} (\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \&\&rhs) noexcept
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \& \mbox{\hyperlink{classleveldb_1_1_status_a70ba77aa00b1c1c26aa2a59010723284}{operator=}} (\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \&\&rhs) noexcept
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1_status_af988e2a8d204019c14f21126d9300362}{ok}} () const
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1_status_ad4c0469a76324aeb01d96db8bf95737d}{Is\+Not\+Found}} () const
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1_status_a83077fd4bb808556e6290a25187e2cb3}{Is\+Corruption}} () const
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1_status_a54c6da2f81ae0dff8bc6cea605ce1de6}{Is\+I\+O\+Error}} () const
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1_status_a2cca03c2723fc37c43df2b9e095f56bc}{Is\+Not\+Supported\+Error}} () const
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1_status_a104680c351113a93b9c8d2b23f88d87e}{Is\+Invalid\+Argument}} () const
+\item 
+std\+::string \mbox{\hyperlink{classleveldb_1_1_status_a9bd26a7abfa28b572a4f38732bf9218a}{To\+String}} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_status_a8e3720d233281c874a53c17e081f51b3}{OK}} ()
+\item 
+static \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_status_a9e5beb5b2e758f041e0c012426e7b1b8}{Not\+Found}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&msg, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&msg2=\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}}())
+\item 
+static \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_status_a755b1ee5b0029cf9ea1128f1cdff5855}{Corruption}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&msg, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&msg2=\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}}())
+\item 
+static \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_status_a66c6b7171cedb55651e34e5df9a14705}{Not\+Supported}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&msg, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&msg2=\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}}())
+\item 
+static \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_status_aefef9f88d0a6ca6d34bd9dec1670309e}{Invalid\+Argument}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&msg, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&msg2=\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}}())
+\item 
+static \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_status_ada6143081d41803808f77287153f96b7}{I\+O\+Error}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&msg, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&msg2=\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}}())
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_status_a01e02f5736b96f1b1e58bbcb0c98bf92}\label{classleveldb_1_1_status_a01e02f5736b96f1b1e58bbcb0c98bf92}} 
+\index{leveldb::Status@{leveldb::Status}!Status@{Status}}
+\index{Status@{Status}!leveldb::Status@{leveldb::Status}}
+\subsubsection{\texorpdfstring{Status()}{Status()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily leveldb\+::\+Status\+::\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_status_a5f36252202fb791ef8312fe848ffceb3}\label{classleveldb_1_1_status_a5f36252202fb791ef8312fe848ffceb3}} 
+\index{leveldb::Status@{leveldb::Status}!````~Status@{$\sim$Status}}
+\index{````~Status@{$\sim$Status}!leveldb::Status@{leveldb::Status}}
+\subsubsection{\texorpdfstring{$\sim$Status()}{~Status()}}
+{\footnotesize\ttfamily leveldb\+::\+Status\+::$\sim$\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_status_aa9c1250e3cf41da64347a3de85e3f0a3}\label{classleveldb_1_1_status_aa9c1250e3cf41da64347a3de85e3f0a3}} 
+\index{leveldb::Status@{leveldb::Status}!Status@{Status}}
+\index{Status@{Status}!leveldb::Status@{leveldb::Status}}
+\subsubsection{\texorpdfstring{Status()}{Status()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily leveldb\+::\+Status\+::\+Status (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_status_a3e2257b373226d0294cdd8ae73615388}\label{classleveldb_1_1_status_a3e2257b373226d0294cdd8ae73615388}} 
+\index{leveldb::Status@{leveldb::Status}!Status@{Status}}
+\index{Status@{Status}!leveldb::Status@{leveldb::Status}}
+\subsubsection{\texorpdfstring{Status()}{Status()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily leveldb\+::\+Status\+::\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \&\&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_status_a755b1ee5b0029cf9ea1128f1cdff5855}\label{classleveldb_1_1_status_a755b1ee5b0029cf9ea1128f1cdff5855}} 
+\index{leveldb::Status@{leveldb::Status}!Corruption@{Corruption}}
+\index{Corruption@{Corruption}!leveldb::Status@{leveldb::Status}}
+\subsubsection{\texorpdfstring{Corruption()}{Corruption()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Status\+::\+Corruption (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{msg,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{msg2 = {\ttfamily \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_status_a755b1ee5b0029cf9ea1128f1cdff5855_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_status_aefef9f88d0a6ca6d34bd9dec1670309e}\label{classleveldb_1_1_status_aefef9f88d0a6ca6d34bd9dec1670309e}} 
+\index{leveldb::Status@{leveldb::Status}!InvalidArgument@{InvalidArgument}}
+\index{InvalidArgument@{InvalidArgument}!leveldb::Status@{leveldb::Status}}
+\subsubsection{\texorpdfstring{InvalidArgument()}{InvalidArgument()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Status\+::\+Invalid\+Argument (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{msg,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{msg2 = {\ttfamily \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_status_aefef9f88d0a6ca6d34bd9dec1670309e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_status_ada6143081d41803808f77287153f96b7}\label{classleveldb_1_1_status_ada6143081d41803808f77287153f96b7}} 
+\index{leveldb::Status@{leveldb::Status}!IOError@{IOError}}
+\index{IOError@{IOError}!leveldb::Status@{leveldb::Status}}
+\subsubsection{\texorpdfstring{IOError()}{IOError()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Status\+::\+I\+O\+Error (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{msg,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{msg2 = {\ttfamily \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_status_ada6143081d41803808f77287153f96b7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_status_a83077fd4bb808556e6290a25187e2cb3}\label{classleveldb_1_1_status_a83077fd4bb808556e6290a25187e2cb3}} 
+\index{leveldb::Status@{leveldb::Status}!IsCorruption@{IsCorruption}}
+\index{IsCorruption@{IsCorruption}!leveldb::Status@{leveldb::Status}}
+\subsubsection{\texorpdfstring{IsCorruption()}{IsCorruption()}}
+{\footnotesize\ttfamily bool leveldb\+::\+Status\+::\+Is\+Corruption (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classleveldb_1_1_status_a83077fd4bb808556e6290a25187e2cb3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_status_a104680c351113a93b9c8d2b23f88d87e}\label{classleveldb_1_1_status_a104680c351113a93b9c8d2b23f88d87e}} 
+\index{leveldb::Status@{leveldb::Status}!IsInvalidArgument@{IsInvalidArgument}}
+\index{IsInvalidArgument@{IsInvalidArgument}!leveldb::Status@{leveldb::Status}}
+\subsubsection{\texorpdfstring{IsInvalidArgument()}{IsInvalidArgument()}}
+{\footnotesize\ttfamily bool leveldb\+::\+Status\+::\+Is\+Invalid\+Argument (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_status_a54c6da2f81ae0dff8bc6cea605ce1de6}\label{classleveldb_1_1_status_a54c6da2f81ae0dff8bc6cea605ce1de6}} 
+\index{leveldb::Status@{leveldb::Status}!IsIOError@{IsIOError}}
+\index{IsIOError@{IsIOError}!leveldb::Status@{leveldb::Status}}
+\subsubsection{\texorpdfstring{IsIOError()}{IsIOError()}}
+{\footnotesize\ttfamily bool leveldb\+::\+Status\+::\+Is\+I\+O\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_status_ad4c0469a76324aeb01d96db8bf95737d}\label{classleveldb_1_1_status_ad4c0469a76324aeb01d96db8bf95737d}} 
+\index{leveldb::Status@{leveldb::Status}!IsNotFound@{IsNotFound}}
+\index{IsNotFound@{IsNotFound}!leveldb::Status@{leveldb::Status}}
+\subsubsection{\texorpdfstring{IsNotFound()}{IsNotFound()}}
+{\footnotesize\ttfamily bool leveldb\+::\+Status\+::\+Is\+Not\+Found (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_status_ad4c0469a76324aeb01d96db8bf95737d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_status_a2cca03c2723fc37c43df2b9e095f56bc}\label{classleveldb_1_1_status_a2cca03c2723fc37c43df2b9e095f56bc}} 
+\index{leveldb::Status@{leveldb::Status}!IsNotSupportedError@{IsNotSupportedError}}
+\index{IsNotSupportedError@{IsNotSupportedError}!leveldb::Status@{leveldb::Status}}
+\subsubsection{\texorpdfstring{IsNotSupportedError()}{IsNotSupportedError()}}
+{\footnotesize\ttfamily bool leveldb\+::\+Status\+::\+Is\+Not\+Supported\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_status_a2cca03c2723fc37c43df2b9e095f56bc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_status_a9e5beb5b2e758f041e0c012426e7b1b8}\label{classleveldb_1_1_status_a9e5beb5b2e758f041e0c012426e7b1b8}} 
+\index{leveldb::Status@{leveldb::Status}!NotFound@{NotFound}}
+\index{NotFound@{NotFound}!leveldb::Status@{leveldb::Status}}
+\subsubsection{\texorpdfstring{NotFound()}{NotFound()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Status\+::\+Not\+Found (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{msg,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{msg2 = {\ttfamily \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_status_a9e5beb5b2e758f041e0c012426e7b1b8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_status_a66c6b7171cedb55651e34e5df9a14705}\label{classleveldb_1_1_status_a66c6b7171cedb55651e34e5df9a14705}} 
+\index{leveldb::Status@{leveldb::Status}!NotSupported@{NotSupported}}
+\index{NotSupported@{NotSupported}!leveldb::Status@{leveldb::Status}}
+\subsubsection{\texorpdfstring{NotSupported()}{NotSupported()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Status\+::\+Not\+Supported (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{msg,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{msg2 = {\ttfamily \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_status_a8e3720d233281c874a53c17e081f51b3}\label{classleveldb_1_1_status_a8e3720d233281c874a53c17e081f51b3}} 
+\index{leveldb::Status@{leveldb::Status}!OK@{OK}}
+\index{OK@{OK}!leveldb::Status@{leveldb::Status}}
+\subsubsection{\texorpdfstring{OK()}{OK()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Status\+::\+OK (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_status_a8e3720d233281c874a53c17e081f51b3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_status_af988e2a8d204019c14f21126d9300362}\label{classleveldb_1_1_status_af988e2a8d204019c14f21126d9300362}} 
+\index{leveldb::Status@{leveldb::Status}!ok@{ok}}
+\index{ok@{ok}!leveldb::Status@{leveldb::Status}}
+\subsubsection{\texorpdfstring{ok()}{ok()}}
+{\footnotesize\ttfamily bool leveldb\+::\+Status\+::ok (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classleveldb_1_1_status_af988e2a8d204019c14f21126d9300362_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_status_a6c7bc85cbe92cba9146e269286838557}\label{classleveldb_1_1_status_a6c7bc85cbe92cba9146e269286838557}} 
+\index{leveldb::Status@{leveldb::Status}!operator=@{operator=}}
+\index{operator=@{operator=}!leveldb::Status@{leveldb::Status}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \& leveldb\+::\+Status\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_status_a70ba77aa00b1c1c26aa2a59010723284}\label{classleveldb_1_1_status_a70ba77aa00b1c1c26aa2a59010723284}} 
+\index{leveldb::Status@{leveldb::Status}!operator=@{operator=}}
+\index{operator=@{operator=}!leveldb::Status@{leveldb::Status}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \& leveldb\+::\+Status\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \&\&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_status_a9bd26a7abfa28b572a4f38732bf9218a}\label{classleveldb_1_1_status_a9bd26a7abfa28b572a4f38732bf9218a}} 
+\index{leveldb::Status@{leveldb::Status}!ToString@{ToString}}
+\index{ToString@{ToString}!leveldb::Status@{leveldb::Status}}
+\subsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily std\+::string leveldb\+::\+Status\+::\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_status_a9bd26a7abfa28b572a4f38732bf9218a_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/leveldb/\mbox{\hyperlink{status_8h}{status.\+h}}\end{DoxyCompactItemize}

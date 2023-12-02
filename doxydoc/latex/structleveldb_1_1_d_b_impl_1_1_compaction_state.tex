@@ -1,0 +1,101 @@
+\hypertarget{structleveldb_1_1_d_b_impl_1_1_compaction_state}{}\section{leveldb\+::D\+B\+Impl\+::Compaction\+State Struct Reference}
+\label{structleveldb_1_1_d_b_impl_1_1_compaction_state}\index{leveldb::DBImpl::CompactionState@{leveldb::DBImpl::CompactionState}}
+
+
+Collaboration diagram for leveldb\+::D\+B\+Impl\+::Compaction\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_d_b_impl_1_1_compaction_state__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_compaction_state_1_1_output}{Output}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_compaction_state_1_1_output}{Output}} $\ast$ \mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_compaction_state_ac371d4a1422f4c1c122cfd39e97a6b95}{current\+\_\+output}} ()
+\item 
+\mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_compaction_state_a3f66a31afd7f73ef5021337d1ec626b6}{Compaction\+State}} (\mbox{\hyperlink{classleveldb_1_1_compaction}{Compaction}} $\ast$c)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_compaction}{Compaction}} $\ast$const \mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_compaction_state_a6b92e9f2249d5977b4801bdf47afed28}{compaction}}
+\item 
+\mbox{\hyperlink{namespaceleveldb_a5481ededd221c36d652c371249f869fa}{Sequence\+Number}} \mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_compaction_state_a725f0984b8372c51691d72f66672dc89}{smallest\+\_\+snapshot}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_compaction_state_1_1_output}{Output}} $>$ \mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_compaction_state_acce338739aafdfa40083ae3d5aacf24a}{outputs}}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_writable_file}{Writable\+File}} $\ast$ \mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_compaction_state_a4c8e3de65efc30fdf33197d544a466f9}{outfile}}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_table_builder}{Table\+Builder}} $\ast$ \mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_compaction_state_a5335b9d45bc03378219e3fbc366fce21}{builder}}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_compaction_state_a21aa7304978dffc6841c4c11761f4b71}{total\+\_\+bytes}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structleveldb_1_1_d_b_impl_1_1_compaction_state_a3f66a31afd7f73ef5021337d1ec626b6}\label{structleveldb_1_1_d_b_impl_1_1_compaction_state_a3f66a31afd7f73ef5021337d1ec626b6}} 
+\index{leveldb::DBImpl::CompactionState@{leveldb::DBImpl::CompactionState}!CompactionState@{CompactionState}}
+\index{CompactionState@{CompactionState}!leveldb::DBImpl::CompactionState@{leveldb::DBImpl::CompactionState}}
+\subsubsection{\texorpdfstring{CompactionState()}{CompactionState()}}
+{\footnotesize\ttfamily leveldb\+::\+D\+B\+Impl\+::\+Compaction\+State\+::\+Compaction\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1_compaction}{Compaction}} $\ast$}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structleveldb_1_1_d_b_impl_1_1_compaction_state_ac371d4a1422f4c1c122cfd39e97a6b95}\label{structleveldb_1_1_d_b_impl_1_1_compaction_state_ac371d4a1422f4c1c122cfd39e97a6b95}} 
+\index{leveldb::DBImpl::CompactionState@{leveldb::DBImpl::CompactionState}!current\_output@{current\_output}}
+\index{current\_output@{current\_output}!leveldb::DBImpl::CompactionState@{leveldb::DBImpl::CompactionState}}
+\subsubsection{\texorpdfstring{current\_output()}{current\_output()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_compaction_state_1_1_output}{Output}}$\ast$ leveldb\+::\+D\+B\+Impl\+::\+Compaction\+State\+::current\+\_\+output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structleveldb_1_1_d_b_impl_1_1_compaction_state_a5335b9d45bc03378219e3fbc366fce21}\label{structleveldb_1_1_d_b_impl_1_1_compaction_state_a5335b9d45bc03378219e3fbc366fce21}} 
+\index{leveldb::DBImpl::CompactionState@{leveldb::DBImpl::CompactionState}!builder@{builder}}
+\index{builder@{builder}!leveldb::DBImpl::CompactionState@{leveldb::DBImpl::CompactionState}}
+\subsubsection{\texorpdfstring{builder}{builder}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_table_builder}{Table\+Builder}}$\ast$ leveldb\+::\+D\+B\+Impl\+::\+Compaction\+State\+::builder}
+
+\mbox{\Hypertarget{structleveldb_1_1_d_b_impl_1_1_compaction_state_a6b92e9f2249d5977b4801bdf47afed28}\label{structleveldb_1_1_d_b_impl_1_1_compaction_state_a6b92e9f2249d5977b4801bdf47afed28}} 
+\index{leveldb::DBImpl::CompactionState@{leveldb::DBImpl::CompactionState}!compaction@{compaction}}
+\index{compaction@{compaction}!leveldb::DBImpl::CompactionState@{leveldb::DBImpl::CompactionState}}
+\subsubsection{\texorpdfstring{compaction}{compaction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_compaction}{Compaction}}$\ast$ const leveldb\+::\+D\+B\+Impl\+::\+Compaction\+State\+::compaction}
+
+\mbox{\Hypertarget{structleveldb_1_1_d_b_impl_1_1_compaction_state_a4c8e3de65efc30fdf33197d544a466f9}\label{structleveldb_1_1_d_b_impl_1_1_compaction_state_a4c8e3de65efc30fdf33197d544a466f9}} 
+\index{leveldb::DBImpl::CompactionState@{leveldb::DBImpl::CompactionState}!outfile@{outfile}}
+\index{outfile@{outfile}!leveldb::DBImpl::CompactionState@{leveldb::DBImpl::CompactionState}}
+\subsubsection{\texorpdfstring{outfile}{outfile}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_writable_file}{Writable\+File}}$\ast$ leveldb\+::\+D\+B\+Impl\+::\+Compaction\+State\+::outfile}
+
+\mbox{\Hypertarget{structleveldb_1_1_d_b_impl_1_1_compaction_state_acce338739aafdfa40083ae3d5aacf24a}\label{structleveldb_1_1_d_b_impl_1_1_compaction_state_acce338739aafdfa40083ae3d5aacf24a}} 
+\index{leveldb::DBImpl::CompactionState@{leveldb::DBImpl::CompactionState}!outputs@{outputs}}
+\index{outputs@{outputs}!leveldb::DBImpl::CompactionState@{leveldb::DBImpl::CompactionState}}
+\subsubsection{\texorpdfstring{outputs}{outputs}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_compaction_state_1_1_output}{Output}}$>$ leveldb\+::\+D\+B\+Impl\+::\+Compaction\+State\+::outputs}
+
+\mbox{\Hypertarget{structleveldb_1_1_d_b_impl_1_1_compaction_state_a725f0984b8372c51691d72f66672dc89}\label{structleveldb_1_1_d_b_impl_1_1_compaction_state_a725f0984b8372c51691d72f66672dc89}} 
+\index{leveldb::DBImpl::CompactionState@{leveldb::DBImpl::CompactionState}!smallest\_snapshot@{smallest\_snapshot}}
+\index{smallest\_snapshot@{smallest\_snapshot}!leveldb::DBImpl::CompactionState@{leveldb::DBImpl::CompactionState}}
+\subsubsection{\texorpdfstring{smallest\_snapshot}{smallest\_snapshot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceleveldb_a5481ededd221c36d652c371249f869fa}{Sequence\+Number}} leveldb\+::\+D\+B\+Impl\+::\+Compaction\+State\+::smallest\+\_\+snapshot}
+
+\mbox{\Hypertarget{structleveldb_1_1_d_b_impl_1_1_compaction_state_a21aa7304978dffc6841c4c11761f4b71}\label{structleveldb_1_1_d_b_impl_1_1_compaction_state_a21aa7304978dffc6841c4c11761f4b71}} 
+\index{leveldb::DBImpl::CompactionState@{leveldb::DBImpl::CompactionState}!total\_bytes@{total\_bytes}}
+\index{total\_bytes@{total\_bytes}!leveldb::DBImpl::CompactionState@{leveldb::DBImpl::CompactionState}}
+\subsubsection{\texorpdfstring{total\_bytes}{total\_bytes}}
+{\footnotesize\ttfamily uint64\+\_\+t leveldb\+::\+D\+B\+Impl\+::\+Compaction\+State\+::total\+\_\+bytes}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{db__impl_8cc}{db\+\_\+impl.\+cc}}\end{DoxyCompactItemize}

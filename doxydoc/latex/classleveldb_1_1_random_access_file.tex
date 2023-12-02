@@ -1,0 +1,78 @@
+\hypertarget{classleveldb_1_1_random_access_file}{}\section{leveldb\+::Random\+Access\+File Class Reference}
+\label{classleveldb_1_1_random_access_file}\index{leveldb::RandomAccessFile@{leveldb::RandomAccessFile}}
+
+
+{\ttfamily \#include $<$env.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+::Random\+Access\+File\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{classleveldb_1_1_random_access_file__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_random_access_file_ac1201ada4756ffa48d6673de1e08e314}{Random\+Access\+File}} ()=default
+\item 
+\mbox{\hyperlink{classleveldb_1_1_random_access_file_a2f1cd32497cb5c1c468b879cd74be749}{Random\+Access\+File}} (const \mbox{\hyperlink{classleveldb_1_1_random_access_file}{Random\+Access\+File}} \&)=delete
+\item 
+\mbox{\hyperlink{classleveldb_1_1_random_access_file}{Random\+Access\+File}} \& \mbox{\hyperlink{classleveldb_1_1_random_access_file_ad76fdf4e12b84592a7ac31a3b57a7377}{operator=}} (const \mbox{\hyperlink{classleveldb_1_1_random_access_file}{Random\+Access\+File}} \&)=delete
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_random_access_file_aed7e781942392270a8c274802f2e62e5}{$\sim$\+Random\+Access\+File}} ()
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_random_access_file_a1a09fadcec904d9791a968acabca98d0}{Read}} (uint64\+\_\+t offset, size\+\_\+t n, \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} $\ast$result, char $\ast$scratch) const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_random_access_file_ac1201ada4756ffa48d6673de1e08e314}\label{classleveldb_1_1_random_access_file_ac1201ada4756ffa48d6673de1e08e314}} 
+\index{leveldb::RandomAccessFile@{leveldb::RandomAccessFile}!RandomAccessFile@{RandomAccessFile}}
+\index{RandomAccessFile@{RandomAccessFile}!leveldb::RandomAccessFile@{leveldb::RandomAccessFile}}
+\subsubsection{\texorpdfstring{RandomAccessFile()}{RandomAccessFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily leveldb\+::\+Random\+Access\+File\+::\+Random\+Access\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_random_access_file_a2f1cd32497cb5c1c468b879cd74be749}\label{classleveldb_1_1_random_access_file_a2f1cd32497cb5c1c468b879cd74be749}} 
+\index{leveldb::RandomAccessFile@{leveldb::RandomAccessFile}!RandomAccessFile@{RandomAccessFile}}
+\index{RandomAccessFile@{RandomAccessFile}!leveldb::RandomAccessFile@{leveldb::RandomAccessFile}}
+\subsubsection{\texorpdfstring{RandomAccessFile()}{RandomAccessFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily leveldb\+::\+Random\+Access\+File\+::\+Random\+Access\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_random_access_file}{Random\+Access\+File}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_random_access_file_aed7e781942392270a8c274802f2e62e5}\label{classleveldb_1_1_random_access_file_aed7e781942392270a8c274802f2e62e5}} 
+\index{leveldb::RandomAccessFile@{leveldb::RandomAccessFile}!````~RandomAccessFile@{$\sim$RandomAccessFile}}
+\index{````~RandomAccessFile@{$\sim$RandomAccessFile}!leveldb::RandomAccessFile@{leveldb::RandomAccessFile}}
+\subsubsection{\texorpdfstring{$\sim$RandomAccessFile()}{~RandomAccessFile()}}
+{\footnotesize\ttfamily virtual leveldb\+::\+Random\+Access\+File\+::$\sim$\+Random\+Access\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_random_access_file_ad76fdf4e12b84592a7ac31a3b57a7377}\label{classleveldb_1_1_random_access_file_ad76fdf4e12b84592a7ac31a3b57a7377}} 
+\index{leveldb::RandomAccessFile@{leveldb::RandomAccessFile}!operator=@{operator=}}
+\index{operator=@{operator=}!leveldb::RandomAccessFile@{leveldb::RandomAccessFile}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_random_access_file}{Random\+Access\+File}}\& leveldb\+::\+Random\+Access\+File\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_random_access_file}{Random\+Access\+File}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_random_access_file_a1a09fadcec904d9791a968acabca98d0}\label{classleveldb_1_1_random_access_file_a1a09fadcec904d9791a968acabca98d0}} 
+\index{leveldb::RandomAccessFile@{leveldb::RandomAccessFile}!Read@{Read}}
+\index{Read@{Read}!leveldb::RandomAccessFile@{leveldb::RandomAccessFile}}
+\subsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Random\+Access\+File\+::\+Read (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{offset,  }\item[{size\+\_\+t}]{n,  }\item[{\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} $\ast$}]{result,  }\item[{char $\ast$}]{scratch }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_random_access_file_a1a09fadcec904d9791a968acabca98d0_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/leveldb/\mbox{\hyperlink{env_8h}{env.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,206 @@
+\hypertarget{classleveldb_1_1_slice}{}\section{leveldb\+::Slice Class Reference}
+\label{classleveldb_1_1_slice}\index{leveldb::Slice@{leveldb::Slice}}
+
+
+{\ttfamily \#include $<$slice.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+::Slice\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classleveldb_1_1_slice__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_slice_a5a57e9733fb783aceec1aecfe068ad85}{Slice}} ()
+\item 
+\mbox{\hyperlink{classleveldb_1_1_slice_ae77bd1d4353bd94d768474d467657c85}{Slice}} (const char $\ast$d, size\+\_\+t n)
+\item 
+\mbox{\hyperlink{classleveldb_1_1_slice_ab79b60f33aa094179fe36880bc220853}{Slice}} (const std\+::string \&s)
+\item 
+\mbox{\hyperlink{classleveldb_1_1_slice_a429c530560405fe1a7cd745f7afecf5a}{Slice}} (const char $\ast$s)
+\item 
+\mbox{\hyperlink{classleveldb_1_1_slice_a53cdde237c653292d361e92bc0f25229}{Slice}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&)=default
+\item 
+\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \& \mbox{\hyperlink{classleveldb_1_1_slice_aed082a8f2d4a877058f5bac84effaac1}{operator=}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&)=default
+\item 
+const char $\ast$ \mbox{\hyperlink{classleveldb_1_1_slice_a94ccee3d05b66ba0b059f2d9772b782b}{data}} () const
+\item 
+size\+\_\+t \mbox{\hyperlink{classleveldb_1_1_slice_a7344120beda110de81d0c45d4cfe4b63}{size}} () const
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1_slice_a56ac7a70125c26187ecf4dd040004582}{empty}} () const
+\item 
+char \mbox{\hyperlink{classleveldb_1_1_slice_aea62da83ffa80f22e065b15ca8596726}{operator\mbox{[}$\,$\mbox{]}}} (size\+\_\+t n) const
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_slice_ab9b6e340e8a483a5cf713f6be17709e3}{clear}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_slice_a1be5b22958a115ebecb2b017aad2b3f6}{remove\+\_\+prefix}} (size\+\_\+t n)
+\item 
+std\+::string \mbox{\hyperlink{classleveldb_1_1_slice_a10ab05e2c2358bb6e6b6d49bf69d72ce}{To\+String}} () const
+\item 
+int \mbox{\hyperlink{classleveldb_1_1_slice_a1ec69137e5cee9ef34c5c4fca3c62957}{compare}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&b) const
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1_slice_ae1c0a7f51a18a83bbeebfb300bf23767}{starts\+\_\+with}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&x) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_slice_a5a57e9733fb783aceec1aecfe068ad85}\label{classleveldb_1_1_slice_a5a57e9733fb783aceec1aecfe068ad85}} 
+\index{leveldb::Slice@{leveldb::Slice}!Slice@{Slice}}
+\index{Slice@{Slice}!leveldb::Slice@{leveldb::Slice}}
+\subsubsection{\texorpdfstring{Slice()}{Slice()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily leveldb\+::\+Slice\+::\+Slice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_slice_ae77bd1d4353bd94d768474d467657c85}\label{classleveldb_1_1_slice_ae77bd1d4353bd94d768474d467657c85}} 
+\index{leveldb::Slice@{leveldb::Slice}!Slice@{Slice}}
+\index{Slice@{Slice}!leveldb::Slice@{leveldb::Slice}}
+\subsubsection{\texorpdfstring{Slice()}{Slice()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily leveldb\+::\+Slice\+::\+Slice (\begin{DoxyParamCaption}\item[{const char $\ast$}]{d,  }\item[{size\+\_\+t}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_slice_ab79b60f33aa094179fe36880bc220853}\label{classleveldb_1_1_slice_ab79b60f33aa094179fe36880bc220853}} 
+\index{leveldb::Slice@{leveldb::Slice}!Slice@{Slice}}
+\index{Slice@{Slice}!leveldb::Slice@{leveldb::Slice}}
+\subsubsection{\texorpdfstring{Slice()}{Slice()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily leveldb\+::\+Slice\+::\+Slice (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_slice_a429c530560405fe1a7cd745f7afecf5a}\label{classleveldb_1_1_slice_a429c530560405fe1a7cd745f7afecf5a}} 
+\index{leveldb::Slice@{leveldb::Slice}!Slice@{Slice}}
+\index{Slice@{Slice}!leveldb::Slice@{leveldb::Slice}}
+\subsubsection{\texorpdfstring{Slice()}{Slice()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily leveldb\+::\+Slice\+::\+Slice (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_slice_a53cdde237c653292d361e92bc0f25229}\label{classleveldb_1_1_slice_a53cdde237c653292d361e92bc0f25229}} 
+\index{leveldb::Slice@{leveldb::Slice}!Slice@{Slice}}
+\index{Slice@{Slice}!leveldb::Slice@{leveldb::Slice}}
+\subsubsection{\texorpdfstring{Slice()}{Slice()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily leveldb\+::\+Slice\+::\+Slice (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_slice_ab9b6e340e8a483a5cf713f6be17709e3}\label{classleveldb_1_1_slice_ab9b6e340e8a483a5cf713f6be17709e3}} 
+\index{leveldb::Slice@{leveldb::Slice}!clear@{clear}}
+\index{clear@{clear}!leveldb::Slice@{leveldb::Slice}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void leveldb\+::\+Slice\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_slice_ab9b6e340e8a483a5cf713f6be17709e3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_slice_a1ec69137e5cee9ef34c5c4fca3c62957}\label{classleveldb_1_1_slice_a1ec69137e5cee9ef34c5c4fca3c62957}} 
+\index{leveldb::Slice@{leveldb::Slice}!compare@{compare}}
+\index{compare@{compare}!leveldb::Slice@{leveldb::Slice}}
+\subsubsection{\texorpdfstring{compare()}{compare()}}
+{\footnotesize\ttfamily int leveldb\+::\+Slice\+::compare (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{b }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_slice_a94ccee3d05b66ba0b059f2d9772b782b}\label{classleveldb_1_1_slice_a94ccee3d05b66ba0b059f2d9772b782b}} 
+\index{leveldb::Slice@{leveldb::Slice}!data@{data}}
+\index{data@{data}!leveldb::Slice@{leveldb::Slice}}
+\subsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily const char$\ast$ leveldb\+::\+Slice\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_slice_a94ccee3d05b66ba0b059f2d9772b782b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_slice_a56ac7a70125c26187ecf4dd040004582}\label{classleveldb_1_1_slice_a56ac7a70125c26187ecf4dd040004582}} 
+\index{leveldb::Slice@{leveldb::Slice}!empty@{empty}}
+\index{empty@{empty}!leveldb::Slice@{leveldb::Slice}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily bool leveldb\+::\+Slice\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_slice_a56ac7a70125c26187ecf4dd040004582_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_slice_aed082a8f2d4a877058f5bac84effaac1}\label{classleveldb_1_1_slice_aed082a8f2d4a877058f5bac84effaac1}} 
+\index{leveldb::Slice@{leveldb::Slice}!operator=@{operator=}}
+\index{operator=@{operator=}!leveldb::Slice@{leveldb::Slice}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}}\& leveldb\+::\+Slice\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_slice_aea62da83ffa80f22e065b15ca8596726}\label{classleveldb_1_1_slice_aea62da83ffa80f22e065b15ca8596726}} 
+\index{leveldb::Slice@{leveldb::Slice}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!leveldb::Slice@{leveldb::Slice}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily char leveldb\+::\+Slice\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{n }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_slice_a1be5b22958a115ebecb2b017aad2b3f6}\label{classleveldb_1_1_slice_a1be5b22958a115ebecb2b017aad2b3f6}} 
+\index{leveldb::Slice@{leveldb::Slice}!remove\_prefix@{remove\_prefix}}
+\index{remove\_prefix@{remove\_prefix}!leveldb::Slice@{leveldb::Slice}}
+\subsubsection{\texorpdfstring{remove\_prefix()}{remove\_prefix()}}
+{\footnotesize\ttfamily void leveldb\+::\+Slice\+::remove\+\_\+prefix (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_slice_a1be5b22958a115ebecb2b017aad2b3f6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_slice_a7344120beda110de81d0c45d4cfe4b63}\label{classleveldb_1_1_slice_a7344120beda110de81d0c45d4cfe4b63}} 
+\index{leveldb::Slice@{leveldb::Slice}!size@{size}}
+\index{size@{size}!leveldb::Slice@{leveldb::Slice}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily size\+\_\+t leveldb\+::\+Slice\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_slice_a7344120beda110de81d0c45d4cfe4b63_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_slice_ae1c0a7f51a18a83bbeebfb300bf23767}\label{classleveldb_1_1_slice_ae1c0a7f51a18a83bbeebfb300bf23767}} 
+\index{leveldb::Slice@{leveldb::Slice}!starts\_with@{starts\_with}}
+\index{starts\_with@{starts\_with}!leveldb::Slice@{leveldb::Slice}}
+\subsubsection{\texorpdfstring{starts\_with()}{starts\_with()}}
+{\footnotesize\ttfamily bool leveldb\+::\+Slice\+::starts\+\_\+with (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_slice_ae1c0a7f51a18a83bbeebfb300bf23767_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_slice_a10ab05e2c2358bb6e6b6d49bf69d72ce}\label{classleveldb_1_1_slice_a10ab05e2c2358bb6e6b6d49bf69d72ce}} 
+\index{leveldb::Slice@{leveldb::Slice}!ToString@{ToString}}
+\index{ToString@{ToString}!leveldb::Slice@{leveldb::Slice}}
+\subsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily std\+::string leveldb\+::\+Slice\+::\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_slice_a10ab05e2c2358bb6e6b6d49bf69d72ce_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/leveldb/\mbox{\hyperlink{slice_8h}{slice.\+h}}\end{DoxyCompactItemize}

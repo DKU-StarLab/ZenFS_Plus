@@ -1,0 +1,167 @@
+\hypertarget{classleveldb_1_1_internal_key}{}\section{leveldb\+::Internal\+Key Class Reference}
+\label{classleveldb_1_1_internal_key}\index{leveldb::InternalKey@{leveldb::InternalKey}}
+
+
+{\ttfamily \#include $<$dbformat.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+::Internal\+Key\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classleveldb_1_1_internal_key__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_internal_key_a277b997aadb14d0a65314187a1e6adf6}{Internal\+Key}} ()
+\item 
+\mbox{\hyperlink{classleveldb_1_1_internal_key_af436814d1667db55e93b6bd583619617}{Internal\+Key}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&\mbox{\hyperlink{classleveldb_1_1_internal_key_a9673dbb181eaa977e6f09c45b02938bc}{user\+\_\+key}}, \mbox{\hyperlink{namespaceleveldb_a5481ededd221c36d652c371249f869fa}{Sequence\+Number}} s, \mbox{\hyperlink{namespaceleveldb_acc038cb0d608414730cafa459a4ba866}{Value\+Type}} t)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_internal_key_a5a8c9bced0ba968b6b62d91cfb19a82a}{Decode\+From}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&s)
+\item 
+\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \mbox{\hyperlink{classleveldb_1_1_internal_key_a0cb2fdabc879bdbe7afc3ba12152384c}{Encode}} () const
+\item 
+\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \mbox{\hyperlink{classleveldb_1_1_internal_key_a9673dbb181eaa977e6f09c45b02938bc}{user\+\_\+key}} () const
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_internal_key_ada9566cd92b6b9784ab7f2f6f71d0a4e}{Set\+From}} (const \mbox{\hyperlink{structleveldb_1_1_parsed_internal_key}{Parsed\+Internal\+Key}} \&p)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_internal_key_ab6e9ebec1bf567de89d8dd34fdc51f86}{Clear}} ()
+\item 
+std\+::string \mbox{\hyperlink{classleveldb_1_1_internal_key_ad5812d3c90842906266e50b5a5911f84}{Debug\+String}} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_internal_key_a277b997aadb14d0a65314187a1e6adf6}\label{classleveldb_1_1_internal_key_a277b997aadb14d0a65314187a1e6adf6}} 
+\index{leveldb::InternalKey@{leveldb::InternalKey}!InternalKey@{InternalKey}}
+\index{InternalKey@{InternalKey}!leveldb::InternalKey@{leveldb::InternalKey}}
+\subsubsection{\texorpdfstring{InternalKey()}{InternalKey()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily leveldb\+::\+Internal\+Key\+::\+Internal\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_internal_key_af436814d1667db55e93b6bd583619617}\label{classleveldb_1_1_internal_key_af436814d1667db55e93b6bd583619617}} 
+\index{leveldb::InternalKey@{leveldb::InternalKey}!InternalKey@{InternalKey}}
+\index{InternalKey@{InternalKey}!leveldb::InternalKey@{leveldb::InternalKey}}
+\subsubsection{\texorpdfstring{InternalKey()}{InternalKey()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily leveldb\+::\+Internal\+Key\+::\+Internal\+Key (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{user\+\_\+key,  }\item[{\mbox{\hyperlink{namespaceleveldb_a5481ededd221c36d652c371249f869fa}{Sequence\+Number}}}]{s,  }\item[{\mbox{\hyperlink{namespaceleveldb_acc038cb0d608414730cafa459a4ba866}{Value\+Type}}}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_internal_key_af436814d1667db55e93b6bd583619617_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_internal_key_ab6e9ebec1bf567de89d8dd34fdc51f86}\label{classleveldb_1_1_internal_key_ab6e9ebec1bf567de89d8dd34fdc51f86}} 
+\index{leveldb::InternalKey@{leveldb::InternalKey}!Clear@{Clear}}
+\index{Clear@{Clear}!leveldb::InternalKey@{leveldb::InternalKey}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void leveldb\+::\+Internal\+Key\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_internal_key_ad5812d3c90842906266e50b5a5911f84}\label{classleveldb_1_1_internal_key_ad5812d3c90842906266e50b5a5911f84}} 
+\index{leveldb::InternalKey@{leveldb::InternalKey}!DebugString@{DebugString}}
+\index{DebugString@{DebugString}!leveldb::InternalKey@{leveldb::InternalKey}}
+\subsubsection{\texorpdfstring{DebugString()}{DebugString()}}
+{\footnotesize\ttfamily std\+::string leveldb\+::\+Internal\+Key\+::\+Debug\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_internal_key_ad5812d3c90842906266e50b5a5911f84_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_internal_key_ad5812d3c90842906266e50b5a5911f84_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_internal_key_a5a8c9bced0ba968b6b62d91cfb19a82a}\label{classleveldb_1_1_internal_key_a5a8c9bced0ba968b6b62d91cfb19a82a}} 
+\index{leveldb::InternalKey@{leveldb::InternalKey}!DecodeFrom@{DecodeFrom}}
+\index{DecodeFrom@{DecodeFrom}!leveldb::InternalKey@{leveldb::InternalKey}}
+\subsubsection{\texorpdfstring{DecodeFrom()}{DecodeFrom()}}
+{\footnotesize\ttfamily void leveldb\+::\+Internal\+Key\+::\+Decode\+From (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classleveldb_1_1_internal_key_a5a8c9bced0ba968b6b62d91cfb19a82a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{classleveldb_1_1_internal_key_a5a8c9bced0ba968b6b62d91cfb19a82a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_internal_key_a0cb2fdabc879bdbe7afc3ba12152384c}\label{classleveldb_1_1_internal_key_a0cb2fdabc879bdbe7afc3ba12152384c}} 
+\index{leveldb::InternalKey@{leveldb::InternalKey}!Encode@{Encode}}
+\index{Encode@{Encode}!leveldb::InternalKey@{leveldb::InternalKey}}
+\subsubsection{\texorpdfstring{Encode()}{Encode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} leveldb\+::\+Internal\+Key\+::\+Encode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_internal_key_a0cb2fdabc879bdbe7afc3ba12152384c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_internal_key_ada9566cd92b6b9784ab7f2f6f71d0a4e}\label{classleveldb_1_1_internal_key_ada9566cd92b6b9784ab7f2f6f71d0a4e}} 
+\index{leveldb::InternalKey@{leveldb::InternalKey}!SetFrom@{SetFrom}}
+\index{SetFrom@{SetFrom}!leveldb::InternalKey@{leveldb::InternalKey}}
+\subsubsection{\texorpdfstring{SetFrom()}{SetFrom()}}
+{\footnotesize\ttfamily void leveldb\+::\+Internal\+Key\+::\+Set\+From (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb_1_1_parsed_internal_key}{Parsed\+Internal\+Key}} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_internal_key_ada9566cd92b6b9784ab7f2f6f71d0a4e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_internal_key_a9673dbb181eaa977e6f09c45b02938bc}\label{classleveldb_1_1_internal_key_a9673dbb181eaa977e6f09c45b02938bc}} 
+\index{leveldb::InternalKey@{leveldb::InternalKey}!user\_key@{user\_key}}
+\index{user\_key@{user\_key}!leveldb::InternalKey@{leveldb::InternalKey}}
+\subsubsection{\texorpdfstring{user\_key()}{user\_key()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} leveldb\+::\+Internal\+Key\+::user\+\_\+key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_internal_key_a9673dbb181eaa977e6f09c45b02938bc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_internal_key_a9673dbb181eaa977e6f09c45b02938bc_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{dbformat_8h}{dbformat.\+h}}\item 
+db/\mbox{\hyperlink{dbformat_8cc}{dbformat.\+cc}}\end{DoxyCompactItemize}

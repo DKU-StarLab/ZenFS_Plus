@@ -1,0 +1,111 @@
+\hypertarget{classleveldb_1_1_table}{}\section{leveldb\+::Table Class Reference}
+\label{classleveldb_1_1_table}\index{leveldb::Table@{leveldb::Table}}
+
+
+{\ttfamily \#include $<$table.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+::Table\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classleveldb_1_1_table__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_table_a7ad26fdc3703c49c6096bf08236b7a49}{Table}} (const \mbox{\hyperlink{classleveldb_1_1_table}{Table}} \&)=delete
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_table_a75d9085263d90ecbebb0416118fbc977}{operator=}} (const \mbox{\hyperlink{classleveldb_1_1_table}{Table}} \&)=delete
+\item 
+\mbox{\hyperlink{classleveldb_1_1_table_a945f1f97b4f53402f5d55422a4dd3af2}{$\sim$\+Table}} ()
+\item 
+\mbox{\hyperlink{classleveldb_1_1_iterator}{Iterator}} $\ast$ \mbox{\hyperlink{classleveldb_1_1_table_a022289eb109fe9b143052b5ed852096d}{New\+Iterator}} (const \mbox{\hyperlink{structleveldb_1_1_read_options}{Read\+Options}} \&) const
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classleveldb_1_1_table_ae9f828f621836e12d154cbe78d6fba3e}{Approximate\+Offset\+Of}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&key) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_table_af9f2fb3a90cf32b5e39da910c5c37afb}{Open}} (const \mbox{\hyperlink{structleveldb_1_1_options}{Options}} \&options, \mbox{\hyperlink{classleveldb_1_1_random_access_file}{Random\+Access\+File}} $\ast$file, uint64\+\_\+t file\+\_\+size, \mbox{\hyperlink{classleveldb_1_1_table}{Table}} $\ast$$\ast$table)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_table_ae1e5f7bae4682672cfcc68d0add43199}{Table\+Cache}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_table_a7ad26fdc3703c49c6096bf08236b7a49}\label{classleveldb_1_1_table_a7ad26fdc3703c49c6096bf08236b7a49}} 
+\index{leveldb::Table@{leveldb::Table}!Table@{Table}}
+\index{Table@{Table}!leveldb::Table@{leveldb::Table}}
+\subsubsection{\texorpdfstring{Table()}{Table()}}
+{\footnotesize\ttfamily leveldb\+::\+Table\+::\+Table (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_table}{Table}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_table_a945f1f97b4f53402f5d55422a4dd3af2}\label{classleveldb_1_1_table_a945f1f97b4f53402f5d55422a4dd3af2}} 
+\index{leveldb::Table@{leveldb::Table}!````~Table@{$\sim$Table}}
+\index{````~Table@{$\sim$Table}!leveldb::Table@{leveldb::Table}}
+\subsubsection{\texorpdfstring{$\sim$Table()}{~Table()}}
+{\footnotesize\ttfamily leveldb\+::\+Table\+::$\sim$\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_table_ae9f828f621836e12d154cbe78d6fba3e}\label{classleveldb_1_1_table_ae9f828f621836e12d154cbe78d6fba3e}} 
+\index{leveldb::Table@{leveldb::Table}!ApproximateOffsetOf@{ApproximateOffsetOf}}
+\index{ApproximateOffsetOf@{ApproximateOffsetOf}!leveldb::Table@{leveldb::Table}}
+\subsubsection{\texorpdfstring{ApproximateOffsetOf()}{ApproximateOffsetOf()}}
+{\footnotesize\ttfamily uint64\+\_\+t leveldb\+::\+Table\+::\+Approximate\+Offset\+Of (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{key }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_table_ae9f828f621836e12d154cbe78d6fba3e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_table_a022289eb109fe9b143052b5ed852096d}\label{classleveldb_1_1_table_a022289eb109fe9b143052b5ed852096d}} 
+\index{leveldb::Table@{leveldb::Table}!NewIterator@{NewIterator}}
+\index{NewIterator@{NewIterator}!leveldb::Table@{leveldb::Table}}
+\subsubsection{\texorpdfstring{NewIterator()}{NewIterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_iterator}{Iterator}}$\ast$ leveldb\+::\+Table\+::\+New\+Iterator (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb_1_1_read_options}{Read\+Options}} \&}]{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_table_a022289eb109fe9b143052b5ed852096d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_table_af9f2fb3a90cf32b5e39da910c5c37afb}\label{classleveldb_1_1_table_af9f2fb3a90cf32b5e39da910c5c37afb}} 
+\index{leveldb::Table@{leveldb::Table}!Open@{Open}}
+\index{Open@{Open}!leveldb::Table@{leveldb::Table}}
+\subsubsection{\texorpdfstring{Open()}{Open()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Table\+::\+Open (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb_1_1_options}{Options}} \&}]{options,  }\item[{\mbox{\hyperlink{classleveldb_1_1_random_access_file}{Random\+Access\+File}} $\ast$}]{file,  }\item[{uint64\+\_\+t}]{file\+\_\+size,  }\item[{\mbox{\hyperlink{classleveldb_1_1_table}{Table}} $\ast$$\ast$}]{table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_table_a75d9085263d90ecbebb0416118fbc977}\label{classleveldb_1_1_table_a75d9085263d90ecbebb0416118fbc977}} 
+\index{leveldb::Table@{leveldb::Table}!operator=@{operator=}}
+\index{operator=@{operator=}!leveldb::Table@{leveldb::Table}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void leveldb\+::\+Table\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_table}{Table}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_table_ae1e5f7bae4682672cfcc68d0add43199}\label{classleveldb_1_1_table_ae1e5f7bae4682672cfcc68d0add43199}} 
+\index{leveldb::Table@{leveldb::Table}!TableCache@{TableCache}}
+\index{TableCache@{TableCache}!leveldb::Table@{leveldb::Table}}
+\subsubsection{\texorpdfstring{TableCache}{TableCache}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classleveldb_1_1_table_cache}{Table\+Cache}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/leveldb/\mbox{\hyperlink{table_8h}{table.\+h}}\end{DoxyCompactItemize}

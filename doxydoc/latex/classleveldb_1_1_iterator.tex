@@ -1,0 +1,282 @@
+\hypertarget{classleveldb_1_1_iterator}{}\section{leveldb\+::Iterator Class Reference}
+\label{classleveldb_1_1_iterator}\index{leveldb::Iterator@{leveldb::Iterator}}
+
+
+{\ttfamily \#include $<$iterator.\+h$>$}
+
+
+
+Inheritance diagram for leveldb\+::Iterator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_iterator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for leveldb\+::Iterator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classleveldb_1_1_iterator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classleveldb_1_1_iterator_aefcc7b475ddca596fe2429a2976e7730}{Cleanup\+Function}} = void($\ast$)(void $\ast$arg1, void $\ast$arg2)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_iterator_a1dc1cbc893e55a3fc990f08cf191480a}{Iterator}} ()
+\item 
+\mbox{\hyperlink{classleveldb_1_1_iterator_abe49ca39e162abccbfd1f0582a14354b}{Iterator}} (const \mbox{\hyperlink{classleveldb_1_1_iterator}{Iterator}} \&)=delete
+\item 
+\mbox{\hyperlink{classleveldb_1_1_iterator}{Iterator}} \& \mbox{\hyperlink{classleveldb_1_1_iterator_aa893453777013b3a7b9367b605076111}{operator=}} (const \mbox{\hyperlink{classleveldb_1_1_iterator}{Iterator}} \&)=delete
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_iterator_a19904cc809b8eb7b3afcddcc38343fa5}{$\sim$\+Iterator}} ()
+\item 
+virtual bool \mbox{\hyperlink{classleveldb_1_1_iterator_a38614978bfa0586327b8e237bcb46012}{Valid}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classleveldb_1_1_iterator_a3594967cf26ddf1d37c7b886bb48627e}{Seek\+To\+First}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classleveldb_1_1_iterator_a8ad637f0a759e6d94cca6c5b4db440d3}{Seek\+To\+Last}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classleveldb_1_1_iterator_a97a556e97ded60c677fbf4de7321ec44}{Seek}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&target)=0
+\item 
+virtual void \mbox{\hyperlink{classleveldb_1_1_iterator_aea54a5ca7eb942eb15770820529410e7}{Next}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classleveldb_1_1_iterator_a28798d802a203788587dc6adc5bc729e}{Prev}} ()=0
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \mbox{\hyperlink{classleveldb_1_1_iterator_ad17feced6e24a1b21db5ae6940c1f220}{key}} () const =0
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \mbox{\hyperlink{classleveldb_1_1_iterator_a613ac2e965518aad7a064c64c72bcf7c}{value}} () const =0
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_iterator_ac84f34623a031b7eeb23409320f76376}{status}} () const =0
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_iterator_a8c0281f9e4a2c9dceb37aad8128b636f}{Register\+Cleanup}} (\mbox{\hyperlink{classleveldb_1_1_iterator_aefcc7b475ddca596fe2429a2976e7730}{Cleanup\+Function}} function, void $\ast$arg1, void $\ast$arg2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_iterator_aefcc7b475ddca596fe2429a2976e7730}\label{classleveldb_1_1_iterator_aefcc7b475ddca596fe2429a2976e7730}} 
+\index{leveldb::Iterator@{leveldb::Iterator}!CleanupFunction@{CleanupFunction}}
+\index{CleanupFunction@{CleanupFunction}!leveldb::Iterator@{leveldb::Iterator}}
+\subsubsection{\texorpdfstring{CleanupFunction}{CleanupFunction}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classleveldb_1_1_iterator_aefcc7b475ddca596fe2429a2976e7730}{leveldb\+::\+Iterator\+::\+Cleanup\+Function}} =  void ($\ast$)(void$\ast$ arg1, void$\ast$ arg2)}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_iterator_a1dc1cbc893e55a3fc990f08cf191480a}\label{classleveldb_1_1_iterator_a1dc1cbc893e55a3fc990f08cf191480a}} 
+\index{leveldb::Iterator@{leveldb::Iterator}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!leveldb::Iterator@{leveldb::Iterator}}
+\subsubsection{\texorpdfstring{Iterator()}{Iterator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily leveldb\+::\+Iterator\+::\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classleveldb_1_1_iterator_abe49ca39e162abccbfd1f0582a14354b}\label{classleveldb_1_1_iterator_abe49ca39e162abccbfd1f0582a14354b}} 
+\index{leveldb::Iterator@{leveldb::Iterator}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!leveldb::Iterator@{leveldb::Iterator}}
+\subsubsection{\texorpdfstring{Iterator()}{Iterator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily leveldb\+::\+Iterator\+::\+Iterator (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_iterator}{Iterator}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_iterator_a19904cc809b8eb7b3afcddcc38343fa5}\label{classleveldb_1_1_iterator_a19904cc809b8eb7b3afcddcc38343fa5}} 
+\index{leveldb::Iterator@{leveldb::Iterator}!````~Iterator@{$\sim$Iterator}}
+\index{````~Iterator@{$\sim$Iterator}!leveldb::Iterator@{leveldb::Iterator}}
+\subsubsection{\texorpdfstring{$\sim$Iterator()}{~Iterator()}}
+{\footnotesize\ttfamily virtual leveldb\+::\+Iterator\+::$\sim$\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_iterator_ad17feced6e24a1b21db5ae6940c1f220}\label{classleveldb_1_1_iterator_ad17feced6e24a1b21db5ae6940c1f220}} 
+\index{leveldb::Iterator@{leveldb::Iterator}!key@{key}}
+\index{key@{key}!leveldb::Iterator@{leveldb::Iterator}}
+\subsubsection{\texorpdfstring{key()}{key()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} leveldb\+::\+Iterator\+::key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classleveldb_1_1_version_1_1_level_file_num_iterator_af89babdc6efb44a125b9ec597fc96bd8}{leveldb\+::\+Version\+::\+Level\+File\+Num\+Iterator}}, and \mbox{\hyperlink{classleveldb_1_1_mem_table_iterator_a6044613338dfb547fc5148e4b6461d15}{leveldb\+::\+Mem\+Table\+Iterator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_iterator_ad17feced6e24a1b21db5ae6940c1f220_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_iterator_aea54a5ca7eb942eb15770820529410e7}\label{classleveldb_1_1_iterator_aea54a5ca7eb942eb15770820529410e7}} 
+\index{leveldb::Iterator@{leveldb::Iterator}!Next@{Next}}
+\index{Next@{Next}!leveldb::Iterator@{leveldb::Iterator}}
+\subsubsection{\texorpdfstring{Next()}{Next()}}
+{\footnotesize\ttfamily virtual void leveldb\+::\+Iterator\+::\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classleveldb_1_1_version_1_1_level_file_num_iterator_a7f470d4bd4dd27ff653bd1e61ccfd759}{leveldb\+::\+Version\+::\+Level\+File\+Num\+Iterator}}, and \mbox{\hyperlink{classleveldb_1_1_mem_table_iterator_a8ce5457cf61b989ce1ceec80084f891c}{leveldb\+::\+Mem\+Table\+Iterator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_iterator_aea54a5ca7eb942eb15770820529410e7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_iterator_aa893453777013b3a7b9367b605076111}\label{classleveldb_1_1_iterator_aa893453777013b3a7b9367b605076111}} 
+\index{leveldb::Iterator@{leveldb::Iterator}!operator=@{operator=}}
+\index{operator=@{operator=}!leveldb::Iterator@{leveldb::Iterator}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_iterator}{Iterator}}\& leveldb\+::\+Iterator\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_iterator}{Iterator}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_iterator_a28798d802a203788587dc6adc5bc729e}\label{classleveldb_1_1_iterator_a28798d802a203788587dc6adc5bc729e}} 
+\index{leveldb::Iterator@{leveldb::Iterator}!Prev@{Prev}}
+\index{Prev@{Prev}!leveldb::Iterator@{leveldb::Iterator}}
+\subsubsection{\texorpdfstring{Prev()}{Prev()}}
+{\footnotesize\ttfamily virtual void leveldb\+::\+Iterator\+::\+Prev (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classleveldb_1_1_version_1_1_level_file_num_iterator_ab39c60a98d579590231034fdb665cb42}{leveldb\+::\+Version\+::\+Level\+File\+Num\+Iterator}}, and \mbox{\hyperlink{classleveldb_1_1_mem_table_iterator_a61f8a385b268158a1e7bd0cba29a83c1}{leveldb\+::\+Mem\+Table\+Iterator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_iterator_a28798d802a203788587dc6adc5bc729e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_iterator_a8c0281f9e4a2c9dceb37aad8128b636f}\label{classleveldb_1_1_iterator_a8c0281f9e4a2c9dceb37aad8128b636f}} 
+\index{leveldb::Iterator@{leveldb::Iterator}!RegisterCleanup@{RegisterCleanup}}
+\index{RegisterCleanup@{RegisterCleanup}!leveldb::Iterator@{leveldb::Iterator}}
+\subsubsection{\texorpdfstring{RegisterCleanup()}{RegisterCleanup()}}
+{\footnotesize\ttfamily void leveldb\+::\+Iterator\+::\+Register\+Cleanup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1_iterator_aefcc7b475ddca596fe2429a2976e7730}{Cleanup\+Function}}}]{function,  }\item[{void $\ast$}]{arg1,  }\item[{void $\ast$}]{arg2 }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_iterator_a8c0281f9e4a2c9dceb37aad8128b636f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_iterator_a97a556e97ded60c677fbf4de7321ec44}\label{classleveldb_1_1_iterator_a97a556e97ded60c677fbf4de7321ec44}} 
+\index{leveldb::Iterator@{leveldb::Iterator}!Seek@{Seek}}
+\index{Seek@{Seek}!leveldb::Iterator@{leveldb::Iterator}}
+\subsubsection{\texorpdfstring{Seek()}{Seek()}}
+{\footnotesize\ttfamily virtual void leveldb\+::\+Iterator\+::\+Seek (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classleveldb_1_1_version_1_1_level_file_num_iterator_adbe855f4a783c2f578e1ff2fbb5259b2}{leveldb\+::\+Version\+::\+Level\+File\+Num\+Iterator}}, and \mbox{\hyperlink{classleveldb_1_1_mem_table_iterator_a140f9575286994337de9b49ea7fe62cb}{leveldb\+::\+Mem\+Table\+Iterator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_iterator_a97a556e97ded60c677fbf4de7321ec44_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_iterator_a3594967cf26ddf1d37c7b886bb48627e}\label{classleveldb_1_1_iterator_a3594967cf26ddf1d37c7b886bb48627e}} 
+\index{leveldb::Iterator@{leveldb::Iterator}!SeekToFirst@{SeekToFirst}}
+\index{SeekToFirst@{SeekToFirst}!leveldb::Iterator@{leveldb::Iterator}}
+\subsubsection{\texorpdfstring{SeekToFirst()}{SeekToFirst()}}
+{\footnotesize\ttfamily virtual void leveldb\+::\+Iterator\+::\+Seek\+To\+First (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classleveldb_1_1_version_1_1_level_file_num_iterator_a8e5d34bf0c1e17e83bbb9941821a7ee2}{leveldb\+::\+Version\+::\+Level\+File\+Num\+Iterator}}, and \mbox{\hyperlink{classleveldb_1_1_mem_table_iterator_a72eaf5c1bcb6d513f71d4edcb8db3f98}{leveldb\+::\+Mem\+Table\+Iterator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_iterator_a3594967cf26ddf1d37c7b886bb48627e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_iterator_a8ad637f0a759e6d94cca6c5b4db440d3}\label{classleveldb_1_1_iterator_a8ad637f0a759e6d94cca6c5b4db440d3}} 
+\index{leveldb::Iterator@{leveldb::Iterator}!SeekToLast@{SeekToLast}}
+\index{SeekToLast@{SeekToLast}!leveldb::Iterator@{leveldb::Iterator}}
+\subsubsection{\texorpdfstring{SeekToLast()}{SeekToLast()}}
+{\footnotesize\ttfamily virtual void leveldb\+::\+Iterator\+::\+Seek\+To\+Last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classleveldb_1_1_version_1_1_level_file_num_iterator_ac7fafc33c049d1e33fdf9b5ae99f73d8}{leveldb\+::\+Version\+::\+Level\+File\+Num\+Iterator}}, and \mbox{\hyperlink{classleveldb_1_1_mem_table_iterator_aaed044dc887a51c924086f2a2844a5f0}{leveldb\+::\+Mem\+Table\+Iterator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classleveldb_1_1_iterator_a8ad637f0a759e6d94cca6c5b4db440d3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_iterator_ac84f34623a031b7eeb23409320f76376}\label{classleveldb_1_1_iterator_ac84f34623a031b7eeb23409320f76376}} 
+\index{leveldb::Iterator@{leveldb::Iterator}!status@{status}}
+\index{status@{status}!leveldb::Iterator@{leveldb::Iterator}}
+\subsubsection{\texorpdfstring{status()}{status()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Iterator\+::status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classleveldb_1_1_version_1_1_level_file_num_iterator_a173217ee0e689944ba052b1d07d2e58a}{leveldb\+::\+Version\+::\+Level\+File\+Num\+Iterator}}, and \mbox{\hyperlink{classleveldb_1_1_mem_table_iterator_af9bc5f041cd319cfb44408d6bf5aa4a2}{leveldb\+::\+Mem\+Table\+Iterator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_iterator_ac84f34623a031b7eeb23409320f76376_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_iterator_a38614978bfa0586327b8e237bcb46012}\label{classleveldb_1_1_iterator_a38614978bfa0586327b8e237bcb46012}} 
+\index{leveldb::Iterator@{leveldb::Iterator}!Valid@{Valid}}
+\index{Valid@{Valid}!leveldb::Iterator@{leveldb::Iterator}}
+\subsubsection{\texorpdfstring{Valid()}{Valid()}}
+{\footnotesize\ttfamily virtual bool leveldb\+::\+Iterator\+::\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classleveldb_1_1_version_1_1_level_file_num_iterator_a9bf0e045961ed325d37bfaa8b2c77e8b}{leveldb\+::\+Version\+::\+Level\+File\+Num\+Iterator}}, and \mbox{\hyperlink{classleveldb_1_1_mem_table_iterator_ab991decbbda3c3c76dbc1e3cce446b90}{leveldb\+::\+Mem\+Table\+Iterator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_iterator_a38614978bfa0586327b8e237bcb46012_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_iterator_a613ac2e965518aad7a064c64c72bcf7c}\label{classleveldb_1_1_iterator_a613ac2e965518aad7a064c64c72bcf7c}} 
+\index{leveldb::Iterator@{leveldb::Iterator}!value@{value}}
+\index{value@{value}!leveldb::Iterator@{leveldb::Iterator}}
+\subsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} leveldb\+::\+Iterator\+::value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classleveldb_1_1_version_1_1_level_file_num_iterator_af7b7da923a316d8b85f7194c926470db}{leveldb\+::\+Version\+::\+Level\+File\+Num\+Iterator}}, and \mbox{\hyperlink{classleveldb_1_1_mem_table_iterator_a6c2907c8c87d2b2933adcd5f0e01f781}{leveldb\+::\+Mem\+Table\+Iterator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_iterator_a613ac2e965518aad7a064c64c72bcf7c_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/leveldb/\mbox{\hyperlink{iterator_8h}{iterator.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,81 @@
+\hypertarget{db__bench_8cc}{}\section{db/db\+\_\+bench.cc File Reference}
+\label{db__bench_8cc}\index{db/db\_bench.cc@{db/db\_bench.cc}}
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}leveldb/cache.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/db.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/env.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/filter\+\_\+policy.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/write\+\_\+batch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}port/port.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/crc32c.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/histogram.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/mutexlock.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/random.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/testutil.\+h\char`\"{}}\newline
+Include dependency graph for db\+\_\+bench.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db__bench_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_benchmark}{leveldb\+::\+Benchmark}}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceleveldb}{leveldb}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{db__bench_8cc_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{db__bench_8cc_a3c04138a5bfe5d72780bb7e82a18e627}\label{db__bench_8cc_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{db\_bench.cc@{db\_bench.cc}!main@{main}}
+\index{main@{main}!db\_bench.cc@{db\_bench.cc}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{db__bench_8cc_a1a5c2f3b52d2dec1d9896cec4b02d17e}\label{db__bench_8cc_a1a5c2f3b52d2dec1d9896cec4b02d17e}} 
+\index{db\_bench.cc@{db\_bench.cc}!mu@{mu}}
+\index{mu@{mu}!db\_bench.cc@{db\_bench.cc}}
+\subsubsection{\texorpdfstring{mu}{mu}}
+{\footnotesize\ttfamily port\+::\+Mutex mu}
+
+\mbox{\Hypertarget{db__bench_8cc_a2391b9dab13f09bae65ae349c8d4c271}\label{db__bench_8cc_a2391b9dab13f09bae65ae349c8d4c271}} 
+\index{db\_bench.cc@{db\_bench.cc}!rand@{rand}}
+\index{rand@{rand}!db\_bench.cc@{db\_bench.cc}}
+\subsubsection{\texorpdfstring{rand}{rand}}
+{\footnotesize\ttfamily Random rand}
+
+\mbox{\Hypertarget{db__bench_8cc_af670cad03774a4316fb28a8634d33a56}\label{db__bench_8cc_af670cad03774a4316fb28a8634d33a56}} 
+\index{db\_bench.cc@{db\_bench.cc}!shared@{shared}}
+\index{shared@{shared}!db\_bench.cc@{db\_bench.cc}}
+\subsubsection{\texorpdfstring{shared}{shared}}
+{\footnotesize\ttfamily Shared\+State$\ast$ shared}
+
+\mbox{\Hypertarget{db__bench_8cc_a5925d216740c89f43482df806fd14e8c}\label{db__bench_8cc_a5925d216740c89f43482df806fd14e8c}} 
+\index{db\_bench.cc@{db\_bench.cc}!stats@{stats}}
+\index{stats@{stats}!db\_bench.cc@{db\_bench.cc}}
+\subsubsection{\texorpdfstring{stats}{stats}}
+{\footnotesize\ttfamily Stats stats}
+
+\mbox{\Hypertarget{db__bench_8cc_a8cc3dd191f714ba4ae35b2d3ac5b557a}\label{db__bench_8cc_a8cc3dd191f714ba4ae35b2d3ac5b557a}} 
+\index{db\_bench.cc@{db\_bench.cc}!tid@{tid}}
+\index{tid@{tid}!db\_bench.cc@{db\_bench.cc}}
+\subsubsection{\texorpdfstring{tid}{tid}}
+{\footnotesize\ttfamily int tid}
+

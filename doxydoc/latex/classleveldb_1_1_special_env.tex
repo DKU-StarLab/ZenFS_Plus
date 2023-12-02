@@ -1,0 +1,147 @@
+\hypertarget{classleveldb_1_1_special_env}{}\section{leveldb\+::Special\+Env Class Reference}
+\label{classleveldb_1_1_special_env}\index{leveldb::SpecialEnv@{leveldb::SpecialEnv}}
+
+
+Inheritance diagram for leveldb\+::Special\+Env\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classleveldb_1_1_special_env__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for leveldb\+::Special\+Env\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_special_env__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_special_env_a29fed9502e35a1f9374e0f46f4bd1181}{Special\+Env}} (\mbox{\hyperlink{classleveldb_1_1_env}{Env}} $\ast$base)
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_special_env_a2a8b88051ccc5f957321d47af0dae5ed}{New\+Writable\+File}} (const std\+::string \&f, \mbox{\hyperlink{classleveldb_1_1_writable_file}{Writable\+File}} $\ast$$\ast$r)
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_special_env_ae04ba2b7b94753d805e316dbda74ec00}{New\+Random\+Access\+File}} (const std\+::string \&f, \mbox{\hyperlink{classleveldb_1_1_random_access_file}{Random\+Access\+File}} $\ast$$\ast$r)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+port\+::\+Atomic\+Pointer \mbox{\hyperlink{classleveldb_1_1_special_env_af8a6a4d77f11f6986cb1d00f3cf9d37a}{delay\+\_\+data\+\_\+sync\+\_\+}}
+\item 
+port\+::\+Atomic\+Pointer \mbox{\hyperlink{classleveldb_1_1_special_env_ae468cdabd36e0b9fde534bb25a47499f}{data\+\_\+sync\+\_\+error\+\_\+}}
+\item 
+port\+::\+Atomic\+Pointer \mbox{\hyperlink{classleveldb_1_1_special_env_a21c9400bf22bd43f75349677b4d3413b}{no\+\_\+space\+\_\+}}
+\item 
+port\+::\+Atomic\+Pointer \mbox{\hyperlink{classleveldb_1_1_special_env_a3ecf4339c101366198febb32cfe938f0}{non\+\_\+writable\+\_\+}}
+\item 
+port\+::\+Atomic\+Pointer \mbox{\hyperlink{classleveldb_1_1_special_env_a354d87bbdeb456c36877e506872bcc04}{manifest\+\_\+sync\+\_\+error\+\_\+}}
+\item 
+port\+::\+Atomic\+Pointer \mbox{\hyperlink{classleveldb_1_1_special_env_a7a6fafc967db1ba7594676d372b7fbec}{manifest\+\_\+write\+\_\+error\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1_special_env_aaf50860248689bda9993dfdcfb53855a}{count\+\_\+random\+\_\+reads\+\_\+}}
+\item 
+Atomic\+Counter \mbox{\hyperlink{classleveldb_1_1_special_env_a7cf0b2e4dcd63460e8776ae3a2c70bee}{random\+\_\+read\+\_\+counter\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_special_env_a29fed9502e35a1f9374e0f46f4bd1181}\label{classleveldb_1_1_special_env_a29fed9502e35a1f9374e0f46f4bd1181}} 
+\index{leveldb::SpecialEnv@{leveldb::SpecialEnv}!SpecialEnv@{SpecialEnv}}
+\index{SpecialEnv@{SpecialEnv}!leveldb::SpecialEnv@{leveldb::SpecialEnv}}
+\subsubsection{\texorpdfstring{SpecialEnv()}{SpecialEnv()}}
+{\footnotesize\ttfamily leveldb\+::\+Special\+Env\+::\+Special\+Env (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1_env}{Env}} $\ast$}]{base }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_special_env_ae04ba2b7b94753d805e316dbda74ec00}\label{classleveldb_1_1_special_env_ae04ba2b7b94753d805e316dbda74ec00}} 
+\index{leveldb::SpecialEnv@{leveldb::SpecialEnv}!NewRandomAccessFile@{NewRandomAccessFile}}
+\index{NewRandomAccessFile@{NewRandomAccessFile}!leveldb::SpecialEnv@{leveldb::SpecialEnv}}
+\subsubsection{\texorpdfstring{NewRandomAccessFile()}{NewRandomAccessFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Special\+Env\+::\+New\+Random\+Access\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{f,  }\item[{\mbox{\hyperlink{classleveldb_1_1_random_access_file}{Random\+Access\+File}} $\ast$$\ast$}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_env_a1df3e0bb2d47ee914448df9bb9ca0734}{leveldb\+::\+Env}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_special_env_ae04ba2b7b94753d805e316dbda74ec00_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_special_env_a2a8b88051ccc5f957321d47af0dae5ed}\label{classleveldb_1_1_special_env_a2a8b88051ccc5f957321d47af0dae5ed}} 
+\index{leveldb::SpecialEnv@{leveldb::SpecialEnv}!NewWritableFile@{NewWritableFile}}
+\index{NewWritableFile@{NewWritableFile}!leveldb::SpecialEnv@{leveldb::SpecialEnv}}
+\subsubsection{\texorpdfstring{NewWritableFile()}{NewWritableFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Special\+Env\+::\+New\+Writable\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{f,  }\item[{\mbox{\hyperlink{classleveldb_1_1_writable_file}{Writable\+File}} $\ast$$\ast$}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_env_a4566194f3e82fede425fdb5bb355f7de}{leveldb\+::\+Env}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_special_env_aaf50860248689bda9993dfdcfb53855a}\label{classleveldb_1_1_special_env_aaf50860248689bda9993dfdcfb53855a}} 
+\index{leveldb::SpecialEnv@{leveldb::SpecialEnv}!count\_random\_reads\_@{count\_random\_reads\_}}
+\index{count\_random\_reads\_@{count\_random\_reads\_}!leveldb::SpecialEnv@{leveldb::SpecialEnv}}
+\subsubsection{\texorpdfstring{count\_random\_reads\_}{count\_random\_reads\_}}
+{\footnotesize\ttfamily bool leveldb\+::\+Special\+Env\+::count\+\_\+random\+\_\+reads\+\_\+}
+
+\mbox{\Hypertarget{classleveldb_1_1_special_env_ae468cdabd36e0b9fde534bb25a47499f}\label{classleveldb_1_1_special_env_ae468cdabd36e0b9fde534bb25a47499f}} 
+\index{leveldb::SpecialEnv@{leveldb::SpecialEnv}!data\_sync\_error\_@{data\_sync\_error\_}}
+\index{data\_sync\_error\_@{data\_sync\_error\_}!leveldb::SpecialEnv@{leveldb::SpecialEnv}}
+\subsubsection{\texorpdfstring{data\_sync\_error\_}{data\_sync\_error\_}}
+{\footnotesize\ttfamily port\+::\+Atomic\+Pointer leveldb\+::\+Special\+Env\+::data\+\_\+sync\+\_\+error\+\_\+}
+
+\mbox{\Hypertarget{classleveldb_1_1_special_env_af8a6a4d77f11f6986cb1d00f3cf9d37a}\label{classleveldb_1_1_special_env_af8a6a4d77f11f6986cb1d00f3cf9d37a}} 
+\index{leveldb::SpecialEnv@{leveldb::SpecialEnv}!delay\_data\_sync\_@{delay\_data\_sync\_}}
+\index{delay\_data\_sync\_@{delay\_data\_sync\_}!leveldb::SpecialEnv@{leveldb::SpecialEnv}}
+\subsubsection{\texorpdfstring{delay\_data\_sync\_}{delay\_data\_sync\_}}
+{\footnotesize\ttfamily port\+::\+Atomic\+Pointer leveldb\+::\+Special\+Env\+::delay\+\_\+data\+\_\+sync\+\_\+}
+
+\mbox{\Hypertarget{classleveldb_1_1_special_env_a354d87bbdeb456c36877e506872bcc04}\label{classleveldb_1_1_special_env_a354d87bbdeb456c36877e506872bcc04}} 
+\index{leveldb::SpecialEnv@{leveldb::SpecialEnv}!manifest\_sync\_error\_@{manifest\_sync\_error\_}}
+\index{manifest\_sync\_error\_@{manifest\_sync\_error\_}!leveldb::SpecialEnv@{leveldb::SpecialEnv}}
+\subsubsection{\texorpdfstring{manifest\_sync\_error\_}{manifest\_sync\_error\_}}
+{\footnotesize\ttfamily port\+::\+Atomic\+Pointer leveldb\+::\+Special\+Env\+::manifest\+\_\+sync\+\_\+error\+\_\+}
+
+\mbox{\Hypertarget{classleveldb_1_1_special_env_a7a6fafc967db1ba7594676d372b7fbec}\label{classleveldb_1_1_special_env_a7a6fafc967db1ba7594676d372b7fbec}} 
+\index{leveldb::SpecialEnv@{leveldb::SpecialEnv}!manifest\_write\_error\_@{manifest\_write\_error\_}}
+\index{manifest\_write\_error\_@{manifest\_write\_error\_}!leveldb::SpecialEnv@{leveldb::SpecialEnv}}
+\subsubsection{\texorpdfstring{manifest\_write\_error\_}{manifest\_write\_error\_}}
+{\footnotesize\ttfamily port\+::\+Atomic\+Pointer leveldb\+::\+Special\+Env\+::manifest\+\_\+write\+\_\+error\+\_\+}
+
+\mbox{\Hypertarget{classleveldb_1_1_special_env_a21c9400bf22bd43f75349677b4d3413b}\label{classleveldb_1_1_special_env_a21c9400bf22bd43f75349677b4d3413b}} 
+\index{leveldb::SpecialEnv@{leveldb::SpecialEnv}!no\_space\_@{no\_space\_}}
+\index{no\_space\_@{no\_space\_}!leveldb::SpecialEnv@{leveldb::SpecialEnv}}
+\subsubsection{\texorpdfstring{no\_space\_}{no\_space\_}}
+{\footnotesize\ttfamily port\+::\+Atomic\+Pointer leveldb\+::\+Special\+Env\+::no\+\_\+space\+\_\+}
+
+\mbox{\Hypertarget{classleveldb_1_1_special_env_a3ecf4339c101366198febb32cfe938f0}\label{classleveldb_1_1_special_env_a3ecf4339c101366198febb32cfe938f0}} 
+\index{leveldb::SpecialEnv@{leveldb::SpecialEnv}!non\_writable\_@{non\_writable\_}}
+\index{non\_writable\_@{non\_writable\_}!leveldb::SpecialEnv@{leveldb::SpecialEnv}}
+\subsubsection{\texorpdfstring{non\_writable\_}{non\_writable\_}}
+{\footnotesize\ttfamily port\+::\+Atomic\+Pointer leveldb\+::\+Special\+Env\+::non\+\_\+writable\+\_\+}
+
+\mbox{\Hypertarget{classleveldb_1_1_special_env_a7cf0b2e4dcd63460e8776ae3a2c70bee}\label{classleveldb_1_1_special_env_a7cf0b2e4dcd63460e8776ae3a2c70bee}} 
+\index{leveldb::SpecialEnv@{leveldb::SpecialEnv}!random\_read\_counter\_@{random\_read\_counter\_}}
+\index{random\_read\_counter\_@{random\_read\_counter\_}!leveldb::SpecialEnv@{leveldb::SpecialEnv}}
+\subsubsection{\texorpdfstring{random\_read\_counter\_}{random\_read\_counter\_}}
+{\footnotesize\ttfamily Atomic\+Counter leveldb\+::\+Special\+Env\+::random\+\_\+read\+\_\+counter\+\_\+}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{db__test_8cc}{db\+\_\+test.\+cc}}\end{DoxyCompactItemize}

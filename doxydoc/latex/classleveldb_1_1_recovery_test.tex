@@ -1,0 +1,402 @@
+\hypertarget{classleveldb_1_1_recovery_test}{}\section{leveldb\+::Recovery\+Test Class Reference}
+\label{classleveldb_1_1_recovery_test}\index{leveldb::RecoveryTest@{leveldb::RecoveryTest}}
+
+
+Collaboration diagram for leveldb\+::Recovery\+Test\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classleveldb_1_1_recovery_test__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_recovery_test_a14ee3aa377807ae74d5b56ed879368c4}{Recovery\+Test}} ()
+\item 
+\mbox{\hyperlink{classleveldb_1_1_recovery_test_acf396d9c48b2a5bdc1ed298210da1ac3}{$\sim$\+Recovery\+Test}} ()
+\item 
+\mbox{\hyperlink{classleveldb_1_1_d_b_impl}{D\+B\+Impl}} $\ast$ \mbox{\hyperlink{classleveldb_1_1_recovery_test_a5b0e79e644c07cd5e1a130268e93c35e}{dbfull}} () const
+\item 
+\mbox{\hyperlink{classleveldb_1_1_env}{Env}} $\ast$ \mbox{\hyperlink{classleveldb_1_1_recovery_test_a1e7db47a1e8abe79a30b6f009b6877b1}{env}} () const
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1_recovery_test_a7f2b97d648d2eb95bd1c9c29697e3389}{Can\+Append}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_recovery_test_a65077ffc562d9d4c5434166068836cbb}{Close}} ()
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_recovery_test_a24c107441e4cd205302496825eb6cef7}{Open\+With\+Status}} (\mbox{\hyperlink{structleveldb_1_1_options}{Options}} $\ast$options=nullptr)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_recovery_test_ada3cbb27c8b7dd9eb4e0be43a476bb2e}{Open}} (\mbox{\hyperlink{structleveldb_1_1_options}{Options}} $\ast$options=nullptr)
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_recovery_test_ad5b3e5d410f452814a0c47b195bda9ff}{Put}} (const std\+::string \&k, const std\+::string \&v)
+\item 
+std\+::string \mbox{\hyperlink{classleveldb_1_1_recovery_test_a296ba88823b34d714bb7c74ed6d83810}{Get}} (const std\+::string \&k, const \mbox{\hyperlink{classleveldb_1_1_snapshot}{Snapshot}} $\ast$snapshot=nullptr)
+\item 
+std\+::string \mbox{\hyperlink{classleveldb_1_1_recovery_test_a544166c64a5b786612230973ce510eaa}{Manifest\+File\+Name}} ()
+\item 
+std\+::string \mbox{\hyperlink{classleveldb_1_1_recovery_test_a1de129c9b097649c0c4349882e536d77}{Log\+Name}} (uint64\+\_\+t number)
+\item 
+size\+\_\+t \mbox{\hyperlink{classleveldb_1_1_recovery_test_a4c1f0cadf52c5580bf6a68731bb573c0}{Delete\+Log\+Files}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_recovery_test_a45284a48b4457b9980ee9425ff6357bc}{Delete\+Manifest\+File}} ()
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classleveldb_1_1_recovery_test_acc405124d7e1408642f64dadf0eb9227}{First\+Log\+File}} ()
+\item 
+std\+::vector$<$ uint64\+\_\+t $>$ \mbox{\hyperlink{classleveldb_1_1_recovery_test_a547c06a2c905b46cbb86a793609c28fd}{Get\+Files}} (\mbox{\hyperlink{namespaceleveldb_ab8e559ac5cadcb2b5dd531c60df944f1}{File\+Type}} t)
+\item 
+int \mbox{\hyperlink{classleveldb_1_1_recovery_test_af02345905fe0db242ae9d68c2536cc4b}{Num\+Logs}} ()
+\item 
+int \mbox{\hyperlink{classleveldb_1_1_recovery_test_a3113da156897fffafda29b83b1f08baa}{Num\+Tables}} ()
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classleveldb_1_1_recovery_test_a0e1b5ec063241e273e4c38f7c70a988c}{File\+Size}} (const std\+::string \&fname)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_recovery_test_ae356f5bfb63f57c36ce5763c8bf82495}{Compact\+Mem\+Table}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_recovery_test_a361c575ee0f6531b95fb58878b1c69bf}{Make\+Log\+File}} (uint64\+\_\+t lognum, \mbox{\hyperlink{namespaceleveldb_a5481ededd221c36d652c371249f869fa}{Sequence\+Number}} seq, \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} key, \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} val)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_recovery_test_a14ee3aa377807ae74d5b56ed879368c4}\label{classleveldb_1_1_recovery_test_a14ee3aa377807ae74d5b56ed879368c4}} 
+\index{leveldb::RecoveryTest@{leveldb::RecoveryTest}!RecoveryTest@{RecoveryTest}}
+\index{RecoveryTest@{RecoveryTest}!leveldb::RecoveryTest@{leveldb::RecoveryTest}}
+\subsubsection{\texorpdfstring{RecoveryTest()}{RecoveryTest()}}
+{\footnotesize\ttfamily leveldb\+::\+Recovery\+Test\+::\+Recovery\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_recovery_test_a14ee3aa377807ae74d5b56ed879368c4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_recovery_test_acf396d9c48b2a5bdc1ed298210da1ac3}\label{classleveldb_1_1_recovery_test_acf396d9c48b2a5bdc1ed298210da1ac3}} 
+\index{leveldb::RecoveryTest@{leveldb::RecoveryTest}!````~RecoveryTest@{$\sim$RecoveryTest}}
+\index{````~RecoveryTest@{$\sim$RecoveryTest}!leveldb::RecoveryTest@{leveldb::RecoveryTest}}
+\subsubsection{\texorpdfstring{$\sim$RecoveryTest()}{~RecoveryTest()}}
+{\footnotesize\ttfamily leveldb\+::\+Recovery\+Test\+::$\sim$\+Recovery\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_recovery_test_acf396d9c48b2a5bdc1ed298210da1ac3_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_recovery_test_a7f2b97d648d2eb95bd1c9c29697e3389}\label{classleveldb_1_1_recovery_test_a7f2b97d648d2eb95bd1c9c29697e3389}} 
+\index{leveldb::RecoveryTest@{leveldb::RecoveryTest}!CanAppend@{CanAppend}}
+\index{CanAppend@{CanAppend}!leveldb::RecoveryTest@{leveldb::RecoveryTest}}
+\subsubsection{\texorpdfstring{CanAppend()}{CanAppend()}}
+{\footnotesize\ttfamily bool leveldb\+::\+Recovery\+Test\+::\+Can\+Append (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_recovery_test_a7f2b97d648d2eb95bd1c9c29697e3389_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_recovery_test_a65077ffc562d9d4c5434166068836cbb}\label{classleveldb_1_1_recovery_test_a65077ffc562d9d4c5434166068836cbb}} 
+\index{leveldb::RecoveryTest@{leveldb::RecoveryTest}!Close@{Close}}
+\index{Close@{Close}!leveldb::RecoveryTest@{leveldb::RecoveryTest}}
+\subsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily void leveldb\+::\+Recovery\+Test\+::\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_recovery_test_a65077ffc562d9d4c5434166068836cbb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_recovery_test_ae356f5bfb63f57c36ce5763c8bf82495}\label{classleveldb_1_1_recovery_test_ae356f5bfb63f57c36ce5763c8bf82495}} 
+\index{leveldb::RecoveryTest@{leveldb::RecoveryTest}!CompactMemTable@{CompactMemTable}}
+\index{CompactMemTable@{CompactMemTable}!leveldb::RecoveryTest@{leveldb::RecoveryTest}}
+\subsubsection{\texorpdfstring{CompactMemTable()}{CompactMemTable()}}
+{\footnotesize\ttfamily void leveldb\+::\+Recovery\+Test\+::\+Compact\+Mem\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_recovery_test_ae356f5bfb63f57c36ce5763c8bf82495_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_recovery_test_a5b0e79e644c07cd5e1a130268e93c35e}\label{classleveldb_1_1_recovery_test_a5b0e79e644c07cd5e1a130268e93c35e}} 
+\index{leveldb::RecoveryTest@{leveldb::RecoveryTest}!dbfull@{dbfull}}
+\index{dbfull@{dbfull}!leveldb::RecoveryTest@{leveldb::RecoveryTest}}
+\subsubsection{\texorpdfstring{dbfull()}{dbfull()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_d_b_impl}{D\+B\+Impl}}$\ast$ leveldb\+::\+Recovery\+Test\+::dbfull (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classleveldb_1_1_recovery_test_a5b0e79e644c07cd5e1a130268e93c35e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_recovery_test_a4c1f0cadf52c5580bf6a68731bb573c0}\label{classleveldb_1_1_recovery_test_a4c1f0cadf52c5580bf6a68731bb573c0}} 
+\index{leveldb::RecoveryTest@{leveldb::RecoveryTest}!DeleteLogFiles@{DeleteLogFiles}}
+\index{DeleteLogFiles@{DeleteLogFiles}!leveldb::RecoveryTest@{leveldb::RecoveryTest}}
+\subsubsection{\texorpdfstring{DeleteLogFiles()}{DeleteLogFiles()}}
+{\footnotesize\ttfamily size\+\_\+t leveldb\+::\+Recovery\+Test\+::\+Delete\+Log\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_recovery_test_a4c1f0cadf52c5580bf6a68731bb573c0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_recovery_test_a45284a48b4457b9980ee9425ff6357bc}\label{classleveldb_1_1_recovery_test_a45284a48b4457b9980ee9425ff6357bc}} 
+\index{leveldb::RecoveryTest@{leveldb::RecoveryTest}!DeleteManifestFile@{DeleteManifestFile}}
+\index{DeleteManifestFile@{DeleteManifestFile}!leveldb::RecoveryTest@{leveldb::RecoveryTest}}
+\subsubsection{\texorpdfstring{DeleteManifestFile()}{DeleteManifestFile()}}
+{\footnotesize\ttfamily void leveldb\+::\+Recovery\+Test\+::\+Delete\+Manifest\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_recovery_test_a45284a48b4457b9980ee9425ff6357bc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_recovery_test_a1e7db47a1e8abe79a30b6f009b6877b1}\label{classleveldb_1_1_recovery_test_a1e7db47a1e8abe79a30b6f009b6877b1}} 
+\index{leveldb::RecoveryTest@{leveldb::RecoveryTest}!env@{env}}
+\index{env@{env}!leveldb::RecoveryTest@{leveldb::RecoveryTest}}
+\subsubsection{\texorpdfstring{env()}{env()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_env}{Env}}$\ast$ leveldb\+::\+Recovery\+Test\+::env (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_recovery_test_a0e1b5ec063241e273e4c38f7c70a988c}\label{classleveldb_1_1_recovery_test_a0e1b5ec063241e273e4c38f7c70a988c}} 
+\index{leveldb::RecoveryTest@{leveldb::RecoveryTest}!FileSize@{FileSize}}
+\index{FileSize@{FileSize}!leveldb::RecoveryTest@{leveldb::RecoveryTest}}
+\subsubsection{\texorpdfstring{FileSize()}{FileSize()}}
+{\footnotesize\ttfamily uint64\+\_\+t leveldb\+::\+Recovery\+Test\+::\+File\+Size (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_recovery_test_a0e1b5ec063241e273e4c38f7c70a988c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_recovery_test_acc405124d7e1408642f64dadf0eb9227}\label{classleveldb_1_1_recovery_test_acc405124d7e1408642f64dadf0eb9227}} 
+\index{leveldb::RecoveryTest@{leveldb::RecoveryTest}!FirstLogFile@{FirstLogFile}}
+\index{FirstLogFile@{FirstLogFile}!leveldb::RecoveryTest@{leveldb::RecoveryTest}}
+\subsubsection{\texorpdfstring{FirstLogFile()}{FirstLogFile()}}
+{\footnotesize\ttfamily uint64\+\_\+t leveldb\+::\+Recovery\+Test\+::\+First\+Log\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_recovery_test_acc405124d7e1408642f64dadf0eb9227_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_recovery_test_a296ba88823b34d714bb7c74ed6d83810}\label{classleveldb_1_1_recovery_test_a296ba88823b34d714bb7c74ed6d83810}} 
+\index{leveldb::RecoveryTest@{leveldb::RecoveryTest}!Get@{Get}}
+\index{Get@{Get}!leveldb::RecoveryTest@{leveldb::RecoveryTest}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily std\+::string leveldb\+::\+Recovery\+Test\+::\+Get (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{k,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_snapshot}{Snapshot}} $\ast$}]{snapshot = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_recovery_test_a296ba88823b34d714bb7c74ed6d83810_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_recovery_test_a547c06a2c905b46cbb86a793609c28fd}\label{classleveldb_1_1_recovery_test_a547c06a2c905b46cbb86a793609c28fd}} 
+\index{leveldb::RecoveryTest@{leveldb::RecoveryTest}!GetFiles@{GetFiles}}
+\index{GetFiles@{GetFiles}!leveldb::RecoveryTest@{leveldb::RecoveryTest}}
+\subsubsection{\texorpdfstring{GetFiles()}{GetFiles()}}
+{\footnotesize\ttfamily std\+::vector$<$uint64\+\_\+t$>$ leveldb\+::\+Recovery\+Test\+::\+Get\+Files (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceleveldb_ab8e559ac5cadcb2b5dd531c60df944f1}{File\+Type}}}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_recovery_test_a547c06a2c905b46cbb86a793609c28fd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_recovery_test_a547c06a2c905b46cbb86a793609c28fd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_recovery_test_a1de129c9b097649c0c4349882e536d77}\label{classleveldb_1_1_recovery_test_a1de129c9b097649c0c4349882e536d77}} 
+\index{leveldb::RecoveryTest@{leveldb::RecoveryTest}!LogName@{LogName}}
+\index{LogName@{LogName}!leveldb::RecoveryTest@{leveldb::RecoveryTest}}
+\subsubsection{\texorpdfstring{LogName()}{LogName()}}
+{\footnotesize\ttfamily std\+::string leveldb\+::\+Recovery\+Test\+::\+Log\+Name (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classleveldb_1_1_recovery_test_a1de129c9b097649c0c4349882e536d77_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classleveldb_1_1_recovery_test_a1de129c9b097649c0c4349882e536d77_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_recovery_test_a361c575ee0f6531b95fb58878b1c69bf}\label{classleveldb_1_1_recovery_test_a361c575ee0f6531b95fb58878b1c69bf}} 
+\index{leveldb::RecoveryTest@{leveldb::RecoveryTest}!MakeLogFile@{MakeLogFile}}
+\index{MakeLogFile@{MakeLogFile}!leveldb::RecoveryTest@{leveldb::RecoveryTest}}
+\subsubsection{\texorpdfstring{MakeLogFile()}{MakeLogFile()}}
+{\footnotesize\ttfamily void leveldb\+::\+Recovery\+Test\+::\+Make\+Log\+File (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{lognum,  }\item[{\mbox{\hyperlink{namespaceleveldb_a5481ededd221c36d652c371249f869fa}{Sequence\+Number}}}]{seq,  }\item[{\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}}}]{key,  }\item[{\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}}}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_recovery_test_a361c575ee0f6531b95fb58878b1c69bf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_recovery_test_a544166c64a5b786612230973ce510eaa}\label{classleveldb_1_1_recovery_test_a544166c64a5b786612230973ce510eaa}} 
+\index{leveldb::RecoveryTest@{leveldb::RecoveryTest}!ManifestFileName@{ManifestFileName}}
+\index{ManifestFileName@{ManifestFileName}!leveldb::RecoveryTest@{leveldb::RecoveryTest}}
+\subsubsection{\texorpdfstring{ManifestFileName()}{ManifestFileName()}}
+{\footnotesize\ttfamily std\+::string leveldb\+::\+Recovery\+Test\+::\+Manifest\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_recovery_test_a544166c64a5b786612230973ce510eaa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classleveldb_1_1_recovery_test_a544166c64a5b786612230973ce510eaa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_recovery_test_af02345905fe0db242ae9d68c2536cc4b}\label{classleveldb_1_1_recovery_test_af02345905fe0db242ae9d68c2536cc4b}} 
+\index{leveldb::RecoveryTest@{leveldb::RecoveryTest}!NumLogs@{NumLogs}}
+\index{NumLogs@{NumLogs}!leveldb::RecoveryTest@{leveldb::RecoveryTest}}
+\subsubsection{\texorpdfstring{NumLogs()}{NumLogs()}}
+{\footnotesize\ttfamily int leveldb\+::\+Recovery\+Test\+::\+Num\+Logs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_recovery_test_af02345905fe0db242ae9d68c2536cc4b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_recovery_test_af02345905fe0db242ae9d68c2536cc4b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_recovery_test_a3113da156897fffafda29b83b1f08baa}\label{classleveldb_1_1_recovery_test_a3113da156897fffafda29b83b1f08baa}} 
+\index{leveldb::RecoveryTest@{leveldb::RecoveryTest}!NumTables@{NumTables}}
+\index{NumTables@{NumTables}!leveldb::RecoveryTest@{leveldb::RecoveryTest}}
+\subsubsection{\texorpdfstring{NumTables()}{NumTables()}}
+{\footnotesize\ttfamily int leveldb\+::\+Recovery\+Test\+::\+Num\+Tables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_recovery_test_a3113da156897fffafda29b83b1f08baa_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_recovery_test_ada3cbb27c8b7dd9eb4e0be43a476bb2e}\label{classleveldb_1_1_recovery_test_ada3cbb27c8b7dd9eb4e0be43a476bb2e}} 
+\index{leveldb::RecoveryTest@{leveldb::RecoveryTest}!Open@{Open}}
+\index{Open@{Open}!leveldb::RecoveryTest@{leveldb::RecoveryTest}}
+\subsubsection{\texorpdfstring{Open()}{Open()}}
+{\footnotesize\ttfamily void leveldb\+::\+Recovery\+Test\+::\+Open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb_1_1_options}{Options}} $\ast$}]{options = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_recovery_test_ada3cbb27c8b7dd9eb4e0be43a476bb2e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classleveldb_1_1_recovery_test_ada3cbb27c8b7dd9eb4e0be43a476bb2e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_recovery_test_a24c107441e4cd205302496825eb6cef7}\label{classleveldb_1_1_recovery_test_a24c107441e4cd205302496825eb6cef7}} 
+\index{leveldb::RecoveryTest@{leveldb::RecoveryTest}!OpenWithStatus@{OpenWithStatus}}
+\index{OpenWithStatus@{OpenWithStatus}!leveldb::RecoveryTest@{leveldb::RecoveryTest}}
+\subsubsection{\texorpdfstring{OpenWithStatus()}{OpenWithStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Recovery\+Test\+::\+Open\+With\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb_1_1_options}{Options}} $\ast$}]{options = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_recovery_test_a24c107441e4cd205302496825eb6cef7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_recovery_test_a24c107441e4cd205302496825eb6cef7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_recovery_test_ad5b3e5d410f452814a0c47b195bda9ff}\label{classleveldb_1_1_recovery_test_ad5b3e5d410f452814a0c47b195bda9ff}} 
+\index{leveldb::RecoveryTest@{leveldb::RecoveryTest}!Put@{Put}}
+\index{Put@{Put}!leveldb::RecoveryTest@{leveldb::RecoveryTest}}
+\subsubsection{\texorpdfstring{Put()}{Put()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Recovery\+Test\+::\+Put (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{k,  }\item[{const std\+::string \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_recovery_test_ad5b3e5d410f452814a0c47b195bda9ff_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{recovery__test_8cc}{recovery\+\_\+test.\+cc}}\end{DoxyCompactItemize}

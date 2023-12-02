@@ -1,0 +1,301 @@
+\hypertarget{classleveldb_1_1_fault_injection_test_env}{}\section{leveldb\+::Fault\+Injection\+Test\+Env Class Reference}
+\label{classleveldb_1_1_fault_injection_test_env}\index{leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}}
+
+
+Inheritance diagram for leveldb\+::Fault\+Injection\+Test\+Env\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classleveldb_1_1_fault_injection_test_env__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for leveldb\+::Fault\+Injection\+Test\+Env\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classleveldb_1_1_fault_injection_test_env__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_fault_injection_test_env_ac997cc4e898833449565bfcd1ff419ba}{Fault\+Injection\+Test\+Env}} ()
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_env_aacf6c0672dc27bced909f7b638fc5269}{$\sim$\+Fault\+Injection\+Test\+Env}} ()
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_env_a1e89cf48116748a2f7d8c07022eab4f7}{New\+Writable\+File}} (const std\+::string \&fname, \mbox{\hyperlink{classleveldb_1_1_writable_file}{Writable\+File}} $\ast$$\ast$result)
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_env_ab3147789bfa49d4a50a06e7c2a1628ef}{New\+Appendable\+File}} (const std\+::string \&fname, \mbox{\hyperlink{classleveldb_1_1_writable_file}{Writable\+File}} $\ast$$\ast$result)
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_env_a3da37455396b1b0cd66689bf5302ebd9}{Delete\+File}} (const std\+::string \&f)
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_env_ac283e671532ee024cf22f84b95680061}{Rename\+File}} (const std\+::string \&s, const std\+::string \&t)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_env_accd10539b6cfa51468fe9cd6b85fd655}{Writable\+File\+Closed}} (const File\+State \&\mbox{\hyperlink{version__set_8cc_a6aad002d0db5e5e85dc31927a5a6f503}{state}})
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_env_a4201d9bce4e169d3a5320c3ecbf05490}{Drop\+Unsynced\+File\+Data}} ()
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_env_a0356c344573232057e7afcd738079805}{Delete\+Files\+Created\+After\+Last\+Dir\+Sync}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_env_a81cf3925b249591f4247757538005dfc}{Dir\+Was\+Synced}} ()
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_env_ae9460fecd27d35869bfc4de6ff4538e3}{Is\+File\+Created\+Since\+Last\+Dir\+Sync}} (const std\+::string \&filename)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_env_ae4f5f304ef1ae31a3da13efec88601f6}{Reset\+State}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_env_a491627b6a1908395df803482839fa7f1}{Untrack\+File}} (const std\+::string \&f)
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_env_ac789749a61e5ac70906d23c0af2eb26e}{Is\+Filesystem\+Active}} () L\+O\+C\+K\+S\+\_\+\+E\+X\+C\+L\+U\+D\+ED(mutex\+\_\+)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_env_a0931f1fd0c96e617dd226cb2cdc44ad7}{Set\+Filesystem\+Active}} (bool active) L\+O\+C\+K\+S\+\_\+\+E\+X\+C\+L\+U\+D\+ED(mutex\+\_\+)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_env_ac997cc4e898833449565bfcd1ff419ba}\label{classleveldb_1_1_fault_injection_test_env_ac997cc4e898833449565bfcd1ff419ba}} 
+\index{leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}!FaultInjectionTestEnv@{FaultInjectionTestEnv}}
+\index{FaultInjectionTestEnv@{FaultInjectionTestEnv}!leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}}
+\subsubsection{\texorpdfstring{FaultInjectionTestEnv()}{FaultInjectionTestEnv()}}
+{\footnotesize\ttfamily leveldb\+::\+Fault\+Injection\+Test\+Env\+::\+Fault\+Injection\+Test\+Env (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_env_aacf6c0672dc27bced909f7b638fc5269}\label{classleveldb_1_1_fault_injection_test_env_aacf6c0672dc27bced909f7b638fc5269}} 
+\index{leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}!````~FaultInjectionTestEnv@{$\sim$FaultInjectionTestEnv}}
+\index{````~FaultInjectionTestEnv@{$\sim$FaultInjectionTestEnv}!leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}}
+\subsubsection{\texorpdfstring{$\sim$FaultInjectionTestEnv()}{~FaultInjectionTestEnv()}}
+{\footnotesize\ttfamily virtual leveldb\+::\+Fault\+Injection\+Test\+Env\+::$\sim$\+Fault\+Injection\+Test\+Env (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_env_a3da37455396b1b0cd66689bf5302ebd9}\label{classleveldb_1_1_fault_injection_test_env_a3da37455396b1b0cd66689bf5302ebd9}} 
+\index{leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}!DeleteFile@{DeleteFile}}
+\index{DeleteFile@{DeleteFile}!leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}}
+\subsubsection{\texorpdfstring{DeleteFile()}{DeleteFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Fault\+Injection\+Test\+Env\+::\+Delete\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_env_ac956b984466d5f09309664177687f9af}{leveldb\+::\+Env}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_env_a3da37455396b1b0cd66689bf5302ebd9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_env_a3da37455396b1b0cd66689bf5302ebd9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_env_a0356c344573232057e7afcd738079805}\label{classleveldb_1_1_fault_injection_test_env_a0356c344573232057e7afcd738079805}} 
+\index{leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}!DeleteFilesCreatedAfterLastDirSync@{DeleteFilesCreatedAfterLastDirSync}}
+\index{DeleteFilesCreatedAfterLastDirSync@{DeleteFilesCreatedAfterLastDirSync}!leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}}
+\subsubsection{\texorpdfstring{DeleteFilesCreatedAfterLastDirSync()}{DeleteFilesCreatedAfterLastDirSync()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Fault\+Injection\+Test\+Env\+::\+Delete\+Files\+Created\+After\+Last\+Dir\+Sync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_env_a0356c344573232057e7afcd738079805_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_env_a0356c344573232057e7afcd738079805_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_env_a81cf3925b249591f4247757538005dfc}\label{classleveldb_1_1_fault_injection_test_env_a81cf3925b249591f4247757538005dfc}} 
+\index{leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}!DirWasSynced@{DirWasSynced}}
+\index{DirWasSynced@{DirWasSynced}!leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}}
+\subsubsection{\texorpdfstring{DirWasSynced()}{DirWasSynced()}}
+{\footnotesize\ttfamily void leveldb\+::\+Fault\+Injection\+Test\+Env\+::\+Dir\+Was\+Synced (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_env_a4201d9bce4e169d3a5320c3ecbf05490}\label{classleveldb_1_1_fault_injection_test_env_a4201d9bce4e169d3a5320c3ecbf05490}} 
+\index{leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}!DropUnsyncedFileData@{DropUnsyncedFileData}}
+\index{DropUnsyncedFileData@{DropUnsyncedFileData}!leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}}
+\subsubsection{\texorpdfstring{DropUnsyncedFileData()}{DropUnsyncedFileData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Fault\+Injection\+Test\+Env\+::\+Drop\+Unsynced\+File\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_env_a4201d9bce4e169d3a5320c3ecbf05490_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_env_a4201d9bce4e169d3a5320c3ecbf05490_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_env_ae9460fecd27d35869bfc4de6ff4538e3}\label{classleveldb_1_1_fault_injection_test_env_ae9460fecd27d35869bfc4de6ff4538e3}} 
+\index{leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}!IsFileCreatedSinceLastDirSync@{IsFileCreatedSinceLastDirSync}}
+\index{IsFileCreatedSinceLastDirSync@{IsFileCreatedSinceLastDirSync}!leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}}
+\subsubsection{\texorpdfstring{IsFileCreatedSinceLastDirSync()}{IsFileCreatedSinceLastDirSync()}}
+{\footnotesize\ttfamily bool leveldb\+::\+Fault\+Injection\+Test\+Env\+::\+Is\+File\+Created\+Since\+Last\+Dir\+Sync (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_env_ae9460fecd27d35869bfc4de6ff4538e3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_env_ac789749a61e5ac70906d23c0af2eb26e}\label{classleveldb_1_1_fault_injection_test_env_ac789749a61e5ac70906d23c0af2eb26e}} 
+\index{leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}!IsFilesystemActive@{IsFilesystemActive}}
+\index{IsFilesystemActive@{IsFilesystemActive}!leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}}
+\subsubsection{\texorpdfstring{IsFilesystemActive()}{IsFilesystemActive()}}
+{\footnotesize\ttfamily bool leveldb\+::\+Fault\+Injection\+Test\+Env\+::\+Is\+Filesystem\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_env_ac789749a61e5ac70906d23c0af2eb26e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_env_ab3147789bfa49d4a50a06e7c2a1628ef}\label{classleveldb_1_1_fault_injection_test_env_ab3147789bfa49d4a50a06e7c2a1628ef}} 
+\index{leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}!NewAppendableFile@{NewAppendableFile}}
+\index{NewAppendableFile@{NewAppendableFile}!leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}}
+\subsubsection{\texorpdfstring{NewAppendableFile()}{NewAppendableFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Fault\+Injection\+Test\+Env\+::\+New\+Appendable\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{fname,  }\item[{\mbox{\hyperlink{classleveldb_1_1_writable_file}{Writable\+File}} $\ast$$\ast$}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classleveldb_1_1_env_a77886b6f8f8b5df8e40057be234a3b5d}{leveldb\+::\+Env}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_env_ab3147789bfa49d4a50a06e7c2a1628ef_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_env_a1e89cf48116748a2f7d8c07022eab4f7}\label{classleveldb_1_1_fault_injection_test_env_a1e89cf48116748a2f7d8c07022eab4f7}} 
+\index{leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}!NewWritableFile@{NewWritableFile}}
+\index{NewWritableFile@{NewWritableFile}!leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}}
+\subsubsection{\texorpdfstring{NewWritableFile()}{NewWritableFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Fault\+Injection\+Test\+Env\+::\+New\+Writable\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{fname,  }\item[{\mbox{\hyperlink{classleveldb_1_1_writable_file}{Writable\+File}} $\ast$$\ast$}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_env_a4566194f3e82fede425fdb5bb355f7de}{leveldb\+::\+Env}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_env_a1e89cf48116748a2f7d8c07022eab4f7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_env_ac283e671532ee024cf22f84b95680061}\label{classleveldb_1_1_fault_injection_test_env_ac283e671532ee024cf22f84b95680061}} 
+\index{leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}!RenameFile@{RenameFile}}
+\index{RenameFile@{RenameFile}!leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}}
+\subsubsection{\texorpdfstring{RenameFile()}{RenameFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Fault\+Injection\+Test\+Env\+::\+Rename\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{s,  }\item[{const std\+::string \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_env_abd743b3d4751ada1ab307427827ed5b0}{leveldb\+::\+Env}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_env_ac283e671532ee024cf22f84b95680061_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_env_ae4f5f304ef1ae31a3da13efec88601f6}\label{classleveldb_1_1_fault_injection_test_env_ae4f5f304ef1ae31a3da13efec88601f6}} 
+\index{leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}!ResetState@{ResetState}}
+\index{ResetState@{ResetState}!leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}}
+\subsubsection{\texorpdfstring{ResetState()}{ResetState()}}
+{\footnotesize\ttfamily void leveldb\+::\+Fault\+Injection\+Test\+Env\+::\+Reset\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_env_ae4f5f304ef1ae31a3da13efec88601f6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_env_ae4f5f304ef1ae31a3da13efec88601f6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_env_a0931f1fd0c96e617dd226cb2cdc44ad7}\label{classleveldb_1_1_fault_injection_test_env_a0931f1fd0c96e617dd226cb2cdc44ad7}} 
+\index{leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}!SetFilesystemActive@{SetFilesystemActive}}
+\index{SetFilesystemActive@{SetFilesystemActive}!leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}}
+\subsubsection{\texorpdfstring{SetFilesystemActive()}{SetFilesystemActive()}}
+{\footnotesize\ttfamily void leveldb\+::\+Fault\+Injection\+Test\+Env\+::\+Set\+Filesystem\+Active (\begin{DoxyParamCaption}\item[{bool}]{active }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_env_a0931f1fd0c96e617dd226cb2cdc44ad7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_env_a491627b6a1908395df803482839fa7f1}\label{classleveldb_1_1_fault_injection_test_env_a491627b6a1908395df803482839fa7f1}} 
+\index{leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}!UntrackFile@{UntrackFile}}
+\index{UntrackFile@{UntrackFile}!leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}}
+\subsubsection{\texorpdfstring{UntrackFile()}{UntrackFile()}}
+{\footnotesize\ttfamily void leveldb\+::\+Fault\+Injection\+Test\+Env\+::\+Untrack\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{f }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_env_a491627b6a1908395df803482839fa7f1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_fault_injection_test_env_accd10539b6cfa51468fe9cd6b85fd655}\label{classleveldb_1_1_fault_injection_test_env_accd10539b6cfa51468fe9cd6b85fd655}} 
+\index{leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}!WritableFileClosed@{WritableFileClosed}}
+\index{WritableFileClosed@{WritableFileClosed}!leveldb::FaultInjectionTestEnv@{leveldb::FaultInjectionTestEnv}}
+\subsubsection{\texorpdfstring{WritableFileClosed()}{WritableFileClosed()}}
+{\footnotesize\ttfamily void leveldb\+::\+Fault\+Injection\+Test\+Env\+::\+Writable\+File\+Closed (\begin{DoxyParamCaption}\item[{const File\+State \&}]{state }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_fault_injection_test_env_accd10539b6cfa51468fe9cd6b85fd655_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{fault__injection__test_8cc}{fault\+\_\+injection\+\_\+test.\+cc}}\end{DoxyCompactItemize}

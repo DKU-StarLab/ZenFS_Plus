@@ -1,0 +1,157 @@
+\hypertarget{classleveldb_1_1_mem_table}{}\section{leveldb\+::Mem\+Table Class Reference}
+\label{classleveldb_1_1_mem_table}\index{leveldb::MemTable@{leveldb::MemTable}}
+
+
+{\ttfamily \#include $<$memtable.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+::Mem\+Table\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classleveldb_1_1_mem_table__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_mem_table_a23add92a4a6e5d1521f3b6695dba5c2d}{Mem\+Table}} (const \mbox{\hyperlink{classleveldb_1_1_internal_key_comparator}{Internal\+Key\+Comparator}} \&comparator)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_mem_table_a332484cffd2ebc7d6a51f22eeeeeb71b}{Ref}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_mem_table_a5dcbf17d1477e6098a30dadd0745cfb2}{Unref}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{classleveldb_1_1_mem_table_a667a1ada274201f0bdd3615baf1bd882}{Approximate\+Memory\+Usage}} ()
+\item 
+\mbox{\hyperlink{classleveldb_1_1_iterator}{Iterator}} $\ast$ \mbox{\hyperlink{classleveldb_1_1_mem_table_a396b8ba5e2ea0de25b666026f3b9235f}{New\+Iterator}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_mem_table_a37bec80954badb2354426aa175e9371f}{Add}} (\mbox{\hyperlink{namespaceleveldb_a5481ededd221c36d652c371249f869fa}{Sequence\+Number}} seq, \mbox{\hyperlink{namespaceleveldb_acc038cb0d608414730cafa459a4ba866}{Value\+Type}} type, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&key, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&\mbox{\hyperlink{version__set_8cc_a38c8b88c432e666ad10b0c5573e1160a}{value}})
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1_mem_table_af94f80a5909a440d0675afa68f8765c5}{Get}} (const \mbox{\hyperlink{classleveldb_1_1_lookup_key}{Lookup\+Key}} \&key, std\+::string $\ast$\mbox{\hyperlink{version__set_8cc_a38c8b88c432e666ad10b0c5573e1160a}{value}}, \mbox{\hyperlink{classleveldb_1_1_status}{Status}} $\ast$s)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_mem_table_ad6cb602bccb9af617c8cb348ae693d4a}{Mem\+Table\+Iterator}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_mem_table_ab6427243fb396d56604898725f9f2327}{Mem\+Table\+Backward\+Iterator}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_mem_table_a23add92a4a6e5d1521f3b6695dba5c2d}\label{classleveldb_1_1_mem_table_a23add92a4a6e5d1521f3b6695dba5c2d}} 
+\index{leveldb::MemTable@{leveldb::MemTable}!MemTable@{MemTable}}
+\index{MemTable@{MemTable}!leveldb::MemTable@{leveldb::MemTable}}
+\subsubsection{\texorpdfstring{MemTable()}{MemTable()}}
+{\footnotesize\ttfamily leveldb\+::\+Mem\+Table\+::\+Mem\+Table (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_internal_key_comparator}{Internal\+Key\+Comparator}} \&}]{comparator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_mem_table_a37bec80954badb2354426aa175e9371f}\label{classleveldb_1_1_mem_table_a37bec80954badb2354426aa175e9371f}} 
+\index{leveldb::MemTable@{leveldb::MemTable}!Add@{Add}}
+\index{Add@{Add}!leveldb::MemTable@{leveldb::MemTable}}
+\subsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void leveldb\+::\+Mem\+Table\+::\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceleveldb_a5481ededd221c36d652c371249f869fa}{Sequence\+Number}}}]{seq,  }\item[{\mbox{\hyperlink{namespaceleveldb_acc038cb0d608414730cafa459a4ba866}{Value\+Type}}}]{type,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{key,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{value }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classleveldb_1_1_mem_table_a37bec80954badb2354426aa175e9371f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_mem_table_a667a1ada274201f0bdd3615baf1bd882}\label{classleveldb_1_1_mem_table_a667a1ada274201f0bdd3615baf1bd882}} 
+\index{leveldb::MemTable@{leveldb::MemTable}!ApproximateMemoryUsage@{ApproximateMemoryUsage}}
+\index{ApproximateMemoryUsage@{ApproximateMemoryUsage}!leveldb::MemTable@{leveldb::MemTable}}
+\subsubsection{\texorpdfstring{ApproximateMemoryUsage()}{ApproximateMemoryUsage()}}
+{\footnotesize\ttfamily size\+\_\+t leveldb\+::\+Mem\+Table\+::\+Approximate\+Memory\+Usage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_mem_table_a667a1ada274201f0bdd3615baf1bd882_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_mem_table_af94f80a5909a440d0675afa68f8765c5}\label{classleveldb_1_1_mem_table_af94f80a5909a440d0675afa68f8765c5}} 
+\index{leveldb::MemTable@{leveldb::MemTable}!Get@{Get}}
+\index{Get@{Get}!leveldb::MemTable@{leveldb::MemTable}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily bool leveldb\+::\+Mem\+Table\+::\+Get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_lookup_key}{Lookup\+Key}} \&}]{key,  }\item[{std\+::string $\ast$}]{value,  }\item[{\mbox{\hyperlink{classleveldb_1_1_status}{Status}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_mem_table_af94f80a5909a440d0675afa68f8765c5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{classleveldb_1_1_mem_table_af94f80a5909a440d0675afa68f8765c5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_mem_table_a396b8ba5e2ea0de25b666026f3b9235f}\label{classleveldb_1_1_mem_table_a396b8ba5e2ea0de25b666026f3b9235f}} 
+\index{leveldb::MemTable@{leveldb::MemTable}!NewIterator@{NewIterator}}
+\index{NewIterator@{NewIterator}!leveldb::MemTable@{leveldb::MemTable}}
+\subsubsection{\texorpdfstring{NewIterator()}{NewIterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_iterator}{Iterator}} $\ast$ leveldb\+::\+Mem\+Table\+::\+New\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classleveldb_1_1_mem_table_a332484cffd2ebc7d6a51f22eeeeeb71b}\label{classleveldb_1_1_mem_table_a332484cffd2ebc7d6a51f22eeeeeb71b}} 
+\index{leveldb::MemTable@{leveldb::MemTable}!Ref@{Ref}}
+\index{Ref@{Ref}!leveldb::MemTable@{leveldb::MemTable}}
+\subsubsection{\texorpdfstring{Ref()}{Ref()}}
+{\footnotesize\ttfamily void leveldb\+::\+Mem\+Table\+::\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_mem_table_a332484cffd2ebc7d6a51f22eeeeeb71b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_mem_table_a5dcbf17d1477e6098a30dadd0745cfb2}\label{classleveldb_1_1_mem_table_a5dcbf17d1477e6098a30dadd0745cfb2}} 
+\index{leveldb::MemTable@{leveldb::MemTable}!Unref@{Unref}}
+\index{Unref@{Unref}!leveldb::MemTable@{leveldb::MemTable}}
+\subsubsection{\texorpdfstring{Unref()}{Unref()}}
+{\footnotesize\ttfamily void leveldb\+::\+Mem\+Table\+::\+Unref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_mem_table_a5dcbf17d1477e6098a30dadd0745cfb2_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_mem_table_ab6427243fb396d56604898725f9f2327}\label{classleveldb_1_1_mem_table_ab6427243fb396d56604898725f9f2327}} 
+\index{leveldb::MemTable@{leveldb::MemTable}!MemTableBackwardIterator@{MemTableBackwardIterator}}
+\index{MemTableBackwardIterator@{MemTableBackwardIterator}!leveldb::MemTable@{leveldb::MemTable}}
+\subsubsection{\texorpdfstring{MemTableBackwardIterator}{MemTableBackwardIterator}}
+{\footnotesize\ttfamily friend class Mem\+Table\+Backward\+Iterator\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_mem_table_ad6cb602bccb9af617c8cb348ae693d4a}\label{classleveldb_1_1_mem_table_ad6cb602bccb9af617c8cb348ae693d4a}} 
+\index{leveldb::MemTable@{leveldb::MemTable}!MemTableIterator@{MemTableIterator}}
+\index{MemTableIterator@{MemTableIterator}!leveldb::MemTable@{leveldb::MemTable}}
+\subsubsection{\texorpdfstring{MemTableIterator}{MemTableIterator}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classleveldb_1_1_mem_table_iterator}{Mem\+Table\+Iterator}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{memtable_8h}{memtable.\+h}}\item 
+db/\mbox{\hyperlink{memtable_8cc}{memtable.\+cc}}\end{DoxyCompactItemize}

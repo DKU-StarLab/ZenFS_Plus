@@ -1,0 +1,217 @@
+\hypertarget{db__test_8cc}{}\section{db/db\+\_\+test.cc File Reference}
+\label{db__test_8cc}\index{db/db\_test.cc@{db/db\_test.cc}}
+{\ttfamily \#include \char`\"{}leveldb/db.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/filter\+\_\+policy.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/db\+\_\+impl.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/filename.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/version\+\_\+set.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/write\+\_\+batch\+\_\+internal.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/cache.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/env.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/table.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}port/port.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}port/thread\+\_\+annotations.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/hash.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/logging.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/mutexlock.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/testharness.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/testutil.\+h\char`\"{}}\newline
+Include dependency graph for db\+\_\+test.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db__test_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_test_env}{leveldb\+::\+Test\+Env}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_special_env}{leveldb\+::\+Special\+Env}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_d_b_test}{leveldb\+::\+D\+B\+Test}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_model_d_b}{leveldb\+::\+Model\+DB}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_model_d_b_1_1_model_snapshot}{leveldb\+::\+Model\+D\+B\+::\+Model\+Snapshot}}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceleveldb}{leveldb}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceleveldb_a5cdb2a977033415260acc09b4b1b7171}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Empty)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a2d427ecc9d7b712d8c5dd7ec8b6343fc}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Read\+Write)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a4d273f5f0d313440832363179e28e010}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Put\+Delete\+Get)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a21cac1755bd447df075909132bb964d4}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Get\+From\+Immutable\+Layer)
+\item 
+\mbox{\hyperlink{namespaceleveldb_affd937ddc8c138fd0b5d020a396310c8}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Get\+From\+Versions)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a8d14b4d9f4b7e5f08dedf54020331143}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Get\+Mem\+Usage)
+\item 
+\mbox{\hyperlink{namespaceleveldb_ad6fac95495278565df640d4055b9c9f0}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Get\+Snapshot)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a1fcf2cd69454b592660a99e2edd0916a}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Get\+Identical\+Snapshots)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a09603654ab44fba6026ef244b6f94b52}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Iterate\+Over\+Empty\+Snapshot)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a2b333e6a496f74899c808279627f11a0}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Get\+Level0\+Ordering)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a8f54952904ed501131060691eb1b6970}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Get\+Ordered\+By\+Levels)
+\item 
+\mbox{\hyperlink{namespaceleveldb_ac3d2a0e1b8553c3106c45ead7d6804bb}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Get\+Picks\+Correct\+File)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a0cec95f588ef6c5c121ac0d63eb4238f}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Get\+Encounters\+Empty\+Level)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a5ad106e9bbfcb5520b7dc344525f7cd2}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Iter\+Empty)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a8a6d5f729259c0f357f4dee533a5ce6a}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Iter\+Single)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a683bc77ccfd830fbe21a91c26ac91347}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Iter\+Multi)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a4044ccda7237640864995a0885ea6710}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Iter\+Small\+And\+Large\+Mix)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a3e41cdc91355438f57b9497b01c66e24}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Iter\+Multi\+With\+Delete)
+\item 
+\mbox{\hyperlink{namespaceleveldb_ab1872cabf2fb215814f9a6f1bacacc80}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Recover)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a890ebffd31d77bc8acb760088d70ee8c}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Recovery\+With\+Empty\+Log)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a2e24806457c57e7dec22e3c05e46a82c}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Recover\+During\+Memtable\+Compaction)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a1ff90ae7b19ecf46c5efb6e5af00fa0a}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Minor\+Compactions\+Happen)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a01bbbae1753711e8b7740ed8faa9efd6}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Recover\+With\+Large\+Log)
+\item 
+\mbox{\hyperlink{namespaceleveldb_acd61524dbc544e8f1ca63fbdfac59791}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Compactions\+Generate\+Multiple\+Files)
+\item 
+\mbox{\hyperlink{namespaceleveldb_acb51ac2eb77bd1af22372748f9fb44da}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Repeated\+Writes\+To\+Same\+Key)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a0ed510b8c03c1ca0216ffee81199d79e}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Sparse\+Merge)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a6b3f1122dc9d727f0c699ed3da2d6474}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Approximate\+Sizes)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a5c41c70ccd20279235316b8627f419da}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Approximate\+Sizes\+\_\+\+Mix\+Of\+Small\+And\+Large)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a899f7415195fa4d25d801246cdec721d}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Iterator\+Pins\+Ref)
+\item 
+\mbox{\hyperlink{namespaceleveldb_ab09998970d1ace06b8082f49da0444f5}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Snapshot)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a94214aebbf6328e7ad9ba735c5e42f68}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Hidden\+Values\+Are\+Removed)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a216168df3713bb71f35038d91b5224f0}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Deletion\+Markers1)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a4188787b0b1e1e25475a2983374065b6}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Deletion\+Markers2)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a4fa4ffaab998ba44a1745937c1e9c55c}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Overlap\+In\+Level0)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a46665ff2f4f9bd25167f82d3be16f8b2}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, L0\+\_\+\+Compaction\+Bug\+\_\+\+Issue44\+\_\+a)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a727df67090c63a0ca4b2effdc90a3da1}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, L0\+\_\+\+Compaction\+Bug\+\_\+\+Issue44\+\_\+b)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a22da7a44e3ed1367424a9eb96cca43a4}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Fflush\+\_\+\+Issue474)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a5cd6c2754610c66f4dd998874482c80b}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Comparator\+Check)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a38772a8b86ea7658430b1fa2f1a5d83e}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Custom\+Comparator)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a34a511836c47efe81202280115290934}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Manual\+Compaction)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a88d6fdcb16ed4edc65da40f383e6f23b}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, D\+B\+Open\+\_\+\+Options)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a63ad7fa22ccda6c82e41ab295482b8ba}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Destroy\+Empty\+Dir)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a8e64ab3b4178a875b558d28409764e7f}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Destroy\+Open\+DB)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a8470163c7e8b292085a5b60f989dc828}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Locking)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a11f56de4abca34391c0e60f311262b65}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, No\+Space)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a9d69b380c464519a1b946fb1faa21cbd}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Non\+Writable\+File\+System)
+\item 
+\mbox{\hyperlink{namespaceleveldb_ab30f3608fe480a765f28f713415b7fe4}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Write\+Sync\+Error)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a071c4940c40a4eed0d3e4e4044a227a6}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Manifest\+Write\+Error)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a8e750f4502e214132281fd755d26c175}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Missing\+S\+S\+T\+File)
+\item 
+\mbox{\hyperlink{namespaceleveldb_ab4a8284a6c982c710e6e84af0d6040a9}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Still\+Read\+S\+ST)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a47755684dc15db851e0174ea9475e97c}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Files\+Deleted\+After\+Compaction)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a6d54978f51e046c170696cbb320f23f1}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Bloom\+Filter)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a9bee47c386abe6004d884f2552bd8184}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Multi\+Threaded)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a028ed215c12e1998d7073b18fce4c24c}{leveldb\+::\+T\+E\+ST}} (D\+B\+Test, Randomized)
+\item 
+std\+::string \mbox{\hyperlink{namespaceleveldb_a706c78e756ff2dcd2185cdf2265c0b8a}{leveldb\+::\+Make\+Key}} (unsigned int num)
+\item 
+void \mbox{\hyperlink{namespaceleveldb_af9cf6ec167c9b6f25fd050ab6fb67a90}{leveldb\+::\+B\+M\+\_\+\+Log\+And\+Apply}} (int iters, int num\+\_\+base\+\_\+files)
+\item 
+int \mbox{\hyperlink{db__test_8cc_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{db__test_8cc_a3c04138a5bfe5d72780bb7e82a18e627}\label{db__test_8cc_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{db\_test.cc@{db\_test.cc}!main@{main}}
+\index{main@{main}!db\_test.cc@{db\_test.cc}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db__test_8cc_a3c04138a5bfe5d72780bb7e82a18e627_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{db__test_8cc_a62ffeaac8bdc204faeb004239f7c04be}\label{db__test_8cc_a62ffeaac8bdc204faeb004239f7c04be}} 
+\index{db\_test.cc@{db\_test.cc}!counter@{counter}}
+\index{counter@{counter}!db\_test.cc@{db\_test.cc}}
+\subsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily port\+::\+Atomic\+Pointer counter\mbox{[}k\+Num\+Threads\mbox{]}}
+
+\mbox{\Hypertarget{db__test_8cc_a7441ef0865bcb3db9b8064dd7375c1ea}\label{db__test_8cc_a7441ef0865bcb3db9b8064dd7375c1ea}} 
+\index{db\_test.cc@{db\_test.cc}!id@{id}}
+\index{id@{id}!db\_test.cc@{db\_test.cc}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int id}
+
+\mbox{\Hypertarget{db__test_8cc_a42432b4356adce5579ccf597f6e83e54}\label{db__test_8cc_a42432b4356adce5579ccf597f6e83e54}} 
+\index{db\_test.cc@{db\_test.cc}!state@{state}}
+\index{state@{state}!db\_test.cc@{db\_test.cc}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily M\+T\+State$\ast$ state}
+
+\mbox{\Hypertarget{db__test_8cc_af6130d1029661dab14372467f0453ffa}\label{db__test_8cc_af6130d1029661dab14372467f0453ffa}} 
+\index{db\_test.cc@{db\_test.cc}!stop@{stop}}
+\index{stop@{stop}!db\_test.cc@{db\_test.cc}}
+\subsubsection{\texorpdfstring{stop}{stop}}
+{\footnotesize\ttfamily port\+::\+Atomic\+Pointer stop}
+
+\mbox{\Hypertarget{db__test_8cc_a9cc668c18debdbcad21b45fdd8158648}\label{db__test_8cc_a9cc668c18debdbcad21b45fdd8158648}} 
+\index{db\_test.cc@{db\_test.cc}!test@{test}}
+\index{test@{test}!db\_test.cc@{db\_test.cc}}
+\subsubsection{\texorpdfstring{test}{test}}
+{\footnotesize\ttfamily D\+B\+Test$\ast$ test}
+
+\mbox{\Hypertarget{db__test_8cc_a3eb5ea5acdb558ac205ffb1c56790fd3}\label{db__test_8cc_a3eb5ea5acdb558ac205ffb1c56790fd3}} 
+\index{db\_test.cc@{db\_test.cc}!thread\_done@{thread\_done}}
+\index{thread\_done@{thread\_done}!db\_test.cc@{db\_test.cc}}
+\subsubsection{\texorpdfstring{thread\_done}{thread\_done}}
+{\footnotesize\ttfamily port\+::\+Atomic\+Pointer thread\+\_\+done\mbox{[}k\+Num\+Threads\mbox{]}}
+

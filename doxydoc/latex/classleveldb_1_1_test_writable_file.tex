@@ -1,0 +1,148 @@
+\hypertarget{classleveldb_1_1_test_writable_file}{}\section{leveldb\+::Test\+Writable\+File Class Reference}
+\label{classleveldb_1_1_test_writable_file}\index{leveldb::TestWritableFile@{leveldb::TestWritableFile}}
+
+
+Inheritance diagram for leveldb\+::Test\+Writable\+File\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classleveldb_1_1_test_writable_file__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for leveldb\+::Test\+Writable\+File\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classleveldb_1_1_test_writable_file__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_test_writable_file_aa7ca9d0df5ec92b331de04f0946bff4e}{Test\+Writable\+File}} (const File\+State \&\mbox{\hyperlink{version__set_8cc_a6aad002d0db5e5e85dc31927a5a6f503}{state}}, \mbox{\hyperlink{classleveldb_1_1_writable_file}{Writable\+File}} $\ast$f, \mbox{\hyperlink{classleveldb_1_1_fault_injection_test_env}{Fault\+Injection\+Test\+Env}} $\ast$env)
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_test_writable_file_addaa3999b5a79da29cbaefb30ee48c11}{$\sim$\+Test\+Writable\+File}} ()
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_test_writable_file_a282d3c3c27ef70c65f467f50abfd93bb}{Append}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&data)
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_test_writable_file_a98284f2e88a705a3c18961f198e94038}{Close}} ()
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_test_writable_file_ad25b85a5ef462fe34e208f955c19d58e}{Flush}} ()
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_test_writable_file_aae96a812f1f2e82563b0900dfffaf1d1}{Sync}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_test_writable_file_aa7ca9d0df5ec92b331de04f0946bff4e}\label{classleveldb_1_1_test_writable_file_aa7ca9d0df5ec92b331de04f0946bff4e}} 
+\index{leveldb::TestWritableFile@{leveldb::TestWritableFile}!TestWritableFile@{TestWritableFile}}
+\index{TestWritableFile@{TestWritableFile}!leveldb::TestWritableFile@{leveldb::TestWritableFile}}
+\subsubsection{\texorpdfstring{TestWritableFile()}{TestWritableFile()}}
+{\footnotesize\ttfamily leveldb\+::\+Test\+Writable\+File\+::\+Test\+Writable\+File (\begin{DoxyParamCaption}\item[{const File\+State \&}]{state,  }\item[{\mbox{\hyperlink{classleveldb_1_1_writable_file}{Writable\+File}} $\ast$}]{f,  }\item[{\mbox{\hyperlink{classleveldb_1_1_fault_injection_test_env}{Fault\+Injection\+Test\+Env}} $\ast$}]{env }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classleveldb_1_1_test_writable_file_addaa3999b5a79da29cbaefb30ee48c11}\label{classleveldb_1_1_test_writable_file_addaa3999b5a79da29cbaefb30ee48c11}} 
+\index{leveldb::TestWritableFile@{leveldb::TestWritableFile}!````~TestWritableFile@{$\sim$TestWritableFile}}
+\index{````~TestWritableFile@{$\sim$TestWritableFile}!leveldb::TestWritableFile@{leveldb::TestWritableFile}}
+\subsubsection{\texorpdfstring{$\sim$TestWritableFile()}{~TestWritableFile()}}
+{\footnotesize\ttfamily leveldb\+::\+Test\+Writable\+File\+::$\sim$\+Test\+Writable\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_test_writable_file_addaa3999b5a79da29cbaefb30ee48c11_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_test_writable_file_a282d3c3c27ef70c65f467f50abfd93bb}\label{classleveldb_1_1_test_writable_file_a282d3c3c27ef70c65f467f50abfd93bb}} 
+\index{leveldb::TestWritableFile@{leveldb::TestWritableFile}!Append@{Append}}
+\index{Append@{Append}!leveldb::TestWritableFile@{leveldb::TestWritableFile}}
+\subsubsection{\texorpdfstring{Append()}{Append()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Test\+Writable\+File\+::\+Append (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_writable_file_a53b41841d9577d28f65d4d90e1660de8}{leveldb\+::\+Writable\+File}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_test_writable_file_a282d3c3c27ef70c65f467f50abfd93bb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_test_writable_file_a98284f2e88a705a3c18961f198e94038}\label{classleveldb_1_1_test_writable_file_a98284f2e88a705a3c18961f198e94038}} 
+\index{leveldb::TestWritableFile@{leveldb::TestWritableFile}!Close@{Close}}
+\index{Close@{Close}!leveldb::TestWritableFile@{leveldb::TestWritableFile}}
+\subsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Test\+Writable\+File\+::\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_writable_file_a2efbf9c02a26028b5002df73b4393915}{leveldb\+::\+Writable\+File}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_test_writable_file_a98284f2e88a705a3c18961f198e94038_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_test_writable_file_a98284f2e88a705a3c18961f198e94038_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_test_writable_file_ad25b85a5ef462fe34e208f955c19d58e}\label{classleveldb_1_1_test_writable_file_ad25b85a5ef462fe34e208f955c19d58e}} 
+\index{leveldb::TestWritableFile@{leveldb::TestWritableFile}!Flush@{Flush}}
+\index{Flush@{Flush}!leveldb::TestWritableFile@{leveldb::TestWritableFile}}
+\subsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Test\+Writable\+File\+::\+Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_writable_file_ab95759ad32f6a05b0ee4266969fa265e}{leveldb\+::\+Writable\+File}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_test_writable_file_ad25b85a5ef462fe34e208f955c19d58e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_test_writable_file_aae96a812f1f2e82563b0900dfffaf1d1}\label{classleveldb_1_1_test_writable_file_aae96a812f1f2e82563b0900dfffaf1d1}} 
+\index{leveldb::TestWritableFile@{leveldb::TestWritableFile}!Sync@{Sync}}
+\index{Sync@{Sync}!leveldb::TestWritableFile@{leveldb::TestWritableFile}}
+\subsubsection{\texorpdfstring{Sync()}{Sync()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Test\+Writable\+File\+::\+Sync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_writable_file_a2d2dcef02a2c9e71f3d39125bcd5a606}{leveldb\+::\+Writable\+File}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_test_writable_file_aae96a812f1f2e82563b0900dfffaf1d1_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{fault__injection__test_8cc}{fault\+\_\+injection\+\_\+test.\+cc}}\end{DoxyCompactItemize}

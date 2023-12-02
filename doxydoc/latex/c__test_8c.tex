@@ -1,0 +1,97 @@
+\hypertarget{c__test_8c}{}\section{db/c\+\_\+test.c File Reference}
+\label{c__test_8c}\index{db/c\_test.c@{db/c\_test.c}}
+{\ttfamily \#include \char`\"{}leveldb/c.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for c\+\_\+test.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{c__test_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{c__test_8c_af3270e97d4196e9f0d1fba6d99720822}{Check\+No\+Error}}(err)
+\item 
+\#define \mbox{\hyperlink{c__test_8c_a7a32a221eb96896ffcfcdfcd0f691252}{Check\+Condition}}(cond)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \mbox{\hyperlink{c__test_8c_a117a386d47165a2d2c5ef9beda9bde94}{Filter\+Key\+Match}} (void $\ast$arg, const char $\ast$key, size\+\_\+t length, const char $\ast$filter, size\+\_\+t filter\+\_\+length)
+\item 
+int \mbox{\hyperlink{c__test_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \mbox{\hyperlink{c__test_8c_aa66920db8e335b57326a73d5592f1273}{phase}} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{c__test_8c_a7a32a221eb96896ffcfcdfcd0f691252}\label{c__test_8c_a7a32a221eb96896ffcfcdfcd0f691252}} 
+\index{c\_test.c@{c\_test.c}!CheckCondition@{CheckCondition}}
+\index{CheckCondition@{CheckCondition}!c\_test.c@{c\_test.c}}
+\subsubsection{\texorpdfstring{CheckCondition}{CheckCondition}}
+{\footnotesize\ttfamily \#define Check\+Condition(\begin{DoxyParamCaption}\item[{}]{cond }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (!(cond)) \{                                                        \(\backslash\)}
+\DoxyCodeLine{    fprintf(stderr, \textcolor{stringliteral}{"\%s:\%d: \%s: \%s\(\backslash\)n"}, \_\_FILE\_\_, \_\_LINE\_\_, \mbox{\hyperlink{c__test_8c_aa66920db8e335b57326a73d5592f1273}{phase}}, \#cond); \(\backslash\)}
+\DoxyCodeLine{    abort();                                                            \(\backslash\)}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{c__test_8c_af3270e97d4196e9f0d1fba6d99720822}\label{c__test_8c_af3270e97d4196e9f0d1fba6d99720822}} 
+\index{c\_test.c@{c\_test.c}!CheckNoError@{CheckNoError}}
+\index{CheckNoError@{CheckNoError}!c\_test.c@{c\_test.c}}
+\subsubsection{\texorpdfstring{CheckNoError}{CheckNoError}}
+{\footnotesize\ttfamily \#define Check\+No\+Error(\begin{DoxyParamCaption}\item[{}]{err }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} ((err) != NULL) \{                                                  \(\backslash\)}
+\DoxyCodeLine{    fprintf(stderr, \textcolor{stringliteral}{"\%s:\%d: \%s: \%s\(\backslash\)n"}, \_\_FILE\_\_, \_\_LINE\_\_, \mbox{\hyperlink{c__test_8c_aa66920db8e335b57326a73d5592f1273}{phase}}, (err)); \(\backslash\)}
+\DoxyCodeLine{    abort();                                                            \(\backslash\)}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{c__test_8c_a117a386d47165a2d2c5ef9beda9bde94}\label{c__test_8c_a117a386d47165a2d2c5ef9beda9bde94}} 
+\index{c\_test.c@{c\_test.c}!FilterKeyMatch@{FilterKeyMatch}}
+\index{FilterKeyMatch@{FilterKeyMatch}!c\_test.c@{c\_test.c}}
+\subsubsection{\texorpdfstring{FilterKeyMatch()}{FilterKeyMatch()}}
+{\footnotesize\ttfamily unsigned char Filter\+Key\+Match (\begin{DoxyParamCaption}\item[{void $\ast$}]{arg,  }\item[{const char $\ast$}]{key,  }\item[{size\+\_\+t}]{length,  }\item[{const char $\ast$}]{filter,  }\item[{size\+\_\+t}]{filter\+\_\+length }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{c__test_8c_a3c04138a5bfe5d72780bb7e82a18e627}\label{c__test_8c_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{c\_test.c@{c\_test.c}!main@{main}}
+\index{main@{main}!c\_test.c@{c\_test.c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{c__test_8c_a3c04138a5bfe5d72780bb7e82a18e627_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{c__test_8c_aa66920db8e335b57326a73d5592f1273}\label{c__test_8c_aa66920db8e335b57326a73d5592f1273}} 
+\index{c\_test.c@{c\_test.c}!phase@{phase}}
+\index{phase@{phase}!c\_test.c@{c\_test.c}}
+\subsubsection{\texorpdfstring{phase}{phase}}
+{\footnotesize\ttfamily const char$\ast$ phase = \char`\"{}\char`\"{}}
+

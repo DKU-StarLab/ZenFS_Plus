@@ -1,0 +1,15 @@
+<map id="include/leveldb/write_batch.h" name="include/leveldb/write_batch.h">
+<area shape="rect" id="node1" title=" " alt="" coords="405,5,546,44"/>
+<area shape="rect" id="node2" href="$c_8cc.html" title=" " alt="" coords="5,99,69,124"/>
+<area shape="rect" id="node3" href="$corruption__test_8cc.html" title=" " alt="" coords="93,99,238,124"/>
+<area shape="rect" id="node4" href="$db__bench_8cc.html" title=" " alt="" coords="262,99,378,124"/>
+<area shape="rect" id="node5" href="$write__batch__internal_8h.html" title=" " alt="" coords="452,99,622,124"/>
+<area shape="rect" id="node8" href="$dumpfile_8cc.html" title=" " alt="" coords="11,179,119,204"/>
+<area shape="rect" id="node9" href="$recovery__test_8cc.html" title=" " alt="" coords="689,179,826,204"/>
+<area shape="rect" id="node11" href="$write__batch_8cc.html" title=" " alt="" coords="849,179,974,204"/>
+<area shape="rect" id="node13" href="$fault__injection__test_8cc.html" title=" " alt="" coords="748,92,870,131"/>
+<area shape="rect" id="node6" href="$db__impl_8cc.html" title=" " alt="" coords="561,179,665,204"/>
+<area shape="rect" id="node7" href="$db__test_8cc.html" title=" " alt="" coords="143,179,243,204"/>
+<area shape="rect" id="node10" href="$repair_8cc.html" title=" " alt="" coords="268,179,358,204"/>
+<area shape="rect" id="node12" href="$write__batch__test_8cc.html" title=" " alt="" coords="383,179,537,204"/>
+</map>

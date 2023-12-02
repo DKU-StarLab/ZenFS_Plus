@@ -1,0 +1,111 @@
+\hypertarget{classleveldb_1_1_table_cache}{}\section{leveldb\+::Table\+Cache Class Reference}
+\label{classleveldb_1_1_table_cache}\index{leveldb::TableCache@{leveldb::TableCache}}
+
+
+{\ttfamily \#include $<$table\+\_\+cache.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+::Table\+Cache\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classleveldb_1_1_table_cache__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_table_cache_a3982d03d396826d23051c1920efc8636}{Table\+Cache}} (const std\+::string \&dbname, const \mbox{\hyperlink{structleveldb_1_1_options}{Options}} \&options, int entries)
+\item 
+\mbox{\hyperlink{classleveldb_1_1_table_cache_a5690fd10ea7cc7f0d44c8e768bea872c}{$\sim$\+Table\+Cache}} ()
+\item 
+\mbox{\hyperlink{classleveldb_1_1_iterator}{Iterator}} $\ast$ \mbox{\hyperlink{classleveldb_1_1_table_cache_ab3312c170081afb56900b50758765151}{New\+Iterator}} (const \mbox{\hyperlink{structleveldb_1_1_read_options}{Read\+Options}} \&options, uint64\+\_\+t file\+\_\+number, uint64\+\_\+t file\+\_\+size, \mbox{\hyperlink{classleveldb_1_1_table}{Table}} $\ast$$\ast$tableptr=nullptr)
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_table_cache_af43ba38b52742e9f5589321747535444}{Get}} (const \mbox{\hyperlink{structleveldb_1_1_read_options}{Read\+Options}} \&options, uint64\+\_\+t file\+\_\+number, uint64\+\_\+t file\+\_\+size, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&k, void $\ast$arg, void($\ast$handle\+\_\+result)(void $\ast$, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&))
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_table_cache_a57b81c58ff0533514b3a5d1652f044bc}{Evict}} (uint64\+\_\+t file\+\_\+number)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_table_cache_a3982d03d396826d23051c1920efc8636}\label{classleveldb_1_1_table_cache_a3982d03d396826d23051c1920efc8636}} 
+\index{leveldb::TableCache@{leveldb::TableCache}!TableCache@{TableCache}}
+\index{TableCache@{TableCache}!leveldb::TableCache@{leveldb::TableCache}}
+\subsubsection{\texorpdfstring{TableCache()}{TableCache()}}
+{\footnotesize\ttfamily leveldb\+::\+Table\+Cache\+::\+Table\+Cache (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{dbname,  }\item[{const \mbox{\hyperlink{structleveldb_1_1_options}{Options}} \&}]{options,  }\item[{int}]{entries }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classleveldb_1_1_table_cache_a5690fd10ea7cc7f0d44c8e768bea872c}\label{classleveldb_1_1_table_cache_a5690fd10ea7cc7f0d44c8e768bea872c}} 
+\index{leveldb::TableCache@{leveldb::TableCache}!````~TableCache@{$\sim$TableCache}}
+\index{````~TableCache@{$\sim$TableCache}!leveldb::TableCache@{leveldb::TableCache}}
+\subsubsection{\texorpdfstring{$\sim$TableCache()}{~TableCache()}}
+{\footnotesize\ttfamily leveldb\+::\+Table\+Cache\+::$\sim$\+Table\+Cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_table_cache_a57b81c58ff0533514b3a5d1652f044bc}\label{classleveldb_1_1_table_cache_a57b81c58ff0533514b3a5d1652f044bc}} 
+\index{leveldb::TableCache@{leveldb::TableCache}!Evict@{Evict}}
+\index{Evict@{Evict}!leveldb::TableCache@{leveldb::TableCache}}
+\subsubsection{\texorpdfstring{Evict()}{Evict()}}
+{\footnotesize\ttfamily void leveldb\+::\+Table\+Cache\+::\+Evict (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{file\+\_\+number }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classleveldb_1_1_table_cache_a57b81c58ff0533514b3a5d1652f044bc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_table_cache_af43ba38b52742e9f5589321747535444}\label{classleveldb_1_1_table_cache_af43ba38b52742e9f5589321747535444}} 
+\index{leveldb::TableCache@{leveldb::TableCache}!Get@{Get}}
+\index{Get@{Get}!leveldb::TableCache@{leveldb::TableCache}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Table\+Cache\+::\+Get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb_1_1_read_options}{Read\+Options}} \&}]{options,  }\item[{uint64\+\_\+t}]{file\+\_\+number,  }\item[{uint64\+\_\+t}]{file\+\_\+size,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{k,  }\item[{void $\ast$}]{arg,  }\item[{void($\ast$)(void $\ast$, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&)}]{handle\+\_\+result }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_table_cache_af43ba38b52742e9f5589321747535444_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_table_cache_af43ba38b52742e9f5589321747535444_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_table_cache_ab3312c170081afb56900b50758765151}\label{classleveldb_1_1_table_cache_ab3312c170081afb56900b50758765151}} 
+\index{leveldb::TableCache@{leveldb::TableCache}!NewIterator@{NewIterator}}
+\index{NewIterator@{NewIterator}!leveldb::TableCache@{leveldb::TableCache}}
+\subsubsection{\texorpdfstring{NewIterator()}{NewIterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_iterator}{Iterator}} $\ast$ leveldb\+::\+Table\+Cache\+::\+New\+Iterator (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb_1_1_read_options}{Read\+Options}} \&}]{options,  }\item[{uint64\+\_\+t}]{file\+\_\+number,  }\item[{uint64\+\_\+t}]{file\+\_\+size,  }\item[{\mbox{\hyperlink{classleveldb_1_1_table}{Table}} $\ast$$\ast$}]{tableptr = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_table_cache_ab3312c170081afb56900b50758765151_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_table_cache_ab3312c170081afb56900b50758765151_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{table__cache_8h}{table\+\_\+cache.\+h}}\item 
+db/\mbox{\hyperlink{table__cache_8cc}{table\+\_\+cache.\+cc}}\end{DoxyCompactItemize}

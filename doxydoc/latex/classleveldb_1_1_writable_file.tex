@@ -1,0 +1,152 @@
+\hypertarget{classleveldb_1_1_writable_file}{}\section{leveldb\+::Writable\+File Class Reference}
+\label{classleveldb_1_1_writable_file}\index{leveldb::WritableFile@{leveldb::WritableFile}}
+
+
+{\ttfamily \#include $<$env.\+h$>$}
+
+
+
+Inheritance diagram for leveldb\+::Writable\+File\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classleveldb_1_1_writable_file__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for leveldb\+::Writable\+File\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classleveldb_1_1_writable_file__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_writable_file_a7dc6ec8aa3c8b4d28130ccc2791f884a}{Writable\+File}} ()=default
+\item 
+\mbox{\hyperlink{classleveldb_1_1_writable_file_afda8e9b2d4783258701f556cd82dd22c}{Writable\+File}} (const \mbox{\hyperlink{classleveldb_1_1_writable_file}{Writable\+File}} \&)=delete
+\item 
+\mbox{\hyperlink{classleveldb_1_1_writable_file}{Writable\+File}} \& \mbox{\hyperlink{classleveldb_1_1_writable_file_a953e5d740da7a2ff3dccdca043901bb3}{operator=}} (const \mbox{\hyperlink{classleveldb_1_1_writable_file}{Writable\+File}} \&)=delete
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_writable_file_a98027e2f2e97b75b189eefa47e5bf4a1}{$\sim$\+Writable\+File}} ()
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_writable_file_a53b41841d9577d28f65d4d90e1660de8}{Append}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&data)=0
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_writable_file_a2efbf9c02a26028b5002df73b4393915}{Close}} ()=0
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_writable_file_ab95759ad32f6a05b0ee4266969fa265e}{Flush}} ()=0
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_writable_file_a2d2dcef02a2c9e71f3d39125bcd5a606}{Sync}} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_writable_file_a7dc6ec8aa3c8b4d28130ccc2791f884a}\label{classleveldb_1_1_writable_file_a7dc6ec8aa3c8b4d28130ccc2791f884a}} 
+\index{leveldb::WritableFile@{leveldb::WritableFile}!WritableFile@{WritableFile}}
+\index{WritableFile@{WritableFile}!leveldb::WritableFile@{leveldb::WritableFile}}
+\subsubsection{\texorpdfstring{WritableFile()}{WritableFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily leveldb\+::\+Writable\+File\+::\+Writable\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_writable_file_afda8e9b2d4783258701f556cd82dd22c}\label{classleveldb_1_1_writable_file_afda8e9b2d4783258701f556cd82dd22c}} 
+\index{leveldb::WritableFile@{leveldb::WritableFile}!WritableFile@{WritableFile}}
+\index{WritableFile@{WritableFile}!leveldb::WritableFile@{leveldb::WritableFile}}
+\subsubsection{\texorpdfstring{WritableFile()}{WritableFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily leveldb\+::\+Writable\+File\+::\+Writable\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_writable_file}{Writable\+File}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_writable_file_a98027e2f2e97b75b189eefa47e5bf4a1}\label{classleveldb_1_1_writable_file_a98027e2f2e97b75b189eefa47e5bf4a1}} 
+\index{leveldb::WritableFile@{leveldb::WritableFile}!````~WritableFile@{$\sim$WritableFile}}
+\index{````~WritableFile@{$\sim$WritableFile}!leveldb::WritableFile@{leveldb::WritableFile}}
+\subsubsection{\texorpdfstring{$\sim$WritableFile()}{~WritableFile()}}
+{\footnotesize\ttfamily virtual leveldb\+::\+Writable\+File\+::$\sim$\+Writable\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_writable_file_a53b41841d9577d28f65d4d90e1660de8}\label{classleveldb_1_1_writable_file_a53b41841d9577d28f65d4d90e1660de8}} 
+\index{leveldb::WritableFile@{leveldb::WritableFile}!Append@{Append}}
+\index{Append@{Append}!leveldb::WritableFile@{leveldb::WritableFile}}
+\subsubsection{\texorpdfstring{Append()}{Append()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Writable\+File\+::\+Append (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classleveldb_1_1_test_writable_file_a282d3c3c27ef70c65f467f50abfd93bb}{leveldb\+::\+Test\+Writable\+File}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_writable_file_a53b41841d9577d28f65d4d90e1660de8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_writable_file_a2efbf9c02a26028b5002df73b4393915}\label{classleveldb_1_1_writable_file_a2efbf9c02a26028b5002df73b4393915}} 
+\index{leveldb::WritableFile@{leveldb::WritableFile}!Close@{Close}}
+\index{Close@{Close}!leveldb::WritableFile@{leveldb::WritableFile}}
+\subsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Writable\+File\+::\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classleveldb_1_1_test_writable_file_a98284f2e88a705a3c18961f198e94038}{leveldb\+::\+Test\+Writable\+File}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_writable_file_a2efbf9c02a26028b5002df73b4393915_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_writable_file_ab95759ad32f6a05b0ee4266969fa265e}\label{classleveldb_1_1_writable_file_ab95759ad32f6a05b0ee4266969fa265e}} 
+\index{leveldb::WritableFile@{leveldb::WritableFile}!Flush@{Flush}}
+\index{Flush@{Flush}!leveldb::WritableFile@{leveldb::WritableFile}}
+\subsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Writable\+File\+::\+Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classleveldb_1_1_test_writable_file_ad25b85a5ef462fe34e208f955c19d58e}{leveldb\+::\+Test\+Writable\+File}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classleveldb_1_1_writable_file_ab95759ad32f6a05b0ee4266969fa265e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_writable_file_a953e5d740da7a2ff3dccdca043901bb3}\label{classleveldb_1_1_writable_file_a953e5d740da7a2ff3dccdca043901bb3}} 
+\index{leveldb::WritableFile@{leveldb::WritableFile}!operator=@{operator=}}
+\index{operator=@{operator=}!leveldb::WritableFile@{leveldb::WritableFile}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_writable_file}{Writable\+File}}\& leveldb\+::\+Writable\+File\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_writable_file}{Writable\+File}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_writable_file_a2d2dcef02a2c9e71f3d39125bcd5a606}\label{classleveldb_1_1_writable_file_a2d2dcef02a2c9e71f3d39125bcd5a606}} 
+\index{leveldb::WritableFile@{leveldb::WritableFile}!Sync@{Sync}}
+\index{Sync@{Sync}!leveldb::WritableFile@{leveldb::WritableFile}}
+\subsubsection{\texorpdfstring{Sync()}{Sync()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Writable\+File\+::\+Sync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classleveldb_1_1_test_writable_file_aae96a812f1f2e82563b0900dfffaf1d1}{leveldb\+::\+Test\+Writable\+File}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_writable_file_a2d2dcef02a2c9e71f3d39125bcd5a606_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/leveldb/\mbox{\hyperlink{env_8h}{env.\+h}}\end{DoxyCompactItemize}

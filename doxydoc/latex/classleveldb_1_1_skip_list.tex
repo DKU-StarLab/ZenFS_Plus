@@ -1,0 +1,80 @@
+\hypertarget{classleveldb_1_1_skip_list}{}\section{leveldb\+::Skip\+List$<$ Key, Comparator $>$ Class Template Reference}
+\label{classleveldb_1_1_skip_list}\index{leveldb::SkipList$<$ Key, Comparator $>$@{leveldb::SkipList$<$ Key, Comparator $>$}}
+
+
+{\ttfamily \#include $<$skiplist.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+::Skip\+List$<$ Key, Comparator $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classleveldb_1_1_skip_list__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_skip_list_1_1_iterator}{Iterator}}
+\item 
+struct \mbox{\hyperlink{structleveldb_1_1_skip_list_1_1_node}{Node}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_skip_list_a793060fb1b44b01c6f510aa16387c6ee}{Skip\+List}} (\mbox{\hyperlink{structleveldb_1_1_comparator}{Comparator}} cmp, Arena $\ast$arena)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_skip_list_af1ed755f0825f38272aafe3cae4da644}{Insert}} (const \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}} \&key)
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1_skip_list_a689b9724beb6c224c01cf1b9d8699e16}{Contains}} (const \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}} \&key) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_skip_list_a793060fb1b44b01c6f510aa16387c6ee}\label{classleveldb_1_1_skip_list_a793060fb1b44b01c6f510aa16387c6ee}} 
+\index{leveldb::SkipList$<$ Key, Comparator $>$@{leveldb::SkipList$<$ Key, Comparator $>$}!SkipList@{SkipList}}
+\index{SkipList@{SkipList}!leveldb::SkipList$<$ Key, Comparator $>$@{leveldb::SkipList$<$ Key, Comparator $>$}}
+\subsubsection{\texorpdfstring{SkipList()}{SkipList()}}
+{\footnotesize\ttfamily template$<$typename Key , class Comparator$>$ \\
+\mbox{\hyperlink{classleveldb_1_1_skip_list}{leveldb\+::\+Skip\+List}}$<$ \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}}, \mbox{\hyperlink{structleveldb_1_1_comparator}{Comparator}} $>$\+::\mbox{\hyperlink{classleveldb_1_1_skip_list}{Skip\+List}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb_1_1_comparator}{Comparator}}}]{cmp,  }\item[{Arena $\ast$}]{arena }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_skip_list_a689b9724beb6c224c01cf1b9d8699e16}\label{classleveldb_1_1_skip_list_a689b9724beb6c224c01cf1b9d8699e16}} 
+\index{leveldb::SkipList$<$ Key, Comparator $>$@{leveldb::SkipList$<$ Key, Comparator $>$}!Contains@{Contains}}
+\index{Contains@{Contains}!leveldb::SkipList$<$ Key, Comparator $>$@{leveldb::SkipList$<$ Key, Comparator $>$}}
+\subsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily template$<$typename Key, class Comparator $>$ \\
+bool \mbox{\hyperlink{classleveldb_1_1_skip_list}{leveldb\+::\+Skip\+List}}$<$ \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}}, \mbox{\hyperlink{structleveldb_1_1_comparator}{Comparator}} $>$\+::Contains (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}} \&}]{key }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{classleveldb_1_1_skip_list_a689b9724beb6c224c01cf1b9d8699e16_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_skip_list_af1ed755f0825f38272aafe3cae4da644}\label{classleveldb_1_1_skip_list_af1ed755f0825f38272aafe3cae4da644}} 
+\index{leveldb::SkipList$<$ Key, Comparator $>$@{leveldb::SkipList$<$ Key, Comparator $>$}!Insert@{Insert}}
+\index{Insert@{Insert}!leveldb::SkipList$<$ Key, Comparator $>$@{leveldb::SkipList$<$ Key, Comparator $>$}}
+\subsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily template$<$typename Key, class Comparator $>$ \\
+void \mbox{\hyperlink{classleveldb_1_1_skip_list}{leveldb\+::\+Skip\+List}}$<$ \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}}, \mbox{\hyperlink{structleveldb_1_1_comparator}{Comparator}} $>$\+::Insert (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceleveldb_a7e9a9725b13fa0bd922d885280dfab95}{Key}} \&}]{key }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classleveldb_1_1_skip_list_af1ed755f0825f38272aafe3cae4da644_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{skiplist_8h}{skiplist.\+h}}\end{DoxyCompactItemize}

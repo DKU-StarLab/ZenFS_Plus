@@ -1,0 +1,12 @@
+<map id="db/snapshot.h" name="db/snapshot.h">
+<area shape="rect" id="node1" title=" " alt="" coords="545,5,650,31"/>
+<area shape="rect" id="node2" href="$db__impl_8h.html" title=" " alt="" coords="548,79,646,104"/>
+<area shape="rect" id="node3" href="$autocompact__test_8cc.html" title=" " alt="" coords="5,159,167,184"/>
+<area shape="rect" id="node4" href="$corruption__test_8cc.html" title=" " alt="" coords="191,159,336,184"/>
+<area shape="rect" id="node5" href="$db__impl_8cc.html" title=" " alt="" coords="360,159,464,184"/>
+<area shape="rect" id="node6" href="$db__iter_8cc.html" title=" " alt="" coords="487,159,584,184"/>
+<area shape="rect" id="node7" href="$db__test_8cc.html" title=" " alt="" coords="608,159,709,184"/>
+<area shape="rect" id="node8" href="$fault__injection__test_8cc.html" title=" " alt="" coords="732,152,854,191"/>
+<area shape="rect" id="node9" href="$recovery__test_8cc.html" title=" " alt="" coords="878,159,1015,184"/>
+<area shape="rect" id="node10" href="$repair_8cc.html" title=" " alt="" coords="1039,159,1129,184"/>
+</map>

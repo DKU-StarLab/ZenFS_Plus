@@ -1,0 +1,77 @@
+\hypertarget{structleveldb_1_1_d_b_impl_1_1_writer}{}\section{leveldb\+::D\+B\+Impl\+::Writer Struct Reference}
+\label{structleveldb_1_1_d_b_impl_1_1_writer}\index{leveldb::DBImpl::Writer@{leveldb::DBImpl::Writer}}
+
+
+Collaboration diagram for leveldb\+::D\+B\+Impl\+::Writer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_d_b_impl_1_1_writer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_writer_a7dfb43a804e1ded7a2a85b3bc756ea93}{Writer}} (port\+::\+Mutex $\ast$\mbox{\hyperlink{db__impl_8cc_a740e67d0878f1b00c462da3805e85078}{mu}})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_writer_af3b0436a99d2679c0e0ac9f6e1fefa37}{status}}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_write_batch}{Write\+Batch}} $\ast$ \mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_writer_ada051134318411635892f0a7d17cb7c0}{batch}}
+\item 
+bool \mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_writer_acb39717e1fa61127f262b474e18ec9f6}{sync}}
+\item 
+bool \mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_writer_afc6025afd873f82252cb563687bd3106}{done}}
+\item 
+port\+::\+Cond\+Var \mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_writer_aacb835eedc44855a7c223fca024c5ac4}{cv}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structleveldb_1_1_d_b_impl_1_1_writer_a7dfb43a804e1ded7a2a85b3bc756ea93}\label{structleveldb_1_1_d_b_impl_1_1_writer_a7dfb43a804e1ded7a2a85b3bc756ea93}} 
+\index{leveldb::DBImpl::Writer@{leveldb::DBImpl::Writer}!Writer@{Writer}}
+\index{Writer@{Writer}!leveldb::DBImpl::Writer@{leveldb::DBImpl::Writer}}
+\subsubsection{\texorpdfstring{Writer()}{Writer()}}
+{\footnotesize\ttfamily leveldb\+::\+D\+B\+Impl\+::\+Writer\+::\+Writer (\begin{DoxyParamCaption}\item[{port\+::\+Mutex $\ast$}]{mu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structleveldb_1_1_d_b_impl_1_1_writer_ada051134318411635892f0a7d17cb7c0}\label{structleveldb_1_1_d_b_impl_1_1_writer_ada051134318411635892f0a7d17cb7c0}} 
+\index{leveldb::DBImpl::Writer@{leveldb::DBImpl::Writer}!batch@{batch}}
+\index{batch@{batch}!leveldb::DBImpl::Writer@{leveldb::DBImpl::Writer}}
+\subsubsection{\texorpdfstring{batch}{batch}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_write_batch}{Write\+Batch}}$\ast$ leveldb\+::\+D\+B\+Impl\+::\+Writer\+::batch}
+
+\mbox{\Hypertarget{structleveldb_1_1_d_b_impl_1_1_writer_aacb835eedc44855a7c223fca024c5ac4}\label{structleveldb_1_1_d_b_impl_1_1_writer_aacb835eedc44855a7c223fca024c5ac4}} 
+\index{leveldb::DBImpl::Writer@{leveldb::DBImpl::Writer}!cv@{cv}}
+\index{cv@{cv}!leveldb::DBImpl::Writer@{leveldb::DBImpl::Writer}}
+\subsubsection{\texorpdfstring{cv}{cv}}
+{\footnotesize\ttfamily port\+::\+Cond\+Var leveldb\+::\+D\+B\+Impl\+::\+Writer\+::cv}
+
+\mbox{\Hypertarget{structleveldb_1_1_d_b_impl_1_1_writer_afc6025afd873f82252cb563687bd3106}\label{structleveldb_1_1_d_b_impl_1_1_writer_afc6025afd873f82252cb563687bd3106}} 
+\index{leveldb::DBImpl::Writer@{leveldb::DBImpl::Writer}!done@{done}}
+\index{done@{done}!leveldb::DBImpl::Writer@{leveldb::DBImpl::Writer}}
+\subsubsection{\texorpdfstring{done}{done}}
+{\footnotesize\ttfamily bool leveldb\+::\+D\+B\+Impl\+::\+Writer\+::done}
+
+\mbox{\Hypertarget{structleveldb_1_1_d_b_impl_1_1_writer_af3b0436a99d2679c0e0ac9f6e1fefa37}\label{structleveldb_1_1_d_b_impl_1_1_writer_af3b0436a99d2679c0e0ac9f6e1fefa37}} 
+\index{leveldb::DBImpl::Writer@{leveldb::DBImpl::Writer}!status@{status}}
+\index{status@{status}!leveldb::DBImpl::Writer@{leveldb::DBImpl::Writer}}
+\subsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+D\+B\+Impl\+::\+Writer\+::status}
+
+\mbox{\Hypertarget{structleveldb_1_1_d_b_impl_1_1_writer_acb39717e1fa61127f262b474e18ec9f6}\label{structleveldb_1_1_d_b_impl_1_1_writer_acb39717e1fa61127f262b474e18ec9f6}} 
+\index{leveldb::DBImpl::Writer@{leveldb::DBImpl::Writer}!sync@{sync}}
+\index{sync@{sync}!leveldb::DBImpl::Writer@{leveldb::DBImpl::Writer}}
+\subsubsection{\texorpdfstring{sync}{sync}}
+{\footnotesize\ttfamily bool leveldb\+::\+D\+B\+Impl\+::\+Writer\+::sync}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{db__impl_8cc}{db\+\_\+impl.\+cc}}\end{DoxyCompactItemize}

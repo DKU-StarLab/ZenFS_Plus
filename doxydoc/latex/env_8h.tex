@@ -1,0 +1,55 @@
+\hypertarget{env_8h}{}\section{include/leveldb/env.h File Reference}
+\label{env_8h}\index{include/leveldb/env.h@{include/leveldb/env.h}}
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}leveldb/export.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/status.\+h\char`\"{}}\newline
+Include dependency graph for env.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{env_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{env_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_env}{leveldb\+::\+Env}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_sequential_file}{leveldb\+::\+Sequential\+File}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_random_access_file}{leveldb\+::\+Random\+Access\+File}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_writable_file}{leveldb\+::\+Writable\+File}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_logger}{leveldb\+::\+Logger}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_file_lock}{leveldb\+::\+File\+Lock}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_env_wrapper}{leveldb\+::\+Env\+Wrapper}}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceleveldb}{leveldb}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespaceleveldb_aeba9623ceee38be99bed2bc1ae082954}{leveldb\+::\+Log}} (Logger $\ast$info\+\_\+log, const char $\ast$format,...)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} Status \mbox{\hyperlink{namespaceleveldb_aa921f8824045bed5a75e2220a65bf68d}{leveldb\+::\+Write\+String\+To\+File}} (Env $\ast$env, const Slice \&data, const std\+::string \&fname)
+\item 
+\mbox{\hyperlink{export_8h_a658cd25b9dd114d894ae8ce9dddb7d3a}{L\+E\+V\+E\+L\+D\+B\+\_\+\+E\+X\+P\+O\+RT}} Status \mbox{\hyperlink{namespaceleveldb_a2d2b5dcaccd555df746cc89ffcd9cd05}{leveldb\+::\+Read\+File\+To\+String}} (Env $\ast$env, const std\+::string \&fname, std\+::string $\ast$data)
+\end{DoxyCompactItemize}

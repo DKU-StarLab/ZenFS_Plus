@@ -1,0 +1,234 @@
+\hypertarget{classleveldb_1_1log_1_1_log_test}{}\section{leveldb\+::log\+::Log\+Test Class Reference}
+\label{classleveldb_1_1log_1_1_log_test}\index{leveldb::log::LogTest@{leveldb::log::LogTest}}
+
+
+Collaboration diagram for leveldb\+::log\+::Log\+Test\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classleveldb_1_1log_1_1_log_test__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test_a71c5f0a5a098ca82a72e7065141a1d06}{Log\+Test}} ()
+\item 
+\mbox{\hyperlink{classleveldb_1_1log_1_1_log_test_adee9ce15bff328c3230fcc097a704400}{$\sim$\+Log\+Test}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1log_1_1_log_test_a0e83e390485711589ee405d85c9f376f}{Reopen\+For\+Append}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1log_1_1_log_test_ab8af1c9335e7fbb42e06a6c01de2d0fc}{Write}} (const std\+::string \&msg)
+\item 
+size\+\_\+t \mbox{\hyperlink{classleveldb_1_1log_1_1_log_test_a602824b02f9220d6813768f6f700db47}{Written\+Bytes}} () const
+\item 
+std\+::string \mbox{\hyperlink{classleveldb_1_1log_1_1_log_test_a2f5deb8b04200600ac0bc7cd3e39bd57}{Read}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1log_1_1_log_test_aee52d93f17cf3e23b2ae11bd9a5f5652}{Increment\+Byte}} (int offset, int delta)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1log_1_1_log_test_a2f3545c3cd495bb60b4322fa045b897c}{Set\+Byte}} (int offset, char new\+\_\+byte)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1log_1_1_log_test_a2f19ddba7e239badc63920c6fb496823}{Shrink\+Size}} (int bytes)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1log_1_1_log_test_ac966525faded349590f1a1ae738844cf}{Fix\+Checksum}} (int header\+\_\+offset, int len)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1log_1_1_log_test_a817eeeba2beef1d81dac83badb9f1049}{Force\+Error}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{classleveldb_1_1log_1_1_log_test_a092d7cb6d95b2f101d89dbee74ee15ad}{Dropped\+Bytes}} () const
+\item 
+std\+::string \mbox{\hyperlink{classleveldb_1_1log_1_1_log_test_a2010f1dfcd23d4cdf295909d0a00ba84}{Report\+Message}} () const
+\item 
+std\+::string \mbox{\hyperlink{classleveldb_1_1log_1_1_log_test_a51c102136e6f0b4b9567ebad8dff74f1}{Match\+Error}} (const std\+::string \&msg) const
+\item 
+void \mbox{\hyperlink{classleveldb_1_1log_1_1_log_test_af0053e30c5ccaa5e2e10d595a4f48565}{Write\+Initial\+Offset\+Log}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1log_1_1_log_test_a1fc5492e2eca6cb26b652322ed3cdc31}{Start\+Reading\+At}} (uint64\+\_\+t initial\+\_\+offset)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1log_1_1_log_test_a2bf9cdf3b3f722c300f65a7752c0e101}{Check\+Offset\+Past\+End\+Returns\+No\+Records}} (uint64\+\_\+t offset\+\_\+past\+\_\+end)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1log_1_1_log_test_ab9ca8c2014e78611d66d884f7b46e4ff}{Check\+Initial\+Offset\+Record}} (uint64\+\_\+t initial\+\_\+offset, int expected\+\_\+record\+\_\+offset)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_log_test_a71c5f0a5a098ca82a72e7065141a1d06}\label{classleveldb_1_1log_1_1_log_test_a71c5f0a5a098ca82a72e7065141a1d06}} 
+\index{leveldb::log::LogTest@{leveldb::log::LogTest}!LogTest@{LogTest}}
+\index{LogTest@{LogTest}!leveldb::log::LogTest@{leveldb::log::LogTest}}
+\subsubsection{\texorpdfstring{LogTest()}{LogTest()}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+Log\+Test\+::\+Log\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_log_test_adee9ce15bff328c3230fcc097a704400}\label{classleveldb_1_1log_1_1_log_test_adee9ce15bff328c3230fcc097a704400}} 
+\index{leveldb::log::LogTest@{leveldb::log::LogTest}!````~LogTest@{$\sim$LogTest}}
+\index{````~LogTest@{$\sim$LogTest}!leveldb::log::LogTest@{leveldb::log::LogTest}}
+\subsubsection{\texorpdfstring{$\sim$LogTest()}{~LogTest()}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+Log\+Test\+::$\sim$\+Log\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_log_test_ab9ca8c2014e78611d66d884f7b46e4ff}\label{classleveldb_1_1log_1_1_log_test_ab9ca8c2014e78611d66d884f7b46e4ff}} 
+\index{leveldb::log::LogTest@{leveldb::log::LogTest}!CheckInitialOffsetRecord@{CheckInitialOffsetRecord}}
+\index{CheckInitialOffsetRecord@{CheckInitialOffsetRecord}!leveldb::log::LogTest@{leveldb::log::LogTest}}
+\subsubsection{\texorpdfstring{CheckInitialOffsetRecord()}{CheckInitialOffsetRecord()}}
+{\footnotesize\ttfamily void leveldb\+::log\+::\+Log\+Test\+::\+Check\+Initial\+Offset\+Record (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{initial\+\_\+offset,  }\item[{int}]{expected\+\_\+record\+\_\+offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1log_1_1_log_test_ab9ca8c2014e78611d66d884f7b46e4ff_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_log_test_a2bf9cdf3b3f722c300f65a7752c0e101}\label{classleveldb_1_1log_1_1_log_test_a2bf9cdf3b3f722c300f65a7752c0e101}} 
+\index{leveldb::log::LogTest@{leveldb::log::LogTest}!CheckOffsetPastEndReturnsNoRecords@{CheckOffsetPastEndReturnsNoRecords}}
+\index{CheckOffsetPastEndReturnsNoRecords@{CheckOffsetPastEndReturnsNoRecords}!leveldb::log::LogTest@{leveldb::log::LogTest}}
+\subsubsection{\texorpdfstring{CheckOffsetPastEndReturnsNoRecords()}{CheckOffsetPastEndReturnsNoRecords()}}
+{\footnotesize\ttfamily void leveldb\+::log\+::\+Log\+Test\+::\+Check\+Offset\+Past\+End\+Returns\+No\+Records (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{offset\+\_\+past\+\_\+end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1log_1_1_log_test_a2bf9cdf3b3f722c300f65a7752c0e101_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_log_test_a092d7cb6d95b2f101d89dbee74ee15ad}\label{classleveldb_1_1log_1_1_log_test_a092d7cb6d95b2f101d89dbee74ee15ad}} 
+\index{leveldb::log::LogTest@{leveldb::log::LogTest}!DroppedBytes@{DroppedBytes}}
+\index{DroppedBytes@{DroppedBytes}!leveldb::log::LogTest@{leveldb::log::LogTest}}
+\subsubsection{\texorpdfstring{DroppedBytes()}{DroppedBytes()}}
+{\footnotesize\ttfamily size\+\_\+t leveldb\+::log\+::\+Log\+Test\+::\+Dropped\+Bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_log_test_ac966525faded349590f1a1ae738844cf}\label{classleveldb_1_1log_1_1_log_test_ac966525faded349590f1a1ae738844cf}} 
+\index{leveldb::log::LogTest@{leveldb::log::LogTest}!FixChecksum@{FixChecksum}}
+\index{FixChecksum@{FixChecksum}!leveldb::log::LogTest@{leveldb::log::LogTest}}
+\subsubsection{\texorpdfstring{FixChecksum()}{FixChecksum()}}
+{\footnotesize\ttfamily void leveldb\+::log\+::\+Log\+Test\+::\+Fix\+Checksum (\begin{DoxyParamCaption}\item[{int}]{header\+\_\+offset,  }\item[{int}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_log_test_a817eeeba2beef1d81dac83badb9f1049}\label{classleveldb_1_1log_1_1_log_test_a817eeeba2beef1d81dac83badb9f1049}} 
+\index{leveldb::log::LogTest@{leveldb::log::LogTest}!ForceError@{ForceError}}
+\index{ForceError@{ForceError}!leveldb::log::LogTest@{leveldb::log::LogTest}}
+\subsubsection{\texorpdfstring{ForceError()}{ForceError()}}
+{\footnotesize\ttfamily void leveldb\+::log\+::\+Log\+Test\+::\+Force\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_log_test_aee52d93f17cf3e23b2ae11bd9a5f5652}\label{classleveldb_1_1log_1_1_log_test_aee52d93f17cf3e23b2ae11bd9a5f5652}} 
+\index{leveldb::log::LogTest@{leveldb::log::LogTest}!IncrementByte@{IncrementByte}}
+\index{IncrementByte@{IncrementByte}!leveldb::log::LogTest@{leveldb::log::LogTest}}
+\subsubsection{\texorpdfstring{IncrementByte()}{IncrementByte()}}
+{\footnotesize\ttfamily void leveldb\+::log\+::\+Log\+Test\+::\+Increment\+Byte (\begin{DoxyParamCaption}\item[{int}]{offset,  }\item[{int}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_log_test_a51c102136e6f0b4b9567ebad8dff74f1}\label{classleveldb_1_1log_1_1_log_test_a51c102136e6f0b4b9567ebad8dff74f1}} 
+\index{leveldb::log::LogTest@{leveldb::log::LogTest}!MatchError@{MatchError}}
+\index{MatchError@{MatchError}!leveldb::log::LogTest@{leveldb::log::LogTest}}
+\subsubsection{\texorpdfstring{MatchError()}{MatchError()}}
+{\footnotesize\ttfamily std\+::string leveldb\+::log\+::\+Log\+Test\+::\+Match\+Error (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{msg }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_log_test_a2f5deb8b04200600ac0bc7cd3e39bd57}\label{classleveldb_1_1log_1_1_log_test_a2f5deb8b04200600ac0bc7cd3e39bd57}} 
+\index{leveldb::log::LogTest@{leveldb::log::LogTest}!Read@{Read}}
+\index{Read@{Read}!leveldb::log::LogTest@{leveldb::log::LogTest}}
+\subsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily std\+::string leveldb\+::log\+::\+Log\+Test\+::\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1log_1_1_log_test_a2f5deb8b04200600ac0bc7cd3e39bd57_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_log_test_a0e83e390485711589ee405d85c9f376f}\label{classleveldb_1_1log_1_1_log_test_a0e83e390485711589ee405d85c9f376f}} 
+\index{leveldb::log::LogTest@{leveldb::log::LogTest}!ReopenForAppend@{ReopenForAppend}}
+\index{ReopenForAppend@{ReopenForAppend}!leveldb::log::LogTest@{leveldb::log::LogTest}}
+\subsubsection{\texorpdfstring{ReopenForAppend()}{ReopenForAppend()}}
+{\footnotesize\ttfamily void leveldb\+::log\+::\+Log\+Test\+::\+Reopen\+For\+Append (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_log_test_a2010f1dfcd23d4cdf295909d0a00ba84}\label{classleveldb_1_1log_1_1_log_test_a2010f1dfcd23d4cdf295909d0a00ba84}} 
+\index{leveldb::log::LogTest@{leveldb::log::LogTest}!ReportMessage@{ReportMessage}}
+\index{ReportMessage@{ReportMessage}!leveldb::log::LogTest@{leveldb::log::LogTest}}
+\subsubsection{\texorpdfstring{ReportMessage()}{ReportMessage()}}
+{\footnotesize\ttfamily std\+::string leveldb\+::log\+::\+Log\+Test\+::\+Report\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_log_test_a2f3545c3cd495bb60b4322fa045b897c}\label{classleveldb_1_1log_1_1_log_test_a2f3545c3cd495bb60b4322fa045b897c}} 
+\index{leveldb::log::LogTest@{leveldb::log::LogTest}!SetByte@{SetByte}}
+\index{SetByte@{SetByte}!leveldb::log::LogTest@{leveldb::log::LogTest}}
+\subsubsection{\texorpdfstring{SetByte()}{SetByte()}}
+{\footnotesize\ttfamily void leveldb\+::log\+::\+Log\+Test\+::\+Set\+Byte (\begin{DoxyParamCaption}\item[{int}]{offset,  }\item[{char}]{new\+\_\+byte }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_log_test_a2f19ddba7e239badc63920c6fb496823}\label{classleveldb_1_1log_1_1_log_test_a2f19ddba7e239badc63920c6fb496823}} 
+\index{leveldb::log::LogTest@{leveldb::log::LogTest}!ShrinkSize@{ShrinkSize}}
+\index{ShrinkSize@{ShrinkSize}!leveldb::log::LogTest@{leveldb::log::LogTest}}
+\subsubsection{\texorpdfstring{ShrinkSize()}{ShrinkSize()}}
+{\footnotesize\ttfamily void leveldb\+::log\+::\+Log\+Test\+::\+Shrink\+Size (\begin{DoxyParamCaption}\item[{int}]{bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_log_test_a1fc5492e2eca6cb26b652322ed3cdc31}\label{classleveldb_1_1log_1_1_log_test_a1fc5492e2eca6cb26b652322ed3cdc31}} 
+\index{leveldb::log::LogTest@{leveldb::log::LogTest}!StartReadingAt@{StartReadingAt}}
+\index{StartReadingAt@{StartReadingAt}!leveldb::log::LogTest@{leveldb::log::LogTest}}
+\subsubsection{\texorpdfstring{StartReadingAt()}{StartReadingAt()}}
+{\footnotesize\ttfamily void leveldb\+::log\+::\+Log\+Test\+::\+Start\+Reading\+At (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{initial\+\_\+offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_log_test_ab8af1c9335e7fbb42e06a6c01de2d0fc}\label{classleveldb_1_1log_1_1_log_test_ab8af1c9335e7fbb42e06a6c01de2d0fc}} 
+\index{leveldb::log::LogTest@{leveldb::log::LogTest}!Write@{Write}}
+\index{Write@{Write}!leveldb::log::LogTest@{leveldb::log::LogTest}}
+\subsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily void leveldb\+::log\+::\+Log\+Test\+::\+Write (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1log_1_1_log_test_ab8af1c9335e7fbb42e06a6c01de2d0fc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1log_1_1_log_test_ab8af1c9335e7fbb42e06a6c01de2d0fc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_log_test_af0053e30c5ccaa5e2e10d595a4f48565}\label{classleveldb_1_1log_1_1_log_test_af0053e30c5ccaa5e2e10d595a4f48565}} 
+\index{leveldb::log::LogTest@{leveldb::log::LogTest}!WriteInitialOffsetLog@{WriteInitialOffsetLog}}
+\index{WriteInitialOffsetLog@{WriteInitialOffsetLog}!leveldb::log::LogTest@{leveldb::log::LogTest}}
+\subsubsection{\texorpdfstring{WriteInitialOffsetLog()}{WriteInitialOffsetLog()}}
+{\footnotesize\ttfamily void leveldb\+::log\+::\+Log\+Test\+::\+Write\+Initial\+Offset\+Log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1log_1_1_log_test_af0053e30c5ccaa5e2e10d595a4f48565_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1log_1_1_log_test_af0053e30c5ccaa5e2e10d595a4f48565_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_log_test_a602824b02f9220d6813768f6f700db47}\label{classleveldb_1_1log_1_1_log_test_a602824b02f9220d6813768f6f700db47}} 
+\index{leveldb::log::LogTest@{leveldb::log::LogTest}!WrittenBytes@{WrittenBytes}}
+\index{WrittenBytes@{WrittenBytes}!leveldb::log::LogTest@{leveldb::log::LogTest}}
+\subsubsection{\texorpdfstring{WrittenBytes()}{WrittenBytes()}}
+{\footnotesize\ttfamily size\+\_\+t leveldb\+::log\+::\+Log\+Test\+::\+Written\+Bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1log_1_1_log_test_a602824b02f9220d6813768f6f700db47_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{log__test_8cc}{log\+\_\+test.\+cc}}\end{DoxyCompactItemize}

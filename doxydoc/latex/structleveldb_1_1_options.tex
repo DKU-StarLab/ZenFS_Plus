@@ -1,0 +1,161 @@
+\hypertarget{structleveldb_1_1_options}{}\section{leveldb\+::Options Struct Reference}
+\label{structleveldb_1_1_options}\index{leveldb::Options@{leveldb::Options}}
+
+
+{\ttfamily \#include $<$options.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+::Options\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structleveldb_1_1_options__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structleveldb_1_1_options_a52d77c894795ba83077045daeab3d581}{Options}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{structleveldb_1_1_comparator}{Comparator}} $\ast$ \mbox{\hyperlink{structleveldb_1_1_options_a7522fbf79de73c4f73ef8d9392e8c80b}{comparator}}
+\item 
+bool \mbox{\hyperlink{structleveldb_1_1_options_afe1b4e94164ff8f081b1c25bf1bcb62e}{create\+\_\+if\+\_\+missing}}
+\item 
+bool \mbox{\hyperlink{structleveldb_1_1_options_aff3b99b1b30a2dba9642adc6c912d5b7}{error\+\_\+if\+\_\+exists}}
+\item 
+bool \mbox{\hyperlink{structleveldb_1_1_options_a4263dcc655493100eecc9daf6737a10b}{paranoid\+\_\+checks}}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_env}{Env}} $\ast$ \mbox{\hyperlink{structleveldb_1_1_options_aeb08bfe820e9c89f57446d6fbd2e6ea8}{env}}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_logger}{Logger}} $\ast$ \mbox{\hyperlink{structleveldb_1_1_options_af5545cba00b0e9763ad0279a74acc429}{info\+\_\+log}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structleveldb_1_1_options_a017f1f9558e6b3887434df29a16dac97}{write\+\_\+buffer\+\_\+size}}
+\item 
+int \mbox{\hyperlink{structleveldb_1_1_options_a25c6ea125fc63342d8fc25b2f7817be4}{max\+\_\+open\+\_\+files}}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_cache}{Cache}} $\ast$ \mbox{\hyperlink{structleveldb_1_1_options_a4e87749ebac1ba28dff6bb63eb2059e5}{block\+\_\+cache}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structleveldb_1_1_options_a715c7941b43db641e76e598aa9ab52a0}{block\+\_\+size}}
+\item 
+int \mbox{\hyperlink{structleveldb_1_1_options_ac71d66ae44e481edc3922d3a139c30b4}{block\+\_\+restart\+\_\+interval}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structleveldb_1_1_options_a3a12f43d8536d284460511e86cd56fc5}{max\+\_\+file\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespaceleveldb_a047a8e77a76becb82bab4720994f6f9b}{Compression\+Type}} \mbox{\hyperlink{structleveldb_1_1_options_abdaf09c8bb3a788636ffb86cb93b01ab}{compression}}
+\item 
+bool \mbox{\hyperlink{structleveldb_1_1_options_aa264d17f9527539b18396a760424dcbc}{reuse\+\_\+logs}}
+\item 
+const \mbox{\hyperlink{classleveldb_1_1_filter_policy}{Filter\+Policy}} $\ast$ \mbox{\hyperlink{structleveldb_1_1_options_a24c88997a866d535e68de15b5c3cd02b}{filter\+\_\+policy}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structleveldb_1_1_options_a52d77c894795ba83077045daeab3d581}\label{structleveldb_1_1_options_a52d77c894795ba83077045daeab3d581}} 
+\index{leveldb::Options@{leveldb::Options}!Options@{Options}}
+\index{Options@{Options}!leveldb::Options@{leveldb::Options}}
+\subsubsection{\texorpdfstring{Options()}{Options()}}
+{\footnotesize\ttfamily leveldb\+::\+Options\+::\+Options (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structleveldb_1_1_options_a4e87749ebac1ba28dff6bb63eb2059e5}\label{structleveldb_1_1_options_a4e87749ebac1ba28dff6bb63eb2059e5}} 
+\index{leveldb::Options@{leveldb::Options}!block\_cache@{block\_cache}}
+\index{block\_cache@{block\_cache}!leveldb::Options@{leveldb::Options}}
+\subsubsection{\texorpdfstring{block\_cache}{block\_cache}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_cache}{Cache}}$\ast$ leveldb\+::\+Options\+::block\+\_\+cache}
+
+\mbox{\Hypertarget{structleveldb_1_1_options_ac71d66ae44e481edc3922d3a139c30b4}\label{structleveldb_1_1_options_ac71d66ae44e481edc3922d3a139c30b4}} 
+\index{leveldb::Options@{leveldb::Options}!block\_restart\_interval@{block\_restart\_interval}}
+\index{block\_restart\_interval@{block\_restart\_interval}!leveldb::Options@{leveldb::Options}}
+\subsubsection{\texorpdfstring{block\_restart\_interval}{block\_restart\_interval}}
+{\footnotesize\ttfamily int leveldb\+::\+Options\+::block\+\_\+restart\+\_\+interval}
+
+\mbox{\Hypertarget{structleveldb_1_1_options_a715c7941b43db641e76e598aa9ab52a0}\label{structleveldb_1_1_options_a715c7941b43db641e76e598aa9ab52a0}} 
+\index{leveldb::Options@{leveldb::Options}!block\_size@{block\_size}}
+\index{block\_size@{block\_size}!leveldb::Options@{leveldb::Options}}
+\subsubsection{\texorpdfstring{block\_size}{block\_size}}
+{\footnotesize\ttfamily size\+\_\+t leveldb\+::\+Options\+::block\+\_\+size}
+
+\mbox{\Hypertarget{structleveldb_1_1_options_a7522fbf79de73c4f73ef8d9392e8c80b}\label{structleveldb_1_1_options_a7522fbf79de73c4f73ef8d9392e8c80b}} 
+\index{leveldb::Options@{leveldb::Options}!comparator@{comparator}}
+\index{comparator@{comparator}!leveldb::Options@{leveldb::Options}}
+\subsubsection{\texorpdfstring{comparator}{comparator}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structleveldb_1_1_comparator}{Comparator}}$\ast$ leveldb\+::\+Options\+::comparator}
+
+\mbox{\Hypertarget{structleveldb_1_1_options_abdaf09c8bb3a788636ffb86cb93b01ab}\label{structleveldb_1_1_options_abdaf09c8bb3a788636ffb86cb93b01ab}} 
+\index{leveldb::Options@{leveldb::Options}!compression@{compression}}
+\index{compression@{compression}!leveldb::Options@{leveldb::Options}}
+\subsubsection{\texorpdfstring{compression}{compression}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceleveldb_a047a8e77a76becb82bab4720994f6f9b}{Compression\+Type}} leveldb\+::\+Options\+::compression}
+
+\mbox{\Hypertarget{structleveldb_1_1_options_afe1b4e94164ff8f081b1c25bf1bcb62e}\label{structleveldb_1_1_options_afe1b4e94164ff8f081b1c25bf1bcb62e}} 
+\index{leveldb::Options@{leveldb::Options}!create\_if\_missing@{create\_if\_missing}}
+\index{create\_if\_missing@{create\_if\_missing}!leveldb::Options@{leveldb::Options}}
+\subsubsection{\texorpdfstring{create\_if\_missing}{create\_if\_missing}}
+{\footnotesize\ttfamily bool leveldb\+::\+Options\+::create\+\_\+if\+\_\+missing}
+
+\mbox{\Hypertarget{structleveldb_1_1_options_aeb08bfe820e9c89f57446d6fbd2e6ea8}\label{structleveldb_1_1_options_aeb08bfe820e9c89f57446d6fbd2e6ea8}} 
+\index{leveldb::Options@{leveldb::Options}!env@{env}}
+\index{env@{env}!leveldb::Options@{leveldb::Options}}
+\subsubsection{\texorpdfstring{env}{env}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_env}{Env}}$\ast$ leveldb\+::\+Options\+::env}
+
+\mbox{\Hypertarget{structleveldb_1_1_options_aff3b99b1b30a2dba9642adc6c912d5b7}\label{structleveldb_1_1_options_aff3b99b1b30a2dba9642adc6c912d5b7}} 
+\index{leveldb::Options@{leveldb::Options}!error\_if\_exists@{error\_if\_exists}}
+\index{error\_if\_exists@{error\_if\_exists}!leveldb::Options@{leveldb::Options}}
+\subsubsection{\texorpdfstring{error\_if\_exists}{error\_if\_exists}}
+{\footnotesize\ttfamily bool leveldb\+::\+Options\+::error\+\_\+if\+\_\+exists}
+
+\mbox{\Hypertarget{structleveldb_1_1_options_a24c88997a866d535e68de15b5c3cd02b}\label{structleveldb_1_1_options_a24c88997a866d535e68de15b5c3cd02b}} 
+\index{leveldb::Options@{leveldb::Options}!filter\_policy@{filter\_policy}}
+\index{filter\_policy@{filter\_policy}!leveldb::Options@{leveldb::Options}}
+\subsubsection{\texorpdfstring{filter\_policy}{filter\_policy}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classleveldb_1_1_filter_policy}{Filter\+Policy}}$\ast$ leveldb\+::\+Options\+::filter\+\_\+policy}
+
+\mbox{\Hypertarget{structleveldb_1_1_options_af5545cba00b0e9763ad0279a74acc429}\label{structleveldb_1_1_options_af5545cba00b0e9763ad0279a74acc429}} 
+\index{leveldb::Options@{leveldb::Options}!info\_log@{info\_log}}
+\index{info\_log@{info\_log}!leveldb::Options@{leveldb::Options}}
+\subsubsection{\texorpdfstring{info\_log}{info\_log}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_logger}{Logger}}$\ast$ leveldb\+::\+Options\+::info\+\_\+log}
+
+\mbox{\Hypertarget{structleveldb_1_1_options_a3a12f43d8536d284460511e86cd56fc5}\label{structleveldb_1_1_options_a3a12f43d8536d284460511e86cd56fc5}} 
+\index{leveldb::Options@{leveldb::Options}!max\_file\_size@{max\_file\_size}}
+\index{max\_file\_size@{max\_file\_size}!leveldb::Options@{leveldb::Options}}
+\subsubsection{\texorpdfstring{max\_file\_size}{max\_file\_size}}
+{\footnotesize\ttfamily size\+\_\+t leveldb\+::\+Options\+::max\+\_\+file\+\_\+size}
+
+\mbox{\Hypertarget{structleveldb_1_1_options_a25c6ea125fc63342d8fc25b2f7817be4}\label{structleveldb_1_1_options_a25c6ea125fc63342d8fc25b2f7817be4}} 
+\index{leveldb::Options@{leveldb::Options}!max\_open\_files@{max\_open\_files}}
+\index{max\_open\_files@{max\_open\_files}!leveldb::Options@{leveldb::Options}}
+\subsubsection{\texorpdfstring{max\_open\_files}{max\_open\_files}}
+{\footnotesize\ttfamily int leveldb\+::\+Options\+::max\+\_\+open\+\_\+files}
+
+\mbox{\Hypertarget{structleveldb_1_1_options_a4263dcc655493100eecc9daf6737a10b}\label{structleveldb_1_1_options_a4263dcc655493100eecc9daf6737a10b}} 
+\index{leveldb::Options@{leveldb::Options}!paranoid\_checks@{paranoid\_checks}}
+\index{paranoid\_checks@{paranoid\_checks}!leveldb::Options@{leveldb::Options}}
+\subsubsection{\texorpdfstring{paranoid\_checks}{paranoid\_checks}}
+{\footnotesize\ttfamily bool leveldb\+::\+Options\+::paranoid\+\_\+checks}
+
+\mbox{\Hypertarget{structleveldb_1_1_options_aa264d17f9527539b18396a760424dcbc}\label{structleveldb_1_1_options_aa264d17f9527539b18396a760424dcbc}} 
+\index{leveldb::Options@{leveldb::Options}!reuse\_logs@{reuse\_logs}}
+\index{reuse\_logs@{reuse\_logs}!leveldb::Options@{leveldb::Options}}
+\subsubsection{\texorpdfstring{reuse\_logs}{reuse\_logs}}
+{\footnotesize\ttfamily bool leveldb\+::\+Options\+::reuse\+\_\+logs}
+
+\mbox{\Hypertarget{structleveldb_1_1_options_a017f1f9558e6b3887434df29a16dac97}\label{structleveldb_1_1_options_a017f1f9558e6b3887434df29a16dac97}} 
+\index{leveldb::Options@{leveldb::Options}!write\_buffer\_size@{write\_buffer\_size}}
+\index{write\_buffer\_size@{write\_buffer\_size}!leveldb::Options@{leveldb::Options}}
+\subsubsection{\texorpdfstring{write\_buffer\_size}{write\_buffer\_size}}
+{\footnotesize\ttfamily size\+\_\+t leveldb\+::\+Options\+::write\+\_\+buffer\+\_\+size}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/leveldb/\mbox{\hyperlink{options_8h}{options.\+h}}\end{DoxyCompactItemize}

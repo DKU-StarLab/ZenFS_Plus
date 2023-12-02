@@ -1,0 +1,118 @@
+\hypertarget{classleveldb_1_1_snapshot_list}{}\section{leveldb\+::Snapshot\+List Class Reference}
+\label{classleveldb_1_1_snapshot_list}\index{leveldb::SnapshotList@{leveldb::SnapshotList}}
+
+
+{\ttfamily \#include $<$snapshot.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+::Snapshot\+List\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{classleveldb_1_1_snapshot_list__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_snapshot_list_a8e312959c2c2e2e64e9bb7eaca2459ae}{Snapshot\+List}} ()
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1_snapshot_list_a1db6b1cbcd79669168052e088e8af84e}{empty}} () const
+\item 
+\mbox{\hyperlink{classleveldb_1_1_snapshot_impl}{Snapshot\+Impl}} $\ast$ \mbox{\hyperlink{classleveldb_1_1_snapshot_list_a2a7757163b6f737771430e3ea1697963}{oldest}} () const
+\item 
+\mbox{\hyperlink{classleveldb_1_1_snapshot_impl}{Snapshot\+Impl}} $\ast$ \mbox{\hyperlink{classleveldb_1_1_snapshot_list_ae4480f4d9059d78623773b7e87aad11b}{newest}} () const
+\item 
+\mbox{\hyperlink{classleveldb_1_1_snapshot_impl}{Snapshot\+Impl}} $\ast$ \mbox{\hyperlink{classleveldb_1_1_snapshot_list_a40ede9e24ef1c4f0544beb44b48f252e}{New}} (\mbox{\hyperlink{namespaceleveldb_a5481ededd221c36d652c371249f869fa}{Sequence\+Number}} sequence\+\_\+number)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_snapshot_list_a806aa482c5a66c080b75b897446f1dba}{Delete}} (const \mbox{\hyperlink{classleveldb_1_1_snapshot_impl}{Snapshot\+Impl}} $\ast$snapshot)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_snapshot_list_a8e312959c2c2e2e64e9bb7eaca2459ae}\label{classleveldb_1_1_snapshot_list_a8e312959c2c2e2e64e9bb7eaca2459ae}} 
+\index{leveldb::SnapshotList@{leveldb::SnapshotList}!SnapshotList@{SnapshotList}}
+\index{SnapshotList@{SnapshotList}!leveldb::SnapshotList@{leveldb::SnapshotList}}
+\subsubsection{\texorpdfstring{SnapshotList()}{SnapshotList()}}
+{\footnotesize\ttfamily leveldb\+::\+Snapshot\+List\+::\+Snapshot\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_snapshot_list_a806aa482c5a66c080b75b897446f1dba}\label{classleveldb_1_1_snapshot_list_a806aa482c5a66c080b75b897446f1dba}} 
+\index{leveldb::SnapshotList@{leveldb::SnapshotList}!Delete@{Delete}}
+\index{Delete@{Delete}!leveldb::SnapshotList@{leveldb::SnapshotList}}
+\subsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily void leveldb\+::\+Snapshot\+List\+::\+Delete (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_snapshot_impl}{Snapshot\+Impl}} $\ast$}]{snapshot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_snapshot_list_a1db6b1cbcd79669168052e088e8af84e}\label{classleveldb_1_1_snapshot_list_a1db6b1cbcd79669168052e088e8af84e}} 
+\index{leveldb::SnapshotList@{leveldb::SnapshotList}!empty@{empty}}
+\index{empty@{empty}!leveldb::SnapshotList@{leveldb::SnapshotList}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily bool leveldb\+::\+Snapshot\+List\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_snapshot_list_a1db6b1cbcd79669168052e088e8af84e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_snapshot_list_a40ede9e24ef1c4f0544beb44b48f252e}\label{classleveldb_1_1_snapshot_list_a40ede9e24ef1c4f0544beb44b48f252e}} 
+\index{leveldb::SnapshotList@{leveldb::SnapshotList}!New@{New}}
+\index{New@{New}!leveldb::SnapshotList@{leveldb::SnapshotList}}
+\subsubsection{\texorpdfstring{New()}{New()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_snapshot_impl}{Snapshot\+Impl}}$\ast$ leveldb\+::\+Snapshot\+List\+::\+New (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceleveldb_a5481ededd221c36d652c371249f869fa}{Sequence\+Number}}}]{sequence\+\_\+number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_snapshot_list_a40ede9e24ef1c4f0544beb44b48f252e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_snapshot_list_ae4480f4d9059d78623773b7e87aad11b}\label{classleveldb_1_1_snapshot_list_ae4480f4d9059d78623773b7e87aad11b}} 
+\index{leveldb::SnapshotList@{leveldb::SnapshotList}!newest@{newest}}
+\index{newest@{newest}!leveldb::SnapshotList@{leveldb::SnapshotList}}
+\subsubsection{\texorpdfstring{newest()}{newest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_snapshot_impl}{Snapshot\+Impl}}$\ast$ leveldb\+::\+Snapshot\+List\+::newest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classleveldb_1_1_snapshot_list_ae4480f4d9059d78623773b7e87aad11b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_snapshot_list_ae4480f4d9059d78623773b7e87aad11b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_snapshot_list_a2a7757163b6f737771430e3ea1697963}\label{classleveldb_1_1_snapshot_list_a2a7757163b6f737771430e3ea1697963}} 
+\index{leveldb::SnapshotList@{leveldb::SnapshotList}!oldest@{oldest}}
+\index{oldest@{oldest}!leveldb::SnapshotList@{leveldb::SnapshotList}}
+\subsubsection{\texorpdfstring{oldest()}{oldest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_snapshot_impl}{Snapshot\+Impl}}$\ast$ leveldb\+::\+Snapshot\+List\+::oldest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classleveldb_1_1_snapshot_list_a2a7757163b6f737771430e3ea1697963_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{snapshot_8h}{snapshot.\+h}}\end{DoxyCompactItemize}

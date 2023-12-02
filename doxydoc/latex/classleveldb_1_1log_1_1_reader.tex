@@ -1,0 +1,92 @@
+\hypertarget{classleveldb_1_1log_1_1_reader}{}\section{leveldb\+::log\+::Reader Class Reference}
+\label{classleveldb_1_1log_1_1_reader}\index{leveldb::log::Reader@{leveldb::log::Reader}}
+
+
+{\ttfamily \#include $<$log\+\_\+reader.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+::log\+::Reader\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{classleveldb_1_1log_1_1_reader__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1log_1_1_reader_1_1_reporter}{Reporter}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1log_1_1_reader_a38c1a9988741af5429dad60cf79f0556}{Reader}} (\mbox{\hyperlink{classleveldb_1_1_sequential_file}{Sequential\+File}} $\ast$file, \mbox{\hyperlink{classleveldb_1_1log_1_1_reader_1_1_reporter}{Reporter}} $\ast$reporter, bool checksum, uint64\+\_\+t initial\+\_\+offset)
+\item 
+\mbox{\hyperlink{classleveldb_1_1log_1_1_reader_a52bc3896f8a0baee92f8c699553e7841}{$\sim$\+Reader}} ()
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1log_1_1_reader_a84059598c9367cb677a9d70d77993282}{Read\+Record}} (\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} $\ast$record, std\+::string $\ast$scratch)
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classleveldb_1_1log_1_1_reader_a358c5545069d86a61948ac0a021aa7f6}{Last\+Record\+Offset}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_reader_a38c1a9988741af5429dad60cf79f0556}\label{classleveldb_1_1log_1_1_reader_a38c1a9988741af5429dad60cf79f0556}} 
+\index{leveldb::log::Reader@{leveldb::log::Reader}!Reader@{Reader}}
+\index{Reader@{Reader}!leveldb::log::Reader@{leveldb::log::Reader}}
+\subsubsection{\texorpdfstring{Reader()}{Reader()}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+Reader\+::\+Reader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1_sequential_file}{Sequential\+File}} $\ast$}]{file,  }\item[{\mbox{\hyperlink{classleveldb_1_1log_1_1_reader_1_1_reporter}{Reporter}} $\ast$}]{reporter,  }\item[{bool}]{checksum,  }\item[{uint64\+\_\+t}]{initial\+\_\+offset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_reader_a52bc3896f8a0baee92f8c699553e7841}\label{classleveldb_1_1log_1_1_reader_a52bc3896f8a0baee92f8c699553e7841}} 
+\index{leveldb::log::Reader@{leveldb::log::Reader}!````~Reader@{$\sim$Reader}}
+\index{````~Reader@{$\sim$Reader}!leveldb::log::Reader@{leveldb::log::Reader}}
+\subsubsection{\texorpdfstring{$\sim$Reader()}{~Reader()}}
+{\footnotesize\ttfamily leveldb\+::log\+::\+Reader\+::$\sim$\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_reader_a358c5545069d86a61948ac0a021aa7f6}\label{classleveldb_1_1log_1_1_reader_a358c5545069d86a61948ac0a021aa7f6}} 
+\index{leveldb::log::Reader@{leveldb::log::Reader}!LastRecordOffset@{LastRecordOffset}}
+\index{LastRecordOffset@{LastRecordOffset}!leveldb::log::Reader@{leveldb::log::Reader}}
+\subsubsection{\texorpdfstring{LastRecordOffset()}{LastRecordOffset()}}
+{\footnotesize\ttfamily uint64\+\_\+t leveldb\+::log\+::\+Reader\+::\+Last\+Record\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1log_1_1_reader_a358c5545069d86a61948ac0a021aa7f6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1log_1_1_reader_a84059598c9367cb677a9d70d77993282}\label{classleveldb_1_1log_1_1_reader_a84059598c9367cb677a9d70d77993282}} 
+\index{leveldb::log::Reader@{leveldb::log::Reader}!ReadRecord@{ReadRecord}}
+\index{ReadRecord@{ReadRecord}!leveldb::log::Reader@{leveldb::log::Reader}}
+\subsubsection{\texorpdfstring{ReadRecord()}{ReadRecord()}}
+{\footnotesize\ttfamily bool leveldb\+::log\+::\+Reader\+::\+Read\+Record (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} $\ast$}]{record,  }\item[{std\+::string $\ast$}]{scratch }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classleveldb_1_1log_1_1_reader_a84059598c9367cb677a9d70d77993282_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1log_1_1_reader_a84059598c9367cb677a9d70d77993282_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{log__reader_8h}{log\+\_\+reader.\+h}}\item 
+db/\mbox{\hyperlink{log__reader_8cc}{log\+\_\+reader.\+cc}}\end{DoxyCompactItemize}

@@ -1,0 +1,257 @@
+\hypertarget{classleveldb_1_1_version}{}\section{leveldb\+::Version Class Reference}
+\label{classleveldb_1_1_version}\index{leveldb::Version@{leveldb::Version}}
+
+
+{\ttfamily \#include $<$version\+\_\+set.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+::Version\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{classleveldb_1_1_version__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structleveldb_1_1_version_1_1_get_stats}{Get\+Stats}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_version_1_1_level_file_num_iterator}{Level\+File\+Num\+Iterator}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_version_a035a0fa5bfe7ab84a711b1138b0b9a3d}{Add\+Iterators}} (const \mbox{\hyperlink{structleveldb_1_1_read_options}{Read\+Options}} \&, std\+::vector$<$ \mbox{\hyperlink{classleveldb_1_1_iterator}{Iterator}} $\ast$ $>$ $\ast$iters)
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_version_a42c439d4a2a767fe281c7a75d4255038}{Get}} (const \mbox{\hyperlink{structleveldb_1_1_read_options}{Read\+Options}} \&, const \mbox{\hyperlink{classleveldb_1_1_lookup_key}{Lookup\+Key}} \&key, std\+::string $\ast$val, \mbox{\hyperlink{structleveldb_1_1_version_1_1_get_stats}{Get\+Stats}} $\ast$\mbox{\hyperlink{db__bench_8cc_a5925d216740c89f43482df806fd14e8c}{stats}})
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1_version_a7e5b8451deb7c4b9006fd9d5ccfc2cef}{Update\+Stats}} (const \mbox{\hyperlink{structleveldb_1_1_version_1_1_get_stats}{Get\+Stats}} \&\mbox{\hyperlink{db__bench_8cc_a5925d216740c89f43482df806fd14e8c}{stats}})
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1_version_a8b9e51b3d0503fe5868f656356557ded}{Record\+Read\+Sample}} (\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} key)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_version_ad237b446c7f7d9e63c4b7c162d6f0064}{Ref}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_version_a3f623697f625d4740d5b273c0bf6223a}{Unref}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_version_afd86dffba7ce5229778bddd546517392}{Get\+Overlapping\+Inputs}} (int level, const \mbox{\hyperlink{classleveldb_1_1_internal_key}{Internal\+Key}} $\ast$begin, const \mbox{\hyperlink{classleveldb_1_1_internal_key}{Internal\+Key}} $\ast$end, std\+::vector$<$ \mbox{\hyperlink{structleveldb_1_1_file_meta_data}{File\+Meta\+Data}} $\ast$ $>$ $\ast$inputs)
+\item 
+bool \mbox{\hyperlink{classleveldb_1_1_version_a7945e88b8a4f2f7b6f3201cb3d791f1e}{Overlap\+In\+Level}} (int level, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} $\ast$smallest\+\_\+user\+\_\+key, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} $\ast$largest\+\_\+user\+\_\+key)
+\item 
+int \mbox{\hyperlink{classleveldb_1_1_version_ac3b623319110ed2a9491723dd4675431}{Pick\+Level\+For\+Mem\+Table\+Output}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&smallest\+\_\+user\+\_\+key, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&largest\+\_\+user\+\_\+key)
+\item 
+int \mbox{\hyperlink{classleveldb_1_1_version_a3860dac2fe3c61ef20edb8482a2a3746}{Num\+Files}} (int level) const
+\item 
+std\+::string \mbox{\hyperlink{classleveldb_1_1_version_abf1f1702c439aea453b041d5db6b7e63}{Debug\+String}} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_version_a9372e882b35d27c78356228e4b758917}{Compaction}}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_version_a1827cd1b4d6e9e3c378ce37ca3cce635}{Version\+Set}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_version_a035a0fa5bfe7ab84a711b1138b0b9a3d}\label{classleveldb_1_1_version_a035a0fa5bfe7ab84a711b1138b0b9a3d}} 
+\index{leveldb::Version@{leveldb::Version}!AddIterators@{AddIterators}}
+\index{AddIterators@{AddIterators}!leveldb::Version@{leveldb::Version}}
+\subsubsection{\texorpdfstring{AddIterators()}{AddIterators()}}
+{\footnotesize\ttfamily void leveldb\+::\+Version\+::\+Add\+Iterators (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb_1_1_read_options}{Read\+Options}} \&}]{options,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classleveldb_1_1_iterator}{Iterator}} $\ast$ $>$ $\ast$}]{iters }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_a035a0fa5bfe7ab84a711b1138b0b9a3d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_abf1f1702c439aea453b041d5db6b7e63}\label{classleveldb_1_1_version_abf1f1702c439aea453b041d5db6b7e63}} 
+\index{leveldb::Version@{leveldb::Version}!DebugString@{DebugString}}
+\index{DebugString@{DebugString}!leveldb::Version@{leveldb::Version}}
+\subsubsection{\texorpdfstring{DebugString()}{DebugString()}}
+{\footnotesize\ttfamily std\+::string leveldb\+::\+Version\+::\+Debug\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_abf1f1702c439aea453b041d5db6b7e63_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_a42c439d4a2a767fe281c7a75d4255038}\label{classleveldb_1_1_version_a42c439d4a2a767fe281c7a75d4255038}} 
+\index{leveldb::Version@{leveldb::Version}!Get@{Get}}
+\index{Get@{Get}!leveldb::Version@{leveldb::Version}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+Version\+::\+Get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb_1_1_read_options}{Read\+Options}} \&}]{options,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_lookup_key}{Lookup\+Key}} \&}]{key,  }\item[{std\+::string $\ast$}]{val,  }\item[{\mbox{\hyperlink{structleveldb_1_1_version_1_1_get_stats}{Get\+Stats}} $\ast$}]{stats }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_a42c439d4a2a767fe281c7a75d4255038_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{classleveldb_1_1_version_a42c439d4a2a767fe281c7a75d4255038_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_afd86dffba7ce5229778bddd546517392}\label{classleveldb_1_1_version_afd86dffba7ce5229778bddd546517392}} 
+\index{leveldb::Version@{leveldb::Version}!GetOverlappingInputs@{GetOverlappingInputs}}
+\index{GetOverlappingInputs@{GetOverlappingInputs}!leveldb::Version@{leveldb::Version}}
+\subsubsection{\texorpdfstring{GetOverlappingInputs()}{GetOverlappingInputs()}}
+{\footnotesize\ttfamily void leveldb\+::\+Version\+::\+Get\+Overlapping\+Inputs (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_internal_key}{Internal\+Key}} $\ast$}]{begin,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_internal_key}{Internal\+Key}} $\ast$}]{end,  }\item[{std\+::vector$<$ \mbox{\hyperlink{structleveldb_1_1_file_meta_data}{File\+Meta\+Data}} $\ast$ $>$ $\ast$}]{inputs }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_afd86dffba7ce5229778bddd546517392_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_afd86dffba7ce5229778bddd546517392_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_a3860dac2fe3c61ef20edb8482a2a3746}\label{classleveldb_1_1_version_a3860dac2fe3c61ef20edb8482a2a3746}} 
+\index{leveldb::Version@{leveldb::Version}!NumFiles@{NumFiles}}
+\index{NumFiles@{NumFiles}!leveldb::Version@{leveldb::Version}}
+\subsubsection{\texorpdfstring{NumFiles()}{NumFiles()}}
+{\footnotesize\ttfamily int leveldb\+::\+Version\+::\+Num\+Files (\begin{DoxyParamCaption}\item[{int}]{level }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_version_a7945e88b8a4f2f7b6f3201cb3d791f1e}\label{classleveldb_1_1_version_a7945e88b8a4f2f7b6f3201cb3d791f1e}} 
+\index{leveldb::Version@{leveldb::Version}!OverlapInLevel@{OverlapInLevel}}
+\index{OverlapInLevel@{OverlapInLevel}!leveldb::Version@{leveldb::Version}}
+\subsubsection{\texorpdfstring{OverlapInLevel()}{OverlapInLevel()}}
+{\footnotesize\ttfamily bool leveldb\+::\+Version\+::\+Overlap\+In\+Level (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} $\ast$}]{smallest\+\_\+user\+\_\+key,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} $\ast$}]{largest\+\_\+user\+\_\+key }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_a7945e88b8a4f2f7b6f3201cb3d791f1e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_a7945e88b8a4f2f7b6f3201cb3d791f1e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_ac3b623319110ed2a9491723dd4675431}\label{classleveldb_1_1_version_ac3b623319110ed2a9491723dd4675431}} 
+\index{leveldb::Version@{leveldb::Version}!PickLevelForMemTableOutput@{PickLevelForMemTableOutput}}
+\index{PickLevelForMemTableOutput@{PickLevelForMemTableOutput}!leveldb::Version@{leveldb::Version}}
+\subsubsection{\texorpdfstring{PickLevelForMemTableOutput()}{PickLevelForMemTableOutput()}}
+{\footnotesize\ttfamily int leveldb\+::\+Version\+::\+Pick\+Level\+For\+Mem\+Table\+Output (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{smallest\+\_\+user\+\_\+key,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{largest\+\_\+user\+\_\+key }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_ac3b623319110ed2a9491723dd4675431_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_a8b9e51b3d0503fe5868f656356557ded}\label{classleveldb_1_1_version_a8b9e51b3d0503fe5868f656356557ded}} 
+\index{leveldb::Version@{leveldb::Version}!RecordReadSample@{RecordReadSample}}
+\index{RecordReadSample@{RecordReadSample}!leveldb::Version@{leveldb::Version}}
+\subsubsection{\texorpdfstring{RecordReadSample()}{RecordReadSample()}}
+{\footnotesize\ttfamily bool leveldb\+::\+Version\+::\+Record\+Read\+Sample (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}}}]{key }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_a8b9e51b3d0503fe5868f656356557ded_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_a8b9e51b3d0503fe5868f656356557ded_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_ad237b446c7f7d9e63c4b7c162d6f0064}\label{classleveldb_1_1_version_ad237b446c7f7d9e63c4b7c162d6f0064}} 
+\index{leveldb::Version@{leveldb::Version}!Ref@{Ref}}
+\index{Ref@{Ref}!leveldb::Version@{leveldb::Version}}
+\subsubsection{\texorpdfstring{Ref()}{Ref()}}
+{\footnotesize\ttfamily void leveldb\+::\+Version\+::\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_ad237b446c7f7d9e63c4b7c162d6f0064_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_a3f623697f625d4740d5b273c0bf6223a}\label{classleveldb_1_1_version_a3f623697f625d4740d5b273c0bf6223a}} 
+\index{leveldb::Version@{leveldb::Version}!Unref@{Unref}}
+\index{Unref@{Unref}!leveldb::Version@{leveldb::Version}}
+\subsubsection{\texorpdfstring{Unref()}{Unref()}}
+{\footnotesize\ttfamily void leveldb\+::\+Version\+::\+Unref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_a3f623697f625d4740d5b273c0bf6223a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_version_a7e5b8451deb7c4b9006fd9d5ccfc2cef}\label{classleveldb_1_1_version_a7e5b8451deb7c4b9006fd9d5ccfc2cef}} 
+\index{leveldb::Version@{leveldb::Version}!UpdateStats@{UpdateStats}}
+\index{UpdateStats@{UpdateStats}!leveldb::Version@{leveldb::Version}}
+\subsubsection{\texorpdfstring{UpdateStats()}{UpdateStats()}}
+{\footnotesize\ttfamily bool leveldb\+::\+Version\+::\+Update\+Stats (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb_1_1_version_1_1_get_stats}{Get\+Stats}} \&}]{stats }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_version_a7e5b8451deb7c4b9006fd9d5ccfc2cef_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_version_a9372e882b35d27c78356228e4b758917}\label{classleveldb_1_1_version_a9372e882b35d27c78356228e4b758917}} 
+\index{leveldb::Version@{leveldb::Version}!Compaction@{Compaction}}
+\index{Compaction@{Compaction}!leveldb::Version@{leveldb::Version}}
+\subsubsection{\texorpdfstring{Compaction}{Compaction}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classleveldb_1_1_compaction}{Compaction}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_version_a1827cd1b4d6e9e3c378ce37ca3cce635}\label{classleveldb_1_1_version_a1827cd1b4d6e9e3c378ce37ca3cce635}} 
+\index{leveldb::Version@{leveldb::Version}!VersionSet@{VersionSet}}
+\index{VersionSet@{VersionSet}!leveldb::Version@{leveldb::Version}}
+\subsubsection{\texorpdfstring{VersionSet}{VersionSet}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classleveldb_1_1_version_set}{Version\+Set}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{version__set_8h}{version\+\_\+set.\+h}}\item 
+db/\mbox{\hyperlink{version__set_8cc}{version\+\_\+set.\+cc}}\end{DoxyCompactItemize}

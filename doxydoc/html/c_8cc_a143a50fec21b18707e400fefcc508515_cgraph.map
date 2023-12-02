@@ -1,0 +1,13 @@
+<map id="leveldb_writebatch_iterate" name="leveldb_writebatch_iterate">
+<area shape="rect" id="node1" title=" " alt="" coords="5,51,137,89"/>
+<area shape="rect" id="node2" href="$classleveldb_1_1_slice.html#a94ccee3d05b66ba0b059f2d9772b782b" title=" " alt="" coords="186,7,320,32"/>
+<area shape="rect" id="node3" href="$classleveldb_1_1_slice.html#a7344120beda110de81d0c45d4cfe4b63" title=" " alt="" coords="394,5,525,31"/>
+<area shape="rect" id="node4" href="$classleveldb_1_1_write_batch.html#a64278020155c37619bfe007840bb2d23" title=" " alt="" coords="185,160,321,199"/>
+<area shape="rect" id="node5" href="$classleveldb_1_1_status.html#a755b1ee5b0029cf9ea1128f1cdff5855" title=" " alt="" coords="370,55,549,80"/>
+<area shape="rect" id="node6" href="$classleveldb_1_1_slice.html#a1be5b22958a115ebecb2b017aad2b3f6" title=" " alt="" coords="383,104,535,143"/>
+<area shape="rect" id="node7" href="$classleveldb_1_1_slice.html#a56ac7a70125c26187ecf4dd040004582" title=" " alt="" coords="387,167,531,192"/>
+<area shape="rect" id="node8" href="$classleveldb_1_1_write_batch_1_1_handler.html#ad41d4985db289b94e29921167d206d4b" title=" " alt="" coords="391,216,527,255"/>
+<area shape="rect" id="node9" href="$classleveldb_1_1_write_batch_1_1_handler.html#aeab6526b87bf5b50fb64216b69b34b17" title=" " alt="" coords="391,279,527,317"/>
+<area shape="rect" id="node10" href="$classleveldb_1_1_write_batch_internal.html#a5270ca4567dbae1524005ad14e0698e3" title=" " alt="" coords="369,341,550,380"/>
+<area shape="rect" id="node11" href="$classleveldb_1_1_status.html#a8e3720d233281c874a53c17e081f51b3" title=" " alt="" coords="392,404,527,429"/>
+</map>

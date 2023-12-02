@@ -1,0 +1,163 @@
+\hypertarget{classleveldb_1_1_cache}{}\section{leveldb\+::Cache Class Reference}
+\label{classleveldb_1_1_cache}\index{leveldb::Cache@{leveldb::Cache}}
+
+
+{\ttfamily \#include $<$cache.\+h$>$}
+
+
+
+Collaboration diagram for leveldb\+::Cache\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=165pt]{classleveldb_1_1_cache__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structleveldb_1_1_cache_1_1_handle}{Handle}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_cache_a1ea9879243055a2818df8409a8a20182}{Cache}} ()=default
+\item 
+\mbox{\hyperlink{classleveldb_1_1_cache_aea6c5e0f3cd7bda18d9bab61d794e28c}{Cache}} (const \mbox{\hyperlink{classleveldb_1_1_cache}{Cache}} \&)=delete
+\item 
+\mbox{\hyperlink{classleveldb_1_1_cache}{Cache}} \& \mbox{\hyperlink{classleveldb_1_1_cache_ae632af1297651c42d750ba2ffc0cbfb5}{operator=}} (const \mbox{\hyperlink{classleveldb_1_1_cache}{Cache}} \&)=delete
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_cache_ac1e9269aeca06d6d5c1c10d895913314}{$\sim$\+Cache}} ()
+\item 
+virtual \mbox{\hyperlink{structleveldb_1_1_cache_1_1_handle}{Handle}} $\ast$ \mbox{\hyperlink{classleveldb_1_1_cache_af0b55b7fa0e64184fa62e0dbe9ba9eae}{Insert}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&key, void $\ast$\mbox{\hyperlink{version__set_8cc_a38c8b88c432e666ad10b0c5573e1160a}{value}}, size\+\_\+t charge, void($\ast$deleter)(const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&key, void $\ast$\mbox{\hyperlink{version__set_8cc_a38c8b88c432e666ad10b0c5573e1160a}{value}}))=0
+\item 
+virtual \mbox{\hyperlink{structleveldb_1_1_cache_1_1_handle}{Handle}} $\ast$ \mbox{\hyperlink{classleveldb_1_1_cache_af90785205182a25cf741dc13a48d76cb}{Lookup}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&key)=0
+\item 
+virtual void \mbox{\hyperlink{classleveldb_1_1_cache_a712618c8bf3bfa48b7bab1fbc23c3002}{Release}} (\mbox{\hyperlink{structleveldb_1_1_cache_1_1_handle}{Handle}} $\ast$handle)=0
+\item 
+virtual void $\ast$ \mbox{\hyperlink{classleveldb_1_1_cache_a454920df8e68917adcf011dfb3538661}{Value}} (\mbox{\hyperlink{structleveldb_1_1_cache_1_1_handle}{Handle}} $\ast$handle)=0
+\item 
+virtual void \mbox{\hyperlink{classleveldb_1_1_cache_af833a38763598253338de37aba079db6}{Erase}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&key)=0
+\item 
+virtual uint64\+\_\+t \mbox{\hyperlink{classleveldb_1_1_cache_ae2d79bfe747fc6c165c77398cc31e125}{New\+Id}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classleveldb_1_1_cache_a2b517fe5e854f6923a357bffa1bb4fa3}{Prune}} ()
+\item 
+virtual size\+\_\+t \mbox{\hyperlink{classleveldb_1_1_cache_a4ccef9422e919a7e5a1ffb64443f88ef}{Total\+Charge}} () const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_cache_a1ea9879243055a2818df8409a8a20182}\label{classleveldb_1_1_cache_a1ea9879243055a2818df8409a8a20182}} 
+\index{leveldb::Cache@{leveldb::Cache}!Cache@{Cache}}
+\index{Cache@{Cache}!leveldb::Cache@{leveldb::Cache}}
+\subsubsection{\texorpdfstring{Cache()}{Cache()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily leveldb\+::\+Cache\+::\+Cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_cache_aea6c5e0f3cd7bda18d9bab61d794e28c}\label{classleveldb_1_1_cache_aea6c5e0f3cd7bda18d9bab61d794e28c}} 
+\index{leveldb::Cache@{leveldb::Cache}!Cache@{Cache}}
+\index{Cache@{Cache}!leveldb::Cache@{leveldb::Cache}}
+\subsubsection{\texorpdfstring{Cache()}{Cache()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily leveldb\+::\+Cache\+::\+Cache (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_cache}{Cache}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_cache_ac1e9269aeca06d6d5c1c10d895913314}\label{classleveldb_1_1_cache_ac1e9269aeca06d6d5c1c10d895913314}} 
+\index{leveldb::Cache@{leveldb::Cache}!````~Cache@{$\sim$Cache}}
+\index{````~Cache@{$\sim$Cache}!leveldb::Cache@{leveldb::Cache}}
+\subsubsection{\texorpdfstring{$\sim$Cache()}{~Cache()}}
+{\footnotesize\ttfamily virtual leveldb\+::\+Cache\+::$\sim$\+Cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_cache_af833a38763598253338de37aba079db6}\label{classleveldb_1_1_cache_af833a38763598253338de37aba079db6}} 
+\index{leveldb::Cache@{leveldb::Cache}!Erase@{Erase}}
+\index{Erase@{Erase}!leveldb::Cache@{leveldb::Cache}}
+\subsubsection{\texorpdfstring{Erase()}{Erase()}}
+{\footnotesize\ttfamily virtual void leveldb\+::\+Cache\+::\+Erase (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classleveldb_1_1_cache_af833a38763598253338de37aba079db6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_cache_af0b55b7fa0e64184fa62e0dbe9ba9eae}\label{classleveldb_1_1_cache_af0b55b7fa0e64184fa62e0dbe9ba9eae}} 
+\index{leveldb::Cache@{leveldb::Cache}!Insert@{Insert}}
+\index{Insert@{Insert}!leveldb::Cache@{leveldb::Cache}}
+\subsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structleveldb_1_1_cache_1_1_handle}{Handle}}$\ast$ leveldb\+::\+Cache\+::\+Insert (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{key,  }\item[{void $\ast$}]{value,  }\item[{size\+\_\+t}]{charge,  }\item[{void($\ast$)(const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&key, void $\ast$\mbox{\hyperlink{version__set_8cc_a38c8b88c432e666ad10b0c5573e1160a}{value}})}]{deleter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_cache_af90785205182a25cf741dc13a48d76cb}\label{classleveldb_1_1_cache_af90785205182a25cf741dc13a48d76cb}} 
+\index{leveldb::Cache@{leveldb::Cache}!Lookup@{Lookup}}
+\index{Lookup@{Lookup}!leveldb::Cache@{leveldb::Cache}}
+\subsubsection{\texorpdfstring{Lookup()}{Lookup()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structleveldb_1_1_cache_1_1_handle}{Handle}}$\ast$ leveldb\+::\+Cache\+::\+Lookup (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_cache_ae2d79bfe747fc6c165c77398cc31e125}\label{classleveldb_1_1_cache_ae2d79bfe747fc6c165c77398cc31e125}} 
+\index{leveldb::Cache@{leveldb::Cache}!NewId@{NewId}}
+\index{NewId@{NewId}!leveldb::Cache@{leveldb::Cache}}
+\subsubsection{\texorpdfstring{NewId()}{NewId()}}
+{\footnotesize\ttfamily virtual uint64\+\_\+t leveldb\+::\+Cache\+::\+New\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_cache_ae632af1297651c42d750ba2ffc0cbfb5}\label{classleveldb_1_1_cache_ae632af1297651c42d750ba2ffc0cbfb5}} 
+\index{leveldb::Cache@{leveldb::Cache}!operator=@{operator=}}
+\index{operator=@{operator=}!leveldb::Cache@{leveldb::Cache}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_cache}{Cache}}\& leveldb\+::\+Cache\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_cache}{Cache}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_cache_a2b517fe5e854f6923a357bffa1bb4fa3}\label{classleveldb_1_1_cache_a2b517fe5e854f6923a357bffa1bb4fa3}} 
+\index{leveldb::Cache@{leveldb::Cache}!Prune@{Prune}}
+\index{Prune@{Prune}!leveldb::Cache@{leveldb::Cache}}
+\subsubsection{\texorpdfstring{Prune()}{Prune()}}
+{\footnotesize\ttfamily virtual void leveldb\+::\+Cache\+::\+Prune (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classleveldb_1_1_cache_a712618c8bf3bfa48b7bab1fbc23c3002}\label{classleveldb_1_1_cache_a712618c8bf3bfa48b7bab1fbc23c3002}} 
+\index{leveldb::Cache@{leveldb::Cache}!Release@{Release}}
+\index{Release@{Release}!leveldb::Cache@{leveldb::Cache}}
+\subsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily virtual void leveldb\+::\+Cache\+::\+Release (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb_1_1_cache_1_1_handle}{Handle}} $\ast$}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_cache_a712618c8bf3bfa48b7bab1fbc23c3002_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_cache_a4ccef9422e919a7e5a1ffb64443f88ef}\label{classleveldb_1_1_cache_a4ccef9422e919a7e5a1ffb64443f88ef}} 
+\index{leveldb::Cache@{leveldb::Cache}!TotalCharge@{TotalCharge}}
+\index{TotalCharge@{TotalCharge}!leveldb::Cache@{leveldb::Cache}}
+\subsubsection{\texorpdfstring{TotalCharge()}{TotalCharge()}}
+{\footnotesize\ttfamily virtual size\+\_\+t leveldb\+::\+Cache\+::\+Total\+Charge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_cache_a4ccef9422e919a7e5a1ffb64443f88ef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_cache_a454920df8e68917adcf011dfb3538661}\label{classleveldb_1_1_cache_a454920df8e68917adcf011dfb3538661}} 
+\index{leveldb::Cache@{leveldb::Cache}!Value@{Value}}
+\index{Value@{Value}!leveldb::Cache@{leveldb::Cache}}
+\subsubsection{\texorpdfstring{Value()}{Value()}}
+{\footnotesize\ttfamily virtual void$\ast$ leveldb\+::\+Cache\+::\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structleveldb_1_1_cache_1_1_handle}{Handle}} $\ast$}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_cache_a454920df8e68917adcf011dfb3538661_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/leveldb/\mbox{\hyperlink{cache_8h}{cache.\+h}}\end{DoxyCompactItemize}

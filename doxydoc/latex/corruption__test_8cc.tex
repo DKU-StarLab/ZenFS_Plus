@@ -1,0 +1,74 @@
+\hypertarget{corruption__test_8cc}{}\section{db/corruption\+\_\+test.cc File Reference}
+\label{corruption__test_8cc}\index{db/corruption\_test.cc@{db/corruption\_test.cc}}
+{\ttfamily \#include \char`\"{}leveldb/db.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}leveldb/cache.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/env.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/table.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/write\+\_\+batch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/db\+\_\+impl.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/filename.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/log\+\_\+format.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}db/version\+\_\+set.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/logging.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/testharness.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/testutil.\+h\char`\"{}}\newline
+Include dependency graph for corruption\+\_\+test.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{corruption__test_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_corruption_test}{leveldb\+::\+Corruption\+Test}}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceleveldb}{leveldb}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceleveldb_a46326658ffc04dd7509c4066082edb1f}{leveldb\+::\+T\+E\+ST}} (Corruption\+Test, Recovery)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a22ecc0fbc7435947076320655c5e0265}{leveldb\+::\+T\+E\+ST}} (Corruption\+Test, Recover\+Write\+Error)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a25dbda5a48ec782778d331e4ccb81b6b}{leveldb\+::\+T\+E\+ST}} (Corruption\+Test, New\+File\+Error\+During\+Write)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a1da99cee14629599882010198aabfa2a}{leveldb\+::\+T\+E\+ST}} (Corruption\+Test, Table\+File)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a9f03547489b40b6e76cd8fc8a116884a}{leveldb\+::\+T\+E\+ST}} (Corruption\+Test, Table\+File\+Repair)
+\item 
+\mbox{\hyperlink{namespaceleveldb_acdfa0365a941e8e01531a402e53ad325}{leveldb\+::\+T\+E\+ST}} (Corruption\+Test, Table\+File\+Index\+Data)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a6214e0d0ebfaf716601f7a9571aa09ca}{leveldb\+::\+T\+E\+ST}} (Corruption\+Test, Missing\+Descriptor)
+\item 
+\mbox{\hyperlink{namespaceleveldb_acc1b0ed2e8e9e4e6b930a1727d9fe0f8}{leveldb\+::\+T\+E\+ST}} (Corruption\+Test, Sequence\+Number\+Recovery)
+\item 
+\mbox{\hyperlink{namespaceleveldb_ab52c022fc16dd83fe1c1c60745c9557c}{leveldb\+::\+T\+E\+ST}} (Corruption\+Test, Corrupted\+Descriptor)
+\item 
+\mbox{\hyperlink{namespaceleveldb_ac45d45675cfba0614b5788177b03e717}{leveldb\+::\+T\+E\+ST}} (Corruption\+Test, Compaction\+Input\+Error)
+\item 
+\mbox{\hyperlink{namespaceleveldb_a2bb2a098a32d42044e6be132020b29b0}{leveldb\+::\+T\+E\+ST}} (Corruption\+Test, Compaction\+Input\+Error\+Paranoid)
+\item 
+\mbox{\hyperlink{namespaceleveldb_adbafd76c895bbb400c6aa4ad6e0eae2e}{leveldb\+::\+T\+E\+ST}} (Corruption\+Test, Unrelated\+Keys)
+\item 
+int \mbox{\hyperlink{corruption__test_8cc_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{corruption__test_8cc_a3c04138a5bfe5d72780bb7e82a18e627}\label{corruption__test_8cc_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{corruption\_test.cc@{corruption\_test.cc}!main@{main}}
+\index{main@{main}!corruption\_test.cc@{corruption\_test.cc}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+

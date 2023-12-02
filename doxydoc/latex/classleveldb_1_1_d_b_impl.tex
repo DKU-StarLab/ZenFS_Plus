@@ -1,0 +1,375 @@
+\hypertarget{classleveldb_1_1_d_b_impl}{}\section{leveldb\+::D\+B\+Impl Class Reference}
+\label{classleveldb_1_1_d_b_impl}\index{leveldb::DBImpl@{leveldb::DBImpl}}
+
+
+{\ttfamily \#include $<$db\+\_\+impl.\+h$>$}
+
+
+
+Inheritance diagram for leveldb\+::D\+B\+Impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classleveldb_1_1_d_b_impl__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for leveldb\+::D\+B\+Impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classleveldb_1_1_d_b_impl__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_compaction_state}{Compaction\+State}}
+\item 
+struct \mbox{\hyperlink{structleveldb_1_1_d_b_impl_1_1_writer}{Writer}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classleveldb_1_1_d_b_impl_a269b55605b27271d6ca5fee68af0d8f3}{D\+B\+Impl}} (const \mbox{\hyperlink{structleveldb_1_1_options}{Options}} \&options, const std\+::string \&dbname)
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_d_b_impl_a07a233a94a2531aed9d3718c9b9ed40d}{$\sim$\+D\+B\+Impl}} ()
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_d_b_impl_ad0d56aeb4d84ff9632c9a7f3f1b7c4d5}{Put}} (const \mbox{\hyperlink{structleveldb_1_1_write_options}{Write\+Options}} \&, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&key, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&\mbox{\hyperlink{version__set_8cc_a38c8b88c432e666ad10b0c5573e1160a}{value}})
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_d_b_impl_af050f77e8c22bd6638fed5a46a59399d}{Delete}} (const \mbox{\hyperlink{structleveldb_1_1_write_options}{Write\+Options}} \&, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&key)
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_d_b_impl_ac0d0b472717099d6a02ad9dace4e8ef4}{Write}} (const \mbox{\hyperlink{structleveldb_1_1_write_options}{Write\+Options}} \&options, \mbox{\hyperlink{classleveldb_1_1_write_batch}{Write\+Batch}} $\ast$updates)
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_d_b_impl_a089964ddcd1f5dc85e73499ae57be508}{Get}} (const \mbox{\hyperlink{structleveldb_1_1_read_options}{Read\+Options}} \&options, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&key, std\+::string $\ast$\mbox{\hyperlink{version__set_8cc_a38c8b88c432e666ad10b0c5573e1160a}{value}})
+\item 
+virtual \mbox{\hyperlink{classleveldb_1_1_iterator}{Iterator}} $\ast$ \mbox{\hyperlink{classleveldb_1_1_d_b_impl_ae955dc8f2a1c38588723a0882653cb58}{New\+Iterator}} (const \mbox{\hyperlink{structleveldb_1_1_read_options}{Read\+Options}} \&)
+\item 
+virtual const \mbox{\hyperlink{classleveldb_1_1_snapshot}{Snapshot}} $\ast$ \mbox{\hyperlink{classleveldb_1_1_d_b_impl_a4bec3d8ffd65fec562b2dd1f6eaba137}{Get\+Snapshot}} ()
+\item 
+virtual void \mbox{\hyperlink{classleveldb_1_1_d_b_impl_a6c0b6abfc9a30cc8e5412d4fc3e8c886}{Release\+Snapshot}} (const \mbox{\hyperlink{classleveldb_1_1_snapshot}{Snapshot}} $\ast$snapshot)
+\item 
+virtual bool \mbox{\hyperlink{classleveldb_1_1_d_b_impl_ad1a2023ce171c8f8476664f5b1cbab4d}{Get\+Property}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&property, std\+::string $\ast$\mbox{\hyperlink{version__set_8cc_a38c8b88c432e666ad10b0c5573e1160a}{value}})
+\item 
+virtual void \mbox{\hyperlink{classleveldb_1_1_d_b_impl_af08e218d92064699942c195ce0f06010}{Get\+Approximate\+Sizes}} (const \mbox{\hyperlink{structleveldb_1_1_range}{Range}} $\ast$range, int n, uint64\+\_\+t $\ast$sizes)
+\item 
+virtual void \mbox{\hyperlink{classleveldb_1_1_d_b_impl_aa6df0739fc0b49380c284347e411b8ed}{Compact\+Range}} (const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} $\ast$begin, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} $\ast$end)
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_d_b_impl_a63fcb49466b689a534ba77d32cf84f99}{T\+E\+S\+T\+\_\+\+Compact\+Range}} (int level, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} $\ast$begin, const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} $\ast$end)
+\item 
+\mbox{\hyperlink{classleveldb_1_1_status}{Status}} \mbox{\hyperlink{classleveldb_1_1_d_b_impl_a8642703fd1398cd8e3f5f24ee0b9da23}{T\+E\+S\+T\+\_\+\+Compact\+Mem\+Table}} ()
+\item 
+\mbox{\hyperlink{classleveldb_1_1_iterator}{Iterator}} $\ast$ \mbox{\hyperlink{classleveldb_1_1_d_b_impl_adba5bf4252bd94f7db50e62921b7ba53}{T\+E\+S\+T\+\_\+\+New\+Internal\+Iterator}} ()
+\item 
+int64\+\_\+t \mbox{\hyperlink{classleveldb_1_1_d_b_impl_af621636048b8d3cfaa21238fe26ef0ca}{T\+E\+S\+T\+\_\+\+Max\+Next\+Level\+Overlapping\+Bytes}} ()
+\item 
+void \mbox{\hyperlink{classleveldb_1_1_d_b_impl_a254ae98e3425046c28ed0aa6d78b37d8}{Record\+Read\+Sample}} (\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} key)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classleveldb_1_1_d_b_impl_ad22eb7a23cbf34de526efa966c578d4a}{DB}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_d_b_impl_a269b55605b27271d6ca5fee68af0d8f3}\label{classleveldb_1_1_d_b_impl_a269b55605b27271d6ca5fee68af0d8f3}} 
+\index{leveldb::DBImpl@{leveldb::DBImpl}!DBImpl@{DBImpl}}
+\index{DBImpl@{DBImpl}!leveldb::DBImpl@{leveldb::DBImpl}}
+\subsubsection{\texorpdfstring{DBImpl()}{DBImpl()}}
+{\footnotesize\ttfamily leveldb\+::\+D\+B\+Impl\+::\+D\+B\+Impl (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb_1_1_options}{Options}} \&}]{options,  }\item[{const std\+::string \&}]{dbname }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classleveldb_1_1_d_b_impl_a07a233a94a2531aed9d3718c9b9ed40d}\label{classleveldb_1_1_d_b_impl_a07a233a94a2531aed9d3718c9b9ed40d}} 
+\index{leveldb::DBImpl@{leveldb::DBImpl}!````~DBImpl@{$\sim$DBImpl}}
+\index{````~DBImpl@{$\sim$DBImpl}!leveldb::DBImpl@{leveldb::DBImpl}}
+\subsubsection{\texorpdfstring{$\sim$DBImpl()}{~DBImpl()}}
+{\footnotesize\ttfamily leveldb\+::\+D\+B\+Impl\+::$\sim$\+D\+B\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_d_b_impl_a07a233a94a2531aed9d3718c9b9ed40d_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_d_b_impl_aa6df0739fc0b49380c284347e411b8ed}\label{classleveldb_1_1_d_b_impl_aa6df0739fc0b49380c284347e411b8ed}} 
+\index{leveldb::DBImpl@{leveldb::DBImpl}!CompactRange@{CompactRange}}
+\index{CompactRange@{CompactRange}!leveldb::DBImpl@{leveldb::DBImpl}}
+\subsubsection{\texorpdfstring{CompactRange()}{CompactRange()}}
+{\footnotesize\ttfamily void leveldb\+::\+D\+B\+Impl\+::\+Compact\+Range (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} $\ast$}]{begin,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} $\ast$}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_d_b_aeea500cbc6704454b3be6908d5da8b3a}{leveldb\+::\+DB}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_d_b_impl_aa6df0739fc0b49380c284347e411b8ed_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_d_b_impl_af050f77e8c22bd6638fed5a46a59399d}\label{classleveldb_1_1_d_b_impl_af050f77e8c22bd6638fed5a46a59399d}} 
+\index{leveldb::DBImpl@{leveldb::DBImpl}!Delete@{Delete}}
+\index{Delete@{Delete}!leveldb::DBImpl@{leveldb::DBImpl}}
+\subsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+D\+B\+Impl\+::\+Delete (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb_1_1_write_options}{Write\+Options}} \&}]{options,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_d_b_aff7577239799cd059464701c548090b9}{leveldb\+::\+DB}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_d_b_impl_af050f77e8c22bd6638fed5a46a59399d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_d_b_impl_a089964ddcd1f5dc85e73499ae57be508}\label{classleveldb_1_1_d_b_impl_a089964ddcd1f5dc85e73499ae57be508}} 
+\index{leveldb::DBImpl@{leveldb::DBImpl}!Get@{Get}}
+\index{Get@{Get}!leveldb::DBImpl@{leveldb::DBImpl}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+D\+B\+Impl\+::\+Get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb_1_1_read_options}{Read\+Options}} \&}]{options,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{key,  }\item[{std\+::string $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_d_b_ad43bd7937b9af88ff856eb8158890911}{leveldb\+::\+DB}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_d_b_impl_a089964ddcd1f5dc85e73499ae57be508_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_d_b_impl_af08e218d92064699942c195ce0f06010}\label{classleveldb_1_1_d_b_impl_af08e218d92064699942c195ce0f06010}} 
+\index{leveldb::DBImpl@{leveldb::DBImpl}!GetApproximateSizes@{GetApproximateSizes}}
+\index{GetApproximateSizes@{GetApproximateSizes}!leveldb::DBImpl@{leveldb::DBImpl}}
+\subsubsection{\texorpdfstring{GetApproximateSizes()}{GetApproximateSizes()}}
+{\footnotesize\ttfamily void leveldb\+::\+D\+B\+Impl\+::\+Get\+Approximate\+Sizes (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb_1_1_range}{Range}} $\ast$}]{range,  }\item[{int}]{n,  }\item[{uint64\+\_\+t $\ast$}]{sizes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_d_b_ad4d54aa1dbcecc8583b013ab2d67aeff}{leveldb\+::\+DB}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_d_b_impl_af08e218d92064699942c195ce0f06010_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_d_b_impl_ad1a2023ce171c8f8476664f5b1cbab4d}\label{classleveldb_1_1_d_b_impl_ad1a2023ce171c8f8476664f5b1cbab4d}} 
+\index{leveldb::DBImpl@{leveldb::DBImpl}!GetProperty@{GetProperty}}
+\index{GetProperty@{GetProperty}!leveldb::DBImpl@{leveldb::DBImpl}}
+\subsubsection{\texorpdfstring{GetProperty()}{GetProperty()}}
+{\footnotesize\ttfamily bool leveldb\+::\+D\+B\+Impl\+::\+Get\+Property (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{property,  }\item[{std\+::string $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_d_b_afcd557d80bac6668f20372c9e737d807}{leveldb\+::\+DB}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_d_b_impl_ad1a2023ce171c8f8476664f5b1cbab4d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_d_b_impl_a4bec3d8ffd65fec562b2dd1f6eaba137}\label{classleveldb_1_1_d_b_impl_a4bec3d8ffd65fec562b2dd1f6eaba137}} 
+\index{leveldb::DBImpl@{leveldb::DBImpl}!GetSnapshot@{GetSnapshot}}
+\index{GetSnapshot@{GetSnapshot}!leveldb::DBImpl@{leveldb::DBImpl}}
+\subsubsection{\texorpdfstring{GetSnapshot()}{GetSnapshot()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classleveldb_1_1_snapshot}{Snapshot}} $\ast$ leveldb\+::\+D\+B\+Impl\+::\+Get\+Snapshot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_d_b_a7d13f6336c7c5f0bf79578d57c45568c}{leveldb\+::\+DB}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_d_b_impl_a4bec3d8ffd65fec562b2dd1f6eaba137_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_d_b_impl_ae955dc8f2a1c38588723a0882653cb58}\label{classleveldb_1_1_d_b_impl_ae955dc8f2a1c38588723a0882653cb58}} 
+\index{leveldb::DBImpl@{leveldb::DBImpl}!NewIterator@{NewIterator}}
+\index{NewIterator@{NewIterator}!leveldb::DBImpl@{leveldb::DBImpl}}
+\subsubsection{\texorpdfstring{NewIterator()}{NewIterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_iterator}{Iterator}} $\ast$ leveldb\+::\+D\+B\+Impl\+::\+New\+Iterator (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb_1_1_read_options}{Read\+Options}} \&}]{options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_d_b_a5629308235de24c05c286c353d4e7d32}{leveldb\+::\+DB}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_d_b_impl_ae955dc8f2a1c38588723a0882653cb58_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_d_b_impl_ad0d56aeb4d84ff9632c9a7f3f1b7c4d5}\label{classleveldb_1_1_d_b_impl_ad0d56aeb4d84ff9632c9a7f3f1b7c4d5}} 
+\index{leveldb::DBImpl@{leveldb::DBImpl}!Put@{Put}}
+\index{Put@{Put}!leveldb::DBImpl@{leveldb::DBImpl}}
+\subsubsection{\texorpdfstring{Put()}{Put()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+D\+B\+Impl\+::\+Put (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb_1_1_write_options}{Write\+Options}} \&}]{o,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{key,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_d_b_ac2e472812630ed74298df7b03b08c1ae}{leveldb\+::\+DB}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_d_b_impl_ad0d56aeb4d84ff9632c9a7f3f1b7c4d5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_d_b_impl_a254ae98e3425046c28ed0aa6d78b37d8}\label{classleveldb_1_1_d_b_impl_a254ae98e3425046c28ed0aa6d78b37d8}} 
+\index{leveldb::DBImpl@{leveldb::DBImpl}!RecordReadSample@{RecordReadSample}}
+\index{RecordReadSample@{RecordReadSample}!leveldb::DBImpl@{leveldb::DBImpl}}
+\subsubsection{\texorpdfstring{RecordReadSample()}{RecordReadSample()}}
+{\footnotesize\ttfamily void leveldb\+::\+D\+B\+Impl\+::\+Record\+Read\+Sample (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classleveldb_1_1_slice}{Slice}}}]{key }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_d_b_impl_a254ae98e3425046c28ed0aa6d78b37d8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_d_b_impl_a6c0b6abfc9a30cc8e5412d4fc3e8c886}\label{classleveldb_1_1_d_b_impl_a6c0b6abfc9a30cc8e5412d4fc3e8c886}} 
+\index{leveldb::DBImpl@{leveldb::DBImpl}!ReleaseSnapshot@{ReleaseSnapshot}}
+\index{ReleaseSnapshot@{ReleaseSnapshot}!leveldb::DBImpl@{leveldb::DBImpl}}
+\subsubsection{\texorpdfstring{ReleaseSnapshot()}{ReleaseSnapshot()}}
+{\footnotesize\ttfamily void leveldb\+::\+D\+B\+Impl\+::\+Release\+Snapshot (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classleveldb_1_1_snapshot}{Snapshot}} $\ast$}]{snapshot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_d_b_aa46de65e990bd179db0aee770af89144}{leveldb\+::\+DB}}.
+
+\mbox{\Hypertarget{classleveldb_1_1_d_b_impl_a8642703fd1398cd8e3f5f24ee0b9da23}\label{classleveldb_1_1_d_b_impl_a8642703fd1398cd8e3f5f24ee0b9da23}} 
+\index{leveldb::DBImpl@{leveldb::DBImpl}!TEST\_CompactMemTable@{TEST\_CompactMemTable}}
+\index{TEST\_CompactMemTable@{TEST\_CompactMemTable}!leveldb::DBImpl@{leveldb::DBImpl}}
+\subsubsection{\texorpdfstring{TEST\_CompactMemTable()}{TEST\_CompactMemTable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+D\+B\+Impl\+::\+T\+E\+S\+T\+\_\+\+Compact\+Mem\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_d_b_impl_a8642703fd1398cd8e3f5f24ee0b9da23_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_d_b_impl_a8642703fd1398cd8e3f5f24ee0b9da23_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_d_b_impl_a63fcb49466b689a534ba77d32cf84f99}\label{classleveldb_1_1_d_b_impl_a63fcb49466b689a534ba77d32cf84f99}} 
+\index{leveldb::DBImpl@{leveldb::DBImpl}!TEST\_CompactRange@{TEST\_CompactRange}}
+\index{TEST\_CompactRange@{TEST\_CompactRange}!leveldb::DBImpl@{leveldb::DBImpl}}
+\subsubsection{\texorpdfstring{TEST\_CompactRange()}{TEST\_CompactRange()}}
+{\footnotesize\ttfamily void leveldb\+::\+D\+B\+Impl\+::\+T\+E\+S\+T\+\_\+\+Compact\+Range (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} $\ast$}]{begin,  }\item[{const \mbox{\hyperlink{classleveldb_1_1_slice}{Slice}} $\ast$}]{end }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_d_b_impl_a63fcb49466b689a534ba77d32cf84f99_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_d_b_impl_af621636048b8d3cfaa21238fe26ef0ca}\label{classleveldb_1_1_d_b_impl_af621636048b8d3cfaa21238fe26ef0ca}} 
+\index{leveldb::DBImpl@{leveldb::DBImpl}!TEST\_MaxNextLevelOverlappingBytes@{TEST\_MaxNextLevelOverlappingBytes}}
+\index{TEST\_MaxNextLevelOverlappingBytes@{TEST\_MaxNextLevelOverlappingBytes}!leveldb::DBImpl@{leveldb::DBImpl}}
+\subsubsection{\texorpdfstring{TEST\_MaxNextLevelOverlappingBytes()}{TEST\_MaxNextLevelOverlappingBytes()}}
+{\footnotesize\ttfamily int64\+\_\+t leveldb\+::\+D\+B\+Impl\+::\+T\+E\+S\+T\+\_\+\+Max\+Next\+Level\+Overlapping\+Bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_d_b_impl_af621636048b8d3cfaa21238fe26ef0ca_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_d_b_impl_adba5bf4252bd94f7db50e62921b7ba53}\label{classleveldb_1_1_d_b_impl_adba5bf4252bd94f7db50e62921b7ba53}} 
+\index{leveldb::DBImpl@{leveldb::DBImpl}!TEST\_NewInternalIterator@{TEST\_NewInternalIterator}}
+\index{TEST\_NewInternalIterator@{TEST\_NewInternalIterator}!leveldb::DBImpl@{leveldb::DBImpl}}
+\subsubsection{\texorpdfstring{TEST\_NewInternalIterator()}{TEST\_NewInternalIterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_iterator}{Iterator}} $\ast$ leveldb\+::\+D\+B\+Impl\+::\+T\+E\+S\+T\+\_\+\+New\+Internal\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_d_b_impl_adba5bf4252bd94f7db50e62921b7ba53_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classleveldb_1_1_d_b_impl_ac0d0b472717099d6a02ad9dace4e8ef4}\label{classleveldb_1_1_d_b_impl_ac0d0b472717099d6a02ad9dace4e8ef4}} 
+\index{leveldb::DBImpl@{leveldb::DBImpl}!Write@{Write}}
+\index{Write@{Write}!leveldb::DBImpl@{leveldb::DBImpl}}
+\subsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classleveldb_1_1_status}{Status}} leveldb\+::\+D\+B\+Impl\+::\+Write (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structleveldb_1_1_write_options}{Write\+Options}} \&}]{options,  }\item[{\mbox{\hyperlink{classleveldb_1_1_write_batch}{Write\+Batch}} $\ast$}]{updates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classleveldb_1_1_d_b_ae0b6ded8c8e0b88ff70190bf7a0c086c}{leveldb\+::\+DB}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_d_b_impl_ac0d0b472717099d6a02ad9dace4e8ef4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classleveldb_1_1_d_b_impl_ac0d0b472717099d6a02ad9dace4e8ef4_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classleveldb_1_1_d_b_impl_ad22eb7a23cbf34de526efa966c578d4a}\label{classleveldb_1_1_d_b_impl_ad22eb7a23cbf34de526efa966c578d4a}} 
+\index{leveldb::DBImpl@{leveldb::DBImpl}!DB@{DB}}
+\index{DB@{DB}!leveldb::DBImpl@{leveldb::DBImpl}}
+\subsubsection{\texorpdfstring{DB}{DB}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classleveldb_1_1_d_b}{DB}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+db/\mbox{\hyperlink{db__impl_8h}{db\+\_\+impl.\+h}}\item 
+db/\mbox{\hyperlink{db__impl_8cc}{db\+\_\+impl.\+cc}}\end{DoxyCompactItemize}

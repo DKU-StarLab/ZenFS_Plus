@@ -1,0 +1,67 @@
+\hypertarget{filename_8h}{}\section{db/filename.h File Reference}
+\label{filename_8h}\index{db/filename.h@{db/filename.h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}leveldb/slice.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}leveldb/status.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}port/port.\+h\char`\"{}}\newline
+Include dependency graph for filename.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{filename_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{filename_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceleveldb}{leveldb}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceleveldb_ab8e559ac5cadcb2b5dd531c60df944f1}{leveldb\+::\+File\+Type}} \{ \newline
+\mbox{\hyperlink{namespaceleveldb_ab8e559ac5cadcb2b5dd531c60df944f1a9aa7599d651d74892a611835cb90f1a8}{leveldb\+::k\+Log\+File}}, 
+\mbox{\hyperlink{namespaceleveldb_ab8e559ac5cadcb2b5dd531c60df944f1abbb39081ce3d1fa7397c074443910235}{leveldb\+::k\+D\+B\+Lock\+File}}, 
+\mbox{\hyperlink{namespaceleveldb_ab8e559ac5cadcb2b5dd531c60df944f1aa5055e5d888b92fd695bbb24c22ca8be}{leveldb\+::k\+Table\+File}}, 
+\mbox{\hyperlink{namespaceleveldb_ab8e559ac5cadcb2b5dd531c60df944f1af941d0365407ca03ed62ad30696c78da}{leveldb\+::k\+Descriptor\+File}}, 
+\newline
+\mbox{\hyperlink{namespaceleveldb_ab8e559ac5cadcb2b5dd531c60df944f1a77227e6519db508a8baf96907bed69fb}{leveldb\+::k\+Current\+File}}, 
+\mbox{\hyperlink{namespaceleveldb_ab8e559ac5cadcb2b5dd531c60df944f1a485201937a3d025c7a5fe0e3517733d6}{leveldb\+::k\+Temp\+File}}, 
+\mbox{\hyperlink{namespaceleveldb_ab8e559ac5cadcb2b5dd531c60df944f1a0e4c1f07a2b307bc47531e94007c34b2}{leveldb\+::k\+Info\+Log\+File}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{namespaceleveldb_aba6dbc953c414e0069c35662ea806b9a}{leveldb\+::\+Log\+File\+Name}} (const std\+::string \&dbname, uint64\+\_\+t number)
+\item 
+std\+::string \mbox{\hyperlink{namespaceleveldb_a0d893a7fbbbc4a94ec75af4f6be33dbb}{leveldb\+::\+Table\+File\+Name}} (const std\+::string \&dbname, uint64\+\_\+t number)
+\item 
+std\+::string \mbox{\hyperlink{namespaceleveldb_a576acf7326a43527670f08edd3e3e12b}{leveldb\+::\+S\+S\+T\+Table\+File\+Name}} (const std\+::string \&dbname, uint64\+\_\+t number)
+\item 
+std\+::string \mbox{\hyperlink{namespaceleveldb_a1ea160b70b18dc85b537e16db3d6ddd0}{leveldb\+::\+Descriptor\+File\+Name}} (const std\+::string \&dbname, uint64\+\_\+t number)
+\item 
+std\+::string \mbox{\hyperlink{namespaceleveldb_affcb2d434f2a772d7c764cd5d1797a9a}{leveldb\+::\+Current\+File\+Name}} (const std\+::string \&dbname)
+\item 
+std\+::string \mbox{\hyperlink{namespaceleveldb_a9f772d88ab2d47dec0d68e5eb85c579e}{leveldb\+::\+Lock\+File\+Name}} (const std\+::string \&dbname)
+\item 
+std\+::string \mbox{\hyperlink{namespaceleveldb_a0563c700d6ff17e88f429464c1442da1}{leveldb\+::\+Temp\+File\+Name}} (const std\+::string \&dbname, uint64\+\_\+t number)
+\item 
+std\+::string \mbox{\hyperlink{namespaceleveldb_ac40453ca7f9c0bd723873ffe32dc12a2}{leveldb\+::\+Info\+Log\+File\+Name}} (const std\+::string \&dbname)
+\item 
+std\+::string \mbox{\hyperlink{namespaceleveldb_a2964797a29cbda9d37cce54109eefdc6}{leveldb\+::\+Old\+Info\+Log\+File\+Name}} (const std\+::string \&dbname)
+\item 
+bool \mbox{\hyperlink{namespaceleveldb_aa6901bbe2ff664657a6d4e01ba7d6d39}{leveldb\+::\+Parse\+File\+Name}} (const std\+::string \&filename, uint64\+\_\+t $\ast$number, File\+Type $\ast$type)
+\item 
+Status \mbox{\hyperlink{namespaceleveldb_a73133aa2e18928553d14913491b094e7}{leveldb\+::\+Set\+Current\+File}} (Env $\ast$env, const std\+::string \&dbname, uint64\+\_\+t descriptor\+\_\+number)
+\end{DoxyCompactItemize}
